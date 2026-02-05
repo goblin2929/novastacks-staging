@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow utility pages
+Disallow: /generator
+
+# Sitemap
+Sitemap: https://www.novastacks-ai.com/sitemap.xml

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="600" height="500" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="300" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#111111">Build vs. Outsource Framework</text>
+
+  <!-- Y-axis label -->
+  <text x="25" y="260" text-anchor="middle" font-size="14" font-weight="600" fill="#111111" transform="rotate(-90, 25, 260)">STRATEGIC DIFFERENTIATION</text>
+  <text x="55" y="130" text-anchor="middle" font-size="11" fill="#666666">Core</text>
+  <text x="55" y="145" text-anchor="middle" font-size="11" fill="#666666">Differentiator</text>
+  <text x="55" y="370" text-anchor="middle" font-size="11" fill="#666666">Commodity</text>
+  <text x="55" y="385" text-anchor="middle" font-size="11" fill="#666666">Function</text>
+
+  <!-- X-axis label -->
+  <text x="330" y="485" text-anchor="middle" font-size="14" font-weight="600" fill="#111111">EXPERTISE REQUIRED</text>
+  <text x="180" y="465" text-anchor="middle" font-size="11" fill="#666666">Low</text>
+  <text x="480" y="465" text-anchor="middle" font-size="11" fill="#666666">High</text>
+
+  <!-- Grid lines -->
+  <line x1="80" y1="250" x2="580" y2="250" stroke="#e5e5e5" stroke-width="2"/>
+  <line x1="330" y1="60" x2="330" y2="440" stroke="#e5e5e5" stroke-width="2"/>
+
+  <!-- Quadrant borders -->
+  <rect x="80" y="60" width="500" height="380" fill="none" stroke="#cccccc" stroke-width="2"/>
+
+  <!-- Top Left: Automate (Yellow) -->
+  <rect x="82" y="62" width="246" height="186" fill="#fef3c7" rx="4"/>
+  <text x="205" y="130" text-anchor="middle" font-size="18" font-weight="bold" fill="#92400e">AUTOMATE</text>
+  <text x="205" y="155" text-anchor="middle" font-size="12" fill="#78716c">Internal process + tools</text>
+  <text x="205" y="180" text-anchor="middle" font-size="11" fill="#78716c">e.g., Email sequences,</text>
+  <text x="205" y="195" text-anchor="middle" font-size="11" fill="#78716c">basic reporting</text>
+
+  <!-- Top Right: Build In-House (Green) -->
+  <rect x="332" y="62" width="246" height="186" fill="#dcfce7" rx="4"/>
+  <text x="455" y="130" text-anchor="middle" font-size="18" font-weight="bold" fill="#166534">BUILD IN-HOUSE</text>
+  <text x="455" y="155" text-anchor="middle" font-size="12" fill="#78716c">Hire specialists</text>
+  <text x="455" y="180" text-anchor="middle" font-size="11" fill="#78716c">e.g., Product Marketing,</text>
+  <text x="455" y="195" text-anchor="middle" font-size="11" fill="#78716c">Brand strategy</text>
+
+  <!-- Bottom Left: Outsource (Blue) -->
+  <rect x="82" y="252" width="246" height="186" fill="#dbeafe" rx="4"/>
+  <text x="205" y="330" text-anchor="middle" font-size="18" font-weight="bold" fill="#1e40af">OUTSOURCE</text>
+  <text x="205" y="355" text-anchor="middle" font-size="12" fill="#78716c">Agencies, freelancers</text>
+  <text x="205" y="380" text-anchor="middle" font-size="11" fill="#78716c">e.g., Graphic design,</text>
+  <text x="205" y="395" text-anchor="middle" font-size="11" fill="#78716c">basic content</text>
+
+  <!-- Bottom Right: Fractional/Partner (Purple) -->
+  <rect x="332" y="252" width="246" height="186" fill="#f3e8ff" rx="4"/>
+  <text x="455" y="320" text-anchor="middle" font-size="18" font-weight="bold" fill="#7c3aed">FRACTIONAL /</text>
+  <text x="455" y="342" text-anchor="middle" font-size="18" font-weight="bold" fill="#7c3aed">PARTNER</text>
+  <text x="455" y="367" text-anchor="middle" font-size="12" fill="#78716c">Specialized firms</text>
+  <text x="455" y="392" text-anchor="middle" font-size="11" fill="#78716c">e.g., MarTech Ops,</text>
+  <text x="455" y="407" text-anchor="middle" font-size="11" fill="#78716c">Technical SEO</text>
+</svg>
