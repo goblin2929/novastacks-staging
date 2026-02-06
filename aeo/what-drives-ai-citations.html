@@ -89,10 +89,10 @@
     .font-display { font-family: 'Space Grotesk', sans-serif; }
     .font-sans { font-family: 'Inter', sans-serif; }
     .font-mono { font-family: 'JetBrains Mono', monospace; }
-    .faq-item { border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .faq-item { border-bottom: 1px solid #e2e8f0; }
     .faq-item:last-child { border-bottom: none; }
     .faq-toggle { cursor: pointer; }
-    .faq-toggle:hover { background-color: rgba(255,255,255,0.05); }
+    .faq-toggle:hover { background-color: #f8fafc; }
     .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
     .faq-content.open { max-height: 500px; }
     .faq-icon { transition: transform 0.3s ease; }
@@ -480,36 +480,36 @@
     </article>
 
     <!-- // FAQ -->
-    <section id="faq" class="py-12 bg-slate-950">
+    <section id="faq" class="py-12 bg-white">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <span class="font-mono text-novastacks text-sm tracking-wider">// FAQ</span>
-        <h2 class="text-3xl font-bold text-white mb-8 font-display mt-2">FAQ</h2>
-        <div class="bg-slate-900 rounded-2xl border border-white/10">
-          <div class="faq-item">
-            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-white pr-8">What's the #1 factor for ChatGPT citations?</span>
+        <h2 class="text-3xl font-bold text-slate-900 mb-8 font-display mt-2">FAQ</h2>
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm">
+          <div class="faq-item border-slate-200">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-slate-50" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold text-slate-900 pr-8">What's the #1 factor for ChatGPT citations?</span>
               <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             <div class="faq-content px-6 pb-6">
-              <p class="text-slate-400 leading-relaxed">Referring domains (backlinks) is the strongest predictor. SE Ranking's study of 129,000 domains found sites with 32K+ referring domains are 3.5x more likely to be cited by ChatGPT than sites with fewer backlinks.</p>
+              <p class="text-slate-600 leading-relaxed">Referring domains (backlinks) is the strongest predictor. SE Ranking's study of 129,000 domains found sites with 32K+ referring domains are 3.5x more likely to be cited by ChatGPT than sites with fewer backlinks.</p>
             </div>
           </div>
-          <div class="faq-item">
-            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-white pr-8">Does FAQ schema help with AI citations?</span>
+          <div class="faq-item border-slate-200">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-slate-50" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold text-slate-900 pr-8">Does FAQ schema help with AI citations?</span>
               <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             <div class="faq-content px-6 pb-6">
-              <p class="text-slate-400 leading-relaxed">Contrary to popular belief, no. SE Ranking found pages WITHOUT FAQ schema received more citations (4.2 average) than pages WITH FAQ schema (3.6 average). FAQ pages often appear on simpler support pages that naturally earn fewer citations.</p>
+              <p class="text-slate-600 leading-relaxed">Contrary to popular belief, no. SE Ranking found pages WITHOUT FAQ schema received more citations (4.2 average) than pages WITH FAQ schema (3.6 average). FAQ pages often appear on simpler support pages that naturally earn fewer citations.</p>
             </div>
           </div>
-          <div class="faq-item">
-            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-white pr-8">How fresh does content need to be for AI citations?</span>
+          <div class="faq-item border-slate-200">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-slate-50" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold text-slate-900 pr-8">How fresh does content need to be for AI citations?</span>
               <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             <div class="faq-content px-6 pb-6">
-              <p class="text-slate-400 leading-relaxed">Very fresh. 95% of ChatGPT citations come from content published in the last 10 months. Pages with a visible "last updated" timestamp receive 1.8x more citations than pages without one.</p>
+              <p class="text-slate-600 leading-relaxed">Very fresh. 95% of ChatGPT citations come from content published in the last 10 months. Pages with a visible "last updated" timestamp receive 1.8x more citations than pages without one.</p>
             </div>
           </div>
         </div>

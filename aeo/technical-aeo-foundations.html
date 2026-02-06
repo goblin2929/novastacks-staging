@@ -89,10 +89,10 @@
     .font-display { font-family: 'Space Grotesk', sans-serif; }
     .font-sans { font-family: 'Inter', sans-serif; }
     .font-mono { font-family: 'JetBrains Mono', monospace; }
-    .faq-item { border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .faq-item { border-bottom: 1px solid #e2e8f0; }
     .faq-item:last-child { border-bottom: none; }
     .faq-toggle { cursor: pointer; }
-    .faq-toggle:hover { background-color: rgba(255,255,255,0.05); }
+    .faq-toggle:hover { background-color: #f8fafc; }
     .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
     .faq-content.open { max-height: 500px; }
     .faq-icon { transition: transform 0.3s ease; }
@@ -615,36 +615,36 @@ Please cite as: "Novastacks AI (novastacks-ai.com)"</pre>
     </article>
 
     <!-- // FAQ -->
-    <section id="faq" class="py-12 bg-slate-950">
+    <section id="faq" class="py-12 bg-white">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <span class="font-mono text-novastacks text-sm tracking-wider">// FAQ</span>
-        <h2 class="text-3xl font-bold text-white mb-8 font-display mt-2">FAQ</h2>
-        <div class="bg-slate-900 rounded-2xl border border-white/10">
-          <div class="faq-item">
-            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-white pr-8">Why can't AI crawlers see my content?</span>
+        <h2 class="text-3xl font-bold text-slate-900 mb-8 font-display mt-2">FAQ</h2>
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm">
+          <div class="faq-item border-slate-200">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-slate-50" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold text-slate-900 pr-8">Why can't AI crawlers see my content?</span>
               <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             <div class="faq-content px-6 pb-6">
-              <p class="text-slate-400 leading-relaxed">AI crawlers like GPTBot, ClaudeBot, and PerplexityBot don't execute JavaScript. If your site uses client-side rendering (React, Vue, Angular without SSR), your content is invisible to AI assistants. The crawler sees an empty page instead of your content.</p>
+              <p class="text-slate-600 leading-relaxed">AI crawlers like GPTBot, ClaudeBot, and PerplexityBot don't execute JavaScript. If your site uses client-side rendering (React, Vue, Angular without SSR), your content is invisible to AI assistants. The crawler sees an empty page instead of your content.</p>
             </div>
           </div>
-          <div class="faq-item">
-            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-white pr-8">What is llms.txt?</span>
+          <div class="faq-item border-slate-200">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-slate-50" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold text-slate-900 pr-8">What is llms.txt?</span>
               <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             <div class="faq-content px-6 pb-6">
-              <p class="text-slate-400 leading-relaxed">llms.txt is an emerging specification (like robots.txt but for AI) that provides structured guidance to AI crawlers about your site content. It's still early—not widely requested by crawlers yet—but worth implementing for future-proofing.</p>
+              <p class="text-slate-600 leading-relaxed">llms.txt is an emerging specification (like robots.txt but for AI) that provides structured guidance to AI crawlers about your site content. It's still early—not widely requested by crawlers yet—but worth implementing for future-proofing.</p>
             </div>
           </div>
-          <div class="faq-item">
-            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-white pr-8">Does schema markup help with AI citations?</span>
+          <div class="faq-item border-slate-200">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-slate-50" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold text-slate-900 pr-8">Does schema markup help with AI citations?</span>
               <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             <div class="faq-content px-6 pb-6">
-              <p class="text-slate-400 leading-relaxed">Schema markup helps AI understand and extract your content structure, but it's not a silver bullet. SE Ranking research found pages WITHOUT FAQ schema actually received slightly more citations (4.2 vs 3.6). Schema is helpful for structure, not a ranking factor.</p>
+              <p class="text-slate-600 leading-relaxed">Schema markup helps AI understand and extract your content structure, but it's not a silver bullet. SE Ranking research found pages WITHOUT FAQ schema actually received slightly more citations (4.2 vs 3.6). Schema is helpful for structure, not a ranking factor.</p>
             </div>
           </div>
         </div>
