@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <base href="/novastacks-staging/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NOVASTACKS - AI Marketing Systems That Get Results</title>
   <meta name="description" content="We build custom AI marketing systems for growth-stage companies. Not templates. Not tools. Agentic workflows designed around your business.">
@@ -22,7 +21,7 @@
   <meta name="twitter:image" content="https://www.novastacks-ai.com/lovable-uploads/favicon.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="lovable-uploads/favicon.png">
+  <link rel="icon" type="image/png" href="/lovable-uploads/favicon.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +29,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS (compiled) -->
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
 
   <!-- Analytics -->
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="a6bNPCfvII1gVtf+GzOf3g" async></script>
@@ -263,18 +262,74 @@
   <!-- Who We Work With — LIGHT SECTION (contrast break) -->
   <section class="py-24 lg:py-32 bg-slate-50 scroll-animate">
     <div class="container mx-auto px-8 md:px-6">
-      <div class="max-w-3xl">
+      <div class="mb-12">
         <p class="font-mono text-novastacks-dark text-sm mb-6 tracking-wider">// WHO WE WORK WITH</p>
-        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-950 mb-8 leading-tight">
-          Built for Growth-Stage Companies
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-950 mb-4 leading-tight">
+          Is This You?
         </h2>
-        <div class="space-y-6 text-lg text-slate-600 leading-relaxed">
-          <p>
-            We work best with Series A and beyond &mdash; companies that have customer data, traction, and rely on online discovery for growth. Companies that want <em>systems</em> that compound, not campaigns that expire.
-          </p>
-          <p>
-            If you are pre-revenue, looking for bulk content, or expect results on a minimal budget, we are probably not the right fit. We are selective because the work is deeply integrated and requires mutual commitment.
-          </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl">
+        <!-- Good Fit -->
+        <div class="bg-white p-8 rounded-lg border-2 border-emerald-200">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
+              <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <h3 class="font-mono text-emerald-700 text-sm tracking-wider">// GOOD FIT</h3>
+          </div>
+
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-500 mt-0.5 font-mono text-sm">+</span>
+              <span class="text-slate-700">Series A+ with customer data and traction</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-500 mt-0.5 font-mono text-sm">+</span>
+              <span class="text-slate-700">Relying on online discovery for growth</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-500 mt-0.5 font-mono text-sm">+</span>
+              <span class="text-slate-700">Ready to invest in systems, not just campaigns</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-500 mt-0.5 font-mono text-sm">+</span>
+              <span class="text-slate-700">Want leverage: human expertise amplified by AI</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Not a Fit -->
+        <div class="bg-white p-8 rounded-lg border border-slate-200">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center">
+              <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </div>
+            <h3 class="font-mono text-slate-500 text-sm tracking-wider">// NOT A FIT</h3>
+          </div>
+
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <span class="text-slate-400 mt-0.5 font-mono text-sm">-</span>
+              <span class="text-slate-500">Pre-product or pre-revenue startups</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-slate-400 mt-0.5 font-mono text-sm">-</span>
+              <span class="text-slate-500">"Rank fast, spend little" expectations</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-slate-400 mt-0.5 font-mono text-sm">-</span>
+              <span class="text-slate-500">Looking for bulk content or template automation</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-slate-400 mt-0.5 font-mono text-sm">-</span>
+              <span class="text-slate-500">Budget under $5K/month</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -294,11 +349,11 @@
       </div>
 
       <div class="flex flex-wrap justify-center items-center gap-12 lg:gap-20">
-        <img src="assets/images/logos/tencent-logo.avif" alt="Tencent" class="h-10 w-auto object-contain grayscale opacity-40">
-        <img src="assets/images/logos/expedia-group-logo.svg" alt="Expedia Group" class="h-10 w-auto object-contain grayscale opacity-40">
-        <img src="assets/images/logos/klook-logo.avif" alt="Klook" class="h-10 w-auto object-contain grayscale opacity-40">
-        <img src="assets/images/logos/cabital-logo.png" alt="Cabital" class="h-10 w-auto object-contain grayscale opacity-40">
-        <img src="assets/images/logos/traveloka-logo.webp" alt="Traveloka" class="h-10 w-auto object-contain grayscale opacity-40">
+        <img src="/assets/images/logos/tencent-logo.avif" alt="Tencent" class="h-10 w-auto object-contain grayscale opacity-40">
+        <img src="/assets/images/logos/expedia-group-logo.svg" alt="Expedia Group" class="h-10 w-auto object-contain grayscale opacity-40">
+        <img src="/assets/images/logos/klook-logo.avif" alt="Klook" class="h-10 w-auto object-contain grayscale opacity-40">
+        <img src="/assets/images/logos/cabital-logo.png" alt="Cabital" class="h-10 w-auto object-contain grayscale opacity-40">
+        <img src="/assets/images/logos/traveloka-logo.webp" alt="Traveloka" class="h-10 w-auto object-contain grayscale opacity-40">
       </div>
     </div>
   </section>
@@ -402,7 +457,7 @@
           <div class="lg:col-span-2">
             <div class="rounded overflow-hidden max-w-[280px] mx-auto lg:max-w-none">
               <img
-                src="assets/images/founder-photo.jpg"
+                src="/assets/images/founder-photo.jpg"
                 alt="Portrait of Tina Chu"
                 class="w-full h-auto object-cover"
               >
@@ -422,6 +477,14 @@
               <p class="text-lg lg:text-xl text-slate-700 leading-[1.6] italic">
                 Now I'm bringing that playbook &mdash; rebuilt for the AI era &mdash; to growth-stage companies who want systems, not just services."
               </p>
+            </div>
+
+            <!-- Skill chips -->
+            <div class="flex flex-wrap gap-3 pt-2">
+              <span class="px-4 py-2 bg-slate-900 text-white rounded font-mono text-xs tracking-wide">AI Strategy</span>
+              <span class="px-4 py-2 bg-slate-900 text-white rounded font-mono text-xs tracking-wide">AEO / SEO</span>
+              <span class="px-4 py-2 bg-slate-900 text-white rounded font-mono text-xs tracking-wide">Performance Marketing</span>
+              <span class="px-4 py-2 bg-slate-900 text-white rounded font-mono text-xs tracking-wide">Growth Leadership</span>
             </div>
           </div>
         </div>
@@ -990,9 +1053,9 @@
 
 
   <!-- JavaScript -->
-  <script src="assets/js/mobile-menu.js"></script>
-  <script src="assets/js/tabs.js"></script>
-  <script src="assets/js/scroll-animations.js"></script>
+  <script src="/assets/js/mobile-menu.js"></script>
+  <script src="/assets/js/tabs.js"></script>
+  <script src="/assets/js/scroll-animations.js"></script>
 
   <!-- Tidio Chat Widget -->
   <script src="//code.tidio.co/lgqazsxxicmqb8rgpj7gvuydpeoizmrg.js" async></script>
