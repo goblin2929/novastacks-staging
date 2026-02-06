@@ -62,7 +62,7 @@
         <a href="/" class="flex items-center gap-3">
           <div
             class="w-60 h-12 md:w-64 md:h-14 bg-contain bg-no-repeat bg-center"
-            style="background-image: url('lovable-uploads/315157be-4582-4858-b0d2-0598ddbed87c.png')"
+            style="background-image: url('/lovable-uploads/315157be-4582-4858-b0d2-0598ddbed87c.png')"
           ></div>
         </a>
 
@@ -452,41 +452,79 @@
         <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-950 mb-4 leading-tight">Meet the Team</h2>
         <p class="text-lg text-slate-500 mb-16 max-w-xl">One founder. Twelve AI agents.</p>
 
-        <!-- Founder — Featured -->
-        <div class="grid grid-cols-1 lg:grid-cols-7 gap-8 lg:gap-12 items-center mb-20">
-          <div class="lg:col-span-2">
-            <div class="rounded overflow-hidden max-w-[280px] mx-auto lg:max-w-none">
+        <!-- Founder — Featured with Terminal Animation -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start mb-20">
+
+          <!-- Left: Photo + Basic Info -->
+          <div class="space-y-6">
+            <div class="rounded overflow-hidden max-w-[320px]">
               <img
                 src="assets/images/founder-photo.jpg"
                 alt="Portrait of Tina Chu"
                 class="w-full h-auto object-cover"
               >
             </div>
-          </div>
-
-          <div class="lg:col-span-5 space-y-6 lg:space-y-8">
             <div>
               <span class="font-mono text-novastacks text-xs tracking-wider">FOUNDER &amp; CEO</span>
               <h3 class="text-2xl lg:text-3xl font-bold text-slate-950 mt-2 mb-1">Tina Chu</h3>
               <p class="text-sm text-slate-500">The human in the loop</p>
             </div>
-            <div class="space-y-4 lg:space-y-6">
-              <p class="text-lg lg:text-xl text-slate-700 leading-[1.6] italic">
-                "I spent 20 years scaling brands at Expedia, Tencent, and across Asia-Pacific. I know what moves metrics at scale.
-              </p>
-              <p class="text-lg lg:text-xl text-slate-700 leading-[1.6] italic">
-                Now I'm bringing that playbook &mdash; rebuilt for the AI era &mdash; to growth-stage companies who want systems, not just services."
-              </p>
-            </div>
-
-            <!-- Skill chips -->
-            <div class="flex flex-wrap gap-3 pt-2">
-              <span class="px-4 py-2 bg-slate-900 text-white rounded font-mono text-xs tracking-wide">AI Strategy</span>
-              <span class="px-4 py-2 bg-slate-900 text-white rounded font-mono text-xs tracking-wide">AEO / SEO</span>
-              <span class="px-4 py-2 bg-slate-900 text-white rounded font-mono text-xs tracking-wide">Performance Marketing</span>
-              <span class="px-4 py-2 bg-slate-900 text-white rounded font-mono text-xs tracking-wide">Growth Leadership</span>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 bg-slate-900 text-white rounded font-mono text-xs tracking-wide">AI Strategy</span>
+              <span class="px-3 py-1.5 bg-slate-900 text-white rounded font-mono text-xs tracking-wide">AEO / SEO</span>
+              <span class="px-3 py-1.5 bg-slate-900 text-white rounded font-mono text-xs tracking-wide">Growth</span>
             </div>
           </div>
+
+          <!-- Right: Terminal Animation -->
+          <div
+            class="terminal-container bg-slate-950 rounded-lg overflow-hidden shadow-2xl border border-slate-800"
+            data-lines='[
+              {"type": "command", "text": "$ cat ~/novastacks/founder.md"},
+              {"type": "normal", "text": ""},
+              {"type": "heading", "text": "# The Marketer Who Built an Agency in Her Terminal"},
+              {"type": "normal", "text": ""},
+              {"type": "normal", "text": "While others debated whether AI would replace marketers,"},
+              {"type": "highlight", "text": "Tina Chu was already living the answer."},
+              {"type": "normal", "text": ""},
+              {"type": "stat", "text": "11,000 messages. 1,737 sessions. 50 days of compute time."},
+              {"type": "normal", "text": ""},
+              {"type": "normal", "text": "That is not a product demo. That is how she runs Novastacks."},
+              {"type": "normal", "text": "Every client report, every SEO audit, every piece of content"},
+              {"type": "normal", "text": "flows through a terminal where Claude Code is not a tool"},
+              {"type": "highlight", "text": "but a thinking partner."},
+              {"type": "normal", "text": ""},
+              {"type": "normal", "text": "When she says she builds AI marketing systems,"},
+              {"type": "normal", "text": "she is not selling software. She is describing her operating"},
+              {"type": "highlight", "text": "system."},
+              {"type": "normal", "text": ""},
+              {"type": "normal", "text": "Twenty years of enterprise marketing at Expedia, Tencent,"},
+              {"type": "normal", "text": "and across APAC taught her what moves metrics at scale."},
+              {"type": "normal", "text": "Now she is proving that one marketer with the right agents"},
+              {"type": "highlight", "text": "can outperform entire teams."},
+              {"type": "normal", "text": ""},
+              {"type": "stat", "text": "Her Claude Code usage: Top 0.5% globally."},
+              {"type": "normal", "text": ""},
+              {"type": "normal", "text": "This is not automation. It is augmentation."},
+              {"type": "highlight", "text": "Human judgment at AI speed."}
+            ]'
+          >
+            <!-- Terminal Title Bar -->
+            <div class="flex items-center gap-2 px-4 py-3 bg-slate-900 border-b border-slate-800">
+              <div class="flex gap-1.5">
+                <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+              </div>
+              <span class="ml-2 text-slate-500 text-xs font-mono">tina@novastacks ~ </span>
+            </div>
+
+            <!-- Terminal Output -->
+            <div class="p-6 font-mono text-sm leading-relaxed min-h-[400px] lg:min-h-[480px]">
+              <pre class="terminal-output whitespace-pre-wrap"></pre><span class="terminal-cursor inline-block w-2 h-4 bg-novastacks animate-pulse ml-0.5"></span>
+            </div>
+          </div>
+
         </div>
 
         <!-- AI Agent Team -->
@@ -1035,7 +1073,7 @@
         <div class="flex items-center gap-2 mb-4 md:mb-0">
           <div
             class="w-32 h-8 bg-contain bg-no-repeat bg-center"
-            style="background-image: url('lovable-uploads/315157be-4582-4858-b0d2-0598ddbed87c.png')"
+            style="background-image: url('/lovable-uploads/315157be-4582-4858-b0d2-0598ddbed87c.png')"
           ></div>
           <span class="text-slate-600 text-sm font-mono">· Singapore</span>
         </div>
@@ -1056,6 +1094,7 @@
   <script src="assets/js/mobile-menu.js"></script>
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/scroll-animations.js"></script>
+  <script src="assets/js/terminal-typing.js"></script>
 
   <!-- Tidio Chat Widget -->
   <script src="//code.tidio.co/lgqazsxxicmqb8rgpj7gvuydpeoizmrg.js" async></script>
