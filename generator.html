@@ -25,17 +25,23 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS (compiled) -->
   <link rel="stylesheet" href="assets/css/styles.css">
+
+  <style>
+    .font-display { font-family: 'Space Grotesk', sans-serif; }
+    .font-sans { font-family: 'Inter', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
 </head>
-<body class="min-h-screen bg-white text-novastacks-text font-serif">
+<body class="min-h-screen bg-slate-950 text-white font-sans">
   <!-- Header -->
-  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <header class="bg-slate-950 border-b border-white/10 sticky top-0 z-50">
     <div class="container mx-auto px-6">
       <nav class="flex justify-between items-center py-4">
-        <a href="/" class="flex items-center gap-3 hover:scale-105 transition-transform">
+        <a href="/" class="flex items-center gap-3 transition-opacity hover:opacity-80">
           <div
             class="w-60 h-12 md:w-64 md:h-14 bg-contain bg-no-repeat bg-center"
             style="background-image: url('lovable-uploads/315157be-4582-4858-b0d2-0598ddbed87c.png')"
@@ -44,20 +50,17 @@
 
         <!-- Desktop Navigation -->
         <ul class="hidden md:flex gap-8">
-          <li><a href="/aeo" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
-          <li><a href="/methodology" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Methodology</a></li>
-          <li><a href="/generator" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">About</a></li>
+          <li><a href="/aeo" class="text-slate-400 hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
+          <li><a href="/methodology" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Methodology</a></li>
+          <li><a href="/generator" class="text-slate-400 hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="text-slate-400 hover:text-novastacks font-medium transition-colors">About</a></li>
         </ul>
 
-        <!-- Desktop CTA Buttons -->
+        <!-- Desktop CTA Button -->
         <div class="hidden md:flex gap-3">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transform hover:-translate-y-1 transition-all duration-300">
-            Get Started
-          </a>
-          <a href="/generator" class="bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300">
-            Learn More
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300">
+            Book a Call
           </a>
         </div>
 
@@ -68,27 +71,24 @@
           aria-label="Toggle mobile menu"
           aria-expanded="false"
         >
-          <span id="menu-bar-1" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-2" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-3" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
+          <span id="menu-bar-1" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-2" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-3" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
         </button>
       </nav>
 
       <!-- Mobile Navigation Menu -->
-      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 py-4">
+      <div id="mobile-menu" class="hidden md:hidden bg-slate-950 border-t border-white/10 py-4">
         <ul class="flex flex-col gap-4">
-          <li><a href="/aeo" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
-          <li><a href="/methodology" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
-          <li><a href="/generator" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">About</a></li>
+          <li><a href="/aeo" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
+          <li><a href="/methodology" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
+          <li><a href="/generator" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">About</a></li>
         </ul>
         <div class="flex flex-col gap-3 mt-4">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transition-all duration-300 text-center">
-            Get Started
-          </a>
-          <a href="/generator" class="bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300 text-center">
-            Learn More
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300 text-center">
+            Book a Call
           </a>
         </div>
       </div>
@@ -97,408 +97,427 @@
 
 
 
-
-
-
-
   <!-- Main Content -->
-  <main class="container mx-auto max-w-4xl px-5 py-16">
-    <!-- Hero Title -->
-    <h1 class="font-display text-4xl md:text-6xl font-bold text-center text-novastacks-text mb-16 leading-tight">
-      Deliver On-Brand Content With AI
-    </h1>
+  <main>
+    <!-- Hero Section (Dark) -->
+    <section class="bg-slate-950 py-16">
+      <div class="container mx-auto max-w-4xl px-5">
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// HERO</p>
+        <h1 class="font-display text-4xl md:text-6xl font-bold text-center text-white mb-16 leading-tight">
+          Deliver On-Brand Content With AI
+        </h1>
 
-    <div class="w-16 h-1 bg-novastacks mx-auto mb-16"></div>
-
-    <!-- The Problem Section -->
-    <section class="mb-16">
-      <h2 class="font-display text-3xl font-bold text-novastacks-text mb-6">
-        Your Brand Voice Gets Lost in Everyday Content.
-      </h2>
-      <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-        Internal decks sound off. Marketing emails feel templated. Social posts look like they were written in 10 seconds.
-      </p>
-      <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-        This happens when everyone writes with personal LLM accounts with no shared rules or context. As a head of marketing, I used to spend hours reviewing banners, emails, and scripts only to give the simple editing feedback: too vague. Simpler English. Cut the fat. Grammar fix.
-      </p>
-      <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-        Your brand voice slowly gets watered down. Where is your carefully written brand guide? Most likely buried in a shared drive, untouched.
-      </p>
-
-      <!-- Visual Comparison -->
-      <div class="grid md:grid-cols-2 gap-8 my-12 p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-200">
-        <!-- What 99% Do -->
-        <div class="space-y-6 flex flex-col h-full">
-          <div class="flex items-center gap-3">
-            <div class="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center">
-              <span class="text-white text-sm font-bold">&#10005;</span>
-            </div>
-            <h3 class="text-xl font-bold text-novastacks-text font-display">What 99% Do - Human + LLM</h3>
-          </div>
-
-          <div class="bg-novastacks-text text-white p-4 rounded-lg font-mono text-sm">
-            "Hey generate a blog for me"
-          </div>
-
-          <div class="space-y-3 flex-grow">
-            <p class="text-sm text-gray-600 text-center">Context Window</p>
-            <div class="h-20 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center">
-              <span class="text-gray-500 text-sm">Empty</span>
-            </div>
-          </div>
-
-          <div class="border-2 border-dashed border-red-300 bg-red-50 p-4 rounded-lg">
-            <h4 class="font-semibold text-red-800 mb-3">Generic Output</h4>
-            <div class="space-y-2 text-sm">
-              <div class="flex items-center gap-2">
-                <span class="text-red-500">&#10005;</span>
-                <span class="text-red-700">Inconsistent tone</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="text-red-500">&#10005;</span>
-                <span class="text-red-700">Vague</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="text-red-500">&#10005;</span>
-                <span class="text-red-700">Feel robotic</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Human + LLM + Context Engineering -->
-        <div class="space-y-6 flex flex-col h-full">
-          <div class="flex items-center gap-3">
-            <div class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center">
-              <span class="text-white text-sm font-bold">&#10003;</span>
-            </div>
-            <h3 class="text-xl font-bold text-novastacks-text font-display">Human + LLM + Context Engineering</h3>
-          </div>
-
-          <div class="bg-novastacks-text text-white p-4 rounded-lg font-mono text-sm">
-            "Following the guidelines, write a blog for me"
-          </div>
-
-          <div class="space-y-3 flex-grow">
-            <p class="text-sm text-gray-600 text-center">Context Window (Optimized)</p>
-            <div class="space-y-2">
-              <div class="bg-gray-100 text-novastacks-text px-3 py-2 rounded text-sm font-medium border border-novastacks/20">
-                Brand Writing Guidelines
-              </div>
-              <div class="bg-novastacks/10 text-novastacks-text px-3 py-2 rounded text-sm font-medium border border-novastacks/30">
-                Optimised for channel
-              </div>
-              <div class="bg-gray-200 text-novastacks-text px-3 py-2 rounded text-sm font-medium border border-novastacks/20">
-                Speak to target audience
-              </div>
-              <div class="bg-novastacks/5 text-novastacks-text px-3 py-2 rounded text-sm font-medium border border-gray-300">
-                Save repetitive editing tasks
-              </div>
-            </div>
-          </div>
-
-          <div class="border-2 border-dashed border-green-300 bg-green-50 p-4 rounded-lg">
-            <h4 class="font-semibold text-green-800 mb-3">Valuable Output</h4>
-            <div class="space-y-2 text-sm">
-              <div class="flex items-center gap-2">
-                <span class="text-green-500">&#10003;</span>
-                <span class="text-green-700">Brand-aligned voice</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="text-green-500">&#10003;</span>
-                <span class="text-green-700">Resonates with audience</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="text-green-500">&#10003;</span>
-                <span class="text-green-700">Consistent & reliable</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="w-16 h-1 bg-novastacks mx-auto"></div>
       </div>
     </section>
 
-    <div class="w-16 h-1 bg-novastacks mx-auto mb-16"></div>
+    <!-- The Problem Section (Light) -->
+    <section class="bg-slate-100 py-16">
+      <div class="container mx-auto max-w-4xl px-5">
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// THE_PROBLEM</p>
+        <h2 class="font-display text-3xl font-bold text-slate-900 mb-6">
+          Your Brand Voice Gets Lost in Everyday Content.
+        </h2>
+        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+          Internal decks sound off. Marketing emails feel templated. Social posts look like they were written in 10 seconds.
+        </p>
+        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+          This happens when everyone writes with personal LLM accounts with no shared rules or context. As a head of marketing, I used to spend hours reviewing banners, emails, and scripts only to give the simple editing feedback: too vague. Simpler English. Cut the fat. Grammar fix.
+        </p>
+        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+          Your brand voice slowly gets watered down. Where is your carefully written brand guide? Most likely buried in a shared drive, untouched.
+        </p>
 
-    <!-- The Solution Section -->
-    <section class="mb-16">
-      <h2 class="font-display text-3xl font-bold text-novastacks-text mb-6">
-        Let's Fix It! Bring Context Back To The Loop
-      </h2>
-      <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-        Your team is already writing with AI. With the right context engineering, you turn that buried brand playbook into a Custom Brand GPT that works as your team's shared editor.
-      </p>
-      <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-        Every draft comes out on-brand. No more vague copy. No more endless reviews. Faster writing, consistent voice, one platform.
-      </p>
-
-      <!-- Three-column layout for main concepts -->
-      <div class="grid md:grid-cols-3 gap-8 mb-12">
-        <!-- What you feed it -->
-        <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl border border-blue-200">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
-              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-novastacks-text">What You Feed It</h3>
-          </div>
-          <ul class="space-y-3 text-base text-gray-600">
-            <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-              </svg>
-              <span>Tone of voice guidelines and playbooks</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <span>Approved copy examples</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6z"></path>
-              </svg>
-              <span>Channel-specific formats</span>
-            </li>
-          </ul>
-        </div>
-
-        <!-- How it works -->
-        <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl border border-green-200">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center">
-              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-novastacks-text">How It Works</h3>
-          </div>
-          <ol class="space-y-3 text-base text-gray-600">
-            <li class="flex items-start gap-3">
-              <div class="w-6 h-6 bg-green-600 text-white text-sm font-bold rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">1</div>
-              <span>Collect your existing brand assets</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <div class="w-6 h-6 bg-green-600 text-white text-sm font-bold rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">2</div>
-              <span>Run a cross-functional workshop to refine prompts</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <div class="w-6 h-6 bg-green-600 text-white text-sm font-bold rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">3</div>
-              <span>Iterate until the outputs feel on-brand</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <div class="w-6 h-6 bg-green-600 text-white text-sm font-bold rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">4</div>
-              <span>Share the Custom GPT across your team</span>
-            </li>
-          </ol>
-        </div>
-
-        <!-- Benefits -->
-        <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl border border-purple-200">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center">
-              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-novastacks-text">Benefits</h3>
-          </div>
-          <ul class="space-y-3 text-base text-gray-600">
-            <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-              </svg>
-              <span>Consistent copy across every channel</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <span>Faster reviews, fewer repetitive corrections</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-              </svg>
-              <span>Writers save time and feel supported</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-              </svg>
-              <span>Most cost-effective way to elevate your brand voice</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <div class="w-16 h-1 bg-novastacks mx-auto mb-16"></div>
-
-    <!-- See it in Action Section -->
-    <section class="mb-16">
-      <h2 class="font-display text-3xl font-bold text-novastacks-text mb-6">
-        See It In Action
-      </h2>
-      <p class="text-lg text-gray-600 leading-relaxed">
-        I built this for a B2C lifestyle brand, let's see the difference between original and context-engineered output.
-      </p>
-
-      <!-- Marketing Copy Generator Tool -->
-      <div class="mt-12">
-        <h3 class="font-display text-2xl font-bold text-novastacks-text mb-8 text-center">
-          [Brand X] On-Brand Marketing Copy Generator
-        </h3>
-
-        <form id="generator-form" class="shadow-xl border-0 bg-gray-50 rounded-xl p-8 space-y-6">
-          <!-- Input Section -->
-          <div class="space-y-2">
-            <label for="copyText" class="block text-lg font-semibold text-novastacks-text">
-              Marketing Copy to Improve:
-            </label>
-            <textarea
-              id="copyText"
-              placeholder="Paste your marketing copy here to see how our AI improves it for brand consistency, grammar, and engagement..."
-              class="w-full min-h-[150px] resize-y border-2 border-gray-200 focus:border-novastacks rounded-lg p-4 text-base focus:outline-none"
-            ></textarea>
-          </div>
-
-          <div class="space-y-2">
-            <label for="keyword" class="block text-lg font-semibold text-novastacks-text">
-              Target Keyword (optional):
-            </label>
-            <input
-              id="keyword"
-              type="text"
-              placeholder="e.g., beach vacation, marketing software, etc."
-              class="w-full border-2 border-gray-200 focus:border-novastacks rounded-lg p-4 text-base focus:outline-none"
-            >
-          </div>
-
-          <div class="space-y-2">
-            <label for="contentType" class="block text-lg font-semibold text-novastacks-text">
-              Channel (optional):
-            </label>
-            <select
-              id="contentType"
-              class="w-full border-2 border-gray-200 focus:border-novastacks rounded-lg p-4 text-base focus:outline-none bg-white"
-            >
-              <option value="">Tell us your target channel or select from dropdown</option>
-              <option value="seo_content">SEO Content</option>
-              <option value="twitter">Twitter</option>
-              <option value="instagram">Instagram</option>
-              <option value="press_release">Press Release</option>
-              <option value="newsletter">Newsletter</option>
-              <option value="banner_copy">Banner Copy</option>
-            </select>
-          </div>
-
-          <!-- Example Buttons -->
-          <div class="flex flex-wrap gap-3 justify-center pt-4">
-            <button
-              type="button"
-              data-example="1"
-              class="bg-gray-200 hover:bg-novastacks hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-all"
-            >
-              Example: Travel Marketing
-            </button>
-            <button
-              type="button"
-              data-example="2"
-              class="bg-gray-200 hover:bg-novastacks hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-all"
-            >
-              Example: Product Description
-            </button>
-            <button
-              type="button"
-              data-example="3"
-              class="bg-gray-200 hover:bg-novastacks hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-all"
-            >
-              Example: Hotel Promotion
-            </button>
-          </div>
-
-          <!-- Submit Button -->
-          <div class="text-center pt-4">
-            <button
-              type="submit"
-              id="submit-btn"
-              class="bg-novastacks hover:bg-novastacks-dark text-white text-xl font-bold py-6 px-12 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all uppercase tracking-wide"
-            >
-              Improve My Copy
-            </button>
-          </div>
-
-          <!-- Error Display -->
-          <div id="error" class="hidden border-red-500 bg-red-50 border-2 rounded-lg p-4 text-red-700 font-medium"></div>
-
-          <!-- Results Display -->
-          <div id="results" class="hidden space-y-6 pt-6">
-            <!-- Original Text -->
-            <div class="border-orange-200 border-l-4 border-l-orange-500 bg-white rounded-lg shadow">
-              <div class="p-4 border-b border-orange-200">
-                <h4 class="text-xl text-novastacks-text flex items-center gap-2 font-semibold">
-                  Original Copy
-                </h4>
+        <!-- Visual Comparison -->
+        <div class="grid md:grid-cols-2 gap-8 my-12 p-8 bg-white rounded-xl border border-slate-200">
+          <!-- What 99% Do -->
+          <div class="space-y-6 flex flex-col h-full">
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded bg-red-500 flex items-center justify-center">
+                <span class="text-white text-sm font-bold">&#10005;</span>
               </div>
-              <div class="p-4">
-                <p id="original-text" class="text-gray-500 italic text-lg leading-relaxed"></p>
+              <h3 class="text-xl font-bold text-slate-900 font-display">What 99% Do - Human + LLM</h3>
+            </div>
+
+            <div class="bg-slate-900 text-white p-4 rounded font-mono text-sm">
+              "Hey generate a blog for me"
+            </div>
+
+            <div class="space-y-3 flex-grow">
+              <p class="text-sm text-slate-600 text-center">Context Window</p>
+              <div class="h-20 border-2 border-dashed border-slate-300 rounded flex items-center justify-center">
+                <span class="text-slate-500 text-sm">Empty</span>
               </div>
             </div>
 
-            <!-- Improved Text -->
-            <div class="border-novastacks/30 bg-novastacks/5 border-l-4 border-l-novastacks rounded-lg shadow">
-              <div class="p-4 border-b border-novastacks/20">
-                <h4 class="text-xl text-novastacks-text flex items-center gap-2 font-semibold">
-                  Improved Copy
-                </h4>
-              </div>
-              <div class="p-4 space-y-4">
-                <div id="content-type-display" class="hidden bg-green-100 text-green-800 p-3 rounded-lg border-l-4 border-green-500"></div>
-                <p id="improved-text" class="text-novastacks font-medium text-lg leading-relaxed"></p>
-
-                <div>
-                  <h5 class="text-base font-semibold text-novastacks-text mb-3">
-                    Improvements Applied:
-                  </h5>
-                  <div id="rules-list" class="flex flex-wrap gap-2"></div>
+            <div class="border-2 border-dashed border-red-300 bg-red-50 p-4 rounded">
+              <h4 class="font-semibold text-red-800 mb-3">Generic Output</h4>
+              <div class="space-y-2 text-sm">
+                <div class="flex items-center gap-2">
+                  <span class="text-red-500">&#10005;</span>
+                  <span class="text-red-700">Inconsistent tone</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-red-500">&#10005;</span>
+                  <span class="text-red-700">Vague</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-red-500">&#10005;</span>
+                  <span class="text-red-700">Feel robotic</span>
                 </div>
               </div>
             </div>
           </div>
-        </form>
+
+          <!-- Human + LLM + Context Engineering -->
+          <div class="space-y-6 flex flex-col h-full">
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded bg-green-500 flex items-center justify-center">
+                <span class="text-white text-sm font-bold">&#10003;</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 font-display">Human + LLM + Context Engineering</h3>
+            </div>
+
+            <div class="bg-slate-900 text-white p-4 rounded font-mono text-sm">
+              "Following the guidelines, write a blog for me"
+            </div>
+
+            <div class="space-y-3 flex-grow">
+              <p class="text-sm text-slate-600 text-center">Context Window (Optimized)</p>
+              <div class="space-y-2">
+                <div class="bg-slate-100 text-slate-900 px-3 py-2 rounded text-sm font-medium border border-novastacks/20">
+                  Brand Writing Guidelines
+                </div>
+                <div class="bg-novastacks/10 text-slate-900 px-3 py-2 rounded text-sm font-medium border border-novastacks/30">
+                  Optimised for channel
+                </div>
+                <div class="bg-slate-200 text-slate-900 px-3 py-2 rounded text-sm font-medium border border-novastacks/20">
+                  Speak to target audience
+                </div>
+                <div class="bg-novastacks/5 text-slate-900 px-3 py-2 rounded text-sm font-medium border border-slate-300">
+                  Save repetitive editing tasks
+                </div>
+              </div>
+            </div>
+
+            <div class="border-2 border-dashed border-green-300 bg-green-50 p-4 rounded">
+              <h4 class="font-semibold text-green-800 mb-3">Valuable Output</h4>
+              <div class="space-y-2 text-sm">
+                <div class="flex items-center gap-2">
+                  <span class="text-green-500">&#10003;</span>
+                  <span class="text-green-700">Brand-aligned voice</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-green-500">&#10003;</span>
+                  <span class="text-green-700">Resonates with audience</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-green-500">&#10003;</span>
+                  <span class="text-green-700">Consistent & reliable</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <div class="w-16 h-1 bg-novastacks mx-auto my-16"></div>
+    <!-- The Solution Section (Dark) -->
+    <section class="bg-slate-950 py-16">
+      <div class="container mx-auto max-w-4xl px-5">
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// THE_SOLUTION</p>
+        <h2 class="font-display text-3xl font-bold text-white mb-6">
+          Let's Fix It! Bring Context Back To The Loop
+        </h2>
+        <p class="text-lg text-slate-400 mb-8 leading-relaxed">
+          Your team is already writing with AI. With the right context engineering, you turn that buried brand playbook into a Custom Brand GPT that works as your team's shared editor.
+        </p>
+        <p class="text-lg text-slate-400 mb-8 leading-relaxed">
+          Every draft comes out on-brand. No more vague copy. No more endless reviews. Faster writing, consistent voice, one platform.
+        </p>
 
-    <!-- Try it for your brand Section -->
-    <section class="mb-16">
-      <h2 class="font-display text-3xl font-bold text-novastacks-text mb-6">
-        Try It For Your Brand
-      </h2>
-      <p class="text-lg text-gray-600 leading-relaxed">
-        I built this to save time for my own team, and the results were outrageous. If you want to try it for your brand, DM me for my template or book a call.
-      </p>
+        <!-- Three-column layout for main concepts -->
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <!-- What you feed it -->
+          <div class="bg-slate-900 p-6 rounded-xl border border-white/10">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 bg-blue-500 rounded flex items-center justify-center">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-white">What You Feed It</h3>
+            </div>
+            <ul class="space-y-3 text-base text-slate-400">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+                <span>Tone of voice guidelines and playbooks</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span>Approved copy examples</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6z"></path>
+                </svg>
+                <span>Channel-specific formats</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- How it works -->
+          <div class="bg-slate-900 p-6 rounded-xl border border-white/10">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 bg-green-500 rounded flex items-center justify-center">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-white">How It Works</h3>
+            </div>
+            <ol class="space-y-3 text-base text-slate-400">
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-green-600 text-white text-sm font-bold rounded flex items-center justify-center mt-0.5 flex-shrink-0">1</div>
+                <span>Collect your existing brand assets</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-green-600 text-white text-sm font-bold rounded flex items-center justify-center mt-0.5 flex-shrink-0">2</div>
+                <span>Run a cross-functional workshop to refine prompts</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-green-600 text-white text-sm font-bold rounded flex items-center justify-center mt-0.5 flex-shrink-0">3</div>
+                <span>Iterate until the outputs feel on-brand</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-green-600 text-white text-sm font-bold rounded flex items-center justify-center mt-0.5 flex-shrink-0">4</div>
+                <span>Share the Custom GPT across your team</span>
+              </li>
+            </ol>
+          </div>
+
+          <!-- Benefits -->
+          <div class="bg-slate-900 p-6 rounded-xl border border-white/10">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 bg-purple-500 rounded flex items-center justify-center">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-white">Benefits</h3>
+            </div>
+            <ul class="space-y-3 text-base text-slate-400">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+                <span>Consistent copy across every channel</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span>Faster reviews, fewer repetitive corrections</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+                <span>Writers save time and feel supported</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                </svg>
+                <span>Most cost-effective way to elevate your brand voice</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Final CTA -->
-    <section class="bg-novastacks-text text-white p-16 rounded-2xl text-center">
-      <h2 class="font-display text-4xl font-bold mb-6">
-        Ready For Your Custom Brand Agent?
-      </h2>
-      <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-        Book a call to discuss how we can build a custom AI agent that maintains your unique brand voice across all content.
-      </p>
-      <a href="https://calendar.app.google/kFcXYGMDD7cY3boHA" class="inline-block bg-white text-novastacks-text hover:bg-gray-100 text-lg font-semibold py-4 px-8 rounded-xl transition-colors">
-        Book a call
-      </a>
+    <!-- See it in Action Section (Light) -->
+    <section class="bg-slate-100 py-16">
+      <div class="container mx-auto max-w-4xl px-5">
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// DEMO</p>
+        <h2 class="font-display text-3xl font-bold text-slate-900 mb-6">
+          See It In Action
+        </h2>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          I built this for a B2C lifestyle brand, let's see the difference between original and context-engineered output.
+        </p>
+
+        <!-- Marketing Copy Generator Tool -->
+        <div class="mt-12">
+          <h3 class="font-display text-2xl font-bold text-slate-900 mb-8 text-center">
+            [Brand X] On-Brand Marketing Copy Generator
+          </h3>
+
+          <form id="generator-form" class="shadow-xl border border-slate-200 bg-white rounded-xl p-8 space-y-6">
+            <!-- Input Section -->
+            <div class="space-y-2">
+              <label for="copyText" class="block text-lg font-semibold text-slate-900">
+                Marketing Copy to Improve:
+              </label>
+              <textarea
+                id="copyText"
+                placeholder="Paste your marketing copy here to see how our AI improves it for brand consistency, grammar, and engagement..."
+                class="w-full min-h-[150px] resize-y border-2 border-slate-200 focus:border-novastacks rounded p-4 text-base focus:outline-none text-slate-900"
+              ></textarea>
+            </div>
+
+            <div class="space-y-2">
+              <label for="keyword" class="block text-lg font-semibold text-slate-900">
+                Target Keyword (optional):
+              </label>
+              <input
+                id="keyword"
+                type="text"
+                placeholder="e.g., beach vacation, marketing software, etc."
+                class="w-full border-2 border-slate-200 focus:border-novastacks rounded p-4 text-base focus:outline-none text-slate-900"
+              >
+            </div>
+
+            <div class="space-y-2">
+              <label for="contentType" class="block text-lg font-semibold text-slate-900">
+                Channel (optional):
+              </label>
+              <select
+                id="contentType"
+                class="w-full border-2 border-slate-200 focus:border-novastacks rounded p-4 text-base focus:outline-none bg-white text-slate-900"
+              >
+                <option value="">Tell us your target channel or select from dropdown</option>
+                <option value="seo_content">SEO Content</option>
+                <option value="twitter">Twitter</option>
+                <option value="instagram">Instagram</option>
+                <option value="press_release">Press Release</option>
+                <option value="newsletter">Newsletter</option>
+                <option value="banner_copy">Banner Copy</option>
+              </select>
+            </div>
+
+            <!-- Example Buttons -->
+            <div class="flex flex-wrap gap-3 justify-center pt-4">
+              <button
+                type="button"
+                data-example="1"
+                class="bg-slate-200 hover:bg-novastacks hover:text-white px-4 py-2 rounded text-sm font-medium transition-all text-slate-900"
+              >
+                Example: Travel Marketing
+              </button>
+              <button
+                type="button"
+                data-example="2"
+                class="bg-slate-200 hover:bg-novastacks hover:text-white px-4 py-2 rounded text-sm font-medium transition-all text-slate-900"
+              >
+                Example: Product Description
+              </button>
+              <button
+                type="button"
+                data-example="3"
+                class="bg-slate-200 hover:bg-novastacks hover:text-white px-4 py-2 rounded text-sm font-medium transition-all text-slate-900"
+              >
+                Example: Hotel Promotion
+              </button>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center pt-4">
+              <button
+                type="submit"
+                id="submit-btn"
+                class="bg-novastacks hover:bg-novastacks/80 text-white text-xl font-bold py-6 px-12 rounded shadow-lg hover:shadow-xl transition-all uppercase tracking-wide"
+              >
+                Improve My Copy
+              </button>
+            </div>
+
+            <!-- Error Display -->
+            <div id="error" class="hidden border-red-500 bg-red-50 border-2 rounded p-4 text-red-700 font-medium"></div>
+
+            <!-- Results Display -->
+            <div id="results" class="hidden space-y-6 pt-6">
+              <!-- Original Text -->
+              <div class="border-orange-200 border-l-4 border-l-orange-500 bg-white rounded shadow">
+                <div class="p-4 border-b border-orange-200">
+                  <h4 class="text-xl text-slate-900 flex items-center gap-2 font-semibold">
+                    Original Copy
+                  </h4>
+                </div>
+                <div class="p-4">
+                  <p id="original-text" class="text-slate-500 italic text-lg leading-relaxed"></p>
+                </div>
+              </div>
+
+              <!-- Improved Text -->
+              <div class="border-novastacks/30 bg-novastacks/5 border-l-4 border-l-novastacks rounded shadow">
+                <div class="p-4 border-b border-novastacks/20">
+                  <h4 class="text-xl text-slate-900 flex items-center gap-2 font-semibold">
+                    Improved Copy
+                  </h4>
+                </div>
+                <div class="p-4 space-y-4">
+                  <div id="content-type-display" class="hidden bg-green-100 text-green-800 p-3 rounded border-l-4 border-green-500"></div>
+                  <p id="improved-text" class="text-novastacks font-medium text-lg leading-relaxed"></p>
+
+                  <div>
+                    <h5 class="text-base font-semibold text-slate-900 mb-3">
+                      Improvements Applied:
+                    </h5>
+                    <div id="rules-list" class="flex flex-wrap gap-2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Try it for your brand Section (Dark) -->
+    <section class="bg-slate-950 py-16">
+      <div class="container mx-auto max-w-4xl px-5">
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// TRY_IT</p>
+        <h2 class="font-display text-3xl font-bold text-white mb-6">
+          Try It For Your Brand
+        </h2>
+        <p class="text-lg text-slate-400 leading-relaxed">
+          I built this to save time for my own team, and the results were outrageous. If you want to try it for your brand, DM me for my template or book a call.
+        </p>
+      </div>
+    </section>
+
+    <!-- Final CTA (Light) -->
+    <section class="bg-slate-100 py-16">
+      <div class="container mx-auto max-w-4xl px-5">
+        <div class="bg-slate-900 text-white p-16 rounded-xl text-center">
+          <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// GET_STARTED</p>
+          <h2 class="font-display text-4xl font-bold mb-6">
+            Ready For Your Custom Brand Agent?
+          </h2>
+          <p class="text-xl text-slate-400 mb-8 max-w-2xl mx-auto leading-relaxed">
+            Book a call to discuss how we can build a custom AI agent that maintains your unique brand voice across all content.
+          </p>
+          <a href="https://calendar.app.google/kFcXYGMDD7cY3boHA" class="inline-block bg-novastacks text-white hover:bg-novastacks/80 text-lg font-semibold py-4 px-8 rounded transition-colors">
+            Book a call
+          </a>
+        </div>
+      </div>
     </section>
   </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 border-t border-white/10 py-16">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-slate-400">&copy; 2026 NOVASTACKS. All rights reserved.</p>
+    </div>
+  </footer>
 
   <!-- JavaScript -->
   <script src="assets/js/generator.js"></script>

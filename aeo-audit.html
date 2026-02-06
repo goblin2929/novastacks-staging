@@ -26,7 +26,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS (compiled) -->
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -77,79 +77,82 @@
   </script>
 
   <style>
-    .faq-item { border-bottom: 1px solid #e5e7eb; }
+    .font-display { font-family: 'Space Grotesk', sans-serif; }
+    .font-sans { font-family: 'Inter', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+
+    .faq-item { border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
     .faq-item:last-child { border-bottom: none; }
     .faq-toggle { cursor: pointer; }
-    .faq-toggle:hover { background-color: #f9fafb; }
+    .faq-toggle:hover { background-color: rgba(255, 255, 255, 0.05); }
     .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
     .faq-content.open { max-height: 500px; }
     .faq-icon { transition: transform 0.3s ease; }
     .faq-toggle.active .faq-icon { transform: rotate(180deg); }
   </style>
 </head>
-<body class="bg-white text-novastacks-text font-serif">
+<body class="bg-slate-950 text-white font-sans">
   <!-- Header -->
-  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <header class="bg-slate-950 border-b border-white/10 sticky top-0 z-50">
     <div class="container mx-auto px-6">
       <nav class="flex justify-between items-center py-4">
-        <a href="/" class="flex items-center gap-3 hover:scale-105 transition-transform">
+        <a href="/" class="flex items-center gap-3">
           <div class="w-60 h-12 md:w-64 md:h-14 bg-contain bg-no-repeat bg-center" style="background-image: url('lovable-uploads/315157be-4582-4858-b0d2-0598ddbed87c.png')"></div>
         </a>
         <ul class="hidden md:flex gap-8">
-          <li><a href="/aeo" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
-          <li><a href="/methodology" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Methodology</a></li>
-          <li><a href="/generator" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">About</a></li>
+          <li><a href="/aeo" class="text-slate-400 hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
+          <li><a href="/methodology" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Methodology</a></li>
+          <li><a href="/generator" class="text-slate-400 hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="text-slate-400 hover:text-novastacks font-medium transition-colors">About</a></li>
         </ul>
         <div class="hidden md:flex gap-3">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transform hover:-translate-y-1 transition-all duration-300">Get Started</a>
-          <a href="/aeo" class="bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300">Learn More</a>
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300">Book a Call</a>
         </div>
         <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1" aria-label="Toggle mobile menu">
-          <span id="menu-bar-1" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-2" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-3" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
+          <span id="menu-bar-1" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-2" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-3" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
         </button>
       </nav>
-      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 py-4">
+      <div id="mobile-menu" class="hidden md:hidden bg-slate-950 border-t border-white/10 py-4">
         <ul class="flex flex-col gap-4">
-          <li><a href="/aeo" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
-          <li><a href="/methodology" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
-          <li><a href="/generator" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">About</a></li>
+          <li><a href="/aeo" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
+          <li><a href="/methodology" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
+          <li><a href="/generator" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">About</a></li>
         </ul>
         <div class="flex flex-col gap-3 mt-4">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold text-center">Get Started</a>
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold text-center">Book a Call</a>
         </div>
       </div>
     </div>
   </header>
 
   <main class="pt-16 md:pt-20">
-    <!-- Hero Section -->
-    <section class="py-16 md:py-20 lg:py-24 bg-gradient-to-b from-white to-gray-50">
+    <!-- Hero Section (Dark) -->
+    <section class="py-16 md:py-20 lg:py-24 bg-slate-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-4xl mx-auto">
-          <span class="inline-block px-4 py-2 bg-novastacks/10 text-novastacks font-semibold text-sm rounded-full mb-6">AEO Audit</span>
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// AEO_AUDIT</p>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight font-display">
             AEO Audit: Find Out Why AI Isn't Citing You
           </h1>
-          <p class="text-lg md:text-xl text-gray-600 mb-6 leading-relaxed max-w-3xl mx-auto">
+          <p class="text-lg md:text-xl text-slate-400 mb-6 leading-relaxed max-w-3xl mx-auto">
             You rank. You have good content. But when people ask ChatGPT about your category, someone else gets recommended.
           </p>
-          <p class="text-xl text-novastacks-text font-semibold mb-6">
+          <p class="text-xl text-white font-semibold mb-6">
             Our AEO Audit shows you exactly why — and what to fix.
           </p>
-          <p class="text-base md:text-lg text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+          <p class="text-base md:text-lg text-slate-400 mb-8 leading-relaxed max-w-3xl mx-auto">
             In 12 dimensions, we analyze your citation readiness: technical setup, content structure, competitive positioning, and authority signals. You'll leave knowing who AI recommends instead of you, what they have that you don't, and the priority fixes to get cited.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-novastacks-dark transform hover:-translate-y-1 transition-all duration-300">
+            <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-8 py-4 rounded font-semibold text-lg hover:bg-novastacks/80 transition-all duration-300">
               Get Your Free Citation Check
             </a>
-            <a href="#audit-tiers" class="bg-transparent text-novastacks border-2 border-novastacks px-8 py-4 rounded-lg font-semibold text-lg hover:bg-novastacks hover:text-white transition-all duration-300">
+            <a href="#audit-tiers" class="bg-transparent text-novastacks border-2 border-novastacks px-8 py-4 rounded font-semibold text-lg hover:bg-novastacks hover:text-white transition-all duration-300">
               See Audit Packages
             </a>
           </div>
@@ -157,27 +160,28 @@
       </div>
     </section>
 
-    <!-- 12 Dimensions Section -->
+    <!-- 12 Dimensions Section (Light) -->
     <section class="py-16 md:py-20 lg:py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// 12_DIMENSIONS</p>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight font-display">
             The 12 Dimensions of Citation Readiness
           </h2>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
           <!-- Technical -->
-          <div class="bg-gray-50 p-8 rounded-2xl">
-            <div class="w-12 h-12 bg-novastacks/10 rounded-full flex items-center justify-center mb-6">
+          <div class="bg-slate-50 p-8 rounded-md">
+            <div class="w-12 h-12 bg-novastacks/10 rounded-md flex items-center justify-center mb-6">
               <svg class="w-6 h-6 text-novastacks" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-novastacks-text mb-4">Technical Foundations</h3>
-            <p class="text-sm text-gray-500 mb-4">Dimensions 1-4</p>
-            <ul class="space-y-3 text-gray-600">
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">Technical Foundations</h3>
+            <p class="text-sm text-slate-500 mb-4">Dimensions 1-4</p>
+            <ul class="space-y-3 text-slate-600">
               <li><strong>1. FAQ Schema</strong> — Implementation and extractability</li>
               <li><strong>2. Product/Service Schema</strong> — AI-parseable structure</li>
               <li><strong>3. Author/Expert Markup</strong> — Expertise attribution</li>
@@ -186,15 +190,15 @@
           </div>
 
           <!-- Content -->
-          <div class="bg-gray-50 p-8 rounded-2xl">
-            <div class="w-12 h-12 bg-novastacks/10 rounded-full flex items-center justify-center mb-6">
+          <div class="bg-slate-50 p-8 rounded-md">
+            <div class="w-12 h-12 bg-novastacks/10 rounded-md flex items-center justify-center mb-6">
               <svg class="w-6 h-6 text-novastacks" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-novastacks-text mb-4">Content Structure</h3>
-            <p class="text-sm text-gray-500 mb-4">Dimensions 5-8</p>
-            <ul class="space-y-3 text-gray-600">
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">Content Structure</h3>
+            <p class="text-sm text-slate-500 mb-4">Dimensions 5-8</p>
+            <ul class="space-y-3 text-slate-600">
               <li><strong>5. Q&A Format</strong> — Structure vs. walls of text</li>
               <li><strong>6. Direct Answers</strong> — First 1-2 sentence quality</li>
               <li><strong>7. Citeable Statistics</strong> — Specific, attributable data</li>
@@ -203,15 +207,15 @@
           </div>
 
           <!-- Competitive -->
-          <div class="bg-gray-50 p-8 rounded-2xl">
-            <div class="w-12 h-12 bg-novastacks/10 rounded-full flex items-center justify-center mb-6">
+          <div class="bg-slate-50 p-8 rounded-md">
+            <div class="w-12 h-12 bg-novastacks/10 rounded-md flex items-center justify-center mb-6">
               <svg class="w-6 h-6 text-novastacks" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-novastacks-text mb-4">Competitive Position</h3>
-            <p class="text-sm text-gray-500 mb-4">Dimensions 9-12</p>
-            <ul class="space-y-3 text-gray-600">
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">Competitive Position</h3>
+            <p class="text-sm text-slate-500 mb-4">Dimensions 9-12</p>
+            <ul class="space-y-3 text-slate-600">
               <li><strong>9. Citation Status</strong> — Who AI recommends now</li>
               <li><strong>10. Citation Share</strong> — You vs. competitors</li>
               <li><strong>11. Content Gaps</strong> — Uncovered queries</li>
@@ -222,63 +226,65 @@
       </div>
     </section>
 
-    <!-- Audit Process Section -->
-    <section class="py-16 md:py-20 lg:py-24 bg-gray-50">
+    <!-- Audit Process Section (Dark) -->
+    <section class="py-16 md:py-20 lg:py-24 bg-slate-900 border-t border-white/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// AUDIT_PROCESS</p>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight font-display">
             How the AEO Audit Works
           </h2>
         </div>
 
         <div class="grid md:grid-cols-5 gap-6">
-          <div class="bg-white p-6 rounded-2xl shadow-sm text-center">
-            <div class="w-10 h-10 bg-novastacks text-white rounded-full flex items-center justify-center mx-auto mb-4 text-lg font-bold">1</div>
-            <h3 class="font-semibold text-novastacks-text mb-2">Query Mapping</h3>
-            <p class="text-sm text-gray-500 mb-2">Day 1-2</p>
-            <p class="text-sm text-gray-600">Identify 20-30 queries that matter for your business</p>
+          <div class="bg-slate-800 p-6 rounded-md text-center border border-white/5">
+            <div class="w-10 h-10 bg-novastacks text-white rounded-md flex items-center justify-center mx-auto mb-4 text-lg font-bold">1</div>
+            <h3 class="font-semibold text-white mb-2">Query Mapping</h3>
+            <p class="text-sm text-slate-500 mb-2">Day 1-2</p>
+            <p class="text-sm text-slate-400">Identify 20-30 queries that matter for your business</p>
           </div>
-          <div class="bg-white p-6 rounded-2xl shadow-sm text-center">
-            <div class="w-10 h-10 bg-novastacks text-white rounded-full flex items-center justify-center mx-auto mb-4 text-lg font-bold">2</div>
-            <h3 class="font-semibold text-novastacks-text mb-2">Live Testing</h3>
-            <p class="text-sm text-gray-500 mb-2">Day 2-3</p>
-            <p class="text-sm text-gray-600">Test every query in ChatGPT, Perplexity, AI Overview</p>
+          <div class="bg-slate-800 p-6 rounded-md text-center border border-white/5">
+            <div class="w-10 h-10 bg-novastacks text-white rounded-md flex items-center justify-center mx-auto mb-4 text-lg font-bold">2</div>
+            <h3 class="font-semibold text-white mb-2">Live Testing</h3>
+            <p class="text-sm text-slate-500 mb-2">Day 2-3</p>
+            <p class="text-sm text-slate-400">Test every query in ChatGPT, Perplexity, AI Overview</p>
           </div>
-          <div class="bg-white p-6 rounded-2xl shadow-sm text-center">
-            <div class="w-10 h-10 bg-novastacks text-white rounded-full flex items-center justify-center mx-auto mb-4 text-lg font-bold">3</div>
-            <h3 class="font-semibold text-novastacks-text mb-2">Technical Audit</h3>
-            <p class="text-sm text-gray-500 mb-2">Day 3-4</p>
-            <p class="text-sm text-gray-600">Schema, structure, and extractability analysis</p>
+          <div class="bg-slate-800 p-6 rounded-md text-center border border-white/5">
+            <div class="w-10 h-10 bg-novastacks text-white rounded-md flex items-center justify-center mx-auto mb-4 text-lg font-bold">3</div>
+            <h3 class="font-semibold text-white mb-2">Technical Audit</h3>
+            <p class="text-sm text-slate-500 mb-2">Day 3-4</p>
+            <p class="text-sm text-slate-400">Schema, structure, and extractability analysis</p>
           </div>
-          <div class="bg-white p-6 rounded-2xl shadow-sm text-center">
-            <div class="w-10 h-10 bg-novastacks text-white rounded-full flex items-center justify-center mx-auto mb-4 text-lg font-bold">4</div>
-            <h3 class="font-semibold text-novastacks-text mb-2">Competitive Teardown</h3>
-            <p class="text-sm text-gray-500 mb-2">Day 4-5</p>
-            <p class="text-sm text-gray-600">Reverse-engineer why competitors get cited</p>
+          <div class="bg-slate-800 p-6 rounded-md text-center border border-white/5">
+            <div class="w-10 h-10 bg-novastacks text-white rounded-md flex items-center justify-center mx-auto mb-4 text-lg font-bold">4</div>
+            <h3 class="font-semibold text-white mb-2">Competitive Teardown</h3>
+            <p class="text-sm text-slate-500 mb-2">Day 4-5</p>
+            <p class="text-sm text-slate-400">Reverse-engineer why competitors get cited</p>
           </div>
-          <div class="bg-white p-6 rounded-2xl shadow-sm text-center">
-            <div class="w-10 h-10 bg-novastacks text-white rounded-full flex items-center justify-center mx-auto mb-4 text-lg font-bold">5</div>
-            <h3 class="font-semibold text-novastacks-text mb-2">Gap Analysis</h3>
-            <p class="text-sm text-gray-500 mb-2">Day 5-7</p>
-            <p class="text-sm text-gray-600">Prioritized fixes with expected impact</p>
+          <div class="bg-slate-800 p-6 rounded-md text-center border border-white/5">
+            <div class="w-10 h-10 bg-novastacks text-white rounded-md flex items-center justify-center mx-auto mb-4 text-lg font-bold">5</div>
+            <h3 class="font-semibold text-white mb-2">Gap Analysis</h3>
+            <p class="text-sm text-slate-500 mb-2">Day 5-7</p>
+            <p class="text-sm text-slate-400">Prioritized fixes with expected impact</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- What You Get Section -->
-    <section class="py-16 md:py-20 lg:py-24 bg-white">
+    <!-- What You Get Section (Light) -->
+    <section class="py-16 md:py-20 lg:py-24 bg-slate-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// DELIVERABLES</p>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight font-display">
             What You Get
           </h2>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-gray-50 p-8 rounded-2xl">
-            <h3 class="text-xl font-semibold text-novastacks-text mb-4">Audit Report (20-30 pages)</h3>
-            <ul class="space-y-3 text-gray-600">
+          <div class="bg-white p-8 rounded-md border border-slate-200">
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">Audit Report (20-30 pages)</h3>
+            <ul class="space-y-3 text-slate-600">
               <li>Executive summary + citation readiness score</li>
               <li>Query-by-query citation breakdown</li>
               <li>Screenshots from ChatGPT, Perplexity, AI Overview</li>
@@ -287,9 +293,9 @@
               <li>Priority-ranked implementation roadmap</li>
             </ul>
           </div>
-          <div class="bg-gray-50 p-8 rounded-2xl">
-            <h3 class="text-xl font-semibold text-novastacks-text mb-4">Live Walkthrough (60 min)</h3>
-            <ul class="space-y-3 text-gray-600">
+          <div class="bg-white p-8 rounded-md border border-slate-200">
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">Live Walkthrough (60 min)</h3>
+            <ul class="space-y-3 text-slate-600">
               <li>Present findings with your team</li>
               <li>Answer questions in real-time</li>
               <li>Discuss implementation priorities</li>
@@ -297,9 +303,9 @@
               <li>Recording provided for reference</li>
             </ul>
           </div>
-          <div class="bg-gray-50 p-8 rounded-2xl">
-            <h3 class="text-xl font-semibold text-novastacks-text mb-4">Implementation Support</h3>
-            <ul class="space-y-3 text-gray-600">
+          <div class="bg-white p-8 rounded-md border border-slate-200">
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">Implementation Support</h3>
+            <ul class="space-y-3 text-slate-600">
               <li>Code snippets for schema implementation</li>
               <li>Content restructuring templates</li>
               <li>Tracking setup guide</li>
@@ -311,66 +317,67 @@
       </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="audit-tiers" class="py-16 md:py-20 lg:py-24 bg-gray-50">
+    <!-- Pricing Section (Dark) -->
+    <section id="audit-tiers" class="py-16 md:py-20 lg:py-24 bg-slate-950 border-t border-white/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// PRICING</p>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight font-display">
             Choose Your Audit Level
           </h2>
         </div>
 
         <div class="grid md:grid-cols-3 gap-6">
           <!-- Free -->
-          <div class="bg-white p-6 rounded-2xl border border-gray-200">
-            <h3 class="text-xl font-bold text-novastacks-text mb-2">Free Citation Check</h3>
-            <p class="text-sm text-gray-400 line-through mb-1">$2,000</p>
+          <div class="bg-slate-900 p-6 rounded-md border border-white/10">
+            <h3 class="text-xl font-bold text-white mb-2">Free Citation Check</h3>
+            <p class="text-sm text-slate-500 line-through mb-1">$2,000</p>
             <p class="text-3xl font-bold text-novastacks mb-1">Free</p>
-            <p class="text-sm text-gray-500 mb-6">15 minutes, live</p>
-            <ul class="space-y-2 mb-6 text-sm text-gray-600">
+            <p class="text-sm text-slate-500 mb-6">15 minutes, live</p>
+            <ul class="space-y-2 mb-6 text-sm text-slate-400">
               <li>- 5 queries tested live</li>
               <li>- See who AI recommends</li>
               <li>- Identify if you have a gap</li>
             </ul>
-            <p class="text-xs text-gray-500 mb-4">Best for: Confirming you have a problem</p>
-            <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="block text-center bg-transparent text-novastacks border-2 border-novastacks px-4 py-2 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300 text-sm">
+            <p class="text-xs text-slate-500 mb-4">Best for: Confirming you have a problem</p>
+            <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="block text-center bg-transparent text-novastacks border-2 border-novastacks px-4 py-2 rounded font-semibold hover:bg-novastacks hover:text-white transition-all duration-300 text-sm">
               Book Free Check
             </a>
           </div>
 
           <!-- Comprehensive -->
-          <div class="bg-novastacks/5 p-6 rounded-2xl border-2 border-novastacks relative">
-            <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-novastacks text-white text-xs font-semibold px-3 py-1 rounded-full">Most Popular</span>
-            <h3 class="text-xl font-bold text-novastacks-text mb-2">Comprehensive</h3>
+          <div class="bg-slate-800 p-6 rounded-md border-2 border-novastacks relative">
+            <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-novastacks text-white text-xs font-semibold px-3 py-1 rounded">Most Popular</span>
+            <h3 class="text-xl font-bold text-white mb-2">Comprehensive</h3>
             <p class="text-3xl font-bold text-novastacks mb-1">$3,000</p>
-            <p class="text-sm text-gray-500 mb-6">Delivered in 10 days</p>
-            <ul class="space-y-2 mb-6 text-sm text-gray-600">
+            <p class="text-sm text-slate-500 mb-6">Delivered in 10 days</p>
+            <ul class="space-y-2 mb-6 text-sm text-slate-400">
               <li>- 30 query analysis</li>
               <li>- 25 page technical review</li>
               <li>- 5 competitor teardown</li>
               <li>- Full report + 60-min call</li>
               <li>- Implementation support</li>
             </ul>
-            <p class="text-xs text-gray-500 mb-4">Best for: Growth-stage companies</p>
-            <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="block text-center bg-novastacks text-white px-4 py-2 rounded-lg font-semibold hover:bg-novastacks-dark transition-all duration-300 text-sm">
+            <p class="text-xs text-slate-500 mb-4">Best for: Growth-stage companies</p>
+            <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="block text-center bg-novastacks text-white px-4 py-2 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300 text-sm">
               Book Comprehensive
             </a>
           </div>
 
           <!-- Enterprise -->
-          <div class="bg-white p-6 rounded-2xl border border-gray-200">
-            <h3 class="text-xl font-bold text-novastacks-text mb-2">Enterprise</h3>
+          <div class="bg-slate-900 p-6 rounded-md border border-white/10">
+            <h3 class="text-xl font-bold text-white mb-2">Enterprise</h3>
             <p class="text-3xl font-bold text-novastacks mb-1">Custom</p>
-            <p class="text-sm text-gray-500 mb-6">Delivered in 15 days</p>
-            <ul class="space-y-2 mb-6 text-sm text-gray-600">
+            <p class="text-sm text-slate-500 mb-6">Delivered in 15 days</p>
+            <ul class="space-y-2 mb-6 text-sm text-slate-400">
               <li>- 50+ query analysis</li>
               <li>- Full site technical review</li>
               <li>- Comprehensive competitive landscape</li>
               <li>- Stakeholder presentations</li>
               <li>- Quarterly planning</li>
             </ul>
-            <p class="text-xs text-gray-500 mb-4">Best for: Large sites, multi-market</p>
-            <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="block text-center bg-transparent text-novastacks border-2 border-novastacks px-4 py-2 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300 text-sm">
+            <p class="text-xs text-slate-500 mb-4">Best for: Large sites, multi-market</p>
+            <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="block text-center bg-transparent text-novastacks border-2 border-novastacks px-4 py-2 rounded font-semibold hover:bg-novastacks hover:text-white transition-all duration-300 text-sm">
               Contact Us
             </a>
           </div>
@@ -378,95 +385,98 @@
       </div>
     </section>
 
-    <!-- FAQ Section -->
+    <!-- FAQ Section (Light) -->
     <section class="py-16 md:py-20 lg:py-24 bg-white">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// FAQ</p>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight font-display">
             AEO Audit FAQ
           </h2>
         </div>
 
-        <div class="bg-gray-50 rounded-2xl shadow-sm border border-gray-200">
-          <div class="faq-item">
-            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-novastacks-text pr-8">What's the difference between an AEO audit and an SEO audit?</span>
+        <div class="bg-slate-50 rounded-md border border-slate-200">
+          <div class="faq-item border-b border-slate-200">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-slate-100" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold text-slate-900 pr-8">What's the difference between an AEO audit and an SEO audit?</span>
               <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             <div class="faq-content px-6 pb-6">
-              <p class="text-gray-600 leading-relaxed">SEO audits focus on rankings, backlinks, keyword optimization, and technical crawlability. AEO audits focus on AI citations, schema analysis, answer optimization, and AI extractability. Both are valuable — an AEO audit specifically analyzes why AI isn't citing you.</p>
+              <p class="text-slate-600 leading-relaxed">SEO audits focus on rankings, backlinks, keyword optimization, and technical crawlability. AEO audits focus on AI citations, schema analysis, answer optimization, and AI extractability. Both are valuable — an AEO audit specifically analyzes why AI isn't citing you.</p>
+            </div>
+          </div>
+          <div class="faq-item border-b border-slate-200">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-slate-100" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold text-slate-900 pr-8">Do you implement the fixes, or just recommend them?</span>
+              <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="faq-content px-6 pb-6">
+              <p class="text-slate-600 leading-relaxed">The audit is diagnostic — we identify and prioritize fixes. Implementation is available as a separate engagement (60-day pilot or 6-month program). Many clients start with an audit, then move to implementation.</p>
+            </div>
+          </div>
+          <div class="faq-item border-b border-slate-200">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-slate-100" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold text-slate-900 pr-8">What if we're already getting some citations?</span>
+              <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="faq-content px-6 pb-6">
+              <p class="text-slate-600 leading-relaxed">Great! The audit will show you which queries you're winning, which you're losing (and to whom), how to expand citation coverage, and how to improve citation quality (mentioned vs. recommended).</p>
             </div>
           </div>
           <div class="faq-item">
-            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-novastacks-text pr-8">Do you implement the fixes, or just recommend them?</span>
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-slate-100" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold text-slate-900 pr-8">Can we do the audit ourselves?</span>
               <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             <div class="faq-content px-6 pb-6">
-              <p class="text-gray-600 leading-relaxed">The audit is diagnostic — we identify and prioritize fixes. Implementation is available as a separate engagement (60-day pilot or 6-month program). Many clients start with an audit, then move to implementation.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-novastacks-text pr-8">What if we're already getting some citations?</span>
-              <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-            </button>
-            <div class="faq-content px-6 pb-6">
-              <p class="text-gray-600 leading-relaxed">Great! The audit will show you which queries you're winning, which you're losing (and to whom), how to expand citation coverage, and how to improve citation quality (mentioned vs. recommended).</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-novastacks-text pr-8">Can we do the audit ourselves?</span>
-              <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-            </button>
-            <div class="faq-content px-6 pb-6">
-              <p class="text-gray-600 leading-relaxed">You can run basic query tests yourself. What you won't have: systematic 12-dimension framework, competitive teardown methodology, pattern recognition from dozens of audits, and implementation prioritization based on impact. Start with our free citation check — we'll tell you if a full audit is worth it.</p>
+              <p class="text-slate-600 leading-relaxed">You can run basic query tests yourself. What you won't have: systematic 12-dimension framework, competitive teardown methodology, pattern recognition from dozens of audits, and implementation prioritization based on impact. Start with our free citation check — we'll tell you if a full audit is worth it.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Related Resources Section -->
-    <section class="py-16 md:py-20 bg-white">
+    <!-- Related Resources Section (Dark) -->
+    <section class="py-16 md:py-20 bg-slate-900 border-t border-white/5">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl font-bold text-novastacks-text mb-6 font-display">Related Resources</h2>
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// RESOURCES</p>
+        <h2 class="text-2xl font-bold text-white mb-6 font-display">Related Resources</h2>
         <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-gray-50 p-6 rounded-xl">
-            <h3 class="font-semibold text-novastacks-text mb-3">Learn AEO</h3>
-            <ul class="space-y-2 text-gray-600">
-              <li><a href="/aeo/what-is-aeo" class="text-novastacks hover:underline">What is AEO? Beginner's Guide →</a></li>
-              <li><a href="/aeo/aeo-vs-seo" class="text-novastacks hover:underline">AEO vs SEO: Key Differences →</a></li>
-              <li><a href="/aeo/technical-aeo-foundations" class="text-novastacks hover:underline">Technical AEO Foundations →</a></li>
-              <li><a href="/aeo" class="text-novastacks hover:underline">Our AEO Services →</a></li>
+          <div class="bg-slate-800 p-6 rounded-md border border-white/5">
+            <h3 class="font-semibold text-white mb-3">Learn AEO</h3>
+            <ul class="space-y-2 text-slate-400">
+              <li><a href="/aeo/what-is-aeo" class="text-novastacks hover:underline">What is AEO? Beginner's Guide</a></li>
+              <li><a href="/aeo/aeo-vs-seo" class="text-novastacks hover:underline">AEO vs SEO: Key Differences</a></li>
+              <li><a href="/aeo/technical-aeo-foundations" class="text-novastacks hover:underline">Technical AEO Foundations</a></li>
+              <li><a href="/aeo" class="text-novastacks hover:underline">Our AEO Services</a></li>
             </ul>
           </div>
-          <div class="bg-gray-50 p-6 rounded-xl">
-            <h3 class="font-semibold text-novastacks-text mb-3">Industry Solutions</h3>
-            <ul class="space-y-2 text-gray-600">
-              <li><a href="/aeo-for-saas" class="text-novastacks hover:underline">AEO for SaaS Companies →</a></li>
-              <li><a href="/blog/best-aeo-tools-2026" class="text-novastacks hover:underline">Best AEO Tools (2026) →</a></li>
-              <li><a href="/blog/chatgpt-seo" class="text-novastacks hover:underline">ChatGPT SEO Guide →</a></li>
-              <li><a href="/aeo/measuring-aeo" class="text-novastacks hover:underline">How to Measure AEO →</a></li>
+          <div class="bg-slate-800 p-6 rounded-md border border-white/5">
+            <h3 class="font-semibold text-white mb-3">Industry Solutions</h3>
+            <ul class="space-y-2 text-slate-400">
+              <li><a href="/aeo-for-saas" class="text-novastacks hover:underline">AEO for SaaS Companies</a></li>
+              <li><a href="/blog/best-aeo-tools-2026" class="text-novastacks hover:underline">Best AEO Tools (2026)</a></li>
+              <li><a href="/blog/chatgpt-seo" class="text-novastacks hover:underline">ChatGPT SEO Guide</a></li>
+              <li><a href="/aeo/measuring-aeo" class="text-novastacks hover:underline">How to Measure AEO</a></li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Final CTA -->
-    <section class="bg-novastacks-text text-white py-16 md:py-20 lg:py-24">
+    <!-- Final CTA (Light) -->
+    <section class="bg-slate-50 text-slate-900 py-16 md:py-20 lg:py-24">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// GET_STARTED</p>
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight font-display">Find Out Why AI Isn't Recommending You</h2>
-        <p class="text-lg text-white/90 mb-8 leading-relaxed">
+        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
           You've invested in content. You've built authority. You rank. But rankings and citations are different games. AI recommends structured, extractable, expert-attributed content — regardless of PageRank. The AEO Audit shows you exactly where you stand, who's beating you, and what to fix.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-white text-novastacks-text px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-300">
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-8 py-4 rounded font-semibold text-lg hover:bg-novastacks/80 transition-all duration-300">
             Get Free Citation Check
           </a>
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-transparent text-white border-2 border-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-novastacks-text transition-all duration-300">
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-transparent text-novastacks border-2 border-novastacks px-8 py-4 rounded font-semibold text-lg hover:bg-novastacks hover:text-white transition-all duration-300">
             Book Comprehensive Audit
           </a>
         </div>
@@ -475,7 +485,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-slate-900 text-white py-12">
+  <footer class="bg-slate-900 text-white py-16">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
 

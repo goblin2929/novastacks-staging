@@ -26,7 +26,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS (compiled) -->
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -110,9 +110,20 @@
   </script>
 
   <style>
+    /* Font Classes */
+    .font-display {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .font-sans {
+      font-family: 'Inter', sans-serif;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
     /* FAQ Accordion Styles */
     .faq-item {
-      border-bottom: 1px solid #e5e7eb;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
     .faq-item:last-child {
       border-bottom: none;
@@ -121,7 +132,7 @@
       cursor: pointer;
     }
     .faq-toggle:hover {
-      background-color: #f9fafb;
+      background-color: rgba(255, 255, 255, 0.05);
     }
     .faq-content {
       max-height: 0;
@@ -139,12 +150,12 @@
     }
   </style>
 </head>
-<body class="bg-white text-novastacks-text font-serif">
+<body class="bg-slate-950 text-white font-sans">
   <!-- Header -->
-  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <header class="bg-slate-950 border-b border-white/10 sticky top-0 z-50">
     <div class="container mx-auto px-6">
       <nav class="flex justify-between items-center py-4">
-        <a href="/" class="flex items-center gap-3 hover:scale-105 transition-transform">
+        <a href="/" class="flex items-center gap-3">
           <div
             class="w-60 h-12 md:w-64 md:h-14 bg-contain bg-no-repeat bg-center"
             style="background-image: url('lovable-uploads/315157be-4582-4858-b0d2-0598ddbed87c.png')"
@@ -153,20 +164,17 @@
 
         <!-- Desktop Navigation -->
         <ul class="hidden md:flex gap-8">
-          <li><a href="/aeo" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
-          <li><a href="/methodology" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Methodology</a></li>
-          <li><a href="/generator" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">About</a></li>
+          <li><a href="/aeo" class="text-slate-400 hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
+          <li><a href="/methodology" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Methodology</a></li>
+          <li><a href="/generator" class="text-slate-400 hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="text-slate-400 hover:text-novastacks font-medium transition-colors">About</a></li>
         </ul>
 
-        <!-- Desktop CTA Buttons -->
-        <div class="hidden md:flex gap-3">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transform hover:-translate-y-1 transition-all duration-300">
-            Get Started
-          </a>
-          <a href="/aeo" class="bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300">
-            Learn More
+        <!-- Desktop CTA Button -->
+        <div class="hidden md:flex">
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300">
+            Book a Call
           </a>
         </div>
 
@@ -177,27 +185,24 @@
           aria-label="Toggle mobile menu"
           aria-expanded="false"
         >
-          <span id="menu-bar-1" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-2" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-3" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
+          <span id="menu-bar-1" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-2" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-3" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
         </button>
       </nav>
 
       <!-- Mobile Navigation Menu -->
-      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 py-4">
+      <div id="mobile-menu" class="hidden md:hidden bg-slate-950 border-t border-white/10 py-4">
         <ul class="flex flex-col gap-4">
-          <li><a href="/aeo" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
-          <li><a href="/methodology" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
-          <li><a href="/generator" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">About</a></li>
+          <li><a href="/aeo" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
+          <li><a href="/methodology" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
+          <li><a href="/generator" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">About</a></li>
         </ul>
         <div class="flex flex-col gap-3 mt-4">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transition-all duration-300 text-center">
-            Get Started
-          </a>
-          <a href="/aeo" class="bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300 text-center">
-            Learn More
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300 text-center">
+            Book a Call
           </a>
         </div>
       </div>
@@ -206,40 +211,38 @@
 
   <!-- Main Content -->
   <main class="pt-16 md:pt-20">
-    <!-- Hero Section -->
-    <section class="py-16 md:py-20 lg:py-24 bg-gradient-to-b from-white to-gray-50">
+    <!-- Hero Section (DARK) -->
+    <section class="py-16 md:py-20 lg:py-24 bg-slate-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-4xl mx-auto">
           <div class="mb-6">
-            <span class="inline-block px-4 py-2 bg-novastacks/10 text-novastacks font-semibold text-sm rounded-full mb-6">
-              AEO for SaaS
-            </span>
+            <span class="font-mono text-novastacks text-sm tracking-wider">// AEO_FOR_SAAS</span>
           </div>
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight font-display">
             AEO for SaaS: Get Cited When Prospects Ask "Best [Your Category] Software"
           </h1>
-          <p class="text-lg md:text-xl text-gray-600 mb-6 leading-relaxed max-w-3xl mx-auto">
+          <p class="text-lg md:text-xl text-slate-400 mb-6 leading-relaxed max-w-3xl mx-auto">
             Your competitors rank below you. But when decision-makers ask ChatGPT for software recommendations, AI names them — not you.
           </p>
-          <p class="text-base md:text-lg text-gray-600 mb-4 leading-relaxed max-w-3xl mx-auto">
+          <p class="text-base md:text-lg text-slate-400 mb-4 leading-relaxed max-w-3xl mx-auto">
             Every day, thousands of SaaS buyers ask AI assistants:
           </p>
           <div class="flex flex-wrap justify-center gap-3 mb-6">
-            <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm italic">"Best project management software for remote teams"</span>
-            <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm italic">"Top CRM for startups under 50 employees"</span>
-            <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm italic">"Which analytics platform integrates with Snowflake"</span>
+            <span class="bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm italic">"Best project management software for remote teams"</span>
+            <span class="bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm italic">"Top CRM for startups under 50 employees"</span>
+            <span class="bg-slate-800 text-slate-300 px-4 py-2 rounded text-sm italic">"Which analytics platform integrates with Snowflake"</span>
           </div>
-          <p class="text-lg text-novastacks-text mb-8 font-semibold">
+          <p class="text-lg text-white mb-8 font-semibold">
             AI responds with 2-3 recommendations. If you're not one of them, you're not in the conversation.
           </p>
           <p class="text-xl md:text-2xl font-semibold text-novastacks mb-8">
             Answer Architecture for SaaS ensures you're in the answer.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-novastacks-dark transform hover:-translate-y-1 transition-all duration-300">
+            <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-8 py-4 rounded font-semibold text-lg hover:bg-novastacks/80 transition-all duration-300">
               Get Your Free SaaS Citation Audit
             </a>
-            <a href="/aeo" class="bg-transparent text-novastacks border-2 border-novastacks px-8 py-4 rounded-lg font-semibold text-lg hover:bg-novastacks hover:text-white transition-all duration-300">
+            <a href="/aeo" class="bg-transparent text-novastacks border-2 border-novastacks px-8 py-4 rounded font-semibold text-lg hover:bg-novastacks hover:text-white transition-all duration-300">
               See How It Works
             </a>
           </div>
@@ -247,106 +250,108 @@
       </div>
     </section>
 
-    <!-- The SaaS Visibility Problem Section -->
+    <!-- The SaaS Visibility Problem Section (LIGHT) -->
     <section class="py-16 md:py-20 lg:py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <span class="font-mono text-novastacks text-sm tracking-wider">// THE_PROBLEM</span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight font-display mt-4">
             You're Winning SEO. You're Losing AI.
           </h2>
         </div>
 
         <div class="max-w-4xl mx-auto">
-          <div class="bg-gray-50 p-8 rounded-2xl mb-8">
-            <p class="text-lg text-gray-600 italic mb-4">
+          <div class="bg-slate-100 p-8 rounded-2xl mb-8">
+            <p class="text-lg text-slate-600 italic mb-4">
               "We rank on page one for our core keywords. Our content is solid. But in sales calls, prospects keep mentioning competitors who 'came recommended.' We couldn't figure out where."
             </p>
-            <p class="text-novastacks-text font-semibold">— The pattern we see from SaaS companies</p>
+            <p class="text-slate-900 font-semibold">— The pattern we see from SaaS companies</p>
           </div>
 
-          <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-            The answer: <strong>AI assistants.</strong>
+          <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+            The answer: <strong class="text-slate-900">AI assistants.</strong>
           </p>
 
-          <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+          <p class="text-lg text-slate-600 mb-6 leading-relaxed">
             When we audit their queries in ChatGPT and Perplexity, we find competitors with:
           </p>
 
           <div class="grid md:grid-cols-3 gap-4 mb-8">
-            <div class="bg-red-50 p-4 rounded-lg text-center">
+            <div class="bg-red-50 p-4 rounded text-center">
               <span class="text-red-600 font-semibold">Lower domain authority</span>
             </div>
-            <div class="bg-red-50 p-4 rounded-lg text-center">
+            <div class="bg-red-50 p-4 rounded text-center">
               <span class="text-red-600 font-semibold">Fewer backlinks</span>
             </div>
-            <div class="bg-red-50 p-4 rounded-lg text-center">
+            <div class="bg-red-50 p-4 rounded text-center">
               <span class="text-red-600 font-semibold">Worse content</span>
             </div>
           </div>
 
-          <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-            But they have structured data, Q&A content, and expert attribution. <strong>So AI cites them.</strong>
+          <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+            But they have structured data, Q&A content, and expert attribution. <strong class="text-slate-900">So AI cites them.</strong>
           </p>
 
           <div class="bg-novastacks/5 p-8 rounded-2xl">
-            <h3 class="text-xl font-semibold text-novastacks-text mb-4">The Math</h3>
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">The Math</h3>
             <div class="overflow-x-auto">
               <table class="w-full">
                 <thead>
-                  <tr class="border-b border-gray-200">
-                    <th class="text-left py-3 px-4 font-semibold text-novastacks-text">Your Status</th>
-                    <th class="text-left py-3 px-4 font-semibold text-novastacks-text">AI Behavior</th>
+                  <tr class="border-b border-slate-200">
+                    <th class="text-left py-3 px-4 font-semibold text-slate-900">Your Status</th>
+                    <th class="text-left py-3 px-4 font-semibold text-slate-900">AI Behavior</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="border-b border-gray-100">
-                    <td class="py-3 px-4 text-gray-600">Rank #1, no AEO</td>
-                    <td class="py-3 px-4 text-gray-600">AI might cite you. Might not.</td>
+                  <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">Rank #1, no AEO</td>
+                    <td class="py-3 px-4 text-slate-600">AI might cite you. Might not.</td>
                   </tr>
                   <tr>
-                    <td class="py-3 px-4 text-gray-600">Rank #5, strong AEO</td>
+                    <td class="py-3 px-4 text-slate-600">Rank #5, strong AEO</td>
                     <td class="py-3 px-4 text-novastacks font-semibold">AI cites you by name with a recommendation</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <p class="mt-4 text-lg text-novastacks-text font-semibold">Rankings help. But structure determines citation.</p>
+            <p class="mt-4 text-lg text-slate-900 font-semibold">Rankings help. But structure determines citation.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SaaS Queries Section -->
-    <section class="py-16 md:py-20 lg:py-24 bg-gray-50">
+    <!-- SaaS Queries Section (DARK) -->
+    <section class="py-16 md:py-20 lg:py-24 bg-slate-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <span class="font-mono text-novastacks text-sm tracking-wider">// BUYER_QUERIES</span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight font-display mt-4">
             The Queries Your Buyers Are Asking AI
           </h2>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
-          <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <div class="bg-slate-900 p-8 rounded-2xl border border-white/10">
             <h3 class="text-xl font-semibold text-novastacks mb-4">Comparison Queries</h3>
-            <ul class="space-y-3 text-gray-600">
+            <ul class="space-y-3 text-slate-400">
               <li class="italic">"Best [category] software for [use case]"</li>
               <li class="italic">"[Product A] vs [Product B] vs [Product C]"</li>
               <li class="italic">"Top [category] tools in 2026"</li>
             </ul>
           </div>
 
-          <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <div class="bg-slate-900 p-8 rounded-2xl border border-white/10">
             <h3 class="text-xl font-semibold text-novastacks mb-4">Fit Queries</h3>
-            <ul class="space-y-3 text-gray-600">
+            <ul class="space-y-3 text-slate-400">
               <li class="italic">"Which [category] is best for [company size]?"</li>
               <li class="italic">"Best [category] for [industry]?"</li>
               <li class="italic">"[Category] that integrates with [tool]?"</li>
             </ul>
           </div>
 
-          <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <div class="bg-slate-900 p-8 rounded-2xl border border-white/10">
             <h3 class="text-xl font-semibold text-novastacks mb-4">Problem Queries</h3>
-            <ul class="space-y-3 text-gray-600">
+            <ul class="space-y-3 text-slate-400">
               <li class="italic">"How do I solve [problem]?"</li>
               <li class="italic">"What tools help with [pain point]?"</li>
               <li class="italic">"Software for [specific need]?"</li>
@@ -355,36 +360,37 @@
         </div>
 
         <div class="max-w-3xl mx-auto text-center">
-          <p class="text-lg text-gray-600 mb-4">
-            These aren't hypothetical. <strong>Run your category queries in ChatGPT right now.</strong>
+          <p class="text-lg text-slate-400 mb-4">
+            These aren't hypothetical. <strong class="text-white">Run your category queries in ChatGPT right now.</strong>
           </p>
-          <p class="text-xl text-novastacks-text font-semibold">
+          <p class="text-xl text-white font-semibold">
             Who does it recommend? If it's not you, that's the gap Answer Architecture closes.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- What We Do Section -->
+    <!-- What We Do Section (LIGHT) -->
     <section class="py-16 md:py-20 lg:py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <span class="font-mono text-novastacks text-sm tracking-wider">// THE_PLAYBOOK</span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight font-display mt-4">
             Answer Architecture for SaaS: The 60-Day Playbook
           </h2>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Phase 1 -->
-          <div class="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-200">
-            <div class="w-12 h-12 bg-novastacks/10 rounded-full flex items-center justify-center mb-6">
+          <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+            <div class="w-12 h-12 bg-novastacks/10 rounded flex items-center justify-center mb-6">
               <span class="text-xl font-bold text-novastacks">1</span>
             </div>
-            <h3 class="text-xl font-semibold text-novastacks-text mb-2">SaaS Citation Audit</h3>
-            <p class="text-sm text-gray-500 mb-4">Week 1-2</p>
-            <p class="text-gray-600 leading-relaxed mb-4">We run your top 20 category queries through ChatGPT, Perplexity, and Google AI Overview.</p>
-            <p class="text-sm font-semibold text-novastacks-text mb-2">You'll know:</p>
-            <ul class="text-sm text-gray-500 space-y-2">
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">SaaS Citation Audit</h3>
+            <p class="text-sm text-slate-500 mb-4">Week 1-2</p>
+            <p class="text-slate-600 leading-relaxed mb-4">We run your top 20 category queries through ChatGPT, Perplexity, and Google AI Overview.</p>
+            <p class="text-sm font-semibold text-slate-900 mb-2">You'll know:</p>
+            <ul class="text-sm text-slate-500 space-y-2">
               <li>- Who AI recommends for your keywords</li>
               <li>- Why they're getting cited</li>
               <li>- Your citation readiness score</li>
@@ -392,14 +398,14 @@
           </div>
 
           <!-- Phase 2 -->
-          <div class="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-200">
-            <div class="w-12 h-12 bg-novastacks/10 rounded-full flex items-center justify-center mb-6">
+          <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+            <div class="w-12 h-12 bg-novastacks/10 rounded flex items-center justify-center mb-6">
               <span class="text-xl font-bold text-novastacks">2</span>
             </div>
-            <h3 class="text-xl font-semibold text-novastacks-text mb-2">Priority Page Mapping</h3>
-            <p class="text-sm text-gray-500 mb-4">Week 2-3</p>
-            <p class="text-gray-600 leading-relaxed mb-4">Not all pages matter equally. For SaaS, these drive 80% of citations:</p>
-            <ul class="text-sm text-gray-500 space-y-2">
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">Priority Page Mapping</h3>
+            <p class="text-sm text-slate-500 mb-4">Week 2-3</p>
+            <p class="text-slate-600 leading-relaxed mb-4">Not all pages matter equally. For SaaS, these drive 80% of citations:</p>
+            <ul class="text-sm text-slate-500 space-y-2">
               <li>- Product/features pages</li>
               <li>- Comparison pages</li>
               <li>- Use case pages</li>
@@ -408,14 +414,14 @@
           </div>
 
           <!-- Phase 3 -->
-          <div class="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-200">
-            <div class="w-12 h-12 bg-novastacks/10 rounded-full flex items-center justify-center mb-6">
+          <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+            <div class="w-12 h-12 bg-novastacks/10 rounded flex items-center justify-center mb-6">
               <span class="text-xl font-bold text-novastacks">3</span>
             </div>
-            <h3 class="text-xl font-semibold text-novastacks-text mb-2">Implementation</h3>
-            <p class="text-sm text-gray-500 mb-4">Week 3-6</p>
-            <p class="text-gray-600 leading-relaxed mb-4">We implement Answer Architecture across your priority pages:</p>
-            <ul class="text-sm text-gray-500 space-y-2">
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">Implementation</h3>
+            <p class="text-sm text-slate-500 mb-4">Week 3-6</p>
+            <p class="text-slate-600 leading-relaxed mb-4">We implement Answer Architecture across your priority pages:</p>
+            <ul class="text-sm text-slate-500 space-y-2">
               <li>- FAQ schema deployment</li>
               <li>- Comparison content restructure</li>
               <li>- Expert attribution markup</li>
@@ -424,14 +430,14 @@
           </div>
 
           <!-- Phase 4 -->
-          <div class="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-200">
-            <div class="w-12 h-12 bg-novastacks/10 rounded-full flex items-center justify-center mb-6">
+          <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+            <div class="w-12 h-12 bg-novastacks/10 rounded flex items-center justify-center mb-6">
               <span class="text-xl font-bold text-novastacks">4</span>
             </div>
-            <h3 class="text-xl font-semibold text-novastacks-text mb-2">Tracking & Optimization</h3>
-            <p class="text-sm text-gray-500 mb-4">Ongoing</p>
-            <p class="text-gray-600 leading-relaxed mb-4">Weekly citation monitoring. Monthly optimization. We track:</p>
-            <ul class="text-sm text-gray-500 space-y-2">
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">Tracking & Optimization</h3>
+            <p class="text-sm text-slate-500 mb-4">Ongoing</p>
+            <p class="text-slate-600 leading-relaxed mb-4">Weekly citation monitoring. Monthly optimization. We track:</p>
+            <ul class="text-sm text-slate-500 space-y-2">
               <li>- Citation count by query</li>
               <li>- Citation sentiment</li>
               <li>- Competitive citation share</li>
@@ -442,83 +448,81 @@
       </div>
     </section>
 
-    <!-- Case Study Section -->
-    <section class="py-16 md:py-20 lg:py-24 bg-novastacks text-white">
+    <!-- Case Study Section (DARK) -->
+    <section class="py-16 md:py-20 lg:py-24 bg-slate-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span class="inline-block px-4 py-2 bg-white/10 text-white font-semibold text-sm rounded-full mb-6">
-              SaaS Case Study
-            </span>
-            <h2 class="text-3xl md:text-4xl font-bold mb-6 leading-tight font-display">
+            <span class="font-mono text-novastacks text-sm tracking-wider">// CASE_STUDY</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight font-display mt-4">
               Logistics SaaS: 0 → 43 AI Citations in 60 Days
             </h2>
-            <p class="text-lg text-white/90 mb-6 leading-relaxed">
+            <p class="text-lg text-slate-400 mb-6 leading-relaxed">
               A Series B logistics SaaS company ranked #3 for "logistics software for mid-market." Good SEO. Solid content. But sales kept hearing about a competitor "that came recommended."
             </p>
-            <p class="text-lg text-white/90 mb-6 leading-relaxed">
+            <p class="text-lg text-slate-400 mb-6 leading-relaxed">
               When we tested their queries in ChatGPT: the competitor was getting cited. They weren't. The competitor had FAQ schema, Q&A structured content, and CEO credentials on technical articles. Our client had none of this.
             </p>
             <div class="space-y-4 mb-8">
               <div class="flex items-center gap-3">
-                <div class="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center flex-shrink-0">
+                <div class="w-6 h-6 bg-green-500 rounded flex items-center justify-center flex-shrink-0">
                   <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </div>
-                <span>43 AI citations in 60 days (from zero)</span>
+                <span class="text-white">43 AI citations in 60 days (from zero)</span>
               </div>
               <div class="flex items-center gap-3">
-                <div class="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center flex-shrink-0">
+                <div class="w-6 h-6 bg-green-500 rounded flex items-center justify-center flex-shrink-0">
                   <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </div>
-                <span>8 queries with first-page AI citation</span>
+                <span class="text-white">8 queries with first-page AI citation</span>
               </div>
               <div class="flex items-center gap-3">
-                <div class="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center flex-shrink-0">
+                <div class="w-6 h-6 bg-green-500 rounded flex items-center justify-center flex-shrink-0">
                   <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </div>
-                <span>+178% organic traffic (non-branded)</span>
+                <span class="text-white">+178% organic traffic (non-branded)</span>
               </div>
               <div class="flex items-center gap-3">
-                <div class="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center flex-shrink-0">
+                <div class="w-6 h-6 bg-green-500 rounded flex items-center justify-center flex-shrink-0">
                   <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </div>
-                <span>2.3x higher conversion from AI-referred visitors</span>
+                <span class="text-white">2.3x higher conversion from AI-referred visitors</span>
               </div>
             </div>
           </div>
-          <div class="bg-white/10 rounded-2xl p-8">
-            <h3 class="text-xl font-semibold mb-6">60-Day Implementation Sprint</h3>
+          <div class="bg-slate-900 rounded-2xl p-8 border border-white/10">
+            <h3 class="text-xl font-semibold text-white mb-6">60-Day Implementation Sprint</h3>
             <ul class="space-y-4">
               <li class="flex items-start gap-3">
-                <span class="text-novastacks-accent font-bold">1.</span>
-                <span>FAQ schema on 12 product/use case pages</span>
+                <span class="text-novastacks font-bold font-mono">1.</span>
+                <span class="text-slate-300">FAQ schema on 12 product/use case pages</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="text-novastacks-accent font-bold">2.</span>
-                <span>Comparison page restructure (vs. 4 main competitors)</span>
+                <span class="text-novastacks font-bold font-mono">2.</span>
+                <span class="text-slate-300">Comparison page restructure (vs. 4 main competitors)</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="text-novastacks-accent font-bold">3.</span>
-                <span>CEO bio + credentials added to technical content</span>
+                <span class="text-novastacks font-bold font-mono">3.</span>
+                <span class="text-slate-300">CEO bio + credentials added to technical content</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="text-novastacks-accent font-bold">4.</span>
-                <span>Integration pages reformatted with Q&A structure</span>
+                <span class="text-novastacks font-bold font-mono">4.</span>
+                <span class="text-slate-300">Integration pages reformatted with Q&A structure</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="text-novastacks-accent font-bold">5.</span>
-                <span>Citeable stats pulled from proprietary data</span>
+                <span class="text-novastacks font-bold font-mono">5.</span>
+                <span class="text-slate-300">Citeable stats pulled from proprietary data</span>
               </li>
             </ul>
-            <p class="mt-6 text-white/80 text-sm">
+            <p class="mt-6 text-slate-500 text-sm">
               AEO amplified their SEO — same rankings, new discovery channel.
             </p>
           </div>
@@ -526,184 +530,187 @@
       </div>
     </section>
 
-    <!-- Pricing Section -->
+    <!-- Pricing Section (LIGHT) -->
     <section class="py-16 md:py-20 lg:py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <span class="font-mono text-novastacks text-sm tracking-wider">// PRICING</span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight font-display mt-4">
             SaaS AEO Packages
           </h2>
         </div>
 
         <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
-            <h3 class="text-2xl font-bold text-novastacks-text mb-2">60-Day Pilot</h3>
+          <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">60-Day Pilot</h3>
             <p class="text-4xl font-bold text-novastacks mb-6">$5,000</p>
             <ul class="space-y-3 mb-8">
               <li class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-gray-600">Citation audit (20 priority queries)</span>
+                <span class="text-slate-600">Citation audit (20 priority queries)</span>
               </li>
               <li class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-gray-600">Implementation on 5 priority pages</span>
+                <span class="text-slate-600">Implementation on 5 priority pages</span>
               </li>
               <li class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-gray-600">30-day citation tracking</span>
+                <span class="text-slate-600">30-day citation tracking</span>
               </li>
             </ul>
-            <p class="text-sm text-gray-500 mb-6">Best for: Testing before full commitment</p>
-            <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="block text-center bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300">
+            <p class="text-sm text-slate-500 mb-6">Best for: Testing before full commitment</p>
+            <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="block text-center bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded font-semibold hover:bg-novastacks hover:text-white transition-all duration-300">
               Join Waitlist
             </a>
           </div>
 
           <div class="bg-novastacks/5 p-8 rounded-2xl border-2 border-novastacks relative">
-            <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-novastacks text-white text-sm font-semibold px-4 py-1 rounded-full">Most Popular</span>
-            <h3 class="text-2xl font-bold text-novastacks-text mb-2">4-6 Month Engagement</h3>
+            <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-novastacks text-white text-sm font-semibold px-4 py-1 rounded">Most Popular</span>
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">4-6 Month Engagement</h3>
             <p class="text-4xl font-bold text-novastacks mb-2">From $10,000</p>
-            <p class="text-sm text-gray-500 mb-6">per month</p>
+            <p class="text-sm text-slate-500 mb-6">per month</p>
             <ul class="space-y-3 mb-8">
               <li class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-gray-600">Full citation audit + strategy</span>
+                <span class="text-slate-600">Full citation audit + strategy</span>
               </li>
               <li class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-gray-600">Onsite optimization (daily publishing)</span>
+                <span class="text-slate-600">Onsite optimization (daily publishing)</span>
               </li>
               <li class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-gray-600">Link building & offpage AEO</span>
+                <span class="text-slate-600">Link building & offpage AEO</span>
               </li>
               <li class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-gray-600">Weekly citation monitoring</span>
+                <span class="text-slate-600">Weekly citation monitoring</span>
               </li>
             </ul>
-            <p class="text-sm text-gray-500 mb-6">Best for: Comprehensive Answer Architecture</p>
-            <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="block text-center bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transition-all duration-300">
+            <p class="text-sm text-slate-500 mb-6">Best for: Comprehensive Answer Architecture</p>
+            <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="block text-center bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300">
               Get Started
             </a>
           </div>
         </div>
 
-        <p class="text-center text-gray-500 mt-8 text-sm">
+        <p class="text-center text-slate-500 mt-8 text-sm">
           Pricing varies based on site size and competitive intensity. The free audit will give you a specific recommendation.
         </p>
       </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="py-16 md:py-20 lg:py-24 bg-gray-50">
+    <!-- FAQ Section (DARK) -->
+    <section class="py-16 md:py-20 lg:py-24 bg-slate-950">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <span class="font-mono text-novastacks text-sm tracking-wider">// FAQ</span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight font-display mt-4">
             SaaS AEO FAQ
           </h2>
         </div>
 
-        <div class="bg-white rounded-2xl shadow-sm border border-gray-200">
+        <div class="bg-slate-900 rounded-2xl border border-white/10">
           <!-- FAQ Item 1 -->
           <div class="faq-item">
             <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-novastacks-text pr-8">Do we need to change our whole website?</span>
+              <span class="text-lg font-semibold text-white pr-8">Do we need to change our whole website?</span>
               <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
             <div class="faq-content px-6 pb-6">
-              <p class="text-gray-600 leading-relaxed">No. For most SaaS companies, optimizing 10-15 pages delivers 80%+ of citation lift. We focus on core product pages, top comparison pages, and highest-traffic use case pages.</p>
+              <p class="text-slate-400 leading-relaxed">No. For most SaaS companies, optimizing 10-15 pages delivers 80%+ of citation lift. We focus on core product pages, top comparison pages, and highest-traffic use case pages.</p>
             </div>
           </div>
 
           <!-- FAQ Item 2 -->
           <div class="faq-item">
             <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-novastacks-text pr-8">We already have FAQ schema. Why aren't we getting cited?</span>
+              <span class="text-lg font-semibold text-white pr-8">We already have FAQ schema. Why aren't we getting cited?</span>
               <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
             <div class="faq-content px-6 pb-6">
-              <p class="text-gray-600 leading-relaxed">Schema is necessary but not sufficient. Common issues include: FAQs answering the wrong questions (not what AI users ask), answers that are too vague or promotional, missing expert attribution, and content structure that doesn't support AI extraction. We audit all of this.</p>
+              <p class="text-slate-400 leading-relaxed">Schema is necessary but not sufficient. Common issues include: FAQs answering the wrong questions (not what AI users ask), answers that are too vague or promotional, missing expert attribution, and content structure that doesn't support AI extraction. We audit all of this.</p>
             </div>
           </div>
 
           <!-- FAQ Item 3 -->
           <div class="faq-item">
             <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-novastacks-text pr-8">How does this work with our existing SEO program?</span>
+              <span class="text-lg font-semibold text-white pr-8">How does this work with our existing SEO program?</span>
               <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
             <div class="faq-content px-6 pb-6">
-              <p class="text-gray-600 leading-relaxed">Answer Architecture complements SEO — it doesn't replace it. Your SEO drives rankings. AEO ensures those rankings translate to AI citations. Most clients run both in parallel. Some even see SEO improvements from AEO work (structured content helps traditional search too).</p>
+              <p class="text-slate-400 leading-relaxed">Answer Architecture complements SEO — it doesn't replace it. Your SEO drives rankings. AEO ensures those rankings translate to AI citations. Most clients run both in parallel. Some even see SEO improvements from AEO work (structured content helps traditional search too).</p>
             </div>
           </div>
 
           <!-- FAQ Item 4 -->
           <div class="faq-item">
             <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-novastacks-text pr-8">What's the ROI for SaaS?</span>
+              <span class="text-lg font-semibold text-white pr-8">What's the ROI for SaaS?</span>
               <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
             <div class="faq-content px-6 pb-6">
-              <p class="text-gray-600 leading-relaxed">Depends on your ACV and sales cycle. But consider: AI citations reach buyers <em>before</em> they hit Google, cited companies enter the consideration set automatically, and sales conversations start warmer ("I saw you recommended by ChatGPT"). For SaaS with $20K+ ACV, a single AI-sourced deal covers a full engagement.</p>
+              <p class="text-slate-400 leading-relaxed">Depends on your ACV and sales cycle. But consider: AI citations reach buyers <em>before</em> they hit Google, cited companies enter the consideration set automatically, and sales conversations start warmer ("I saw you recommended by ChatGPT"). For SaaS with $20K+ ACV, a single AI-sourced deal covers a full engagement.</p>
             </div>
           </div>
 
           <!-- FAQ Item 5 -->
           <div class="faq-item">
             <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-novastacks-text pr-8">How long until we see citations?</span>
+              <span class="text-lg font-semibold text-white pr-8">How long until we see citations?</span>
               <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
             <div class="faq-content px-6 pb-6">
-              <p class="text-gray-600 leading-relaxed">Most SaaS clients see first citations within 30-45 days. Full citation coverage for priority queries typically takes 60-90 days.</p>
+              <p class="text-slate-400 leading-relaxed">Most SaaS clients see first citations within 30-45 days. Full citation coverage for priority queries typically takes 60-90 days.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Related Resources Section -->
+    <!-- Related Resources Section (LIGHT) -->
     <section class="py-16 md:py-20 bg-white">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl font-bold text-novastacks-text mb-6 font-display">Related Resources</h2>
+        <span class="font-mono text-novastacks text-sm tracking-wider">// RESOURCES</span>
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 font-display mt-4">Related Resources</h2>
         <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-gray-50 p-6 rounded-xl">
-            <h3 class="font-semibold text-novastacks-text mb-3">Learn AEO</h3>
-            <ul class="space-y-2 text-gray-600">
+          <div class="bg-slate-50 p-6 rounded-xl">
+            <h3 class="font-semibold text-slate-900 mb-3">Learn AEO</h3>
+            <ul class="space-y-2 text-slate-600">
               <li><a href="/aeo/what-is-aeo" class="text-novastacks hover:underline">What is AEO? →</a></li>
               <li><a href="/aeo/aeo-vs-seo" class="text-novastacks hover:underline">AEO vs SEO Explained →</a></li>
               <li><a href="/aeo/technical-aeo-foundations" class="text-novastacks hover:underline">Technical AEO Foundations →</a></li>
               <li><a href="/aeo" class="text-novastacks hover:underline">Our AEO Services →</a></li>
             </ul>
           </div>
-          <div class="bg-gray-50 p-6 rounded-xl">
-            <h3 class="font-semibold text-novastacks-text mb-3">Tools & Guides</h3>
-            <ul class="space-y-2 text-gray-600">
+          <div class="bg-slate-50 p-6 rounded-xl">
+            <h3 class="font-semibold text-slate-900 mb-3">Tools & Guides</h3>
+            <ul class="space-y-2 text-slate-600">
               <li><a href="/aeo-audit" class="text-novastacks hover:underline">Get an AEO Audit →</a></li>
               <li><a href="/blog/best-aeo-tools-2026" class="text-novastacks hover:underline">Best AEO Tools (2026) →</a></li>
               <li><a href="/blog/chatgpt-seo" class="text-novastacks hover:underline">ChatGPT SEO Guide →</a></li>
@@ -714,27 +721,28 @@
       </div>
     </section>
 
-    <!-- Final CTA Section -->
-    <section class="bg-novastacks-text text-white py-16 md:py-20 lg:py-24">
+    <!-- Final CTA Section (DARK) -->
+    <section class="bg-slate-950 text-white py-16 md:py-20 lg:py-24">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight font-display">Your Buyers Are Asking AI for Recommendations Right Now</h2>
-        <p class="text-lg text-white/90 mb-4 leading-relaxed">
+        <span class="font-mono text-novastacks text-sm tracking-wider">// GET_STARTED</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight font-display mt-4">Your Buyers Are Asking AI for Recommendations Right Now</h2>
+        <p class="text-lg text-slate-400 mb-4 leading-relaxed">
           "Best project management software for agencies."<br>
           "Top CRM for early-stage startups."<br>
           "Which [your category] is best for [your ICP]?"
         </p>
-        <p class="text-lg text-white/90 mb-8 leading-relaxed">
+        <p class="text-lg text-slate-400 mb-8 leading-relaxed">
           These queries are happening today. AI is answering with 2-3 recommendations. If you're not in the answer, you're leaving pipeline on the table — and you'll never see it in your analytics because those buyers never reach your site.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-white text-novastacks-text px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300">
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-8 py-4 rounded font-semibold text-lg hover:bg-novastacks/80 transition-all duration-300">
             Get Your Free SaaS Citation Audit
           </a>
-          <a href="/aeo" class="bg-transparent text-white border-2 border-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-novastacks-text transition-all duration-300">
+          <a href="/aeo" class="bg-transparent text-white border-2 border-white px-8 py-4 rounded font-semibold text-lg hover:bg-white hover:text-slate-900 transition-all duration-300">
             Learn About Answer Architecture
           </a>
         </div>
-        <p class="text-white/70 mt-6 text-sm">
+        <p class="text-slate-500 mt-6 text-sm">
           We'll run your top queries live and show you exactly who AI is recommending instead of you.
         </p>
       </div>
@@ -742,7 +750,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-slate-900 text-white py-12">
+  <footer class="bg-slate-900 text-white py-16">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
 

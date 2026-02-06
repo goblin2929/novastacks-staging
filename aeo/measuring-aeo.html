@@ -20,7 +20,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -86,22 +86,25 @@
   </script>
 
   <style>
-    .faq-item { border-bottom: 1px solid #e5e7eb; }
+    .font-display { font-family: 'Space Grotesk', sans-serif; }
+    .font-sans { font-family: 'Inter', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .faq-item { border-bottom: 1px solid rgba(255,255,255,0.1); }
     .faq-item:last-child { border-bottom: none; }
     .faq-toggle { cursor: pointer; }
-    .faq-toggle:hover { background-color: #f9fafb; }
+    .faq-toggle:hover { background-color: rgba(255,255,255,0.05); }
     .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
     .faq-content.open { max-height: 500px; }
     .faq-icon { transition: transform 0.3s ease; }
     .faq-toggle.active .faq-icon { transform: rotate(180deg); }
   </style>
 </head>
-<body class="bg-white text-novastacks-text font-serif">
+<body class="bg-slate-950 text-white font-sans">
   <!-- Header -->
-  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <header class="bg-slate-950 border-b border-white/10 sticky top-0 z-50">
     <div class="container mx-auto px-6">
       <nav class="flex justify-between items-center py-4">
-        <a href="/" class="flex items-center gap-3 hover:scale-105 transition-transform">
+        <a href="/" class="flex items-center gap-3">
           <div
             class="w-60 h-12 md:w-64 md:h-14 bg-contain bg-no-repeat bg-center"
             style="background-image: url('lovable-uploads/315157be-4582-4858-b0d2-0598ddbed87c.png')"
@@ -110,20 +113,17 @@
 
         <!-- Desktop Navigation -->
         <ul class="hidden md:flex gap-8">
-          <li><a href="/aeo" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
-          <li><a href="/methodology" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Methodology</a></li>
-          <li><a href="/generator" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">About</a></li>
+          <li><a href="/aeo" class="text-slate-400 hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
+          <li><a href="/methodology" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Methodology</a></li>
+          <li><a href="/generator" class="text-slate-400 hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="text-slate-400 hover:text-novastacks font-medium transition-colors">About</a></li>
         </ul>
 
-        <!-- Desktop CTA Buttons -->
-        <div class="hidden md:flex gap-3">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transform hover:-translate-y-1 transition-all duration-300">
-            Get Started
-          </a>
-          <a href="/generator" class="bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300">
-            Learn More
+        <!-- Desktop CTA Button -->
+        <div class="hidden md:flex">
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300">
+            Book a Call
           </a>
         </div>
 
@@ -134,59 +134,54 @@
           aria-label="Toggle mobile menu"
           aria-expanded="false"
         >
-          <span id="menu-bar-1" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-2" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-3" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
+          <span id="menu-bar-1" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-2" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-3" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
         </button>
       </nav>
 
       <!-- Mobile Navigation Menu -->
-      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 py-4">
+      <div id="mobile-menu" class="hidden md:hidden bg-slate-950 border-t border-white/10 py-4">
         <ul class="flex flex-col gap-4">
-          <li><a href="/aeo" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
-          <li><a href="/methodology" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
-          <li><a href="/generator" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">About</a></li>
+          <li><a href="/aeo" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
+          <li><a href="/methodology" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
+          <li><a href="/generator" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">About</a></li>
         </ul>
         <div class="flex flex-col gap-3 mt-4">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transition-all duration-300 text-center">
-            Get Started
-          </a>
-          <a href="/generator" class="bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300 text-center">
-            Learn More
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300 text-center">
+            Book a Call
           </a>
         </div>
       </div>
     </div>
   </header>
 
-
-
-
-  <main class="pt-16 md:pt-20">
-    <!-- Breadcrumb -->
-    <div class="bg-gray-50 py-4">
+  <main>
+    <!-- Breadcrumb - Dark -->
+    <div class="bg-slate-950 py-4 border-b border-white/10">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <nav class="text-sm text-gray-500">
+        <nav class="text-sm text-slate-500">
           <a href="/" class="hover:text-novastacks">Home</a>
           <span class="mx-2">/</span>
           <a href="/aeo" class="hover:text-novastacks">AEO</a>
           <span class="mx-2">/</span>
-          <span class="text-novastacks-text">How to Measure AEO</span>
+          <span class="text-white">How to Measure AEO</span>
         </nav>
       </div>
     </div>
 
-    <article class="py-12 md:py-16">
+    <!-- Article Header - Dark -->
+    <article class="py-12 md:py-16 bg-slate-950">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <header class="mb-12">
-          <span class="inline-block px-4 py-2 bg-novastacks/10 text-novastacks font-semibold text-sm rounded-full mb-6">Measurement Guide</span>
-          <h1 class="text-4xl md:text-5xl font-bold text-novastacks-text mb-6 leading-tight font-display">How to Measure AEO: Tools and Metrics for AI Visibility</h1>
-          <p class="text-xl text-gray-600 leading-relaxed mb-8">
+          <span class="font-mono text-novastacks text-sm tracking-wider">// MEASUREMENT_GUIDE</span>
+          <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight font-display mt-4">How to Measure AEO: Tools and Metrics for AI Visibility</h1>
+          <p class="text-xl text-slate-400 leading-relaxed mb-8">
             The #1 reason teams hesitate on AEO: "How do we prove ROI?" Traditional analytics break down when AI summarizes your content without a click. Here's what to track instead.
           </p>
-          <div class="flex items-center gap-4 text-sm text-gray-500">
+          <div class="flex items-center gap-4 text-sm text-slate-500">
             <span>By Tina Chu</span>
             <span>|</span>
             <span>January 2026</span>
@@ -194,361 +189,393 @@
             <span>6 min read</span>
           </div>
         </header>
+      </div>
+    </article>
 
-        <!-- Content -->
-        <div class="prose prose-lg max-w-none">
+    <!-- The Attribution Problem - Light -->
+    <section class="py-12 bg-slate-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <span class="font-mono text-novastacks text-sm tracking-wider">// THE_PROBLEM</span>
+        <h2 class="text-3xl font-bold text-slate-900 mb-6 font-display mt-2">The Attribution Problem</h2>
+        <p class="text-slate-600 leading-relaxed mb-4">
+          AI-referred visitors often don't show a clear referral source. When ChatGPT summarizes your content to answer a user's question, that user may never click through to your site. They got their answer. Your content was the source. You see nothing in analytics.
+        </p>
 
-          <!-- Section 1: The Problem -->
-          <section class="mb-12">
-            <h2 class="text-3xl font-bold text-novastacks-text mb-6 font-display">The Attribution Problem</h2>
-            <p class="text-gray-600 leading-relaxed mb-4">
-              AI-referred visitors often don't show a clear referral source. When ChatGPT summarizes your content to answer a user's question, that user may never click through to your site. They got their answer. Your content was the source. You see nothing in analytics.
-            </p>
-
-            <div class="grid md:grid-cols-2 gap-6 mb-6">
-              <div class="bg-red-50 p-6 rounded-xl">
-                <p class="text-3xl font-bold text-red-700 mb-2">69%</p>
-                <p class="text-gray-600">of searches are now <strong>zero-click</strong> (up from 56% in 2024)</p>
-                <p class="text-sm text-gray-500 mt-2">Source: <a href="https://digiday.com/media/in-graphic-detail-ai-platforms-are-driving-more-traffic-but-not-enough-to-offset-zero-click-search/" class="text-red-600 hover:underline" target="_blank" rel="noopener">Digiday 2025</a></p>
-              </div>
-              <div class="bg-red-50 p-6 rounded-xl">
-                <p class="text-3xl font-bold text-red-700 mb-2">1%</p>
-                <p class="text-gray-600">of users click AI Overview citations</p>
-                <p class="text-sm text-gray-500 mt-2">Source: <a href="https://searchengineland.com/llm-optimization-tracking-visibility-ai-discovery-463860" class="text-red-600 hover:underline" target="_blank" rel="noopener">Search Engine Land</a></p>
-              </div>
-            </div>
-
-            <p class="text-gray-600 leading-relaxed mb-4">
-              The numbers get worse. <a href="https://searchengineland.com/llm-optimization-tracking-visibility-ai-discovery-463860" class="text-novastacks hover:underline" target="_blank" rel="noopener">Research shows</a> 92% of Gemini answers have no clickable citation at all. Cloudflare's CEO called getting referral traffic from OpenAI "<strong>750x harder than traditional web</strong>."
-            </p>
-
-            <div class="bg-amber-50 border-l-4 border-amber-400 p-6 rounded-r-lg">
-              <p class="text-amber-800">
-                <strong>The measurement gap:</strong> AI Overviews caused a <a href="https://www.brightedge.com/news/press-releases/one-year-google-ai-overviews-brightedge-data-reveals-google-search-usage" class="text-amber-700 hover:underline" target="_blank" rel="noopener">40% CTR drop</a> for affected queries. Your content is being used, but clicks aren't happening. Traditional metrics miss the picture.
-              </p>
-            </div>
-          </section>
-
-          <!-- Section 2: Why GA Fails -->
-          <section class="mb-12">
-            <h2 class="text-3xl font-bold text-novastacks-text mb-6 font-display">Why Google Analytics Doesn't Capture It</h2>
-            <p class="text-gray-600 leading-relaxed mb-4">
-              Google Analytics is built around clicks. It tracks when someone lands on your site, where they came from, and what they do. But AEO value often happens without a click:
-            </p>
-
-            <ul class="list-disc pl-6 space-y-3 text-gray-600 mb-6">
-              <li><strong>Citation without click:</strong> AI summarizes your content; user gets answer; no pageview</li>
-              <li><strong>Brand exposure:</strong> User sees your brand mentioned by ChatGPT; later searches for you directly (shows as "direct" or "branded search"—not attributed to AI)</li>
-              <li><strong>Trust transfer:</strong> AI recommends your product; user converts later via another channel</li>
-            </ul>
-
-            <p class="text-gray-600 leading-relaxed mb-6">
-              The value is real, but it's invisible to click-based analytics. This is why many teams struggle to justify AEO investment—they're looking for the wrong signal.
-            </p>
-
-            <div class="bg-gray-50 rounded-xl p-6">
-              <p class="text-gray-600">
-                <strong>What about Google Search Console?</strong> GSC fares slightly better—it can track AI Mode clicks—but all AI-related queries remain anonymized regardless of volume. You cannot filter or segment AI Mode traffic in GSC.<sup>3</sup>
-              </p>
-            </div>
-          </section>
-
-          <!-- Section 3: What to Track -->
-          <section class="mb-12">
-            <h2 class="text-3xl font-bold text-novastacks-text mb-6 font-display">What to Track Instead</h2>
-            <p class="text-gray-600 leading-relaxed mb-6">
-              AEO measurement requires different metrics. Here's what actually indicates AI visibility:
-            </p>
-
-            <div class="space-y-6 mb-6">
-              <div class="bg-white border border-gray-200 p-6 rounded-xl">
-                <h3 class="text-lg font-semibold text-novastacks mb-2">Citation Rate</h3>
-                <p class="text-gray-600">How often your domain is mentioned in AI responses for target queries. This is the core AEO metric—requires dedicated tracking tools.</p>
-              </div>
-
-              <div class="bg-white border border-gray-200 p-6 rounded-xl">
-                <h3 class="text-lg font-semibold text-novastacks mb-2">Brand Mention Correlation</h3>
-                <p class="text-gray-600">Track branded search volume in Google Search Console over time. If AI is citing you, branded searches often increase even without direct referral traffic.</p>
-              </div>
-
-              <div class="bg-white border border-gray-200 p-6 rounded-xl">
-                <h3 class="text-lg font-semibold text-novastacks mb-2">Share of Voice</h3>
-                <p class="text-gray-600">Your citations vs competitors for the same queries. Are you the primary recommendation, or buried in a list? Position matters.</p>
-              </div>
-
-              <div class="bg-white border border-gray-200 p-6 rounded-xl">
-                <h3 class="text-lg font-semibold text-novastacks mb-2">Content Velocity</h3>
-                <p class="text-gray-600">How quickly AI picks up new/updated content. Sites publishing frequently create more citation surface area. Industry benchmarks suggest 2-3x weekly minimum for competitive visibility.<sup>1</sup></p>
-              </div>
-
-              <div class="bg-white border border-gray-200 p-6 rounded-xl">
-                <h3 class="text-lg font-semibold text-novastacks mb-2">Common Crawl Rank</h3>
-                <p class="text-gray-600">Your domain's position in Common Crawl's authority index correlates with training data inclusion. Check your rank at <a href="https://metehan.ai/blog/cc-rank/" class="text-novastacks hover:underline" target="_blank" rel="noopener">metehan.ai/blog/cc-rank/</a>. Domains below 1 million face an invisible authority ceiling.<sup>2</sup></p>
-              </div>
-            </div>
-          </section>
-
-          <!-- Section 4: Tools -->
-          <section class="mb-12">
-            <h2 class="text-3xl font-bold text-novastacks-text mb-6 font-display">Emerging AEO Tracking Tools</h2>
-            <p class="text-gray-600 leading-relaxed mb-6">
-              A new category of tools is emerging to track AI visibility. Here's the current landscape (based on <a href="https://nicklafferty.com/blog/best-ai-visibility-optimization-platforms/" class="text-novastacks hover:underline" target="_blank" rel="noopener">Nick Lafferty's comparison</a>):
-            </p>
-
-            <div class="overflow-x-auto mb-6">
-              <table class="w-full border-collapse bg-white rounded-xl overflow-hidden shadow-sm">
-                <thead>
-                  <tr class="bg-gray-50">
-                    <th class="text-left p-4 font-semibold text-novastacks-text border-b">Tool</th>
-                    <th class="text-left p-4 font-semibold text-novastacks-text border-b">Focus</th>
-                    <th class="text-left p-4 font-semibold text-novastacks-text border-b">Best For</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="border-b">
-                    <td class="p-4 font-medium">
-                      <a href="https://otterly.ai/" class="text-novastacks hover:underline" target="_blank" rel="noopener">Otterly</a>
-                    </td>
-                    <td class="p-4">AI search monitoring</td>
-                    <td class="p-4">Brand visibility tracking across ChatGPT, Perplexity</td>
-                  </tr>
-                  <tr class="border-b">
-                    <td class="p-4 font-medium">
-                      <a href="https://www.withgauge.com/" class="text-novastacks hover:underline" target="_blank" rel="noopener">Gauge</a>
-                    </td>
-                    <td class="p-4">AI visibility analytics</td>
-                    <td class="p-4">Citation tracking and competitive analysis</td>
-                  </tr>
-                  <tr class="border-b">
-                    <td class="p-4 font-medium">
-                      <a href="https://www.tryprofound.com/" class="text-novastacks hover:underline" target="_blank" rel="noopener">Profound</a>
-                    </td>
-                    <td class="p-4">LLM tracking</td>
-                    <td class="p-4">Deep analysis of how LLMs reference your content</td>
-                  </tr>
-                  <tr>
-                    <td class="p-4 font-medium">DataForSEO API</td>
-                    <td class="p-4">Programmatic access</td>
-                    <td class="p-4">Building custom dashboards, automated monitoring</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div class="bg-novastacks/5 border-l-4 border-novastacks p-6 rounded-r-lg">
-              <p class="text-novastacks-text font-medium">
-                <strong>Note:</strong> This space is evolving rapidly. Tools are adding features monthly. Evaluate based on your specific needs—brand monitoring vs competitive analysis vs content optimization.
-              </p>
-            </div>
-          </section>
-
-          <!-- Section 5: Proxy Metrics -->
-          <section class="mb-12">
-            <h2 class="text-3xl font-bold text-novastacks-text mb-6 font-display">The Proxy Metrics Approach</h2>
-            <p class="text-gray-600 leading-relaxed mb-4">
-              If dedicated tools aren't in your budget yet, you can track proxy metrics using existing tools:
-            </p>
-
-            <div class="bg-white border border-gray-200 rounded-xl p-6 mb-6">
-              <h3 class="text-lg font-semibold text-novastacks-text mb-4">Free/Low-Cost Tracking Methods</h3>
-              <ul class="space-y-4">
-                <li class="flex items-start gap-3">
-                  <span class="text-novastacks font-bold">1.</span>
-                  <div>
-                    <span class="font-medium text-novastacks-text">Brand search volume (GSC)</span>
-                    <p class="text-gray-600 text-sm mt-1">Track branded search queries in Google Search Console. Unexplained increases may correlate with AI exposure.</p>
-                  </div>
-                </li>
-                <li class="flex items-start gap-3">
-                  <span class="text-novastacks font-bold">2.</span>
-                  <div>
-                    <span class="font-medium text-novastacks-text">"How did you hear about us?" surveys</span>
-                    <p class="text-gray-600 text-sm mt-1">Add this question to contact forms. Look for responses mentioning "ChatGPT," "AI," or "Perplexity."</p>
-                  </div>
-                </li>
-                <li class="flex items-start gap-3">
-                  <span class="text-novastacks font-bold">3.</span>
-                  <div>
-                    <span class="font-medium text-novastacks-text">AI platform referral traffic</span>
-                    <p class="text-gray-600 text-sm mt-1">Check GA for referrals from chat.openai.com, perplexity.ai, and similar. Small numbers, but directional.</p>
-                  </div>
-                </li>
-                <li class="flex items-start gap-3">
-                  <span class="text-novastacks font-bold">4.</span>
-                  <div>
-                    <span class="font-medium text-novastacks-text">Manual spot-checks</span>
-                    <p class="text-gray-600 text-sm mt-1">Regularly ask ChatGPT/Perplexity your target queries. Screenshot results. Track changes over time.</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <p class="text-gray-600 leading-relaxed">
-              These methods aren't perfect, but they provide directional signal while the measurement ecosystem matures.
-            </p>
-          </section>
-
-          <!-- Section 6: Baselines -->
-          <section class="mb-12">
-            <h2 class="text-3xl font-bold text-novastacks-text mb-6 font-display">Setting Realistic Baselines</h2>
-            <p class="text-gray-600 leading-relaxed mb-4">
-              Before investing in AEO, establish your current visibility baseline:
-            </p>
-
-            <ul class="list-disc pl-6 space-y-2 text-gray-600 mb-6">
-              <li>Test 10-20 target queries in ChatGPT/Perplexity—are you cited?</li>
-              <li>Note your current branded search volume in GSC</li>
-              <li>Document competitor citations for the same queries</li>
-              <li>Set 90-day review cycles to measure progress</li>
-            </ul>
-
-            <p class="text-gray-600 leading-relaxed">
-              For the full comparison of AEO vs SEO measurement approaches, see our <a href="/aeo/aeo-vs-seo" class="text-novastacks hover:underline">AEO vs SEO guide</a>.
-            </p>
-          </section>
-
-          <!-- Summary -->
-          <section class="mb-12">
-            <h2 class="text-3xl font-bold text-novastacks-text mb-6 font-display">AEO Measurement Checklist</h2>
-            <div class="bg-white border border-gray-200 rounded-xl p-6">
-              <ul class="space-y-3">
-                <li class="flex items-start gap-3">
-                  <input type="checkbox" class="mt-1" disabled>
-                  <span class="text-gray-600">Establish citation baseline (manual spot-checks)</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <input type="checkbox" class="mt-1" disabled>
-                  <span class="text-gray-600">Track branded search volume trends in GSC</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <input type="checkbox" class="mt-1" disabled>
-                  <span class="text-gray-600">Add "How did you hear about us?" to forms</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <input type="checkbox" class="mt-1" disabled>
-                  <span class="text-gray-600">Monitor AI platform referral traffic in GA</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <input type="checkbox" class="mt-1" disabled>
-                  <span class="text-gray-600">Evaluate dedicated AEO tools (Otterly, Gauge, Profound)</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <input type="checkbox" class="mt-1" disabled>
-                  <span class="text-gray-600">Set 90-day review cycles</span>
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          <!-- Related Articles -->
-          <section class="mb-12">
-            <h3 class="text-xl font-semibold text-novastacks-text mb-4">Related Articles</h3>
-            <div class="grid md:grid-cols-2 gap-4">
-              <a href="/aeo/aeo-vs-seo" class="block bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition-colors">
-                <span class="text-novastacks font-medium">AEO vs SEO: What's the Difference?</span>
-                <p class="text-gray-600 text-sm mt-1">The complete comparison guide</p>
-              </a>
-              <a href="/aeo/what-drives-ai-citations" class="block bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition-colors">
-                <span class="text-novastacks font-medium">What Drives AI Citations</span>
-                <p class="text-gray-600 text-sm mt-1">Data from 129,000 domains analyzed</p>
-              </a>
-            </div>
-          </section>
-
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-red-50 p-6 rounded-xl">
+            <p class="text-3xl font-bold text-red-700 mb-2">69%</p>
+            <p class="text-slate-600">of searches are now <strong>zero-click</strong> (up from 56% in 2024)</p>
+            <p class="text-sm text-slate-500 mt-2">Source: <a href="https://digiday.com/media/in-graphic-detail-ai-platforms-are-driving-more-traffic-but-not-enough-to-offset-zero-click-search/" class="text-red-600 hover:underline" target="_blank" rel="noopener">Digiday 2025</a></p>
+          </div>
+          <div class="bg-red-50 p-6 rounded-xl">
+            <p class="text-3xl font-bold text-red-700 mb-2">1%</p>
+            <p class="text-slate-600">of users click AI Overview citations</p>
+            <p class="text-sm text-slate-500 mt-2">Source: <a href="https://searchengineland.com/llm-optimization-tracking-visibility-ai-discovery-463860" class="text-red-600 hover:underline" target="_blank" rel="noopener">Search Engine Land</a></p>
+          </div>
         </div>
 
-        <!-- FAQ Section -->
-        <section id="faq" class="mt-16">
-          <h2 class="text-3xl font-bold text-novastacks-text mb-8 font-display">FAQ</h2>
-          <div class="bg-white rounded-2xl shadow-sm border border-gray-200">
-            <div class="faq-item">
-              <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-                <span class="text-lg font-semibold text-novastacks-text pr-8">Why can't Google Analytics track AEO?</span>
-                <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-              </button>
-              <div class="faq-content px-6 pb-6">
-                <p class="text-gray-600 leading-relaxed">Google Analytics tracks clicks, not citations. When AI assistants summarize your content, users often get their answer without clicking through—69% of searches are now zero-click. GA sees nothing, even when your content is being cited thousands of times.</p>
+        <p class="text-slate-600 leading-relaxed mb-4">
+          The numbers get worse. <a href="https://searchengineland.com/llm-optimization-tracking-visibility-ai-discovery-463860" class="text-novastacks hover:underline" target="_blank" rel="noopener">Research shows</a> 92% of Gemini answers have no clickable citation at all. Cloudflare's CEO called getting referral traffic from OpenAI "<strong>750x harder than traditional web</strong>."
+        </p>
+
+        <div class="bg-amber-50 border-l-4 border-amber-400 p-6 rounded-r-lg">
+          <p class="text-amber-800">
+            <strong>The measurement gap:</strong> AI Overviews caused a <a href="https://www.brightedge.com/news/press-releases/one-year-google-ai-overviews-brightedge-data-reveals-google-search-usage" class="text-amber-700 hover:underline" target="_blank" rel="noopener">40% CTR drop</a> for affected queries. Your content is being used, but clicks aren't happening. Traditional metrics miss the picture.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why GA Fails - Dark -->
+    <section class="py-12 bg-slate-950">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <span class="font-mono text-novastacks text-sm tracking-wider">// WHY_GA_FAILS</span>
+        <h2 class="text-3xl font-bold text-white mb-6 font-display mt-2">Why Google Analytics Doesn't Capture It</h2>
+        <p class="text-slate-400 leading-relaxed mb-4">
+          Google Analytics is built around clicks. It tracks when someone lands on your site, where they came from, and what they do. But AEO value often happens without a click:
+        </p>
+
+        <ul class="list-disc pl-6 space-y-3 text-slate-400 mb-6">
+          <li><strong class="text-white">Citation without click:</strong> AI summarizes your content; user gets answer; no pageview</li>
+          <li><strong class="text-white">Brand exposure:</strong> User sees your brand mentioned by ChatGPT; later searches for you directly (shows as "direct" or "branded search"—not attributed to AI)</li>
+          <li><strong class="text-white">Trust transfer:</strong> AI recommends your product; user converts later via another channel</li>
+        </ul>
+
+        <p class="text-slate-400 leading-relaxed mb-6">
+          The value is real, but it's invisible to click-based analytics. This is why many teams struggle to justify AEO investment—they're looking for the wrong signal.
+        </p>
+
+        <div class="bg-slate-900 border border-white/10 rounded-xl p-6">
+          <p class="text-slate-400">
+            <strong class="text-white">What about Google Search Console?</strong> GSC fares slightly better—it can track AI Mode clicks—but all AI-related queries remain anonymized regardless of volume. You cannot filter or segment AI Mode traffic in GSC.<sup>3</sup>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What to Track Instead - Light -->
+    <section class="py-12 bg-slate-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <span class="font-mono text-novastacks text-sm tracking-wider">// WHAT_TO_TRACK</span>
+        <h2 class="text-3xl font-bold text-slate-900 mb-6 font-display mt-2">What to Track Instead</h2>
+        <p class="text-slate-600 leading-relaxed mb-6">
+          AEO measurement requires different metrics. Here's what actually indicates AI visibility:
+        </p>
+
+        <div class="space-y-6 mb-6">
+          <div class="bg-white border border-slate-200 p-6 rounded-xl shadow-sm">
+            <h3 class="text-lg font-semibold text-novastacks mb-2">Citation Rate</h3>
+            <p class="text-slate-600">How often your domain is mentioned in AI responses for target queries. This is the core AEO metric—requires dedicated tracking tools.</p>
+          </div>
+
+          <div class="bg-white border border-slate-200 p-6 rounded-xl shadow-sm">
+            <h3 class="text-lg font-semibold text-novastacks mb-2">Brand Mention Correlation</h3>
+            <p class="text-slate-600">Track branded search volume in Google Search Console over time. If AI is citing you, branded searches often increase even without direct referral traffic.</p>
+          </div>
+
+          <div class="bg-white border border-slate-200 p-6 rounded-xl shadow-sm">
+            <h3 class="text-lg font-semibold text-novastacks mb-2">Share of Voice</h3>
+            <p class="text-slate-600">Your citations vs competitors for the same queries. Are you the primary recommendation, or buried in a list? Position matters.</p>
+          </div>
+
+          <div class="bg-white border border-slate-200 p-6 rounded-xl shadow-sm">
+            <h3 class="text-lg font-semibold text-novastacks mb-2">Content Velocity</h3>
+            <p class="text-slate-600">How quickly AI picks up new/updated content. Sites publishing frequently create more citation surface area. Industry benchmarks suggest 2-3x weekly minimum for competitive visibility.<sup>1</sup></p>
+          </div>
+
+          <div class="bg-white border border-slate-200 p-6 rounded-xl shadow-sm">
+            <h3 class="text-lg font-semibold text-novastacks mb-2">Common Crawl Rank</h3>
+            <p class="text-slate-600">Your domain's position in Common Crawl's authority index correlates with training data inclusion. Check your rank at <a href="https://metehan.ai/blog/cc-rank/" class="text-novastacks hover:underline" target="_blank" rel="noopener">metehan.ai/blog/cc-rank/</a>. Domains below 1 million face an invisible authority ceiling.<sup>2</sup></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emerging Tools - Dark -->
+    <section class="py-12 bg-slate-950">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <span class="font-mono text-novastacks text-sm tracking-wider">// TOOLS</span>
+        <h2 class="text-3xl font-bold text-white mb-6 font-display mt-2">Emerging AEO Tracking Tools</h2>
+        <p class="text-slate-400 leading-relaxed mb-6">
+          A new category of tools is emerging to track AI visibility. Here's the current landscape (based on <a href="https://nicklafferty.com/blog/best-ai-visibility-optimization-platforms/" class="text-novastacks hover:underline" target="_blank" rel="noopener">Nick Lafferty's comparison</a>):
+        </p>
+
+        <div class="overflow-x-auto mb-6">
+          <table class="w-full border-collapse bg-slate-900 rounded-xl overflow-hidden">
+            <thead>
+              <tr class="bg-slate-800">
+                <th class="text-left p-4 font-semibold text-white border-b border-white/10">Tool</th>
+                <th class="text-left p-4 font-semibold text-white border-b border-white/10">Focus</th>
+                <th class="text-left p-4 font-semibold text-white border-b border-white/10">Best For</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-white/10">
+                <td class="p-4 font-medium text-white">
+                  <a href="https://otterly.ai/" class="text-novastacks hover:underline" target="_blank" rel="noopener">Otterly</a>
+                </td>
+                <td class="p-4 text-slate-400">AI search monitoring</td>
+                <td class="p-4 text-slate-400">Brand visibility tracking across ChatGPT, Perplexity</td>
+              </tr>
+              <tr class="border-b border-white/10">
+                <td class="p-4 font-medium text-white">
+                  <a href="https://www.withgauge.com/" class="text-novastacks hover:underline" target="_blank" rel="noopener">Gauge</a>
+                </td>
+                <td class="p-4 text-slate-400">AI visibility analytics</td>
+                <td class="p-4 text-slate-400">Citation tracking and competitive analysis</td>
+              </tr>
+              <tr class="border-b border-white/10">
+                <td class="p-4 font-medium text-white">
+                  <a href="https://www.tryprofound.com/" class="text-novastacks hover:underline" target="_blank" rel="noopener">Profound</a>
+                </td>
+                <td class="p-4 text-slate-400">LLM tracking</td>
+                <td class="p-4 text-slate-400">Deep analysis of how LLMs reference your content</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-medium text-white">DataForSEO API</td>
+                <td class="p-4 text-slate-400">Programmatic access</td>
+                <td class="p-4 text-slate-400">Building custom dashboards, automated monitoring</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="bg-novastacks/10 border-l-4 border-novastacks p-6 rounded-r-lg">
+          <p class="text-white font-medium">
+            <strong>Note:</strong> This space is evolving rapidly. Tools are adding features monthly. Evaluate based on your specific needs—brand monitoring vs competitive analysis vs content optimization.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proxy Metrics - Light -->
+    <section class="py-12 bg-slate-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <span class="font-mono text-novastacks text-sm tracking-wider">// PROXY_METRICS</span>
+        <h2 class="text-3xl font-bold text-slate-900 mb-6 font-display mt-2">The Proxy Metrics Approach</h2>
+        <p class="text-slate-600 leading-relaxed mb-4">
+          If dedicated tools aren't in your budget yet, you can track proxy metrics using existing tools:
+        </p>
+
+        <div class="bg-white border border-slate-200 rounded-xl p-6 mb-6 shadow-sm">
+          <h3 class="text-lg font-semibold text-slate-900 mb-4">Free/Low-Cost Tracking Methods</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <span class="text-novastacks font-bold">1.</span>
+              <div>
+                <span class="font-medium text-slate-900">Brand search volume (GSC)</span>
+                <p class="text-slate-600 text-sm mt-1">Track branded search queries in Google Search Console. Unexplained increases may correlate with AI exposure.</p>
               </div>
-            </div>
-            <div class="faq-item">
-              <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-                <span class="text-lg font-semibold text-novastacks-text pr-8">What tools can track AI visibility?</span>
-                <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-              </button>
-              <div class="faq-content px-6 pb-6">
-                <p class="text-gray-600 leading-relaxed">Emerging tools include Otterly (otterly.ai), Gauge (withgauge.com), and Profound (tryprofound.com). These monitor AI responses for brand mentions and citations. DataForSEO also offers an AI Optimization API for programmatic tracking.</p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-novastacks font-bold">2.</span>
+              <div>
+                <span class="font-medium text-slate-900">"How did you hear about us?" surveys</span>
+                <p class="text-slate-600 text-sm mt-1">Add this question to contact forms. Look for responses mentioning "ChatGPT," "AI," or "Perplexity."</p>
               </div>
-            </div>
-            <div class="faq-item">
-              <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-                <span class="text-lg font-semibold text-novastacks-text pr-8">How do I measure AEO without dedicated tools?</span>
-                <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-              </button>
-              <div class="faq-content px-6 pb-6">
-                <p class="text-gray-600 leading-relaxed">Track proxy metrics: brand search volume in Google Search Console (increases suggest AI exposure), "How did you hear about us?" survey responses mentioning AI, referral traffic from chat.openai.com and perplexity.ai, and manual spot-checks of AI responses for your target queries.</p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-novastacks font-bold">3.</span>
+              <div>
+                <span class="font-medium text-slate-900">AI platform referral traffic</span>
+                <p class="text-slate-600 text-sm mt-1">Check GA for referrals from chat.openai.com, perplexity.ai, and similar. Small numbers, but directional.</p>
               </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-novastacks font-bold">4.</span>
+              <div>
+                <span class="font-medium text-slate-900">Manual spot-checks</span>
+                <p class="text-slate-600 text-sm mt-1">Regularly ask ChatGPT/Perplexity your target queries. Screenshot results. Track changes over time.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <p class="text-slate-600 leading-relaxed">
+          These methods aren't perfect, but they provide directional signal while the measurement ecosystem matures.
+        </p>
+      </div>
+    </section>
+
+    <!-- Setting Baselines - Dark -->
+    <section class="py-12 bg-slate-950">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <span class="font-mono text-novastacks text-sm tracking-wider">// BASELINES</span>
+        <h2 class="text-3xl font-bold text-white mb-6 font-display mt-2">Setting Realistic Baselines</h2>
+        <p class="text-slate-400 leading-relaxed mb-4">
+          Before investing in AEO, establish your current visibility baseline:
+        </p>
+
+        <ul class="list-disc pl-6 space-y-2 text-slate-400 mb-6">
+          <li>Test 10-20 target queries in ChatGPT/Perplexity—are you cited?</li>
+          <li>Note your current branded search volume in GSC</li>
+          <li>Document competitor citations for the same queries</li>
+          <li>Set 90-day review cycles to measure progress</li>
+        </ul>
+
+        <p class="text-slate-400 leading-relaxed">
+          For the full comparison of AEO vs SEO measurement approaches, see our <a href="/aeo/aeo-vs-seo" class="text-novastacks hover:underline">AEO vs SEO guide</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Checklist - Light -->
+    <section class="py-12 bg-slate-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <span class="font-mono text-novastacks text-sm tracking-wider">// CHECKLIST</span>
+        <h2 class="text-3xl font-bold text-slate-900 mb-6 font-display mt-2">AEO Measurement Checklist</h2>
+        <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <input type="checkbox" class="mt-1" disabled>
+              <span class="text-slate-600">Establish citation baseline (manual spot-checks)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <input type="checkbox" class="mt-1" disabled>
+              <span class="text-slate-600">Track branded search volume trends in GSC</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <input type="checkbox" class="mt-1" disabled>
+              <span class="text-slate-600">Add "How did you hear about us?" to forms</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <input type="checkbox" class="mt-1" disabled>
+              <span class="text-slate-600">Monitor AI platform referral traffic in GA</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <input type="checkbox" class="mt-1" disabled>
+              <span class="text-slate-600">Evaluate dedicated AEO tools (Otterly, Gauge, Profound)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <input type="checkbox" class="mt-1" disabled>
+              <span class="text-slate-600">Set 90-day review cycles</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Articles - Dark -->
+    <section class="py-12 bg-slate-950">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <span class="font-mono text-novastacks text-sm tracking-wider">// RELATED</span>
+        <h3 class="text-xl font-semibold text-white mb-4 mt-2">Related Articles</h3>
+        <div class="grid md:grid-cols-2 gap-4">
+          <a href="/aeo/aeo-vs-seo" class="block bg-slate-900 border border-white/10 p-4 rounded-lg hover:border-novastacks/50 transition-colors">
+            <span class="text-novastacks font-medium">AEO vs SEO: What's the Difference?</span>
+            <p class="text-slate-400 text-sm mt-1">The complete comparison guide</p>
+          </a>
+          <a href="/aeo/what-drives-ai-citations" class="block bg-slate-900 border border-white/10 p-4 rounded-lg hover:border-novastacks/50 transition-colors">
+            <span class="text-novastacks font-medium">What Drives AI Citations</span>
+            <p class="text-slate-400 text-sm mt-1">Data from 129,000 domains analyzed</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section - Light -->
+    <section id="faq" class="py-12 bg-slate-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <span class="font-mono text-novastacks text-sm tracking-wider">// FAQ</span>
+        <h2 class="text-3xl font-bold text-slate-900 mb-8 font-display mt-2">FAQ</h2>
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200">
+          <div class="faq-item border-slate-200">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-slate-50" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold text-slate-900 pr-8">Why can't Google Analytics track AEO?</span>
+              <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="faq-content px-6 pb-6">
+              <p class="text-slate-600 leading-relaxed">Google Analytics tracks clicks, not citations. When AI assistants summarize your content, users often get their answer without clicking through—69% of searches are now zero-click. GA sees nothing, even when your content is being cited thousands of times.</p>
             </div>
           </div>
-        </section>
-
-        <!-- Sources -->
-        <section class="mt-12 border-t border-gray-200 pt-8">
-          <h3 class="text-lg font-semibold text-novastacks-text mb-4">Sources</h3>
-          <ol class="text-sm text-gray-600 space-y-2 list-decimal list-inside">
-            <li><a href="https://www.linkedin.com/in/liamdunne/" class="text-novastacks hover:underline" target="_blank" rel="noopener">Liam Dunne</a> — Content velocity benchmarks</li>
-            <li><a href="https://www.linkedin.com/in/metehanyesilyurt/" class="text-novastacks hover:underline" target="_blank" rel="noopener">Metehan Yeşilyurt</a>, SEO Consultant — Common Crawl rank tool and analysis</li>
-            <li><a href="https://www.linkedin.com/in/jeanchristophechouinard/" class="text-novastacks hover:underline" target="_blank" rel="noopener">Jean-Christophe Chouinard</a> — GSC AI Mode tracking limitations</li>
-          </ol>
-        </section>
-
-        <!-- Related Resources -->
-        <section class="mt-16 bg-gray-50 rounded-2xl p-8">
-          <h2 class="text-2xl font-bold text-novastacks-text mb-6 font-display">Continue Learning</h2>
-          <div class="grid md:grid-cols-3 gap-6">
-            <div>
-              <h3 class="font-semibold text-novastacks-text mb-3">AEO Fundamentals</h3>
-              <ul class="space-y-2 text-gray-600">
-                <li><a href="/aeo/what-is-aeo" class="text-novastacks hover:underline">What is AEO? Beginner's Guide →</a></li>
-                <li><a href="/aeo/aeo-vs-seo" class="text-novastacks hover:underline">AEO vs SEO Comparison →</a></li>
-                <li><a href="/aeo/technical-aeo-foundations" class="text-novastacks hover:underline">Technical AEO Foundations →</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 class="font-semibold text-novastacks-text mb-3">Services</h3>
-              <ul class="space-y-2 text-gray-600">
-                <li><a href="/aeo-for-saas" class="text-novastacks hover:underline">AEO for SaaS Companies →</a></li>
-                <li><a href="/aeo-audit" class="text-novastacks hover:underline">Get an AEO Audit →</a></li>
-                <li><a href="/aeo" class="text-novastacks hover:underline">Our AEO Services →</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 class="font-semibold text-novastacks-text mb-3">Tools & Guides</h3>
-              <ul class="space-y-2 text-gray-600">
-                <li><a href="/blog/best-aeo-tools-2026" class="text-novastacks hover:underline">Best AEO Tools (2026) →</a></li>
-                <li><a href="/blog/chatgpt-seo" class="text-novastacks hover:underline">ChatGPT SEO Guide →</a></li>
-                <li><a href="/blog/answer-engine-optimization-guide" class="text-novastacks hover:underline">Complete AEO Guide →</a></li>
-              </ul>
+          <div class="faq-item border-slate-200">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-slate-50" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold text-slate-900 pr-8">What tools can track AI visibility?</span>
+              <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="faq-content px-6 pb-6">
+              <p class="text-slate-600 leading-relaxed">Emerging tools include Otterly (otterly.ai), Gauge (withgauge.com), and Profound (tryprofound.com). These monitor AI responses for brand mentions and citations. DataForSEO also offers an AI Optimization API for programmatic tracking.</p>
             </div>
           </div>
-        </section>
+          <div class="faq-item border-slate-200">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-slate-50" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold text-slate-900 pr-8">How do I measure AEO without dedicated tools?</span>
+              <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="faq-content px-6 pb-6">
+              <p class="text-slate-600 leading-relaxed">Track proxy metrics: brand search volume in Google Search Console (increases suggest AI exposure), "How did you hear about us?" survey responses mentioning AI, referral traffic from chat.openai.com and perplexity.ai, and manual spot-checks of AI responses for your target queries.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- CTA -->
-        <section class="mt-16 bg-novastacks rounded-2xl p-8 md:p-12 text-white text-center">
+    <!-- Sources - Dark -->
+    <section class="py-12 bg-slate-950">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <span class="font-mono text-novastacks text-sm tracking-wider">// SOURCES</span>
+        <h3 class="text-lg font-semibold text-white mb-4 mt-2">Sources</h3>
+        <ol class="text-sm text-slate-400 space-y-2 list-decimal list-inside">
+          <li><a href="https://www.linkedin.com/in/liamdunne/" class="text-novastacks hover:underline" target="_blank" rel="noopener">Liam Dunne</a> — Content velocity benchmarks</li>
+          <li><a href="https://www.linkedin.com/in/metehanyesilyurt/" class="text-novastacks hover:underline" target="_blank" rel="noopener">Metehan Yesilyurt</a>, SEO Consultant — Common Crawl rank tool and analysis</li>
+          <li><a href="https://www.linkedin.com/in/jeanchristophechouinard/" class="text-novastacks hover:underline" target="_blank" rel="noopener">Jean-Christophe Chouinard</a> — GSC AI Mode tracking limitations</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Related Resources - Light -->
+    <section class="py-12 bg-slate-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <span class="font-mono text-novastacks text-sm tracking-wider">// CONTINUE_LEARNING</span>
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 font-display mt-2">Continue Learning</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div>
+            <h3 class="font-semibold text-slate-900 mb-3">AEO Fundamentals</h3>
+            <ul class="space-y-2 text-slate-600">
+              <li><a href="/aeo/what-is-aeo" class="text-novastacks hover:underline">What is AEO? Beginner's Guide</a></li>
+              <li><a href="/aeo/aeo-vs-seo" class="text-novastacks hover:underline">AEO vs SEO Comparison</a></li>
+              <li><a href="/aeo/technical-aeo-foundations" class="text-novastacks hover:underline">Technical AEO Foundations</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold text-slate-900 mb-3">Services</h3>
+            <ul class="space-y-2 text-slate-600">
+              <li><a href="/aeo-for-saas" class="text-novastacks hover:underline">AEO for SaaS Companies</a></li>
+              <li><a href="/aeo-audit" class="text-novastacks hover:underline">Get an AEO Audit</a></li>
+              <li><a href="/aeo" class="text-novastacks hover:underline">Our AEO Services</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold text-slate-900 mb-3">Tools & Guides</h3>
+            <ul class="space-y-2 text-slate-600">
+              <li><a href="/blog/best-aeo-tools-2026" class="text-novastacks hover:underline">Best AEO Tools (2026)</a></li>
+              <li><a href="/blog/chatgpt-seo" class="text-novastacks hover:underline">ChatGPT SEO Guide</a></li>
+              <li><a href="/blog/answer-engine-optimization-guide" class="text-novastacks hover:underline">Complete AEO Guide</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA - Dark -->
+    <section class="py-12 bg-slate-950">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-novastacks rounded-2xl p-8 md:p-12 text-white text-center">
           <h2 class="text-2xl md:text-3xl font-bold mb-4 font-display">Get Your AEO Visibility Baseline</h2>
           <p class="text-white/90 mb-8 max-w-2xl mx-auto">
             We'll assess your current AI visibility, identify gaps vs competitors, and set up tracking for meaningful progress measurement.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/contact" class="bg-white text-novastacks-text px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300">Get Free Assessment</a>
-            <a href="/aeo" class="bg-transparent text-white border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-novastacks transition-all duration-300">Explore AEO Services</a>
+            <a href="/contact" class="bg-white text-slate-900 px-8 py-4 rounded font-semibold hover:bg-slate-100 transition-all duration-300">Get Free Assessment</a>
+            <a href="/aeo" class="bg-transparent text-white border-2 border-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-novastacks transition-all duration-300">Explore AEO Services</a>
           </div>
-        </section>
+        </div>
       </div>
-    </article>
+    </section>
   </main>
 
   <!-- Footer -->
-  <footer class="bg-slate-900 text-white py-12">
+  <footer class="bg-slate-900 text-white py-16">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
 
@@ -621,7 +648,7 @@
             class="w-32 h-8 bg-contain bg-no-repeat bg-center"
             style="background-image: url('lovable-uploads/315157be-4582-4858-b0d2-0598ddbed87c.png')"
           ></div>
-          <span class="text-slate-500 text-sm">· Singapore</span>
+          <span class="text-slate-500 text-sm">* Singapore</span>
         </div>
         <p class="text-slate-500 text-sm">
           &copy; 2026 NOVASTACKS. All rights reserved.
@@ -629,9 +656,6 @@
       </div>
     </div>
   </footer>
-
-
-
 
   <script src="assets/js/mobile-menu.js"></script>
   <script>

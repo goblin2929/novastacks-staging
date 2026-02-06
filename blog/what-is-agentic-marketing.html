@@ -77,7 +77,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS (compiled) -->
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -86,6 +86,9 @@
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="a6bNPCfvII1gVtf+GzOf3g" async></script>
 
   <style>
+    .font-display { font-family: 'Space Grotesk', sans-serif; }
+    .font-sans { font-family: 'Inter', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
     .faq-content {
       max-height: 0;
       overflow: hidden;
@@ -102,12 +105,12 @@
     }
   </style>
 </head>
-<body class="bg-white text-novastacks-text font-serif">
+<body class="bg-slate-950 text-white font-sans">
   <!-- Header -->
-  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <header class="bg-slate-950 border-b border-white/10 sticky top-0 z-50">
     <div class="container mx-auto px-6">
       <nav class="flex justify-between items-center py-4">
-        <a href="/" class="flex items-center gap-3 hover:scale-105 transition-transform">
+        <a href="/" class="flex items-center gap-3">
           <div
             class="w-60 h-12 md:w-64 md:h-14 bg-contain bg-no-repeat bg-center"
             style="background-image: url('lovable-uploads/315157be-4582-4858-b0d2-0598ddbed87c.png')"
@@ -116,20 +119,17 @@
 
         <!-- Desktop Navigation -->
         <ul class="hidden md:flex gap-8">
-          <li><a href="/aeo" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
-          <li><a href="/methodology" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Methodology</a></li>
-          <li><a href="/generator" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">About</a></li>
+          <li><a href="/aeo" class="text-slate-400 hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
+          <li><a href="/methodology" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Methodology</a></li>
+          <li><a href="/generator" class="text-slate-400 hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="text-slate-400 hover:text-novastacks font-medium transition-colors">About</a></li>
         </ul>
 
-        <!-- Desktop CTA Buttons -->
+        <!-- Desktop CTA Button -->
         <div class="hidden md:flex gap-3">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transform hover:-translate-y-1 transition-all duration-300">
-            Get Started
-          </a>
-          <a href="/generator" class="bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300">
-            Learn More
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300">
+            Book a Call
           </a>
         </div>
 
@@ -140,66 +140,58 @@
           aria-label="Toggle mobile menu"
           aria-expanded="false"
         >
-          <span id="menu-bar-1" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-2" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-3" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
+          <span id="menu-bar-1" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-2" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-3" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
         </button>
       </nav>
 
       <!-- Mobile Navigation Menu -->
-      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 py-4">
+      <div id="mobile-menu" class="hidden md:hidden bg-slate-950 border-t border-white/10 py-4">
         <ul class="flex flex-col gap-4">
-          <li><a href="/aeo" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
-          <li><a href="/methodology" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
-          <li><a href="/generator" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">About</a></li>
+          <li><a href="/aeo" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
+          <li><a href="/methodology" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
+          <li><a href="/generator" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">About</a></li>
         </ul>
         <div class="flex flex-col gap-3 mt-4">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transition-all duration-300 text-center">
-            Get Started
-          </a>
-          <a href="/generator" class="bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300 text-center">
-            Learn More
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300 text-center">
+            Book a Call
           </a>
         </div>
       </div>
     </div>
   </header>
 
-
-
-
-
-
-
   <!-- Breadcrumb -->
-  <div class="bg-gray-50 border-b border-gray-200">
+  <div class="bg-slate-900 border-b border-white/10">
     <div class="container mx-auto px-6 py-3">
-      <nav class="text-sm text-gray-600">
+      <nav class="text-sm text-slate-400">
         <a href="/" class="hover:text-novastacks">Home</a>
         <span class="mx-2">/</span>
         <a href="/blog/" class="hover:text-novastacks">Blog</a>
         <span class="mx-2">/</span>
-        <span class="text-novastacks-text">What is Agentic Marketing</span>
+        <span class="text-white">What is Agentic Marketing</span>
       </nav>
     </div>
   </div>
 
   <!-- Article Header -->
   <article>
-    <header class="py-12 lg:py-16 bg-gradient-to-b from-gray-50 to-white">
+    <header class="py-12 lg:py-16 bg-slate-950">
       <div class="container mx-auto px-6">
         <div class="max-w-3xl">
+          <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// MARKETING</p>
           <div class="flex items-center gap-3 mb-4">
-            <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded-full">Marketing</span>
-            <span class="text-sm text-gray-500">12 min read</span>
-            <span class="text-sm text-gray-500">January 24, 2026</span>
+            <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded">Marketing</span>
+            <span class="text-sm text-slate-400">12 min read</span>
+            <span class="text-sm text-slate-400">January 24, 2026</span>
           </div>
-          <h1 class="text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 font-display">
+          <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6 font-display">
             What is Agentic Marketing? The Future of AI-Powered Marketing Execution
           </h1>
-          <p class="text-xl text-gray-600 mb-6">
+          <p class="text-xl text-slate-300 mb-6">
             Agentic marketing uses autonomous AI agents to execute marketing tasks with minimal human intervention. Unlike traditional marketing automation, which follows pre-programmed rules, agentic marketing systems make decisions, adapt to new information, and pursue goals independently.
           </p>
           <div class="flex items-center gap-4">
@@ -207,8 +199,8 @@
               <span class="text-novastacks font-bold">TC</span>
             </div>
             <div>
-              <p class="font-medium text-novastacks-text">Tina Chu</p>
-              <p class="text-sm text-gray-500">Founder & Growth Strategist</p>
+              <p class="font-medium text-white">Tina Chu</p>
+              <p class="text-sm text-slate-400">Founder & Growth Strategist</p>
             </div>
           </div>
         </div>
@@ -216,254 +208,265 @@
     </header>
 
     <!-- Featured Image -->
-    <div class="container mx-auto px-6 -mt-4">
-      <div class="max-w-4xl mx-auto">
-        <div class="aspect-video bg-gradient-to-br from-novastacks/20 to-novastacks/5 rounded-xl flex items-center justify-center border-2 border-dashed border-novastacks/30">
-          <div class="text-center">
-            <svg class="w-16 h-16 mx-auto text-novastacks/40 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-            </svg>
-            <p class="text-novastacks/60 font-medium">Featured Header Image</p>
-            <p class="text-sm text-gray-400">16:9 aspect ratio | ~1200x675px recommended</p>
+    <div class="bg-slate-900 py-8">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="aspect-video bg-gradient-to-br from-novastacks/20 to-novastacks/5 rounded-xl flex items-center justify-center border border-white/10">
+            <div class="text-center">
+              <svg class="w-16 h-16 mx-auto text-novastacks/40 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              <p class="text-novastacks/60 font-medium">Featured Header Image</p>
+              <p class="text-sm text-slate-500">16:9 aspect ratio | ~1200x675px recommended</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Article Content -->
-    <div class="container mx-auto px-6 py-12">
-      <div class="max-w-3xl mx-auto">
+    <div class="bg-slate-950 py-12">
+      <div class="container mx-auto px-6">
+        <div class="max-w-3xl mx-auto">
 
-        <!-- Section 1: Definition -->
-        <section class="mb-12">
-          <h2 class="text-2xl font-bold text-novastacks-text mb-4 font-display">The Key Distinction: Automation vs. Agents</h2>
-          <p class="text-gray-700 mb-4">
-            We've been building agentic marketing systems at Novastacks since 2024, and we're now seeing the results compound. What once required a team of five specialists — technical SEO audits, content optimization, competitive analysis, performance reporting — now happens through coordinated AI agents in a fraction of the time.
-          </p>
-          <p class="text-gray-700 mb-6">
-            But let's be clear about what agentic marketing is and isn't. It's not science fiction. It's not fully autonomous robots replacing marketers. It's a practical framework for orchestrating AI capabilities to execute marketing work faster, more consistently, and at a scale humans alone can't match.
-          </p>
-
-          <!-- Comparison Table -->
-          <div class="overflow-x-auto mb-6">
-            <table class="w-full border-collapse text-sm">
-              <thead>
-                <tr class="bg-gray-100">
-                  <th class="text-left p-3 font-bold">Dimension</th>
-                  <th class="text-left p-3 font-bold">Marketing Automation</th>
-                  <th class="text-left p-3 font-bold">Agentic Marketing</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="border-b border-gray-200">
-                  <td class="p-3 font-medium">Core Logic</td>
-                  <td class="p-3">If-then rules</td>
-                  <td class="p-3 text-novastacks font-medium">Goal-oriented reasoning</td>
-                </tr>
-                <tr class="border-b border-gray-200 bg-gray-50">
-                  <td class="p-3 font-medium">Decision Making</td>
-                  <td class="p-3">Pre-programmed paths</td>
-                  <td class="p-3 text-novastacks font-medium">Autonomous judgment</td>
-                </tr>
-                <tr class="border-b border-gray-200">
-                  <td class="p-3 font-medium">Adaptability</td>
-                  <td class="p-3">Fixed workflows</td>
-                  <td class="p-3 text-novastacks font-medium">Dynamic adjustment</td>
-                </tr>
-                <tr class="border-b border-gray-200 bg-gray-50">
-                  <td class="p-3 font-medium">Human Involvement</td>
-                  <td class="p-3">Setup and monitoring</td>
-                  <td class="p-3 text-novastacks font-medium">Oversight and direction</td>
-                </tr>
-                <tr class="border-b border-gray-200">
-                  <td class="p-3 font-medium">Example</td>
-                  <td class="p-3 text-sm">"If email opened, wait 2 days, send follow-up"</td>
-                  <td class="p-3 text-sm text-novastacks font-medium">"Increase qualified leads by 30% using available channels"</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <!-- Infographic Placeholder -->
-        <section class="mb-12">
-          <div class="bg-gradient-to-br from-gray-100 to-gray-50 rounded-xl p-8 border-2 border-dashed border-gray-300">
-            <div class="text-center">
-              <svg class="w-12 h-12 mx-auto text-gray-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-              </svg>
-              <p class="text-gray-500 font-medium mb-1">Infographic: Agentic Marketing vs Marketing Automation</p>
-              <p class="text-sm text-gray-400">Visual comparison diagram | ~800px wide</p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Section 2: How It Works -->
-        <section class="mb-12">
-          <h2 class="text-2xl font-bold text-novastacks-text mb-4 font-display">How Agentic Marketing Works</h2>
-          <p class="text-gray-700 mb-6">
-            Agentic marketing systems follow a consistent architecture, even as implementations vary:
-          </p>
-
-          <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 mb-6">
-            <h3 class="font-bold text-novastacks-text mb-4">The Agent Architecture:</h3>
-            <div class="space-y-4">
-              <div>
-                <p class="font-medium text-novastacks-text mb-1">1. Perception</p>
-                <p class="text-sm text-gray-600">The agent ingests information from various sources: analytics platforms, CRM data, competitive intelligence, market trends.</p>
-              </div>
-              <div>
-                <p class="font-medium text-novastacks-text mb-1">2. Reasoning</p>
-                <p class="text-sm text-gray-600">Using large language models (LLMs) as their reasoning engine, agents process context and determine appropriate actions.</p>
-              </div>
-              <div>
-                <p class="font-medium text-novastacks-text mb-1">3. Action</p>
-                <p class="text-sm text-gray-600">Agents execute tasks: writing content, adjusting campaigns, sending reports, making API calls to marketing platforms.</p>
-              </div>
-              <div>
-                <p class="font-medium text-novastacks-text mb-1">4. Memory</p>
-                <p class="text-sm text-gray-600">Agents maintain context across interactions, learning from outcomes and refining their approach.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Section 3: Benefits -->
-        <section class="mb-12">
-          <h2 class="text-2xl font-bold text-novastacks-text mb-4 font-display">Benefits of Agentic Marketing</h2>
-
-          <div class="space-y-6">
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 bg-novastacks/10 rounded-full flex items-center justify-center flex-shrink-0">
-                <span class="text-novastacks font-bold">10x</span>
-              </div>
-              <div>
-                <h3 class="font-bold text-novastacks-text mb-1">Speed: 10x Faster Execution</h3>
-                <p class="text-gray-700 text-sm">A comprehensive technical SEO audit that took three weeks now takes two days. A content calendar that took a week now takes hours.</p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 bg-novastacks/10 rounded-full flex items-center justify-center flex-shrink-0">
-                <span class="text-novastacks font-bold text-lg">∞</span>
-              </div>
-              <div>
-                <h3 class="font-bold text-novastacks-text mb-1">Scale: Handle Complexity Humans Can't</h3>
-                <p class="text-gray-700 text-sm">Monitoring brand mentions across 50 platforms. Analyzing competitor content across 1,000 pages. Personalizing messages for 10,000 segments.</p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 bg-novastacks/10 rounded-full flex items-center justify-center flex-shrink-0">
-                <span class="text-novastacks font-bold">40%</span>
-              </div>
-              <div>
-                <h3 class="font-bold text-novastacks-text mb-1">Cost: More Output Per Dollar</h3>
-                <p class="text-gray-700 text-sm">We've seen clients reduce marketing operational costs by 40-60% while increasing output.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Novastacks Service Tie-In -->
-        <section class="mb-12">
-          <div class="bg-gradient-to-br from-novastacks/5 to-novastacks/10 border-l-4 border-novastacks p-6 rounded-r-lg">
-            <h3 class="text-xl font-bold text-novastacks-text mb-3 font-display">How Novastacks Applies Agentic Marketing</h3>
-            <p class="text-gray-700 mb-4">
-              At Novastacks, we've built agentic marketing into every service we offer. Our AI agents work alongside senior strategists with 20+ years of experience scaling brands at Tencent, Expedia, and other global companies.
+          <!-- Section 1: Definition -->
+          <section class="mb-12">
+            <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// KEY_DISTINCTION</p>
+            <h2 class="text-2xl font-bold text-white mb-4 font-display">The Key Distinction: Automation vs. Agents</h2>
+            <p class="text-slate-300 mb-4">
+              We've been building agentic marketing systems at Novastacks since 2024, and we're now seeing the results compound. What once required a team of five specialists — technical SEO audits, content optimization, competitive analysis, performance reporting — now happens through coordinated AI agents in a fraction of the time.
             </p>
-            <div class="grid md:grid-cols-2 gap-4 mt-4">
-              <a href="/aeo" class="flex items-start gap-3 p-4 bg-white rounded-lg border border-gray-200 hover:border-novastacks transition-colors group">
-                <div class="w-8 h-8 bg-novastacks/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-novastacks/20 transition-colors">
-                  <svg class="w-4 h-4 text-novastacks" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                  </svg>
+            <p class="text-slate-300 mb-6">
+              But let's be clear about what agentic marketing is and isn't. It's not science fiction. It's not fully autonomous robots replacing marketers. It's a practical framework for orchestrating AI capabilities to execute marketing work faster, more consistently, and at a scale humans alone can't match.
+            </p>
+
+            <!-- Comparison Table -->
+            <div class="overflow-x-auto mb-6">
+              <table class="w-full border-collapse text-sm">
+                <thead>
+                  <tr class="bg-slate-800">
+                    <th class="text-left p-3 font-bold text-white">Dimension</th>
+                    <th class="text-left p-3 font-bold text-white">Marketing Automation</th>
+                    <th class="text-left p-3 font-bold text-white">Agentic Marketing</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-white/10">
+                    <td class="p-3 font-medium text-white">Core Logic</td>
+                    <td class="p-3 text-slate-300">If-then rules</td>
+                    <td class="p-3 text-novastacks font-medium">Goal-oriented reasoning</td>
+                  </tr>
+                  <tr class="border-b border-white/10 bg-slate-900/50">
+                    <td class="p-3 font-medium text-white">Decision Making</td>
+                    <td class="p-3 text-slate-300">Pre-programmed paths</td>
+                    <td class="p-3 text-novastacks font-medium">Autonomous judgment</td>
+                  </tr>
+                  <tr class="border-b border-white/10">
+                    <td class="p-3 font-medium text-white">Adaptability</td>
+                    <td class="p-3 text-slate-300">Fixed workflows</td>
+                    <td class="p-3 text-novastacks font-medium">Dynamic adjustment</td>
+                  </tr>
+                  <tr class="border-b border-white/10 bg-slate-900/50">
+                    <td class="p-3 font-medium text-white">Human Involvement</td>
+                    <td class="p-3 text-slate-300">Setup and monitoring</td>
+                    <td class="p-3 text-novastacks font-medium">Oversight and direction</td>
+                  </tr>
+                  <tr class="border-b border-white/10">
+                    <td class="p-3 font-medium text-white">Example</td>
+                    <td class="p-3 text-sm text-slate-300">"If email opened, wait 2 days, send follow-up"</td>
+                    <td class="p-3 text-sm text-novastacks font-medium">"Increase qualified leads by 30% using available channels"</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- Infographic Placeholder -->
+          <section class="mb-12 bg-slate-900 -mx-6 px-6 py-12 lg:-mx-12 lg:px-12">
+            <div class="bg-slate-800 rounded-xl p-8 border border-white/10">
+              <div class="text-center">
+                <svg class="w-12 h-12 mx-auto text-slate-500 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                </svg>
+                <p class="text-slate-400 font-medium mb-1">Infographic: Agentic Marketing vs Marketing Automation</p>
+                <p class="text-sm text-slate-500">Visual comparison diagram | ~800px wide</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 2: How It Works -->
+          <section class="mb-12">
+            <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// HOW_IT_WORKS</p>
+            <h2 class="text-2xl font-bold text-white mb-4 font-display">How Agentic Marketing Works</h2>
+            <p class="text-slate-300 mb-6">
+              Agentic marketing systems follow a consistent architecture, even as implementations vary:
+            </p>
+
+            <div class="bg-slate-800 p-6 rounded-lg border border-white/10 mb-6">
+              <h3 class="font-bold text-white mb-4">The Agent Architecture:</h3>
+              <div class="space-y-4">
+                <div>
+                  <p class="font-medium text-white mb-1">1. Perception</p>
+                  <p class="text-sm text-slate-400">The agent ingests information from various sources: analytics platforms, CRM data, competitive intelligence, market trends.</p>
                 </div>
                 <div>
-                  <p class="font-semibold text-novastacks-text">AEO & SEO Solutions</p>
-                  <p class="text-sm text-gray-600">AI agents that optimize your content for Google, ChatGPT, and voice search simultaneously.</p>
-                </div>
-              </a>
-              <a href="/fractional-growth-partner" class="flex items-start gap-3 p-4 bg-white rounded-lg border border-gray-200 hover:border-novastacks transition-colors group">
-                <div class="w-8 h-8 bg-novastacks/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-novastacks/20 transition-colors">
-                  <svg class="w-4 h-4 text-novastacks" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                  </svg>
+                  <p class="font-medium text-white mb-1">2. Reasoning</p>
+                  <p class="text-sm text-slate-400">Using large language models (LLMs) as their reasoning engine, agents process context and determine appropriate actions.</p>
                 </div>
                 <div>
-                  <p class="font-semibold text-novastacks-text">Fractional Growth Partner</p>
-                  <p class="text-sm text-gray-600">Senior CMO expertise + AI-powered execution at a fraction of the cost.</p>
+                  <p class="font-medium text-white mb-1">3. Action</p>
+                  <p class="text-sm text-slate-400">Agents execute tasks: writing content, adjusting campaigns, sending reports, making API calls to marketing platforms.</p>
                 </div>
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="mb-12">
-          <h2 class="text-2xl font-bold text-novastacks-text mb-6 font-display">FAQ: Agentic Marketing</h2>
-          <div class="space-y-4">
-            <!-- FAQ Item 1 -->
-            <div class="border border-gray-200 rounded-lg">
-              <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-novastacks-text hover:bg-gray-50" onclick="toggleFaq(this)">
-                <span>What is the difference between agentic marketing and marketing automation?</span>
-                <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="faq-content px-4 pb-4">
-                <p class="text-gray-700">Marketing automation follows pre-programmed rules: if X happens, do Y. Agentic marketing pursues goals through autonomous reasoning: achieve outcome Z using available tools and information. Automation is rule-based; agentic systems are goal-based.</p>
+                <div>
+                  <p class="font-medium text-white mb-1">4. Memory</p>
+                  <p class="text-sm text-slate-400">Agents maintain context across interactions, learning from outcomes and refining their approach.</p>
+                </div>
               </div>
             </div>
+          </section>
 
-            <!-- FAQ Item 2 -->
-            <div class="border border-gray-200 rounded-lg">
-              <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-novastacks-text hover:bg-gray-50" onclick="toggleFaq(this)">
-                <span>Is agentic marketing the same as AI marketing?</span>
-                <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="faq-content px-4 pb-4">
-                <p class="text-gray-700">Agentic marketing is a specific type of AI marketing. AI marketing is the broad category of using artificial intelligence in marketing. Agentic marketing specifically refers to using autonomous AI agents that can reason, plan, and execute tasks with minimal human intervention.</p>
+          <!-- Section 3: Benefits -->
+          <section class="mb-12 bg-slate-900 -mx-6 px-6 py-12 lg:-mx-12 lg:px-12">
+            <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// BENEFITS</p>
+            <h2 class="text-2xl font-bold text-white mb-4 font-display">Benefits of Agentic Marketing</h2>
+
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-novastacks/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span class="text-novastacks font-bold">10x</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-white mb-1">Speed: 10x Faster Execution</h3>
+                  <p class="text-slate-400 text-sm">A comprehensive technical SEO audit that took three weeks now takes two days. A content calendar that took a week now takes hours.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-novastacks/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span class="text-novastacks font-bold text-lg">&#8734;</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-white mb-1">Scale: Handle Complexity Humans Can't</h3>
+                  <p class="text-slate-400 text-sm">Monitoring brand mentions across 50 platforms. Analyzing competitor content across 1,000 pages. Personalizing messages for 10,000 segments.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-novastacks/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span class="text-novastacks font-bold">40%</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-white mb-1">Cost: More Output Per Dollar</h3>
+                  <p class="text-slate-400 text-sm">We've seen clients reduce marketing operational costs by 40-60% while increasing output.</p>
+                </div>
               </div>
             </div>
+          </section>
 
-            <!-- FAQ Item 3 -->
-            <div class="border border-gray-200 rounded-lg">
-              <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-novastacks-text hover:bg-gray-50" onclick="toggleFaq(this)">
-                <span>Will agentic marketing replace human marketers?</span>
-                <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="faq-content px-4 pb-4">
-                <p class="text-gray-700">No — but it will change what human marketers do. Routine execution will increasingly be handled by agents. Human marketers will focus on strategy, creative direction, relationship building, and oversight. The marketers who thrive will be those who learn to work with agents effectively.</p>
+          <!-- Novastacks Service Tie-In -->
+          <section class="mb-12">
+            <div class="bg-gradient-to-br from-novastacks/10 to-novastacks/5 border-l-4 border-novastacks p-6 rounded-r-lg">
+              <p class="font-mono text-novastacks text-sm tracking-wider mb-2">// NOVASTACKS_APPROACH</p>
+              <h3 class="text-xl font-bold text-white mb-3 font-display">How Novastacks Applies Agentic Marketing</h3>
+              <p class="text-slate-300 mb-4">
+                At Novastacks, we've built agentic marketing into every service we offer. Our AI agents work alongside senior strategists with 20+ years of experience scaling brands at Tencent, Expedia, and other global companies.
+              </p>
+              <div class="grid md:grid-cols-2 gap-4 mt-4">
+                <a href="/aeo" class="flex items-start gap-3 p-4 bg-slate-900 rounded-lg border border-white/10 hover:border-novastacks/50 transition-colors group">
+                  <div class="w-8 h-8 bg-novastacks/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-novastacks/20 transition-colors">
+                    <svg class="w-4 h-4 text-novastacks" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-white">AEO & SEO Solutions</p>
+                    <p class="text-sm text-slate-400">AI agents that optimize your content for Google, ChatGPT, and voice search simultaneously.</p>
+                  </div>
+                </a>
+                <a href="/fractional-growth-partner" class="flex items-start gap-3 p-4 bg-slate-900 rounded-lg border border-white/10 hover:border-novastacks/50 transition-colors group">
+                  <div class="w-8 h-8 bg-novastacks/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-novastacks/20 transition-colors">
+                    <svg class="w-4 h-4 text-novastacks" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-white">Fractional Growth Partner</p>
+                    <p class="text-sm text-slate-400">Senior CMO expertise + AI-powered execution at a fraction of the cost.</p>
+                  </div>
+                </a>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <!-- CTA Section -->
-        <section class="bg-novastacks-text p-8 lg:p-12 rounded-2xl text-center">
-          <h2 class="text-2xl lg:text-3xl font-bold text-white mb-4 font-display">Ready to Explore Agentic Marketing?</h2>
-          <p class="text-white/90 mb-8 max-w-xl mx-auto">Schedule a conversation with our team to discuss how agentic marketing could transform your marketing operations.</p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-white text-novastacks-text px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300">
-              Schedule 30 mins Consultation
-            </a>
-            <a href="/generator" class="bg-transparent text-white border-2 border-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-novastacks-text transition-all duration-300">
-              Get Free On Brand Copy Generator
-            </a>
-          </div>
-        </section>
+          <!-- FAQ Section -->
+          <section class="mb-12 bg-slate-900 -mx-6 px-6 py-12 lg:-mx-12 lg:px-12">
+            <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// FAQ</p>
+            <h2 class="text-2xl font-bold text-white mb-6 font-display">FAQ: Agentic Marketing</h2>
+            <div class="space-y-4">
+              <!-- FAQ Item 1 -->
+              <div class="border border-white/10 rounded-lg">
+                <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-white hover:bg-slate-800" onclick="toggleFaq(this)">
+                  <span>What is the difference between agentic marketing and marketing automation?</span>
+                  <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div class="faq-content px-4 pb-4">
+                  <p class="text-slate-300">Marketing automation follows pre-programmed rules: if X happens, do Y. Agentic marketing pursues goals through autonomous reasoning: achieve outcome Z using available tools and information. Automation is rule-based; agentic systems are goal-based.</p>
+                </div>
+              </div>
 
+              <!-- FAQ Item 2 -->
+              <div class="border border-white/10 rounded-lg">
+                <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-white hover:bg-slate-800" onclick="toggleFaq(this)">
+                  <span>Is agentic marketing the same as AI marketing?</span>
+                  <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div class="faq-content px-4 pb-4">
+                  <p class="text-slate-300">Agentic marketing is a specific type of AI marketing. AI marketing is the broad category of using artificial intelligence in marketing. Agentic marketing specifically refers to using autonomous AI agents that can reason, plan, and execute tasks with minimal human intervention.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div class="border border-white/10 rounded-lg">
+                <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-white hover:bg-slate-800" onclick="toggleFaq(this)">
+                  <span>Will agentic marketing replace human marketers?</span>
+                  <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div class="faq-content px-4 pb-4">
+                  <p class="text-slate-300">No — but it will change what human marketers do. Routine execution will increasingly be handled by agents. Human marketers will focus on strategy, creative direction, relationship building, and oversight. The marketers who thrive will be those who learn to work with agents effectively.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <section class="mb-12">
+            <div class="bg-slate-800 p-8 lg:p-12 rounded-2xl text-center">
+              <h2 class="text-2xl lg:text-3xl font-bold text-white mb-4 font-display">Ready to Explore Agentic Marketing?</h2>
+              <p class="text-slate-300 mb-8 max-w-xl mx-auto">Schedule a conversation with our team to discuss how agentic marketing could transform your marketing operations.</p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-8 py-4 rounded font-semibold text-lg hover:bg-novastacks/80 transition-all duration-300">
+                  Schedule 30 mins Consultation
+                </a>
+                <a href="/generator" class="bg-transparent text-white border-2 border-white/20 px-8 py-4 rounded font-semibold text-lg hover:bg-white/10 transition-all duration-300">
+                  Get Free On Brand Copy Generator
+                </a>
+              </div>
+            </div>
+          </section>
+
+        </div>
       </div>
     </div>
   </article>
 
   <!-- Footer -->
-  <footer class="bg-slate-900 text-white py-12">
+  <footer class="bg-slate-900 text-white py-16">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
 
@@ -544,12 +547,6 @@
       </div>
     </div>
   </footer>
-
-
-
-
-
-
 
   <!-- JavaScript -->
   <script src="assets/js/mobile-menu.js"></script>

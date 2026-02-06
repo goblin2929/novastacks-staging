@@ -19,17 +19,23 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS (compiled) -->
   <link rel="stylesheet" href="assets/css/styles.css">
+
+  <style>
+    .font-display { font-family: 'Space Grotesk', sans-serif; }
+    .font-sans { font-family: 'Inter', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
 </head>
-<body class="bg-white text-novastacks-text font-serif">
+<body class="bg-slate-950 text-white font-sans">
   <!-- Header -->
-  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <header class="bg-slate-950 border-b border-white/10 sticky top-0 z-50">
     <div class="container mx-auto px-6">
       <nav class="flex justify-between items-center py-4">
-        <a href="/" class="flex items-center gap-3 hover:scale-105 transition-transform">
+        <a href="/" class="flex items-center gap-3">
           <div
             class="w-60 h-12 md:w-64 md:h-14 bg-contain bg-no-repeat bg-center"
             style="background-image: url('lovable-uploads/315157be-4582-4858-b0d2-0598ddbed87c.png')"
@@ -38,20 +44,17 @@
 
         <!-- Desktop Navigation -->
         <ul class="hidden md:flex gap-8">
-          <li><a href="/aeo" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
-          <li><a href="/methodology" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Methodology</a></li>
-          <li><a href="/generator" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">About</a></li>
+          <li><a href="/aeo" class="text-slate-400 hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
+          <li><a href="/methodology" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Methodology</a></li>
+          <li><a href="/generator" class="text-slate-400 hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="text-slate-400 hover:text-novastacks font-medium transition-colors">About</a></li>
         </ul>
 
-        <!-- Desktop CTA Buttons -->
-        <div class="hidden md:flex gap-3">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transform hover:-translate-y-1 transition-all duration-300">
-            Get Started
-          </a>
-          <a href="/generator" class="bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300">
-            Learn More
+        <!-- Desktop CTA Button -->
+        <div class="hidden md:flex">
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300">
+            Book a Call
           </a>
         </div>
 
@@ -62,50 +65,42 @@
           aria-label="Toggle mobile menu"
           aria-expanded="false"
         >
-          <span id="menu-bar-1" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-2" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-3" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
+          <span id="menu-bar-1" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-2" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-3" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
         </button>
       </nav>
 
       <!-- Mobile Navigation Menu -->
-      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 py-4">
+      <div id="mobile-menu" class="hidden md:hidden bg-slate-950 border-t border-white/10 py-4">
         <ul class="flex flex-col gap-4">
-          <li><a href="/aeo" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
-          <li><a href="/methodology" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
-          <li><a href="/generator" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">About</a></li>
+          <li><a href="/aeo" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
+          <li><a href="/methodology" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
+          <li><a href="/generator" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">About</a></li>
         </ul>
         <div class="flex flex-col gap-3 mt-4">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transition-all duration-300 text-center">
-            Get Started
-          </a>
-          <a href="/generator" class="bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300 text-center">
-            Learn More
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300 text-center">
+            Book a Call
           </a>
         </div>
       </div>
     </div>
   </header>
 
-
-
-
-
-
-
   <!-- Hero Section -->
-  <section class="py-16 lg:py-20 bg-gradient-to-b from-white to-gray-50">
+  <section class="py-16 lg:py-20 bg-slate-950">
     <div class="container mx-auto px-6">
       <div class="max-w-3xl">
-        <h1 class="text-4xl lg:text-5xl font-bold text-novastacks-text mb-4 font-display">
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// INSIGHTS</p>
+        <h1 class="text-4xl lg:text-5xl font-bold text-white mb-4 font-display">
           AEO Insights & Growth Marketing Strategies
         </h1>
-        <p class="text-lg text-gray-600 mb-6">
+        <p class="text-lg text-slate-400 mb-6">
           Growth marketing insights from the frontlines. Battle-tested strategies from scaling brands like Tencent and Expedia — adapted for today's AI-first world.
         </p>
-        <p class="text-gray-600">
+        <p class="text-slate-400">
           This blog is different. We don't write marketing content. We write from operator experience — the frameworks we've built scaling billion-dollar brands, now applied to emerging channels like Answer Engine Optimization and AI-powered search.
         </p>
       </div>
@@ -113,42 +108,42 @@
   </section>
 
   <!-- Category Filter -->
-  <section class="border-b border-gray-200 bg-white">
+  <section class="border-b border-white/10 bg-slate-900">
     <div class="container mx-auto px-6 py-4">
       <div class="flex gap-2 overflow-x-auto" id="category-filters">
         <button
           data-category="All"
-          class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors bg-novastacks text-white"
+          class="category-btn px-4 py-2 rounded text-sm font-medium whitespace-nowrap transition-colors bg-novastacks text-white"
         >
           All
         </button>
         <button
           data-category="AEO"
-          class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors bg-gray-100 text-gray-600 hover:bg-gray-200"
+          class="category-btn px-4 py-2 rounded text-sm font-medium whitespace-nowrap transition-colors bg-slate-800 text-slate-400 hover:bg-slate-700"
         >
           AEO
         </button>
         <button
           data-category="AI Search"
-          class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors bg-gray-100 text-gray-600 hover:bg-gray-200"
+          class="category-btn px-4 py-2 rounded text-sm font-medium whitespace-nowrap transition-colors bg-slate-800 text-slate-400 hover:bg-slate-700"
         >
           AI Search
         </button>
         <button
           data-category="Growth Marketing"
-          class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors bg-gray-100 text-gray-600 hover:bg-gray-200"
+          class="category-btn px-4 py-2 rounded text-sm font-medium whitespace-nowrap transition-colors bg-slate-800 text-slate-400 hover:bg-slate-700"
         >
           Growth Marketing
         </button>
         <button
           data-category="SEO"
-          class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors bg-gray-100 text-gray-600 hover:bg-gray-200"
+          class="category-btn px-4 py-2 rounded text-sm font-medium whitespace-nowrap transition-colors bg-slate-800 text-slate-400 hover:bg-slate-700"
         >
           SEO
         </button>
         <button
           data-category="Growth Strategy"
-          class="category-btn px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors bg-gray-100 text-gray-600 hover:bg-gray-200"
+          class="category-btn px-4 py-2 rounded text-sm font-medium whitespace-nowrap transition-colors bg-slate-800 text-slate-400 hover:bg-slate-700"
         >
           Growth Strategy
         </button>
@@ -157,42 +152,43 @@
   </section>
 
   <!-- Featured Posts Section -->
-  <section class="py-12 lg:py-16 bg-gray-50">
+  <section class="py-12 lg:py-16 bg-slate-950">
     <div class="container mx-auto px-6">
-      <h2 class="text-2xl font-bold text-novastacks-text mb-8 font-display">Featured Posts</h2>
+      <p class="font-mono text-novastacks text-sm tracking-wider mb-2">// FEATURED</p>
+      <h2 class="text-2xl font-bold text-white mb-8 font-display">Featured Posts</h2>
       <div class="grid md:grid-cols-2 gap-8">
         <!-- Featured Post 1: Best AEO Tools -->
         <article class="group blog-post" data-category="AEO">
           <a href="/blog/best-aeo-tools-2026/" class="block">
-            <div class="bg-white border-2 border-novastacks/20 rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div class="aspect-video bg-gradient-to-br from-novastacks/10 to-novastacks-dark/20 flex items-center justify-center">
+            <div class="bg-slate-900 border border-white/10 rounded-lg overflow-hidden hover:border-novastacks/50 transition-all duration-300">
+              <div class="aspect-video bg-gradient-to-br from-novastacks/20 to-slate-800 flex items-center justify-center">
                 <div class="text-center p-6">
                   <svg class="w-16 h-16 mx-auto text-novastacks mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
                   </svg>
-                  <span class="text-novastacks-dark font-display font-bold">Featured: Tool Comparison</span>
+                  <span class="text-white font-display font-bold">Featured: Tool Comparison</span>
                 </div>
               </div>
               <div class="p-6">
                 <div class="flex items-center gap-3 mb-3">
-                  <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded-full">
+                  <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded">
                     AEO
                   </span>
-                  <div class="flex items-center gap-1 text-xs text-gray-500">
+                  <div class="flex items-center gap-1 text-xs text-slate-500">
                     <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                     12 min read
                   </div>
                 </div>
-                <h3 class="text-xl font-bold text-novastacks-text mb-2 group-hover:text-novastacks transition-colors">
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-novastacks transition-colors">
                   Best AEO Tools for 2026: Comprehensive Comparison
                 </h3>
-                <p class="text-gray-600 text-sm mb-4">
+                <p class="text-slate-400 text-sm mb-4">
                   We tested 12 AEO tools across 6 months and 12 client projects. Here's what actually works for tracking AI citations, optimizing FAQ schema, and monitoring answer engine visibility. No affiliate fluff — just honest evaluation.
                 </p>
                 <div class="flex items-center justify-between text-sm">
-                  <div class="flex items-center gap-2 text-gray-500">
+                  <div class="flex items-center gap-2 text-slate-500">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                     </svg>
@@ -213,35 +209,35 @@
         <!-- Featured Post 2: ChatGPT SEO -->
         <article class="group blog-post" data-category="AI Search">
           <a href="/blog/chatgpt-seo/" class="block">
-            <div class="bg-white border-2 border-novastacks/20 rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div class="aspect-video bg-gradient-to-br from-novastacks/10 to-novastacks-dark/20 flex items-center justify-center">
+            <div class="bg-slate-900 border border-white/10 rounded-lg overflow-hidden hover:border-novastacks/50 transition-all duration-300">
+              <div class="aspect-video bg-gradient-to-br from-novastacks/20 to-slate-800 flex items-center justify-center">
                 <div class="text-center p-6">
                   <svg class="w-16 h-16 mx-auto text-novastacks mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
                   </svg>
-                  <span class="text-novastacks-dark font-display font-bold">Featured: ChatGPT Guide</span>
+                  <span class="text-white font-display font-bold">Featured: ChatGPT Guide</span>
                 </div>
               </div>
               <div class="p-6">
                 <div class="flex items-center gap-3 mb-3">
-                  <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded-full">
+                  <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded">
                     AI Search
                   </span>
-                  <div class="flex items-center gap-1 text-xs text-gray-500">
+                  <div class="flex items-center gap-1 text-xs text-slate-500">
                     <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                     10 min read
                   </div>
                 </div>
-                <h3 class="text-xl font-bold text-novastacks-text mb-2 group-hover:text-novastacks transition-colors">
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-novastacks transition-colors">
                   ChatGPT SEO: How to Get Cited by ChatGPT
                 </h3>
-                <p class="text-gray-600 text-sm mb-4">
+                <p class="text-slate-400 text-sm mb-4">
                   Getting cited by ChatGPT isn't luck — it's a systematic process. We tested 500+ queries to reverse-engineer exactly what ChatGPT cites. Here's the complete framework: FAQ schema, direct answers, expert attribution, and the metrics that matter.
                 </p>
                 <div class="flex items-center justify-between text-sm">
-                  <div class="flex items-center gap-2 text-gray-500">
+                  <div class="flex items-center gap-2 text-slate-500">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                     </svg>
@@ -263,39 +259,40 @@
   </section>
 
   <!-- Latest Posts Section -->
-  <section class="py-12 lg:py-16">
+  <section class="py-12 lg:py-16 bg-slate-900">
     <div class="container mx-auto px-6">
-      <h2 class="text-2xl font-bold text-novastacks-text mb-8 font-display">Latest Posts</h2>
+      <p class="font-mono text-novastacks text-sm tracking-wider mb-2">// LATEST</p>
+      <h2 class="text-2xl font-bold text-white mb-8 font-display">Latest Posts</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-posts">
         <!-- Post 1: What is AEO -->
         <article class="group blog-post" data-category="AEO">
           <a href="/aeo/what-is-aeo/" class="block">
-            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <div class="aspect-video bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
+            <div class="bg-slate-800 border border-white/10 rounded-lg overflow-hidden hover:border-novastacks/50 transition-all duration-300">
+              <div class="aspect-video bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center">
                 <svg class="w-12 h-12 text-novastacks/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
                 </svg>
               </div>
               <div class="p-6">
                 <div class="flex items-center gap-3 mb-3">
-                  <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded-full">
+                  <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded">
                     AEO
                   </span>
-                  <div class="flex items-center gap-1 text-xs text-gray-500">
+                  <div class="flex items-center gap-1 text-xs text-slate-500">
                     <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                     8 min read
                   </div>
                 </div>
-                <h3 class="text-lg font-bold text-novastacks-text mb-2 group-hover:text-novastacks transition-colors line-clamp-2">
+                <h3 class="text-lg font-bold text-white mb-2 group-hover:text-novastacks transition-colors line-clamp-2">
                   What is AEO? (Answer Engine Optimization Explained)
                 </h3>
-                <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                <p class="text-slate-400 text-sm mb-4 line-clamp-3">
                   The definitive guide to Answer Engine Optimization. How AI decides what to cite, the three core ranking signals, and a step-by-step implementation framework.
                 </p>
                 <div class="flex items-center justify-between text-sm">
-                  <div class="flex items-center gap-2 text-gray-500">
+                  <div class="flex items-center gap-2 text-slate-500">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                     </svg>
@@ -316,32 +313,32 @@
         <!-- Post 2: AEO vs SEO -->
         <article class="group blog-post" data-category="AEO">
           <a href="/aeo/aeo-vs-seo/" class="block">
-            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <div class="aspect-video bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
+            <div class="bg-slate-800 border border-white/10 rounded-lg overflow-hidden hover:border-novastacks/50 transition-all duration-300">
+              <div class="aspect-video bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center">
                 <svg class="w-12 h-12 text-novastacks/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path>
                 </svg>
               </div>
               <div class="p-6">
                 <div class="flex items-center gap-3 mb-3">
-                  <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded-full">
+                  <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded">
                     AEO
                   </span>
-                  <div class="flex items-center gap-1 text-xs text-gray-500">
+                  <div class="flex items-center gap-1 text-xs text-slate-500">
                     <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                     9 min read
                   </div>
                 </div>
-                <h3 class="text-lg font-bold text-novastacks-text mb-2 group-hover:text-novastacks transition-colors line-clamp-2">
+                <h3 class="text-lg font-bold text-white mb-2 group-hover:text-novastacks transition-colors line-clamp-2">
                   AEO vs SEO: What's the Difference?
                 </h3>
-                <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                <p class="text-slate-400 text-sm mb-4 line-clamp-3">
                   SEO gets you ranked. AEO gets you cited. Here's the strategic guide on integrating both approaches, with a transition roadmap and real client example showing 178% organic traffic growth.
                 </p>
                 <div class="flex items-center justify-between text-sm">
-                  <div class="flex items-center gap-2 text-gray-500">
+                  <div class="flex items-center gap-2 text-slate-500">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                     </svg>
@@ -362,35 +359,35 @@
         <!-- Post 3: BrightonSEO -->
         <article class="group blog-post" data-category="SEO">
           <a href="/blog/brightonseo-october-2025-summaries" class="block">
-            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <div class="aspect-video bg-gray-100 overflow-hidden">
+            <div class="bg-slate-800 border border-white/10 rounded-lg overflow-hidden hover:border-novastacks/50 transition-all duration-300">
+              <div class="aspect-video bg-slate-700 overflow-hidden">
                 <img
                   src="lovable-uploads/brightonseo-hero.jpg"
                   alt="BrightonSEO Presentation Summaries (October 2025)"
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  class="w-full h-full object-cover"
                   onerror="this.style.display='none'"
                 >
               </div>
               <div class="p-6">
                 <div class="flex items-center gap-3 mb-3">
-                  <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded-full">
+                  <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded">
                     SEO
                   </span>
-                  <div class="flex items-center gap-1 text-xs text-gray-500">
+                  <div class="flex items-center gap-1 text-xs text-slate-500">
                     <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                     12 min read
                   </div>
                 </div>
-                <h3 class="text-lg font-bold text-novastacks-text mb-2 group-hover:text-novastacks transition-colors line-clamp-2">
+                <h3 class="text-lg font-bold text-white mb-2 group-hover:text-novastacks transition-colors line-clamp-2">
                   BrightonSEO Presentation Summaries (October 2025)
                 </h3>
-                <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                <p class="text-slate-400 text-sm mb-4 line-clamp-3">
                   Key takeaways from 5 presentations covering answer engine optimization, brand trust, GSC strategies, and the Search Everywhere Trifecta.
                 </p>
                 <div class="flex items-center justify-between text-sm">
-                  <div class="flex items-center gap-2 text-gray-500">
+                  <div class="flex items-center gap-2 text-slate-500">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                     </svg>
@@ -411,34 +408,34 @@
         <!-- Post 4: AEO Guide -->
         <article class="group blog-post" data-category="AEO">
           <a href="/blog/answer-engine-optimization-guide" class="block">
-            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <div class="aspect-video bg-gray-100 overflow-hidden">
+            <div class="bg-slate-800 border border-white/10 rounded-lg overflow-hidden hover:border-novastacks/50 transition-all duration-300">
+              <div class="aspect-video bg-slate-700 overflow-hidden">
                 <img
                   src="lovable-uploads/315157be-4582-4858-b0d2-0598ddbed87c.png"
                   alt="The Complete Guide to Answer Engine Optimization (AEO) in 2025"
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  class="w-full h-full object-cover"
                 >
               </div>
               <div class="p-6">
                 <div class="flex items-center gap-3 mb-3">
-                  <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded-full">
+                  <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded">
                     AEO
                   </span>
-                  <div class="flex items-center gap-1 text-xs text-gray-500">
+                  <div class="flex items-center gap-1 text-xs text-slate-500">
                     <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                     8 min read
                   </div>
                 </div>
-                <h3 class="text-lg font-bold text-novastacks-text mb-2 group-hover:text-novastacks transition-colors line-clamp-2">
+                <h3 class="text-lg font-bold text-white mb-2 group-hover:text-novastacks transition-colors line-clamp-2">
                   The Complete Guide to Answer Engine Optimization (AEO)
                 </h3>
-                <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                <p class="text-slate-400 text-sm mb-4 line-clamp-3">
                   Learn how to optimize your content for AI-powered search engines like ChatGPT, Perplexity, and Google SGE to capture the future of search traffic.
                 </p>
                 <div class="flex items-center justify-between text-sm">
-                  <div class="flex items-center gap-2 text-gray-500">
+                  <div class="flex items-center gap-2 text-slate-500">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                     </svg>
@@ -460,81 +457,84 @@
   </section>
 
   <!-- Why Read This Blog Section -->
-  <section class="py-12 lg:py-16 bg-gray-50">
+  <section class="py-12 lg:py-16 bg-slate-950">
     <div class="container mx-auto px-6">
-      <h2 class="text-2xl font-bold text-novastacks-text mb-8 font-display">Why Read This Blog?</h2>
+      <p class="font-mono text-novastacks text-sm tracking-wider mb-2">// WHY_READ</p>
+      <h2 class="text-2xl font-bold text-white mb-8 font-display">Why Read This Blog?</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-white p-6 rounded-lg border border-gray-200">
+        <div class="bg-slate-900 p-6 rounded-lg border border-white/10">
           <div class="w-12 h-12 bg-novastacks/10 rounded-lg flex items-center justify-center mb-4">
             <svg class="w-6 h-6 text-novastacks" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
             </svg>
           </div>
-          <h3 class="font-bold text-novastacks-text mb-2">Operator Perspective</h3>
-          <p class="text-gray-600 text-sm">Every post is written by someone who's built growth systems at scale — not a content marketer researching a topic.</p>
+          <h3 class="font-bold text-white mb-2">Operator Perspective</h3>
+          <p class="text-slate-400 text-sm">Every post is written by someone who's built growth systems at scale — not a content marketer researching a topic.</p>
         </div>
-        <div class="bg-white p-6 rounded-lg border border-gray-200">
+        <div class="bg-slate-900 p-6 rounded-lg border border-white/10">
           <div class="w-12 h-12 bg-novastacks/10 rounded-lg flex items-center justify-center mb-4">
             <svg class="w-6 h-6 text-novastacks" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
             </svg>
           </div>
-          <h3 class="font-bold text-novastacks-text mb-2">Battle-Tested Frameworks</h3>
-          <p class="text-gray-600 text-sm">We share methodologies we use with real clients: the 12-phase AEO audit, citation tracking systems, FAQ schema implementation.</p>
+          <h3 class="font-bold text-white mb-2">Battle-Tested Frameworks</h3>
+          <p class="text-slate-400 text-sm">We share methodologies we use with real clients: the 12-phase AEO audit, citation tracking systems, FAQ schema implementation.</p>
         </div>
-        <div class="bg-white p-6 rounded-lg border border-gray-200">
+        <div class="bg-slate-900 p-6 rounded-lg border border-white/10">
           <div class="w-12 h-12 bg-novastacks/10 rounded-lg flex items-center justify-center mb-4">
             <svg class="w-6 h-6 text-novastacks" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
             </svg>
           </div>
-          <h3 class="font-bold text-novastacks-text mb-2">No Fluff</h3>
-          <p class="text-gray-600 text-sm">We respect your time. Every post teaches something actionable. You won't find "5 tips for better marketing" listicles here.</p>
+          <h3 class="font-bold text-white mb-2">No Fluff</h3>
+          <p class="text-slate-400 text-sm">We respect your time. Every post teaches something actionable. You won't find "5 tips for better marketing" listicles here.</p>
         </div>
-        <div class="bg-white p-6 rounded-lg border border-gray-200">
+        <div class="bg-slate-900 p-6 rounded-lg border border-white/10">
           <div class="w-12 h-12 bg-novastacks/10 rounded-lg flex items-center justify-center mb-4">
             <svg class="w-6 h-6 text-novastacks" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
             </svg>
           </div>
-          <h3 class="font-bold text-novastacks-text mb-2">Forward-Thinking</h3>
-          <p class="text-gray-600 text-sm">While most blogs write about yesterday's tactics, we're focused on emerging channels that will dominate the next decade: AEO, AI-powered search, voice optimization.</p>
+          <h3 class="font-bold text-white mb-2">Forward-Thinking</h3>
+          <p class="text-slate-400 text-sm">While most blogs write about yesterday's tactics, we're focused on emerging channels that will dominate the next decade: AEO, AI-powered search, voice optimization.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Popular Topics Section -->
-  <section class="py-12 lg:py-16">
+  <section class="py-12 lg:py-16 bg-slate-900">
     <div class="container mx-auto px-6">
-      <h2 class="text-2xl font-bold text-novastacks-text mb-8 font-display">Popular Topics</h2>
+      <p class="font-mono text-novastacks text-sm tracking-wider mb-2">// TOPICS</p>
+      <h2 class="text-2xl font-bold text-white mb-8 font-display">Popular Topics</h2>
       <div class="flex flex-wrap gap-3">
-        <a href="/aeo/" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-novastacks hover:text-white transition-colors">Answer Engine Optimization</a>
-        <a href="/blog/chatgpt-seo/" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-novastacks hover:text-white transition-colors">ChatGPT SEO</a>
-        <a href="/aeo/what-is-aeo/" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-novastacks hover:text-white transition-colors">FAQ Schema</a>
-        <a href="/aeo/" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-novastacks hover:text-white transition-colors">AI Citations</a>
-        <a href="/blog/best-aeo-tools-2026/" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-novastacks hover:text-white transition-colors">AEO Tools</a>
-        <a href="/fractional-growth-partner/" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-novastacks hover:text-white transition-colors">Growth Marketing</a>
-        <a href="/aeo/aeo-vs-seo/" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-novastacks hover:text-white transition-colors">Technical SEO</a>
-        <a href="/blog/" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-novastacks hover:text-white transition-colors">Content Strategy</a>
-        <a href="/aeo/" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-novastacks hover:text-white transition-colors">Perplexity Optimization</a>
-        <a href="/aeo/" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-novastacks hover:text-white transition-colors">Performance Marketing</a>
+        <a href="/aeo/" class="px-4 py-2 bg-slate-800 text-slate-300 rounded text-sm hover:bg-novastacks hover:text-white transition-colors">Answer Engine Optimization</a>
+        <a href="/blog/chatgpt-seo/" class="px-4 py-2 bg-slate-800 text-slate-300 rounded text-sm hover:bg-novastacks hover:text-white transition-colors">ChatGPT SEO</a>
+        <a href="/aeo/what-is-aeo/" class="px-4 py-2 bg-slate-800 text-slate-300 rounded text-sm hover:bg-novastacks hover:text-white transition-colors">FAQ Schema</a>
+        <a href="/aeo/" class="px-4 py-2 bg-slate-800 text-slate-300 rounded text-sm hover:bg-novastacks hover:text-white transition-colors">AI Citations</a>
+        <a href="/blog/best-aeo-tools-2026/" class="px-4 py-2 bg-slate-800 text-slate-300 rounded text-sm hover:bg-novastacks hover:text-white transition-colors">AEO Tools</a>
+        <a href="/fractional-growth-partner/" class="px-4 py-2 bg-slate-800 text-slate-300 rounded text-sm hover:bg-novastacks hover:text-white transition-colors">Growth Marketing</a>
+        <a href="/aeo/aeo-vs-seo/" class="px-4 py-2 bg-slate-800 text-slate-300 rounded text-sm hover:bg-novastacks hover:text-white transition-colors">Technical SEO</a>
+        <a href="/blog/" class="px-4 py-2 bg-slate-800 text-slate-300 rounded text-sm hover:bg-novastacks hover:text-white transition-colors">Content Strategy</a>
+        <a href="/aeo/" class="px-4 py-2 bg-slate-800 text-slate-300 rounded text-sm hover:bg-novastacks hover:text-white transition-colors">Perplexity Optimization</a>
+        <a href="/aeo/" class="px-4 py-2 bg-slate-800 text-slate-300 rounded text-sm hover:bg-novastacks hover:text-white transition-colors">Performance Marketing</a>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section class="py-12 lg:py-16 bg-gradient-to-br from-novastacks to-novastacks-dark">
+  <section class="py-12 lg:py-16 bg-slate-950">
     <div class="container mx-auto px-6 text-center">
+      <p class="font-mono text-novastacks text-sm tracking-wider mb-2">// WORK_WITH_US</p>
       <h2 class="text-3xl font-bold text-white mb-4 font-display">Work with Us</h2>
-      <p class="text-white/90 max-w-2xl mx-auto mb-8">
+      <p class="text-slate-400 max-w-2xl mx-auto mb-8">
         Need help implementing these strategies? We work with growth-stage companies and SMBs on Answer Engine Optimization and AI-powered marketing.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/aeo/" class="px-6 py-3 bg-white text-novastacks font-medium rounded-lg hover:bg-gray-100 transition-colors">
+        <a href="/aeo/" class="px-6 py-3 bg-novastacks text-white font-medium rounded hover:bg-novastacks/80 transition-colors">
           Explore AEO Services
         </a>
-        <a href="/contact/" class="px-6 py-3 bg-transparent border-2 border-white text-white font-medium rounded-lg hover:bg-white/10 transition-colors">
+        <a href="/contact/" class="px-6 py-3 bg-transparent border border-white/20 text-white font-medium rounded hover:bg-white/10 transition-colors">
           Get Free Assessment
         </a>
       </div>
@@ -542,7 +542,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-slate-900 text-white py-12">
+  <footer class="bg-slate-900 text-white py-16">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
 
@@ -623,12 +623,6 @@
       </div>
     </div>
   </footer>
-
-
-
-
-
-
 
   <!-- JavaScript -->
   <script src="assets/js/mobile-menu.js"></script>

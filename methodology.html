@@ -26,10 +26,17 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS (compiled) -->
   <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Font Classes -->
+  <style>
+    .font-display { font-family: 'Space Grotesk', sans-serif; }
+    .font-sans { font-family: 'Inter', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
 
   <!-- Analytics -->
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="a6bNPCfvII1gVtf+GzOf3g" async></script>
@@ -179,12 +186,12 @@
   }
   </script>
 </head>
-<body class="bg-white text-novastacks-text font-serif">
+<body class="bg-slate-950 text-white font-sans">
   <!-- Header -->
-  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <header class="bg-slate-950 border-b border-white/10 sticky top-0 z-50">
     <div class="container mx-auto px-6">
       <nav class="flex justify-between items-center py-4">
-        <a href="/" class="flex items-center gap-3 hover:scale-105 transition-transform">
+        <a href="/" class="flex items-center gap-3">
           <div
             class="w-60 h-12 md:w-64 md:h-14 bg-contain bg-no-repeat bg-center"
             style="background-image: url('lovable-uploads/315157be-4582-4858-b0d2-0598ddbed87c.png')"
@@ -193,20 +200,17 @@
 
         <!-- Desktop Navigation -->
         <ul class="hidden md:flex gap-8">
-          <li><a href="/aeo" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
-          <li><a href="/methodology" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Methodology</a></li>
-          <li><a href="/generator" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">About</a></li>
+          <li><a href="/aeo" class="text-slate-400 hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
+          <li><a href="/methodology" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Methodology</a></li>
+          <li><a href="/generator" class="text-slate-400 hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="text-slate-400 hover:text-novastacks font-medium transition-colors">About</a></li>
         </ul>
 
-        <!-- Desktop CTA Buttons -->
-        <div class="hidden md:flex gap-3">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transform hover:-translate-y-1 transition-all duration-300">
-            Get Started
-          </a>
-          <a href="/generator" class="bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300">
-            Learn More
+        <!-- Desktop CTA Button -->
+        <div class="hidden md:flex">
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-colors">
+            Book a Call
           </a>
         </div>
 
@@ -217,61 +221,50 @@
           aria-label="Toggle mobile menu"
           aria-expanded="false"
         >
-          <span id="menu-bar-1" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-2" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-3" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
+          <span id="menu-bar-1" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-2" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-3" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
         </button>
       </nav>
 
       <!-- Mobile Navigation Menu -->
-      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 py-4">
+      <div id="mobile-menu" class="hidden md:hidden bg-slate-950 border-t border-white/10 py-4">
         <ul class="flex flex-col gap-4">
-          <li><a href="/aeo" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
-          <li><a href="/methodology" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
-          <li><a href="/generator" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">About</a></li>
+          <li><a href="/aeo" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
+          <li><a href="/methodology" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
+          <li><a href="/generator" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">About</a></li>
         </ul>
         <div class="flex flex-col gap-3 mt-4">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transition-all duration-300 text-center">
-            Get Started
-          </a>
-          <a href="/generator" class="bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300 text-center">
-            Learn More
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-colors text-center">
+            Book a Call
           </a>
         </div>
       </div>
     </div>
   </header>
 
-
-
-
-
-
-
-  <!-- Hero Section -->
-  <section class="relative py-16 lg:py-24 bg-novastacks-text overflow-hidden">
+  <!-- Hero Section (DARK) -->
+  <section class="relative py-16 lg:py-24 bg-slate-950 overflow-hidden">
     <div class="container mx-auto px-6 relative z-10">
       <div class="text-center max-w-4xl mx-auto">
-        <div class="inline-flex items-center gap-2 px-4 py-2 bg-novastacks/20 rounded-full text-sm font-medium text-novastacks mb-6">
-          Our Methodology
-        </div>
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// METHODOLOGY</p>
         <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight font-display">
           Senior Operators <span class="text-novastacks">+</span> AI Infrastructure <span class="text-novastacks">=</span> Enterprise-Grade Results
         </h1>
-        <p class="text-lg lg:text-xl text-white/90 mb-6 leading-relaxed max-w-3xl mx-auto">
+        <p class="text-lg lg:text-xl text-slate-300 mb-6 leading-relaxed max-w-3xl mx-auto">
           We're not AI influencers selling untested tools. We're marketing operators with decades at Expedia, Tencent, and Klook — who ramped up on the best AI platforms and now deploy systems that actually work.
         </p>
-        <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium text-white/80 mb-8">
+        <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-md text-sm font-medium text-slate-400 mb-8">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a5 5 0 0 0-5 5c0 4.5 5 11 5 11s5-6.5 5-11a5 5 0 0 0-5-5zm0 7.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
           Singapore-Based AI Marketing Studio
         </div>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks hover:bg-novastacks/90 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center gap-2">
-            Get Started
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks hover:bg-novastacks/80 text-white px-8 py-3 rounded font-semibold text-lg transition-colors inline-flex items-center justify-center gap-2">
+            Book a Call
           </a>
-          <a href="/aeo" class="bg-white/10 backdrop-blur-sm text-white border-2 border-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-white hover:text-novastacks-text transition-all duration-300 text-center">
+          <a href="/aeo" class="bg-white/5 border border-white/10 text-white px-8 py-3 rounded font-semibold text-lg hover:bg-white/10 transition-colors text-center">
             See Our Services
           </a>
         </div>
@@ -279,166 +272,169 @@
     </div>
   </section>
 
-  <!-- Definition Section - AEO Optimized -->
+  <!-- Definition Section (LIGHT) -->
   <section class="py-16 lg:py-20 bg-white">
     <div class="container mx-auto px-6">
       <div class="max-w-4xl mx-auto">
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// WHAT_WE_DO</p>
         <!-- Definition Box -->
-        <div class="bg-gray-50 border-l-4 border-novastacks p-8 rounded-r-xl mb-12">
-          <h2 class="text-2xl font-bold text-novastacks mb-4">What is Agentic AI Marketing?</h2>
-          <p class="text-lg text-novastacks-text leading-relaxed">
+        <div class="bg-slate-50 border-l-4 border-novastacks p-8 rounded-r-xl mb-12">
+          <h2 class="text-2xl font-bold text-slate-900 mb-4 font-display">What is Agentic AI Marketing?</h2>
+          <p class="text-lg text-slate-700 leading-relaxed">
             <strong>Agentic AI marketing</strong> is an advanced approach where interconnected AI agents autonomously execute complex marketing tasks—from research and content creation to distribution and analysis—under human strategic guidance. Unlike traditional AI tools that require manual prompting for each task, agentic workflows operate as coordinated systems that can plan, execute, and adapt marketing strategies at scale.
           </p>
         </div>
 
-        <h2 class="text-3xl lg:text-4xl font-bold text-novastacks-text mb-6">The Novastacks Engine: Operators + Infrastructure</h2>
-        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-          We believe the future of marketing isn't about choosing between human strategists and AI tools — it's about <strong class="text-novastacks-text">senior operators wielding the best AI infrastructure</strong>. That's what we do.
+        <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-6 font-display">The Novastacks Engine: Operators + Infrastructure</h2>
+        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+          We believe the future of marketing isn't about choosing between human strategists and AI tools — it's about <strong class="text-slate-900">senior operators wielding the best AI infrastructure</strong>. That's what we do.
         </p>
 
         <!-- Philosophy Quote -->
-        <div class="bg-novastacks-text text-white p-8 lg:p-10 rounded-2xl mb-8 relative">
+        <div class="bg-slate-900 text-white p-8 lg:p-10 rounded-xl mb-8 relative">
           <div class="absolute top-4 left-6 text-6xl text-novastacks/30 font-serif">"</div>
           <p class="text-xl lg:text-2xl italic relative z-10 pl-8">
             We're not an agency that bolted 'AI' onto our pitch deck. We're senior marketing operators who learned the best AI platforms deeply — and now deploy enterprise-grade solutions that move metrics.
           </p>
         </div>
 
-        <p class="text-lg text-gray-600 leading-relaxed">
+        <p class="text-lg text-slate-600 leading-relaxed">
           This creates a virtuous cycle: operator expertise makes our AI systems smarter, and AI-powered execution gives our operators the data and scale to make better, faster decisions.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Two Key Components -->
-  <section class="py-16 lg:py-20 bg-gray-50">
+  <!-- Two Key Components (DARK) -->
+  <section class="py-16 lg:py-20 bg-slate-950 border-t border-white/5">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl lg:text-4xl font-bold text-novastacks-text text-center mb-12">The Two Key Components</h2>
+      <p class="font-mono text-novastacks text-sm tracking-wider text-center mb-4">// CORE_COMPONENTS</p>
+      <h2 class="text-3xl lg:text-4xl font-bold text-white text-center mb-12 font-display">The Two Key Components</h2>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
         <!-- Component 1 -->
-        <div class="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-novastacks">
+        <div class="bg-white/5 border border-white/10 rounded-xl p-8">
           <div class="flex items-center gap-4 mb-6">
-            <div class="w-12 h-12 bg-novastacks text-white rounded-full flex items-center justify-center text-xl font-bold">1</div>
-            <h3 class="text-2xl font-bold text-novastacks-text">World-Class Human Expertise</h3>
+            <div class="w-12 h-12 bg-novastacks text-white rounded-md flex items-center justify-center text-xl font-bold font-mono">1</div>
+            <h3 class="text-2xl font-bold text-white font-display">World-Class Human Expertise</h3>
           </div>
           <p class="text-novastacks font-semibold mb-4">The "Why" Behind Every Strategy</p>
-          <p class="text-gray-600 mb-6 leading-relaxed">
+          <p class="text-slate-400 mb-6 leading-relaxed">
             Every engagement is led by a seasoned marketer who has been in your shoes. Our experts are responsible for the high-level strategy that AI cannot replicate:
           </p>
           <ul class="space-y-4">
             <li class="flex items-start gap-3">
-              <span class="text-green-500 font-bold mt-1">✓</span>
-              <div><strong class="text-novastacks-text">Understanding Your Business:</strong> We dive deep into your goals, competitive landscape, and ideal customer profile.</div>
+              <span class="text-novastacks font-bold mt-1">-</span>
+              <div class="text-slate-300"><strong class="text-white">Understanding Your Business:</strong> We dive deep into your goals, competitive landscape, and ideal customer profile.</div>
             </li>
             <li class="flex items-start gap-3">
-              <span class="text-green-500 font-bold mt-1">✓</span>
-              <div><strong class="text-novastacks-text">Setting Strategic Direction:</strong> We define your core messaging, identify high-value opportunities, and set strategic guardrails for our AI agents.</div>
+              <span class="text-novastacks font-bold mt-1">-</span>
+              <div class="text-slate-300"><strong class="text-white">Setting Strategic Direction:</strong> We define your core messaging, identify high-value opportunities, and set strategic guardrails for our AI agents.</div>
             </li>
             <li class="flex items-start gap-3">
-              <span class="text-green-500 font-bold mt-1">✓</span>
-              <div><strong class="text-novastacks-text">Ensuring Quality & Impact:</strong> Our experts review and refine all AI-generated outputs to ensure they meet our standards for quality, brand alignment, and business impact.</div>
+              <span class="text-novastacks font-bold mt-1">-</span>
+              <div class="text-slate-300"><strong class="text-white">Ensuring Quality & Impact:</strong> Our experts review and refine all AI-generated outputs to ensure they meet our standards for quality, brand alignment, and business impact.</div>
             </li>
           </ul>
         </div>
 
         <!-- Component 2 -->
-        <div class="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-novastacks">
+        <div class="bg-white/5 border border-white/10 rounded-xl p-8">
           <div class="flex items-center gap-4 mb-6">
-            <div class="w-12 h-12 bg-novastacks text-white rounded-full flex items-center justify-center text-xl font-bold">2</div>
-            <h3 class="text-2xl font-bold text-novastacks-text">AI Infrastructure</h3>
+            <div class="w-12 h-12 bg-novastacks text-white rounded-md flex items-center justify-center text-xl font-bold font-mono">2</div>
+            <h3 class="text-2xl font-bold text-white font-display">AI Infrastructure</h3>
           </div>
           <p class="text-novastacks font-semibold mb-4">The "How" of AI-Powered Execution</p>
-          <p class="text-gray-600 mb-6 leading-relaxed">
+          <p class="text-slate-400 mb-6 leading-relaxed">
             Once strategy is set, our custom-built agentic workflows handle execution. These aren't off-the-shelf AI tools — they're interconnected systems running on the platforms that are actually reshaping how work gets done:
           </p>
 
           <!-- Tools Grid -->
           <div class="grid grid-cols-2 gap-3 mb-6">
-            <div class="bg-gray-50 rounded-lg p-3 text-center">
-              <div class="font-bold text-novastacks-text">Claude Code</div>
-              <div class="text-xs text-gray-500">Agentic development</div>
+            <div class="bg-slate-800/50 border border-white/5 rounded-md p-3 text-center">
+              <div class="font-bold text-white">Claude Code</div>
+              <div class="text-xs text-slate-500">Agentic development</div>
             </div>
-            <div class="bg-gray-50 rounded-lg p-3 text-center">
-              <div class="font-bold text-novastacks-text">Perplexity</div>
-              <div class="text-xs text-gray-500">AI-powered research</div>
+            <div class="bg-slate-800/50 border border-white/5 rounded-md p-3 text-center">
+              <div class="font-bold text-white">Perplexity</div>
+              <div class="text-xs text-slate-500">AI-powered research</div>
             </div>
-            <div class="bg-gray-50 rounded-lg p-3 text-center">
-              <div class="font-bold text-novastacks-text">Gemini</div>
-              <div class="text-xs text-gray-500">Multimodal intelligence</div>
+            <div class="bg-slate-800/50 border border-white/5 rounded-md p-3 text-center">
+              <div class="font-bold text-white">Gemini</div>
+              <div class="text-xs text-slate-500">Multimodal intelligence</div>
             </div>
-            <div class="bg-gray-50 rounded-lg p-3 text-center">
-              <div class="font-bold text-novastacks-text">Manus</div>
-              <div class="text-xs text-gray-500">Agentic workflows</div>
+            <div class="bg-slate-800/50 border border-white/5 rounded-md p-3 text-center">
+              <div class="font-bold text-white">Manus</div>
+              <div class="text-xs text-slate-500">Agentic workflows</div>
             </div>
           </div>
 
           <ul class="space-y-4">
             <li class="flex items-start gap-3">
-              <span class="text-green-500 font-bold mt-1">✓</span>
-              <div><strong class="text-novastacks-text">Market Research:</strong> Automated competitor analysis, trend detection, and opportunity identification.</div>
+              <span class="text-novastacks font-bold mt-1">-</span>
+              <div class="text-slate-300"><strong class="text-white">Market Research:</strong> Automated competitor analysis, trend detection, and opportunity identification.</div>
             </li>
             <li class="flex items-start gap-3">
-              <span class="text-green-500 font-bold mt-1">✓</span>
-              <div><strong class="text-novastacks-text">Content Creation:</strong> Brand-aligned content at scale across formats and channels.</div>
+              <span class="text-novastacks font-bold mt-1">-</span>
+              <div class="text-slate-300"><strong class="text-white">Content Creation:</strong> Brand-aligned content at scale across formats and channels.</div>
             </li>
             <li class="flex items-start gap-3">
-              <span class="text-green-500 font-bold mt-1">✓</span>
-              <div><strong class="text-novastacks-text">Distribution:</strong> Multi-channel publishing and optimization.</div>
+              <span class="text-novastacks font-bold mt-1">-</span>
+              <div class="text-slate-300"><strong class="text-white">Distribution:</strong> Multi-channel publishing and optimization.</div>
             </li>
             <li class="flex items-start gap-3">
-              <span class="text-green-500 font-bold mt-1">✓</span>
-              <div><strong class="text-novastacks-text">Performance Analysis:</strong> Real-time monitoring and data-driven recommendations.</div>
+              <span class="text-novastacks font-bold mt-1">-</span>
+              <div class="text-slate-300"><strong class="text-white">Performance Analysis:</strong> Real-time monitoring and data-driven recommendations.</div>
             </li>
           </ul>
-          <p class="text-sm text-gray-500 mt-4 italic">Not because it's trendy. Because it lets us deliver at enterprise speed with boutique attention.</p>
+          <p class="text-sm text-slate-500 mt-4 italic">Not because it's trendy. Because it lets us deliver at enterprise speed with boutique attention.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- How It Works - 4 Steps -->
-  <section class="py-16 lg:py-20 bg-novastacks-text">
+  <!-- How It Works - 4 Steps (LIGHT) -->
+  <section class="py-16 lg:py-20 bg-slate-50">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl lg:text-4xl font-bold text-white text-center mb-4">How We Work</h2>
-      <p class="text-lg text-white/80 text-center mb-12 max-w-2xl mx-auto">
+      <p class="font-mono text-novastacks text-sm tracking-wider text-center mb-4">// PROCESS</p>
+      <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 text-center mb-4 font-display">How We Work</h2>
+      <p class="text-lg text-slate-600 text-center mb-12 max-w-2xl mx-auto">
         We don't just plan or advise — we design, build, and operate. You get results, not deliverables.
       </p>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
         <!-- Step 1 -->
-        <div class="bg-white/5 border border-white/10 rounded-xl p-6 text-center hover:bg-white/10 transition-all duration-300">
-          <div class="w-14 h-14 bg-novastacks text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
-          <h3 class="text-xl font-bold text-novastacks mb-3">Discover</h3>
-          <p class="text-white/70 text-sm leading-relaxed">
+        <div class="bg-white border border-slate-200 rounded-xl p-6 text-center">
+          <div class="w-14 h-14 bg-novastacks text-white rounded-md flex items-center justify-center text-2xl font-bold mx-auto mb-4 font-mono">1</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Discover</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
             Audit your current state + opportunity gaps
           </p>
         </div>
 
         <!-- Step 2 -->
-        <div class="bg-white/5 border border-white/10 rounded-xl p-6 text-center hover:bg-white/10 transition-all duration-300">
-          <div class="w-14 h-14 bg-novastacks text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
-          <h3 class="text-xl font-bold text-novastacks mb-3">Design</h3>
-          <p class="text-white/70 text-sm leading-relaxed">
+        <div class="bg-white border border-slate-200 rounded-xl p-6 text-center">
+          <div class="w-14 h-14 bg-novastacks text-white rounded-md flex items-center justify-center text-2xl font-bold mx-auto mb-4 font-mono">2</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Design</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
             Architect custom agentic workflows for your goals
           </p>
         </div>
 
         <!-- Step 3 -->
-        <div class="bg-white/5 border border-white/10 rounded-xl p-6 text-center hover:bg-white/10 transition-all duration-300">
-          <div class="w-14 h-14 bg-novastacks text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
-          <h3 class="text-xl font-bold text-novastacks mb-3">Build</h3>
-          <p class="text-white/70 text-sm leading-relaxed">
+        <div class="bg-white border border-slate-200 rounded-xl p-6 text-center">
+          <div class="w-14 h-14 bg-novastacks text-white rounded-md flex items-center justify-center text-2xl font-bold mx-auto mb-4 font-mono">3</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Build</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
             Implement tech stack, agents, integrations
           </p>
         </div>
 
         <!-- Step 4 -->
-        <div class="bg-white/5 border border-white/10 rounded-xl p-6 text-center hover:bg-white/10 transition-all duration-300">
-          <div class="w-14 h-14 bg-novastacks text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
-          <h3 class="text-xl font-bold text-novastacks mb-3">Operate</h3>
-          <p class="text-white/70 text-sm leading-relaxed">
+        <div class="bg-white border border-slate-200 rounded-xl p-6 text-center">
+          <div class="w-14 h-14 bg-novastacks text-white rounded-md flex items-center justify-center text-2xl font-bold mx-auto mb-4 font-mono">4</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Operate</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
             Run, optimize, report on business results
           </p>
         </div>
@@ -446,80 +442,81 @@
 
       <!-- Mid-page CTA -->
       <div class="text-center mt-12">
-        <p class="text-white/80 mb-6">Not a retainer that runs on autopilot. A partnership that moves metrics.</p>
-        <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks hover:bg-novastacks-dark text-white px-8 py-4 rounded-lg font-semibold text-lg transform hover:scale-105 transition-all duration-300 inline-flex items-center justify-center gap-2 shadow-lg">
+        <p class="text-slate-600 mb-6">Not a retainer that runs on autopilot. A partnership that moves metrics.</p>
+        <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks hover:bg-novastacks/80 text-white px-8 py-4 rounded font-semibold text-lg transition-colors inline-flex items-center justify-center gap-2">
           Book a Strategy Call
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Comparison Table -->
-  <section class="py-16 lg:py-20 bg-white">
+  <!-- Comparison Table (DARK) -->
+  <section class="py-16 lg:py-20 bg-slate-900 border-t border-white/5">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl lg:text-4xl font-bold text-novastacks-text text-center mb-4">The Novastacks Difference</h2>
-      <p class="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+      <p class="font-mono text-novastacks text-sm tracking-wider text-center mb-4">// COMPARISON</p>
+      <h2 class="text-3xl lg:text-4xl font-bold text-white text-center mb-4 font-display">The Novastacks Difference</h2>
+      <p class="text-lg text-slate-400 text-center mb-12 max-w-2xl mx-auto">
         See how our Human-AI Augmentation model compares to traditional approaches:
       </p>
 
       <div class="overflow-x-auto max-w-6xl mx-auto">
-        <table class="w-full border-collapse rounded-xl overflow-hidden shadow-lg">
+        <table class="w-full border-collapse rounded-xl overflow-hidden">
           <thead>
             <tr>
-              <th class="p-4 text-left font-semibold bg-gray-800 text-white">Factor</th>
-              <th class="p-4 text-left font-semibold bg-gray-800 text-white">Traditional Agency</th>
-              <th class="p-4 text-left font-semibold bg-gray-800 text-white">DIY AI Tools</th>
+              <th class="p-4 text-left font-semibold bg-slate-800 text-white">Factor</th>
+              <th class="p-4 text-left font-semibold bg-slate-800 text-white">Traditional Agency</th>
+              <th class="p-4 text-left font-semibold bg-slate-800 text-white">DIY AI Tools</th>
               <th class="p-4 text-left font-semibold bg-novastacks text-white">Novastacks</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="border-b border-gray-200">
-              <td class="p-4 font-semibold bg-gray-100 text-novastacks-text">Who's doing it</td>
-              <td class="p-4 bg-white text-gray-700">Junior staff with playbooks.</td>
-              <td class="p-4 bg-white text-gray-700">You, manually prompting.</td>
-              <td class="p-4 bg-novastacks/10 text-novastacks-dark font-medium">Senior operators with AI infrastructure.</td>
+            <tr class="border-b border-white/5">
+              <td class="p-4 font-semibold bg-slate-800/50 text-white">Who's doing it</td>
+              <td class="p-4 bg-slate-950 text-slate-400">Junior staff with playbooks.</td>
+              <td class="p-4 bg-slate-950 text-slate-400">You, manually prompting.</td>
+              <td class="p-4 bg-novastacks/10 text-novastacks font-medium">Senior operators with AI infrastructure.</td>
             </tr>
-            <tr class="border-b border-gray-200">
-              <td class="p-4 font-semibold bg-gray-100 text-novastacks-text">Strategy</td>
-              <td class="p-4 bg-white text-gray-700">Manual, slow, based on old playbooks.</td>
-              <td class="p-4 bg-white text-gray-700">None. Relies on user input for every task.</td>
-              <td class="p-4 bg-novastacks/10 text-novastacks-dark font-medium">Operator-led, dynamic, and context-aware.</td>
+            <tr class="border-b border-white/5">
+              <td class="p-4 font-semibold bg-slate-800/50 text-white">Strategy</td>
+              <td class="p-4 bg-slate-950 text-slate-400">Manual, slow, based on old playbooks.</td>
+              <td class="p-4 bg-slate-950 text-slate-400">None. Relies on user input for every task.</td>
+              <td class="p-4 bg-novastacks/10 text-novastacks font-medium">Operator-led, dynamic, and context-aware.</td>
             </tr>
-            <tr class="border-b border-gray-200">
-              <td class="p-4 font-semibold bg-gray-100 text-novastacks-text">Execution</td>
-              <td class="p-4 bg-white text-gray-700">Manual content creation; slow turnaround.</td>
-              <td class="p-4 bg-white text-gray-700">Generic, often low-quality AI output.</td>
-              <td class="p-4 bg-novastacks/10 text-novastacks-dark font-medium">Enterprise-speed via agentic workflows.</td>
+            <tr class="border-b border-white/5">
+              <td class="p-4 font-semibold bg-slate-800/50 text-white">Execution</td>
+              <td class="p-4 bg-slate-950 text-slate-400">Manual content creation; slow turnaround.</td>
+              <td class="p-4 bg-slate-950 text-slate-400">Generic, often low-quality AI output.</td>
+              <td class="p-4 bg-novastacks/10 text-novastacks font-medium">Enterprise-speed via agentic workflows.</td>
             </tr>
-            <tr class="border-b border-gray-200">
-              <td class="p-4 font-semibold bg-gray-100 text-novastacks-text">Tools</td>
-              <td class="p-4 bg-white text-gray-700">Basic SaaS stack.</td>
-              <td class="p-4 bg-white text-gray-700">ChatGPT, maybe.</td>
-              <td class="p-4 bg-novastacks/10 text-novastacks-dark font-medium">Claude Code, Gemini, Perplexity, Manus.</td>
+            <tr class="border-b border-white/5">
+              <td class="p-4 font-semibold bg-slate-800/50 text-white">Tools</td>
+              <td class="p-4 bg-slate-950 text-slate-400">Basic SaaS stack.</td>
+              <td class="p-4 bg-slate-950 text-slate-400">ChatGPT, maybe.</td>
+              <td class="p-4 bg-novastacks/10 text-novastacks font-medium">Claude Code, Gemini, Perplexity, Manus.</td>
             </tr>
-            <tr class="border-b border-gray-200">
-              <td class="p-4 font-semibold bg-gray-100 text-novastacks-text">Precision</td>
-              <td class="p-4 bg-white text-gray-700">Broad targeting; hit-or-miss.</td>
-              <td class="p-4 bg-white text-gray-700">Lacks strategic focus.</td>
-              <td class="p-4 bg-novastacks/10 text-novastacks-dark font-medium">Hyper-focused on high-value opportunities.</td>
+            <tr class="border-b border-white/5">
+              <td class="p-4 font-semibold bg-slate-800/50 text-white">Precision</td>
+              <td class="p-4 bg-slate-950 text-slate-400">Broad targeting; hit-or-miss.</td>
+              <td class="p-4 bg-slate-950 text-slate-400">Lacks strategic focus.</td>
+              <td class="p-4 bg-novastacks/10 text-novastacks font-medium">Hyper-focused on high-value opportunities.</td>
             </tr>
-            <tr class="border-b border-gray-200">
-              <td class="p-4 font-semibold bg-gray-100 text-novastacks-text">Scale</td>
-              <td class="p-4 bg-white text-gray-700">Limited by headcount; expensive to scale.</td>
-              <td class="p-4 bg-white text-gray-700">Degrades with volume.</td>
-              <td class="p-4 bg-novastacks/10 text-novastacks-dark font-medium">Scales without sacrificing quality or strategy.</td>
+            <tr class="border-b border-white/5">
+              <td class="p-4 font-semibold bg-slate-800/50 text-white">Scale</td>
+              <td class="p-4 bg-slate-950 text-slate-400">Limited by headcount; expensive to scale.</td>
+              <td class="p-4 bg-slate-950 text-slate-400">Degrades with volume.</td>
+              <td class="p-4 bg-novastacks/10 text-novastacks font-medium">Scales without sacrificing quality or strategy.</td>
             </tr>
-            <tr class="border-b border-gray-200">
-              <td class="p-4 font-semibold bg-gray-100 text-novastacks-text">Adaptability</td>
-              <td class="p-4 bg-white text-gray-700">Rigid SOWs; slow to react.</td>
-              <td class="p-4 bg-white text-gray-700">Static tools that don't learn or adapt.</td>
-              <td class="p-4 bg-novastacks/10 text-novastacks-dark font-medium">Agile and responsive; workflows constantly refined.</td>
+            <tr class="border-b border-white/5">
+              <td class="p-4 font-semibold bg-slate-800/50 text-white">Adaptability</td>
+              <td class="p-4 bg-slate-950 text-slate-400">Rigid SOWs; slow to react.</td>
+              <td class="p-4 bg-slate-950 text-slate-400">Static tools that don't learn or adapt.</td>
+              <td class="p-4 bg-novastacks/10 text-novastacks font-medium">Agile and responsive; workflows constantly refined.</td>
             </tr>
             <tr>
-              <td class="p-4 font-semibold bg-gray-100 text-novastacks-text">Business Focus</td>
-              <td class="p-4 bg-white text-gray-700">Focused on deliverables (e.g., # of articles).</td>
-              <td class="p-4 bg-white text-gray-700">Focused on tasks (e.g., generate a paragraph).</td>
-              <td class="p-4 bg-novastacks/10 text-novastacks-dark font-medium">Focused on outcomes (revenue growth, CAC reduction).</td>
+              <td class="p-4 font-semibold bg-slate-800/50 text-white">Business Focus</td>
+              <td class="p-4 bg-slate-950 text-slate-400">Focused on deliverables (e.g., # of articles).</td>
+              <td class="p-4 bg-slate-950 text-slate-400">Focused on tasks (e.g., generate a paragraph).</td>
+              <td class="p-4 bg-novastacks/10 text-novastacks font-medium">Focused on outcomes (revenue growth, CAC reduction).</td>
             </tr>
           </tbody>
         </table>
@@ -527,56 +524,57 @@
     </div>
   </section>
 
-  <!-- FAQ Section -->
+  <!-- FAQ Section (LIGHT) -->
   <section class="py-16 lg:py-20 bg-white">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl lg:text-4xl font-bold text-novastacks-text text-center mb-12">Frequently Asked Questions</h2>
+      <p class="font-mono text-novastacks text-sm tracking-wider text-center mb-4">// FAQ</p>
+      <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 text-center mb-12 font-display">Frequently Asked Questions</h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
         <!-- FAQ 1 -->
-        <div class="bg-gray-50 rounded-xl p-6">
-          <h3 class="text-lg font-bold text-novastacks-text mb-3">What is an AI marketing studio?</h3>
-          <p class="text-gray-600 leading-relaxed">
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-6">
+          <h3 class="text-lg font-bold text-slate-900 mb-3 font-display">What is an AI marketing studio?</h3>
+          <p class="text-slate-600 leading-relaxed">
             An AI marketing studio is a marketing agency or consultancy that leverages artificial intelligence technologies—particularly agentic AI workflows—to execute marketing strategies at scale. Unlike traditional agencies that rely primarily on human labor, AI marketing studios like Novastacks combine expert human strategy with AI-powered execution to deliver faster results at a fraction of the cost.
           </p>
         </div>
 
         <!-- FAQ 2 -->
-        <div class="bg-gray-50 rounded-xl p-6">
-          <h3 class="text-lg font-bold text-novastacks-text mb-3">How does AI marketing implementation work?</h3>
-          <p class="text-gray-600 leading-relaxed">
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-6">
+          <h3 class="text-lg font-bold text-slate-900 mb-3 font-display">How does AI marketing implementation work?</h3>
+          <p class="text-slate-600 leading-relaxed">
             AI marketing implementation involves integrating agentic AI workflows into your marketing operations. At Novastacks, this starts with strategic discovery to understand your goals, followed by custom workflow design, AI-powered execution across your marketing channels, and continuous optimization. The entire process is overseen by experienced marketing strategists.
           </p>
         </div>
 
         <!-- FAQ 3 -->
-        <div class="bg-gray-50 rounded-xl p-6">
-          <h3 class="text-lg font-bold text-novastacks-text mb-3">What is an agentic workflow in marketing?</h3>
-          <p class="text-gray-600 leading-relaxed">
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-6">
+          <h3 class="text-lg font-bold text-slate-900 mb-3 font-display">What is an agentic workflow in marketing?</h3>
+          <p class="text-slate-600 leading-relaxed">
             An agentic workflow is a system of interconnected AI agents that collaborate to perform complex marketing tasks autonomously. Unlike single-purpose AI tools, agentic workflows can plan, execute, and adapt strategies across multiple steps—from research and content creation to distribution and analysis—with minimal human intervention for routine tasks.
           </p>
         </div>
 
         <!-- FAQ 4 -->
-        <div class="bg-gray-50 rounded-xl p-6">
-          <h3 class="text-lg font-bold text-novastacks-text mb-3">How is Novastacks different from using ChatGPT or hiring an AI agency?</h3>
-          <p class="text-gray-600 leading-relaxed">
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-6">
+          <h3 class="text-lg font-bold text-slate-900 mb-3 font-display">How is Novastacks different from using ChatGPT or hiring an AI agency?</h3>
+          <p class="text-slate-600 leading-relaxed">
             Most "AI agencies" bolted AI onto their existing pitch deck. We're different — we're senior marketing operators who learned the actual AI infrastructure deeply (Claude Code, Gemini, Perplexity, Manus) and now deploy enterprise-grade solutions. While ChatGPT requires manual prompting for each task, we run coordinated agentic workflows that execute complete marketing strategies end-to-end. And while typical AI agencies have junior staff using basic tools, we have operators with decades at Expedia, Tencent, and Klook running sophisticated systems.
           </p>
         </div>
 
         <!-- FAQ 5 -->
-        <div class="bg-gray-50 rounded-xl p-6">
-          <h3 class="text-lg font-bold text-novastacks-text mb-3">What types of businesses benefit from AI marketing?</h3>
-          <p class="text-gray-600 leading-relaxed">
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-6">
+          <h3 class="text-lg font-bold text-slate-900 mb-3 font-display">What types of businesses benefit from AI marketing?</h3>
+          <p class="text-slate-600 leading-relaxed">
             AI marketing implementation is particularly valuable for growth-stage companies, B2B SaaS, e-commerce brands, and businesses looking to scale their marketing without proportionally scaling their team. Companies with limited marketing resources but ambitious growth targets see the greatest impact.
           </p>
         </div>
 
         <!-- FAQ 6 -->
-        <div class="bg-gray-50 rounded-xl p-6">
-          <h3 class="text-lg font-bold text-novastacks-text mb-3">Is Novastacks based in Singapore?</h3>
-          <p class="text-gray-600 leading-relaxed">
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-6">
+          <h3 class="text-lg font-bold text-slate-900 mb-3 font-display">Is Novastacks based in Singapore?</h3>
+          <p class="text-slate-600 leading-relaxed">
             Yes, Novastacks is a Singapore-based AI marketing studio. We work with clients across Southeast Asia and globally, providing AI-powered marketing services including Answer Engine Optimization (AEO), content strategy, and fractional CMO services. Our local presence allows us to understand the unique dynamics of the APAC market.
           </p>
         </div>
@@ -584,18 +582,19 @@
     </div>
   </section>
 
-  <!-- Final CTA Section -->
-  <section class="bg-gradient-to-r from-novastacks to-novastacks-dark text-white py-16 lg:py-20">
+  <!-- Final CTA Section (DARK) -->
+  <section class="bg-slate-950 border-t border-white/5 text-white py-16 lg:py-20">
     <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-4">Ready to Work with Operators, Not Influencers?</h2>
-      <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+      <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// GET_STARTED</p>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4 font-display">Ready to Work with Operators, Not Influencers?</h2>
+      <p class="text-lg text-slate-400 mb-8 max-w-2xl mx-auto">
         Let's discuss how senior operators + AI infrastructure can move your metrics.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-white text-novastacks px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 inline-block">
+        <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-8 py-4 rounded font-semibold text-lg hover:bg-novastacks/80 transition-colors inline-block">
           Book a Strategy Call
         </a>
-        <a href="/aeo" class="bg-transparent text-white border-2 border-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-novastacks transition-all duration-300 inline-block">
+        <a href="/aeo" class="bg-white/5 border border-white/10 text-white px-8 py-4 rounded font-semibold text-lg hover:bg-white/10 transition-colors inline-block">
           Explore Our Services
         </a>
       </div>
@@ -603,7 +602,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-slate-900 text-white py-12">
+  <footer class="bg-slate-900 text-white py-16">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
 
@@ -684,12 +683,6 @@
       </div>
     </div>
   </footer>
-
-
-
-
-
-
 
   <!-- JavaScript -->
   <script src="assets/js/mobile-menu.js"></script>

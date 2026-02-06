@@ -109,12 +109,21 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS (compiled) -->
   <link rel="stylesheet" href="assets/css/styles.css">
 
   <style>
+    .font-display {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .font-sans {
+      font-family: 'Inter', sans-serif;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
     .faq-content {
       max-height: 0;
       overflow: hidden;
@@ -131,12 +140,12 @@
     }
   </style>
 </head>
-<body class="bg-white text-novastacks-text font-serif">
+<body class="bg-slate-950 text-white font-sans">
   <!-- Header -->
-  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <header class="bg-slate-950 border-b border-white/10 sticky top-0 z-50">
     <div class="container mx-auto px-6">
       <nav class="flex justify-between items-center py-4">
-        <a href="/" class="flex items-center gap-3 hover:scale-105 transition-transform">
+        <a href="/" class="flex items-center gap-3">
           <div
             class="w-60 h-12 md:w-64 md:h-14 bg-contain bg-no-repeat bg-center"
             style="background-image: url('lovable-uploads/315157be-4582-4858-b0d2-0598ddbed87c.png')"
@@ -145,20 +154,17 @@
 
         <!-- Desktop Navigation -->
         <ul class="hidden md:flex gap-8">
-          <li><a href="/aeo" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
-          <li><a href="/methodology" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Methodology</a></li>
-          <li><a href="/generator" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">About</a></li>
+          <li><a href="/aeo" class="text-slate-400 hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
+          <li><a href="/methodology" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Methodology</a></li>
+          <li><a href="/generator" class="text-slate-400 hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="text-slate-400 hover:text-novastacks font-medium transition-colors">About</a></li>
         </ul>
 
-        <!-- Desktop CTA Buttons -->
-        <div class="hidden md:flex gap-3">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transform hover:-translate-y-1 transition-all duration-300">
-            Get Started
-          </a>
-          <a href="/generator" class="bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300">
-            Learn More
+        <!-- Desktop CTA Button -->
+        <div class="hidden md:flex">
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300">
+            Book a Call
           </a>
         </div>
 
@@ -169,66 +175,58 @@
           aria-label="Toggle mobile menu"
           aria-expanded="false"
         >
-          <span id="menu-bar-1" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-2" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-3" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
+          <span id="menu-bar-1" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-2" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-3" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
         </button>
       </nav>
 
       <!-- Mobile Navigation Menu -->
-      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 py-4">
+      <div id="mobile-menu" class="hidden md:hidden bg-slate-950 border-t border-white/10 py-4">
         <ul class="flex flex-col gap-4">
-          <li><a href="/aeo" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
-          <li><a href="/methodology" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
-          <li><a href="/generator" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">About</a></li>
+          <li><a href="/aeo" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
+          <li><a href="/methodology" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
+          <li><a href="/generator" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">About</a></li>
         </ul>
         <div class="flex flex-col gap-3 mt-4">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transition-all duration-300 text-center">
-            Get Started
-          </a>
-          <a href="/generator" class="bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300 text-center">
-            Learn More
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300 text-center">
+            Book a Call
           </a>
         </div>
       </div>
     </div>
   </header>
 
-
-
-
-
-
-
-  <!-- Breadcrumb -->
-  <div class="bg-gray-50 border-b border-gray-200">
+  <!-- Breadcrumb (Dark) -->
+  <div class="bg-slate-950 border-b border-white/10">
     <div class="container mx-auto px-6 py-3">
-      <nav class="text-sm text-gray-600">
+      <nav class="text-sm text-slate-400">
         <a href="/" class="hover:text-novastacks">Home</a>
         <span class="mx-2">/</span>
         <a href="/aeo/" class="hover:text-novastacks">SEO</a>
         <span class="mx-2">/</span>
-        <span class="text-novastacks-text">SEO Agency Singapore</span>
+        <span class="text-white">SEO Agency Singapore</span>
       </nav>
     </div>
   </div>
 
-  <!-- Article Header -->
+  <!-- Article Header (Light) -->
   <article>
-    <header class="py-12 lg:py-16 bg-gradient-to-b from-gray-50 to-white">
+    <header class="py-12 lg:py-16 bg-slate-100">
       <div class="container mx-auto px-6">
         <div class="max-w-3xl">
+          <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// HERO</p>
           <div class="flex items-center gap-3 mb-4">
-            <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded-full">SEO</span>
-            <span class="text-sm text-gray-500">11 min read</span>
-            <span class="text-sm text-gray-500">January 24, 2026</span>
+            <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded">SEO</span>
+            <span class="text-sm text-slate-500">11 min read</span>
+            <span class="text-sm text-slate-500">January 24, 2026</span>
           </div>
-          <h1 class="text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 font-display">
+          <h1 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 font-display">
             SEO Agency Singapore: AI-Powered Search Optimization for Growth
           </h1>
-          <p class="text-xl text-gray-600 mb-6">
+          <p class="text-xl text-slate-600 mb-6">
             We're a Singapore-based SEO agency that combines AI-powered execution with 20+ years of experience scaling brands across Asia-Pacific. Our approach is different: we focus on business outcomes - leads, sales, revenue - not vanity metrics like keyword rankings.
           </p>
           <div class="flex items-center gap-4">
@@ -236,547 +234,560 @@
               <span class="text-novastacks font-bold">TC</span>
             </div>
             <div>
-              <p class="font-medium text-novastacks-text">Tina Chu</p>
-              <p class="text-sm text-gray-500">Founder & Growth Strategist</p>
+              <p class="font-medium text-slate-900">Tina Chu</p>
+              <p class="text-sm text-slate-500">Founder & Growth Strategist</p>
             </div>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Article Content -->
-    <div class="container mx-auto px-6 py-12">
-      <div class="max-w-3xl mx-auto">
+    <!-- Article Content (Dark) -->
+    <div class="bg-slate-950 py-12">
+      <div class="container mx-auto px-6">
+        <div class="max-w-3xl mx-auto">
 
-        <!-- Intro Section -->
-        <section class="mb-12">
-          <p class="text-gray-700 mb-4">
-            The SEO landscape has changed fundamentally. Google now shows AI Overviews for 62% of searches. Users increasingly ask ChatGPT and Perplexity instead of browsing search results. A Singapore SEO agency that only optimizes for traditional rankings is solving yesterday's problem.
-          </p>
-          <p class="text-gray-700 mb-4">
-            We've built Novastacks to solve today's problem - and tomorrow's. We optimize for both traditional search AND AI-powered discovery through our proprietary <a href="/aeo/" class="text-novastacks hover:underline">Answer Engine Optimization (AEO)</a> methodology. Our clients don't just rank; they get cited by AI assistants as authoritative sources.
-          </p>
-          <p class="text-gray-700">
-            The result: more visibility, more traffic, more leads - from both human searchers and AI systems.
-          </p>
-        </section>
-
-        <!-- Why SEO Matters in Singapore -->
-        <section class="mb-12">
-          <h2 class="text-2xl font-bold text-novastacks-text mb-4 font-display">Why SEO Still Matters in Singapore's Digital Landscape</h2>
-          <p class="text-gray-700 mb-4">
-            Let's address the elephant in the room: Is SEO still relevant in Singapore? Absolutely - but it's evolving.
-          </p>
-
-          <h3 class="text-xl font-semibold text-novastacks-text mb-3">Singapore Search Behavior</h3>
-          <p class="text-gray-700 mb-4">
-            Singapore has one of the highest internet penetration rates in the world (92%+). Here's what the data shows:
-          </p>
-          <ul class="space-y-2 mb-6">
-            <li class="flex items-start gap-2">
-              <span class="text-novastacks font-bold">88% of Singapore consumers</span>
-              <span class="text-gray-700">research online before making purchases</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-novastacks font-bold">Google processes 3.5+ million searches daily</span>
-              <span class="text-gray-700">from Singapore</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-novastacks font-bold">Mobile searches</span>
-              <span class="text-gray-700">account for 68% of Singapore search traffic</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-novastacks font-bold">Local searches</span>
-              <span class="text-gray-700">("near me" queries) have grown 150%+ in five years</span>
-            </li>
-          </ul>
-          <p class="text-gray-700 mb-6">
-            SEO isn't dying in Singapore - it's fragmenting. Users search on Google, ask ChatGPT, browse YouTube, search within apps. A comprehensive SEO strategy now means optimizing for multiple discovery channels.
-          </p>
-
-          <h3 class="text-xl font-semibold text-novastacks-text mb-3">The Competitive Landscape</h3>
-          <p class="text-gray-700 mb-4">
-            Singapore's digital market is sophisticated and competitive:
-          </p>
-          <ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
-            <li>Major global brands compete with local players</li>
-            <li>Cost-per-click for competitive keywords is among the highest in APAC</li>
-            <li>Content quality expectations are high</li>
-            <li>Technical SEO requirements are stringent</li>
-          </ul>
-          <p class="text-gray-700">
-            This creates opportunity for businesses willing to invest in proper SEO. Many companies underinvest, creating gaps that strategic optimization can exploit.
-          </p>
-        </section>
-
-        <!-- Our SEO Services -->
-        <section class="mb-12">
-          <h2 class="text-2xl font-bold text-novastacks-text mb-6 font-display">Our SEO Services for Singapore Businesses</h2>
-          <p class="text-gray-700 mb-6">
-            We offer comprehensive SEO services tailored to Singapore's market:
-          </p>
-
-          <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
-            <h3 class="font-bold text-novastacks-text mb-3">Technical SEO Audits and Fixes</h3>
-            <p class="text-gray-700 mb-3">Your website's technical foundation determines SEO success:</p>
-            <ul class="text-sm text-gray-700 space-y-1">
-              <li>- Site architecture analysis - crawlability, indexation, internal linking</li>
-              <li>- Page speed optimization - Core Web Vitals, mobile performance</li>
-              <li>- Mobile optimization - mobile-first indexing compliance</li>
-              <li>- Schema markup implementation - structured data for rich results</li>
-              <li>- Security and accessibility - HTTPS, site security</li>
-            </ul>
-          </div>
-
-          <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
-            <h3 class="font-bold text-novastacks-text mb-3">On-Page Optimization</h3>
-            <p class="text-gray-700 mb-3">Content optimization for both users and search engines:</p>
-            <ul class="text-sm text-gray-700 space-y-1">
-              <li>- Keyword research and mapping - Singapore-specific search behavior analysis</li>
-              <li>- Content optimization - title tags, meta descriptions, header structure</li>
-              <li>- Semantic optimization - topic coverage, entity relationships</li>
-              <li>- User experience optimization - engagement signals, conversion focus</li>
-              <li>- Internal linking optimization - strategic link architecture</li>
-            </ul>
-          </div>
-
-          <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
-            <h3 class="font-bold text-novastacks-text mb-3">Content Strategy and Production</h3>
-            <p class="text-gray-700 mb-3">Content is the engine of organic growth:</p>
-            <ul class="text-sm text-gray-700 space-y-1">
-              <li>- Content gap analysis - what topics you should cover</li>
-              <li>- Content calendar development - strategic publishing schedule</li>
-              <li>- SEO content production - blog posts, landing pages, guides</li>
-              <li>- Content optimization - updating existing content for better performance</li>
-              <li>- AI-augmented quality at scale - we produce in days what others take weeks</li>
-            </ul>
-          </div>
-
-          <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
-            <h3 class="font-bold text-novastacks-text mb-3">Link Building and Digital PR</h3>
-            <p class="text-gray-700 mb-3">Authority signals remain crucial for rankings:</p>
-            <ul class="text-sm text-gray-700 space-y-1">
-              <li>- Backlink profile analysis - current authority assessment</li>
-              <li>- Link building strategy - ethical, sustainable acquisition</li>
-              <li>- Digital PR - thought leadership and media coverage</li>
-              <li>- Content partnership - strategic collaborations for link acquisition</li>
-            </ul>
-          </div>
-
-          <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
-            <h3 class="font-bold text-novastacks-text mb-3">Local SEO for Singapore Businesses</h3>
-            <p class="text-gray-700 mb-3">For businesses serving Singapore customers:</p>
-            <ul class="text-sm text-gray-700 space-y-1">
-              <li>- Google Business Profile optimization - complete, optimized listings</li>
-              <li>- Local citation building - consistent NAP across directories</li>
-              <li>- Review management - strategy for acquiring and responding to reviews</li>
-              <li>- Local content optimization - Singapore-specific landing pages</li>
-              <li>- Map pack optimization - visibility in local search results</li>
-            </ul>
-          </div>
-
-          <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
-            <h3 class="font-bold text-novastacks-text mb-3">E-commerce SEO</h3>
-            <p class="text-gray-700 mb-3">For online retailers in Singapore:</p>
-            <ul class="text-sm text-gray-700 space-y-1">
-              <li>- Product page optimization - individual product visibility</li>
-              <li>- Category page optimization - collection and category rankings</li>
-              <li>- Product schema implementation - rich results for products</li>
-              <li>- Technical e-commerce SEO - faceted navigation, canonicalization</li>
-              <li>- Competitive positioning - standing out in product searches</li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- Beyond Traditional SEO: AEO -->
-        <section class="mb-12">
-          <h2 class="text-2xl font-bold text-novastacks-text mb-4 font-display">Beyond Traditional SEO: Answer Engine Optimization (AEO)</h2>
-          <p class="text-gray-700 mb-4">
-            Here's what most Singapore SEO agencies miss: the rise of AI-powered search.
-          </p>
-
-          <h3 class="text-xl font-semibold text-novastacks-text mb-3">Why AEO Matters Now</h3>
-          <p class="text-gray-700 mb-4">
-            According to BrightEdge, 62% of Google searches now trigger AI Overviews. Users are increasingly asking ChatGPT and Perplexity for recommendations instead of browsing search results.
-          </p>
-          <div class="bg-novastacks/5 p-4 rounded-lg border-l-4 border-novastacks mb-6">
-            <p class="text-gray-700 font-medium">
-              If AI doesn't cite you, you're invisible - even if you rank #1 on Google.
+          <!-- Intro Section -->
+          <section class="mb-12">
+            <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// INTRODUCTION</p>
+            <p class="text-slate-300 mb-4">
+              The SEO landscape has changed fundamentally. Google now shows AI Overviews for 62% of searches. Users increasingly ask ChatGPT and Perplexity instead of browsing search results. A Singapore SEO agency that only optimizes for traditional rankings is solving yesterday's problem.
             </p>
-          </div>
-
-          <h3 class="text-xl font-semibold text-novastacks-text mb-3">How AI Search Is Changing Singapore</h3>
-          <ul class="list-disc list-inside text-gray-700 mb-6 space-y-1">
-            <li>High ChatGPT and Perplexity usage among professionals</li>
-            <li>Google AI Overview rollout covering Singapore searches</li>
-            <li>AI-powered search integrated into workplace tools</li>
-            <li>Growing preference for direct answers over link browsing</li>
-          </ul>
-          <p class="text-gray-700 mb-6">
-            Businesses that optimize for AI visibility now will have a structural advantage as this behavior grows.
-          </p>
-
-          <h3 class="text-xl font-semibold text-novastacks-text mb-3">Our Proprietary AEO Methodology</h3>
-          <p class="text-gray-700 mb-4">
-            We've developed a comprehensive <a href="/aeo/" class="text-novastacks hover:underline">AEO framework</a> that includes:
-          </p>
-          <ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
-            <li>FAQ schema implementation - structured data for AI extraction</li>
-            <li>Q&A content structure - direct answers in the first 100 words</li>
-            <li>Expert attribution - author markup with credentials</li>
-            <li>Citeable statistics - data points AI systems can reference</li>
-            <li>Citation tracking - monitoring mentions across AI platforms</li>
-          </ul>
-          <p class="text-gray-700">
-            When we do SEO for Singapore clients, we include AEO fundamentals. You get optimized for both traditional search AND AI-powered discovery. Learn more about <a href="/aeo/what-is-aeo/" class="text-novastacks hover:underline">what AEO is</a> and how it complements traditional SEO.
-          </p>
-        </section>
-
-        <!-- The Novastacks Approach -->
-        <section class="mb-12">
-          <h2 class="text-2xl font-bold text-novastacks-text mb-4 font-display">The Novastacks Approach to SEO</h2>
-          <p class="text-gray-700 mb-6">We do SEO differently than traditional agencies:</p>
-
-          <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 mb-6">
-            <h3 class="font-bold text-novastacks-text mb-4">Our Core Principles:</h3>
-            <div class="grid md:grid-cols-2 gap-4">
-              <div>
-                <p class="font-medium text-novastacks-text mb-2">1. Data-Driven Methodology</p>
-                <p class="text-sm text-gray-600">Comprehensive keyword research, competitive analysis, user behavior analytics. We don't guess - we analyze, implement, measure, and optimize.</p>
-              </div>
-              <div>
-                <p class="font-medium text-novastacks-text mb-2">2. AI-Augmented Execution</p>
-                <p class="text-sm text-gray-600">Audit agents, content agents, and implementation agents deliver in weeks what traditional agencies take months. Results 30-50% faster.</p>
-              </div>
-              <div>
-                <p class="font-medium text-novastacks-text mb-2">3. Transparent Reporting</p>
-                <p class="text-sm text-gray-600">Monthly reporting on all key metrics, clear attribution, honest assessment. No jargon, no hiding behind complexity.</p>
-              </div>
-              <div>
-                <p class="font-medium text-novastacks-text mb-2">4. Revenue Focus</p>
-                <p class="text-sm text-gray-600">Rankings are a means to an end. We optimize for leads, revenue, and customer acquisition cost - not vanity metrics.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Industries We Serve -->
-        <section class="mb-12">
-          <h2 class="text-2xl font-bold text-novastacks-text mb-6 font-display">Industries We Serve in Singapore</h2>
-          <p class="text-gray-700 mb-6">We bring deepest expertise in these sectors:</p>
-
-          <div class="overflow-x-auto">
-            <table class="w-full border-collapse text-sm mb-6">
-              <thead>
-                <tr class="bg-gray-100">
-                  <th class="text-left p-3 font-bold">Industry</th>
-                  <th class="text-left p-3 font-bold">Our Expertise</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="border-b border-gray-200">
-                  <td class="p-3 font-medium">SaaS and Technology</td>
-                  <td class="p-3 text-gray-600">Long B2B sales cycles, technical audiences, international SEO for APAC</td>
-                </tr>
-                <tr class="border-b border-gray-200 bg-gray-50">
-                  <td class="p-3 font-medium">Professional Services</td>
-                  <td class="p-3 text-gray-600">Thought leadership, local SEO, reputation management, regulatory compliance</td>
-                </tr>
-                <tr class="border-b border-gray-200">
-                  <td class="p-3 font-medium">E-commerce</td>
-                  <td class="p-3 text-gray-600">Product optimization, technical e-commerce SEO, marketplace integration</td>
-                </tr>
-                <tr class="border-b border-gray-200 bg-gray-50">
-                  <td class="p-3 font-medium">B2B Companies</td>
-                  <td class="p-3 text-gray-600">Long-tail keywords, content marketing, lead generation, ABM integration</td>
-                </tr>
-                <tr class="border-b border-gray-200">
-                  <td class="p-3 font-medium">Startups and Scale-ups</td>
-                  <td class="p-3 text-gray-600">Foundation building, quick wins, scalable SEO processes, growth marketing</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <!-- Case Study -->
-        <section class="mb-12">
-          <h2 class="text-2xl font-bold text-novastacks-text mb-6 font-display">SEO Results for Singapore Clients</h2>
-          <p class="text-gray-700 mb-6">We measure success by business impact.</p>
-
-          <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 mb-6">
-            <h3 class="font-bold text-novastacks-text mb-4">Case Study: Singapore B2B SaaS Company</h3>
-            <p class="text-gray-700 mb-4">
-              <strong>Situation:</strong> Series A SaaS company targeting Southeast Asia. Strong product but minimal organic visibility.
+            <p class="text-slate-300 mb-4">
+              We've built Novastacks to solve today's problem - and tomorrow's. We optimize for both traditional search AND AI-powered discovery through our proprietary <a href="/aeo/" class="text-novastacks hover:underline">Answer Engine Optimization (AEO)</a> methodology. Our clients don't just rank; they get cited by AI assistants as authoritative sources.
             </p>
-            <p class="text-gray-700 mb-4">
-              <strong>What We Did:</strong> Comprehensive technical SEO audit and fixes, content strategy focused on buyer journey, AEO implementation for AI visibility, local SEO for Singapore market, and backlink building through thought leadership.
+            <p class="text-slate-300">
+              The result: more visibility, more traffic, more leads - from both human searchers and AI systems.
             </p>
-            <p class="text-gray-700 font-bold mb-2">Results (6 months):</p>
-            <ul class="text-gray-700 space-y-1">
-              <li>+312% organic traffic from non-branded queries</li>
-              <li>+43 AI citations per month (from zero)</li>
-              <li>First page rankings for 23 target keywords</li>
-              <li>2.3x increase in organic leads</li>
-              <li>34% reduction in cost per acquisition</li>
+          </section>
+
+          <!-- Why SEO Matters in Singapore (Light) -->
+          <section class="mb-12 bg-slate-100 -mx-6 px-6 py-12 md:-mx-12 md:px-12 rounded-lg">
+            <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// WHY_SEO_MATTERS</p>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 font-display">Why SEO Still Matters in Singapore's Digital Landscape</h2>
+            <p class="text-slate-700 mb-4">
+              Let's address the elephant in the room: Is SEO still relevant in Singapore? Absolutely - but it's evolving.
+            </p>
+
+            <h3 class="text-xl font-semibold text-slate-900 mb-3">Singapore Search Behavior</h3>
+            <p class="text-slate-700 mb-4">
+              Singapore has one of the highest internet penetration rates in the world (92%+). Here's what the data shows:
+            </p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-start gap-2">
+                <span class="text-novastacks font-bold">88% of Singapore consumers</span>
+                <span class="text-slate-700">research online before making purchases</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-novastacks font-bold">Google processes 3.5+ million searches daily</span>
+                <span class="text-slate-700">from Singapore</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-novastacks font-bold">Mobile searches</span>
+                <span class="text-slate-700">account for 68% of Singapore search traffic</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-novastacks font-bold">Local searches</span>
+                <span class="text-slate-700">("near me" queries) have grown 150%+ in five years</span>
+              </li>
             </ul>
-          </div>
-
-          <div class="overflow-x-auto mb-6">
-            <table class="w-full border-collapse text-sm">
-              <thead>
-                <tr class="bg-gray-100">
-                  <th class="text-left p-3 font-bold">Metric</th>
-                  <th class="text-left p-3 font-bold">What We Measure</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="border-b border-gray-200">
-                  <td class="p-3 font-medium">Organic Traffic</td>
-                  <td class="p-3 text-gray-600">Visitors from search engines (branded and non-branded)</td>
-                </tr>
-                <tr class="border-b border-gray-200 bg-gray-50">
-                  <td class="p-3 font-medium">Keyword Rankings</td>
-                  <td class="p-3 text-gray-600">Positions for target keywords (weighted by search volume)</td>
-                </tr>
-                <tr class="border-b border-gray-200">
-                  <td class="p-3 font-medium">AI Citations</td>
-                  <td class="p-3 text-gray-600">Mentions in ChatGPT, Perplexity, Google AI Overview</td>
-                </tr>
-                <tr class="border-b border-gray-200 bg-gray-50">
-                  <td class="p-3 font-medium">Organic Leads</td>
-                  <td class="p-3 text-gray-600">Form submissions, inquiries attributed to organic</td>
-                </tr>
-                <tr class="border-b border-gray-200">
-                  <td class="p-3 font-medium">Organic Revenue</td>
-                  <td class="p-3 text-gray-600">Sales connected to organic traffic</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <h3 class="text-xl font-semibold text-novastacks-text mb-3">Timeline Expectations</h3>
-          <div class="overflow-x-auto">
-            <table class="w-full border-collapse text-sm">
-              <thead>
-                <tr class="bg-gray-100">
-                  <th class="text-left p-3 font-bold">Timeframe</th>
-                  <th class="text-left p-3 font-bold">Typical Results</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="border-b border-gray-200">
-                  <td class="p-3 font-medium">Month 1-2</td>
-                  <td class="p-3 text-gray-600">Technical fixes complete, content optimization begun</td>
-                </tr>
-                <tr class="border-b border-gray-200 bg-gray-50">
-                  <td class="p-3 font-medium">Month 3-4</td>
-                  <td class="p-3 text-gray-600">Initial ranking improvements, traffic growth starting</td>
-                </tr>
-                <tr class="border-b border-gray-200">
-                  <td class="p-3 font-medium">Month 5-6</td>
-                  <td class="p-3 text-gray-600">Significant traffic gains, leads increasing</td>
-                </tr>
-                <tr class="border-b border-gray-200 bg-gray-50">
-                  <td class="p-3 font-medium">Month 7-12</td>
-                  <td class="p-3 text-gray-600">Compounding results, competitive positions secured</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="text-sm text-gray-500 mt-4">Our AI-augmented execution typically delivers results 30-50% faster than traditional agencies.</p>
-        </section>
-
-        <!-- SEO Pricing -->
-        <section class="mb-12">
-          <h2 class="text-2xl font-bold text-novastacks-text mb-6 font-display">SEO Pricing for Singapore Businesses</h2>
-          <p class="text-gray-700 mb-6">We offer transparent, flexible pricing:</p>
-
-          <div class="overflow-x-auto mb-6">
-            <table class="w-full border-collapse text-sm">
-              <thead>
-                <tr class="bg-gray-100">
-                  <th class="text-left p-3 font-bold">Model</th>
-                  <th class="text-left p-3 font-bold">Best For</th>
-                  <th class="text-left p-3 font-bold">Monthly Investment</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="border-b border-gray-200">
-                  <td class="p-3 font-medium">SEO Retainer</td>
-                  <td class="p-3 text-gray-600">Ongoing optimization and growth</td>
-                  <td class="p-3 text-novastacks font-bold">SGD $4,000-$12,000</td>
-                </tr>
-                <tr class="border-b border-gray-200 bg-gray-50">
-                  <td class="p-3 font-medium">SEO Audit + Roadmap</td>
-                  <td class="p-3 text-gray-600">One-time assessment with implementation plan</td>
-                  <td class="p-3 text-novastacks font-bold">SGD $3,000-$6,000</td>
-                </tr>
-                <tr class="border-b border-gray-200">
-                  <td class="p-3 font-medium">SEO + AEO Package</td>
-                  <td class="p-3 text-gray-600">Complete search visibility (traditional + AI)</td>
-                  <td class="p-3 text-novastacks font-bold">SGD $6,000-$15,000</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <h3 class="text-xl font-semibold text-novastacks-text mb-3">What Affects Pricing</h3>
-          <ul class="list-disc list-inside text-gray-700 mb-6 space-y-1">
-            <li><strong>Website size</strong> - More pages require more optimization work</li>
-            <li><strong>Competition</strong> - More competitive industries require more investment</li>
-            <li><strong>Scope</strong> - SEO-only vs. SEO + content production</li>
-            <li><strong>Current state</strong> - Sites with more issues require more initial work</li>
-            <li><strong>Goals</strong> - Aggressive targets require more resources</li>
-          </ul>
-
-          <div class="bg-novastacks/5 p-4 rounded-lg border-l-4 border-novastacks">
-            <p class="text-sm text-gray-700">
-              <strong>ROI Example:</strong> For a SGD $8,000/month engagement, if organic traffic generates 50 qualified leads/month at SGD $200 value each = SGD $10,000/month value. 6-month investment: SGD $48,000; potential return: SGD $60,000+ (leads only). Most clients see positive ROI within 6 months.
+            <p class="text-slate-700 mb-6">
+              SEO isn't dying in Singapore - it's fragmenting. Users search on Google, ask ChatGPT, browse YouTube, search within apps. A comprehensive SEO strategy now means optimizing for multiple discovery channels.
             </p>
-          </div>
-        </section>
 
-        <!-- FAQ Section -->
-        <section class="mb-12">
-          <h2 class="text-2xl font-bold text-novastacks-text mb-6 font-display">Frequently Asked Questions</h2>
-          <div class="space-y-4">
-            <!-- FAQ Item 1 -->
-            <div class="border border-gray-200 rounded-lg">
-              <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-novastacks-text hover:bg-gray-50" onclick="toggleFaq(this)">
-                <span>How long does SEO take to show results in Singapore?</span>
-                <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="faq-content px-4 pb-4">
-                <p class="text-gray-700">SEO typically takes 3-6 months to show meaningful results. Quick wins (technical fixes, content optimization) can appear in 1-2 months. Competitive keywords may take 6-12 months to rank. Our AI-augmented execution typically delivers results 30-50% faster than traditional agencies. We set realistic expectations during discovery.</p>
-              </div>
+            <h3 class="text-xl font-semibold text-slate-900 mb-3">The Competitive Landscape</h3>
+            <p class="text-slate-700 mb-4">
+              Singapore's digital market is sophisticated and competitive:
+            </p>
+            <ul class="list-disc list-inside text-slate-700 mb-4 space-y-1">
+              <li>Major global brands compete with local players</li>
+              <li>Cost-per-click for competitive keywords is among the highest in APAC</li>
+              <li>Content quality expectations are high</li>
+              <li>Technical SEO requirements are stringent</li>
+            </ul>
+            <p class="text-slate-700">
+              This creates opportunity for businesses willing to invest in proper SEO. Many companies underinvest, creating gaps that strategic optimization can exploit.
+            </p>
+          </section>
+
+          <!-- Our SEO Services (Dark) -->
+          <section class="mb-12">
+            <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// SERVICES</p>
+            <h2 class="text-2xl font-bold text-white mb-6 font-display">Our SEO Services for Singapore Businesses</h2>
+            <p class="text-slate-300 mb-6">
+              We offer comprehensive SEO services tailored to Singapore's market:
+            </p>
+
+            <div class="bg-slate-900 border border-white/10 rounded-lg p-6 mb-6">
+              <h3 class="font-bold text-white mb-3">Technical SEO Audits and Fixes</h3>
+              <p class="text-slate-300 mb-3">Your website's technical foundation determines SEO success:</p>
+              <ul class="text-sm text-slate-400 space-y-1">
+                <li>- Site architecture analysis - crawlability, indexation, internal linking</li>
+                <li>- Page speed optimization - Core Web Vitals, mobile performance</li>
+                <li>- Mobile optimization - mobile-first indexing compliance</li>
+                <li>- Schema markup implementation - structured data for rich results</li>
+                <li>- Security and accessibility - HTTPS, site security</li>
+              </ul>
             </div>
 
-            <!-- FAQ Item 2 -->
-            <div class="border border-gray-200 rounded-lg">
-              <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-novastacks-text hover:bg-gray-50" onclick="toggleFaq(this)">
-                <span>Do you work with Singapore-based businesses only?</span>
-                <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="faq-content px-4 pb-4">
-                <p class="text-gray-700">We're based in Singapore and have deep expertise in the Singapore market, but we work with companies across APAC. Our founder's experience at Tencent and Expedia spans Asia-Pacific and North America. For international SEO (targeting multiple countries), we bring regional understanding that pure-play agencies lack.</p>
-              </div>
+            <div class="bg-slate-900 border border-white/10 rounded-lg p-6 mb-6">
+              <h3 class="font-bold text-white mb-3">On-Page Optimization</h3>
+              <p class="text-slate-300 mb-3">Content optimization for both users and search engines:</p>
+              <ul class="text-sm text-slate-400 space-y-1">
+                <li>- Keyword research and mapping - Singapore-specific search behavior analysis</li>
+                <li>- Content optimization - title tags, meta descriptions, header structure</li>
+                <li>- Semantic optimization - topic coverage, entity relationships</li>
+                <li>- User experience optimization - engagement signals, conversion focus</li>
+                <li>- Internal linking optimization - strategic link architecture</li>
+              </ul>
             </div>
 
-            <!-- FAQ Item 3 -->
-            <div class="border border-gray-200 rounded-lg">
-              <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-novastacks-text hover:bg-gray-50" onclick="toggleFaq(this)">
-                <span>What's the difference between SEO and AEO?</span>
-                <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="faq-content px-4 pb-4">
-                <p class="text-gray-700">SEO optimizes for traditional search rankings - appearing in Google's organic results. AEO optimizes for AI citations - being mentioned by ChatGPT, Perplexity, and Google AI Overview. They're complementary: SEO drives clicks from search results; AEO drives traffic from AI recommendations. We recommend both for comprehensive search visibility.</p>
-              </div>
+            <div class="bg-slate-900 border border-white/10 rounded-lg p-6 mb-6">
+              <h3 class="font-bold text-white mb-3">Content Strategy and Production</h3>
+              <p class="text-slate-300 mb-3">Content is the engine of organic growth:</p>
+              <ul class="text-sm text-slate-400 space-y-1">
+                <li>- Content gap analysis - what topics you should cover</li>
+                <li>- Content calendar development - strategic publishing schedule</li>
+                <li>- SEO content production - blog posts, landing pages, guides</li>
+                <li>- Content optimization - updating existing content for better performance</li>
+                <li>- AI-augmented quality at scale - we produce in days what others take weeks</li>
+              </ul>
             </div>
 
-            <!-- FAQ Item 4 -->
-            <div class="border border-gray-200 rounded-lg">
-              <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-novastacks-text hover:bg-gray-50" onclick="toggleFaq(this)">
-                <span>How do you measure SEO success?</span>
-                <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="faq-content px-4 pb-4">
-                <p class="text-gray-700">We measure organic traffic, keyword rankings, AI citations, leads attributed to organic, and revenue from organic channels. Rankings alone don't matter if they don't drive business results. We establish baseline metrics and report monthly on progress. Every metric ties back to business impact.</p>
-              </div>
+            <div class="bg-slate-900 border border-white/10 rounded-lg p-6 mb-6">
+              <h3 class="font-bold text-white mb-3">Link Building and Digital PR</h3>
+              <p class="text-slate-300 mb-3">Authority signals remain crucial for rankings:</p>
+              <ul class="text-sm text-slate-400 space-y-1">
+                <li>- Backlink profile analysis - current authority assessment</li>
+                <li>- Link building strategy - ethical, sustainable acquisition</li>
+                <li>- Digital PR - thought leadership and media coverage</li>
+                <li>- Content partnership - strategic collaborations for link acquisition</li>
+              </ul>
             </div>
 
-            <!-- FAQ Item 5 -->
-            <div class="border border-gray-200 rounded-lg">
-              <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-novastacks-text hover:bg-gray-50" onclick="toggleFaq(this)">
-                <span>Can you help with Google Business Profile optimization?</span>
-                <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="faq-content px-4 pb-4">
-                <p class="text-gray-700">Yes. Local SEO including Google Business Profile optimization is part of our offering. For businesses with physical locations or service areas, we optimize GBP, build local citations, manage reviews, and create location-specific content. Local SEO is especially important for Singapore businesses serving local customers.</p>
-              </div>
+            <div class="bg-slate-900 border border-white/10 rounded-lg p-6 mb-6">
+              <h3 class="font-bold text-white mb-3">Local SEO for Singapore Businesses</h3>
+              <p class="text-slate-300 mb-3">For businesses serving Singapore customers:</p>
+              <ul class="text-sm text-slate-400 space-y-1">
+                <li>- Google Business Profile optimization - complete, optimized listings</li>
+                <li>- Local citation building - consistent NAP across directories</li>
+                <li>- Review management - strategy for acquiring and responding to reviews</li>
+                <li>- Local content optimization - Singapore-specific landing pages</li>
+                <li>- Map pack optimization - visibility in local search results</li>
+              </ul>
             </div>
 
-            <!-- FAQ Item 6 -->
-            <div class="border border-gray-200 rounded-lg">
-              <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-novastacks-text hover:bg-gray-50" onclick="toggleFaq(this)">
-                <span>Do you provide SEO training for in-house teams?</span>
-                <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="faq-content px-4 pb-4">
-                <p class="text-gray-700">Yes. We can train your team on SEO fundamentals, content optimization, technical best practices, and ongoing maintenance. Training is especially valuable for companies that want to build internal capability while we handle strategic initiatives. We also document processes so your team can maintain what we build.</p>
-              </div>
+            <div class="bg-slate-900 border border-white/10 rounded-lg p-6 mb-6">
+              <h3 class="font-bold text-white mb-3">E-commerce SEO</h3>
+              <p class="text-slate-300 mb-3">For online retailers in Singapore:</p>
+              <ul class="text-sm text-slate-400 space-y-1">
+                <li>- Product page optimization - individual product visibility</li>
+                <li>- Category page optimization - collection and category rankings</li>
+                <li>- Product schema implementation - rich results for products</li>
+                <li>- Technical e-commerce SEO - faceted navigation, canonicalization</li>
+                <li>- Competitive positioning - standing out in product searches</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Beyond Traditional SEO: AEO (Light) -->
+          <section class="mb-12 bg-slate-100 -mx-6 px-6 py-12 md:-mx-12 md:px-12 rounded-lg">
+            <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// AEO</p>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 font-display">Beyond Traditional SEO: Answer Engine Optimization (AEO)</h2>
+            <p class="text-slate-700 mb-4">
+              Here's what most Singapore SEO agencies miss: the rise of AI-powered search.
+            </p>
+
+            <h3 class="text-xl font-semibold text-slate-900 mb-3">Why AEO Matters Now</h3>
+            <p class="text-slate-700 mb-4">
+              According to BrightEdge, 62% of Google searches now trigger AI Overviews. Users are increasingly asking ChatGPT and Perplexity for recommendations instead of browsing search results.
+            </p>
+            <div class="bg-novastacks/5 p-4 rounded-lg border-l-4 border-novastacks mb-6">
+              <p class="text-slate-700 font-medium">
+                If AI doesn't cite you, you're invisible - even if you rank #1 on Google.
+              </p>
             </div>
 
-            <!-- FAQ Item 7 -->
-            <div class="border border-gray-200 rounded-lg">
-              <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-novastacks-text hover:bg-gray-50" onclick="toggleFaq(this)">
-                <span>What makes Novastacks different from other Singapore SEO agencies?</span>
-                <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="faq-content px-4 pb-4">
-                <p class="text-gray-700">Three things: First, we combine SEO with AEO - you get optimized for both traditional search and AI-powered discovery. Second, our AI-augmented execution delivers results 30-50% faster than traditional agencies. Third, we're operators, not just consultants - 20+ years of experience at companies like Tencent and Expedia means we understand what actually drives business growth, not just rankings.</p>
+            <h3 class="text-xl font-semibold text-slate-900 mb-3">How AI Search Is Changing Singapore</h3>
+            <ul class="list-disc list-inside text-slate-700 mb-6 space-y-1">
+              <li>High ChatGPT and Perplexity usage among professionals</li>
+              <li>Google AI Overview rollout covering Singapore searches</li>
+              <li>AI-powered search integrated into workplace tools</li>
+              <li>Growing preference for direct answers over link browsing</li>
+            </ul>
+            <p class="text-slate-700 mb-6">
+              Businesses that optimize for AI visibility now will have a structural advantage as this behavior grows.
+            </p>
+
+            <h3 class="text-xl font-semibold text-slate-900 mb-3">Our Proprietary AEO Methodology</h3>
+            <p class="text-slate-700 mb-4">
+              We've developed a comprehensive <a href="/aeo/" class="text-novastacks hover:underline">AEO framework</a> that includes:
+            </p>
+            <ul class="list-disc list-inside text-slate-700 mb-4 space-y-1">
+              <li>FAQ schema implementation - structured data for AI extraction</li>
+              <li>Q&A content structure - direct answers in the first 100 words</li>
+              <li>Expert attribution - author markup with credentials</li>
+              <li>Citeable statistics - data points AI systems can reference</li>
+              <li>Citation tracking - monitoring mentions across AI platforms</li>
+            </ul>
+            <p class="text-slate-700">
+              When we do SEO for Singapore clients, we include AEO fundamentals. You get optimized for both traditional search AND AI-powered discovery. Learn more about <a href="/aeo/what-is-aeo/" class="text-novastacks hover:underline">what AEO is</a> and how it complements traditional SEO.
+            </p>
+          </section>
+
+          <!-- The Novastacks Approach (Dark) -->
+          <section class="mb-12">
+            <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// APPROACH</p>
+            <h2 class="text-2xl font-bold text-white mb-4 font-display">The Novastacks Approach to SEO</h2>
+            <p class="text-slate-300 mb-6">We do SEO differently than traditional agencies:</p>
+
+            <div class="bg-slate-900 p-6 rounded-lg border border-white/10 mb-6">
+              <h3 class="font-bold text-white mb-4">Our Core Principles:</h3>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="font-medium text-white mb-2">1. Data-Driven Methodology</p>
+                  <p class="text-sm text-slate-400">Comprehensive keyword research, competitive analysis, user behavior analytics. We don't guess - we analyze, implement, measure, and optimize.</p>
+                </div>
+                <div>
+                  <p class="font-medium text-white mb-2">2. AI-Augmented Execution</p>
+                  <p class="text-sm text-slate-400">Audit agents, content agents, and implementation agents deliver in weeks what traditional agencies take months. Results 30-50% faster.</p>
+                </div>
+                <div>
+                  <p class="font-medium text-white mb-2">3. Transparent Reporting</p>
+                  <p class="text-sm text-slate-400">Monthly reporting on all key metrics, clear attribution, honest assessment. No jargon, no hiding behind complexity.</p>
+                </div>
+                <div>
+                  <p class="font-medium text-white mb-2">4. Revenue Focus</p>
+                  <p class="text-sm text-slate-400">Rankings are a means to an end. We optimize for leads, revenue, and customer acquisition cost - not vanity metrics.</p>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <!-- CTA -->
-        <section class="bg-gradient-to-br from-novastacks to-novastacks-dark p-8 rounded-lg text-center">
-          <h2 class="text-2xl font-bold text-white mb-4 font-display">Ready to Grow Your Singapore Business Through SEO?</h2>
-          <p class="text-white/90 mb-6">If you're looking for an SEO agency in Singapore that delivers business results - not just rankings - we should talk.</p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/contact/" class="inline-block px-6 py-3 bg-white text-novastacks font-medium rounded-lg hover:bg-gray-100 transition-colors">
-              Get Free SEO Audit
-            </a>
-            <a href="/contact/" class="inline-block px-6 py-3 bg-transparent border-2 border-white text-white font-medium rounded-lg hover:bg-white/10 transition-colors">
-              Book Consultation
-            </a>
-          </div>
-        </section>
+          <!-- Industries We Serve (Light) -->
+          <section class="mb-12 bg-slate-100 -mx-6 px-6 py-12 md:-mx-12 md:px-12 rounded-lg">
+            <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// INDUSTRIES</p>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 font-display">Industries We Serve in Singapore</h2>
+            <p class="text-slate-700 mb-6">We bring deepest expertise in these sectors:</p>
+
+            <div class="overflow-x-auto">
+              <table class="w-full border-collapse text-sm mb-6">
+                <thead>
+                  <tr class="bg-slate-800 text-white">
+                    <th class="text-left p-3 font-bold">Industry</th>
+                    <th class="text-left p-3 font-bold">Our Expertise</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-slate-200 bg-white">
+                    <td class="p-3 font-medium text-slate-900">SaaS and Technology</td>
+                    <td class="p-3 text-slate-600">Long B2B sales cycles, technical audiences, international SEO for APAC</td>
+                  </tr>
+                  <tr class="border-b border-slate-200 bg-slate-50">
+                    <td class="p-3 font-medium text-slate-900">Professional Services</td>
+                    <td class="p-3 text-slate-600">Thought leadership, local SEO, reputation management, regulatory compliance</td>
+                  </tr>
+                  <tr class="border-b border-slate-200 bg-white">
+                    <td class="p-3 font-medium text-slate-900">E-commerce</td>
+                    <td class="p-3 text-slate-600">Product optimization, technical e-commerce SEO, marketplace integration</td>
+                  </tr>
+                  <tr class="border-b border-slate-200 bg-slate-50">
+                    <td class="p-3 font-medium text-slate-900">B2B Companies</td>
+                    <td class="p-3 text-slate-600">Long-tail keywords, content marketing, lead generation, ABM integration</td>
+                  </tr>
+                  <tr class="border-b border-slate-200 bg-white">
+                    <td class="p-3 font-medium text-slate-900">Startups and Scale-ups</td>
+                    <td class="p-3 text-slate-600">Foundation building, quick wins, scalable SEO processes, growth marketing</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- Case Study (Dark) -->
+          <section class="mb-12">
+            <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// RESULTS</p>
+            <h2 class="text-2xl font-bold text-white mb-6 font-display">SEO Results for Singapore Clients</h2>
+            <p class="text-slate-300 mb-6">We measure success by business impact.</p>
+
+            <div class="bg-slate-900 p-6 rounded-lg border border-white/10 mb-6">
+              <h3 class="font-bold text-white mb-4">Case Study: Singapore B2B SaaS Company</h3>
+              <p class="text-slate-300 mb-4">
+                <strong class="text-white">Situation:</strong> Series A SaaS company targeting Southeast Asia. Strong product but minimal organic visibility.
+              </p>
+              <p class="text-slate-300 mb-4">
+                <strong class="text-white">What We Did:</strong> Comprehensive technical SEO audit and fixes, content strategy focused on buyer journey, AEO implementation for AI visibility, local SEO for Singapore market, and backlink building through thought leadership.
+              </p>
+              <p class="text-white font-bold mb-2">Results (6 months):</p>
+              <ul class="text-slate-300 space-y-1">
+                <li>+312% organic traffic from non-branded queries</li>
+                <li>+43 AI citations per month (from zero)</li>
+                <li>First page rankings for 23 target keywords</li>
+                <li>2.3x increase in organic leads</li>
+                <li>34% reduction in cost per acquisition</li>
+              </ul>
+            </div>
+
+            <div class="overflow-x-auto mb-6">
+              <table class="w-full border-collapse text-sm">
+                <thead>
+                  <tr class="bg-slate-800 text-white">
+                    <th class="text-left p-3 font-bold">Metric</th>
+                    <th class="text-left p-3 font-bold">What We Measure</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-white/10 bg-slate-900">
+                    <td class="p-3 font-medium text-white">Organic Traffic</td>
+                    <td class="p-3 text-slate-400">Visitors from search engines (branded and non-branded)</td>
+                  </tr>
+                  <tr class="border-b border-white/10 bg-slate-900/50">
+                    <td class="p-3 font-medium text-white">Keyword Rankings</td>
+                    <td class="p-3 text-slate-400">Positions for target keywords (weighted by search volume)</td>
+                  </tr>
+                  <tr class="border-b border-white/10 bg-slate-900">
+                    <td class="p-3 font-medium text-white">AI Citations</td>
+                    <td class="p-3 text-slate-400">Mentions in ChatGPT, Perplexity, Google AI Overview</td>
+                  </tr>
+                  <tr class="border-b border-white/10 bg-slate-900/50">
+                    <td class="p-3 font-medium text-white">Organic Leads</td>
+                    <td class="p-3 text-slate-400">Form submissions, inquiries attributed to organic</td>
+                  </tr>
+                  <tr class="border-b border-white/10 bg-slate-900">
+                    <td class="p-3 font-medium text-white">Organic Revenue</td>
+                    <td class="p-3 text-slate-400">Sales connected to organic traffic</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 class="text-xl font-semibold text-white mb-3">Timeline Expectations</h3>
+            <div class="overflow-x-auto">
+              <table class="w-full border-collapse text-sm">
+                <thead>
+                  <tr class="bg-slate-800 text-white">
+                    <th class="text-left p-3 font-bold">Timeframe</th>
+                    <th class="text-left p-3 font-bold">Typical Results</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-white/10 bg-slate-900">
+                    <td class="p-3 font-medium text-white">Month 1-2</td>
+                    <td class="p-3 text-slate-400">Technical fixes complete, content optimization begun</td>
+                  </tr>
+                  <tr class="border-b border-white/10 bg-slate-900/50">
+                    <td class="p-3 font-medium text-white">Month 3-4</td>
+                    <td class="p-3 text-slate-400">Initial ranking improvements, traffic growth starting</td>
+                  </tr>
+                  <tr class="border-b border-white/10 bg-slate-900">
+                    <td class="p-3 font-medium text-white">Month 5-6</td>
+                    <td class="p-3 text-slate-400">Significant traffic gains, leads increasing</td>
+                  </tr>
+                  <tr class="border-b border-white/10 bg-slate-900/50">
+                    <td class="p-3 font-medium text-white">Month 7-12</td>
+                    <td class="p-3 text-slate-400">Compounding results, competitive positions secured</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-sm text-slate-500 mt-4">Our AI-augmented execution typically delivers results 30-50% faster than traditional agencies.</p>
+          </section>
+
+          <!-- SEO Pricing (Light) -->
+          <section class="mb-12 bg-slate-100 -mx-6 px-6 py-12 md:-mx-12 md:px-12 rounded-lg">
+            <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// PRICING</p>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 font-display">SEO Pricing for Singapore Businesses</h2>
+            <p class="text-slate-700 mb-6">We offer transparent, flexible pricing:</p>
+
+            <div class="overflow-x-auto mb-6">
+              <table class="w-full border-collapse text-sm">
+                <thead>
+                  <tr class="bg-slate-800 text-white">
+                    <th class="text-left p-3 font-bold">Model</th>
+                    <th class="text-left p-3 font-bold">Best For</th>
+                    <th class="text-left p-3 font-bold">Monthly Investment</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-slate-200 bg-white">
+                    <td class="p-3 font-medium text-slate-900">SEO Retainer</td>
+                    <td class="p-3 text-slate-600">Ongoing optimization and growth</td>
+                    <td class="p-3 text-novastacks font-bold">SGD $4,000-$12,000</td>
+                  </tr>
+                  <tr class="border-b border-slate-200 bg-slate-50">
+                    <td class="p-3 font-medium text-slate-900">SEO Audit + Roadmap</td>
+                    <td class="p-3 text-slate-600">One-time assessment with implementation plan</td>
+                    <td class="p-3 text-novastacks font-bold">SGD $3,000-$6,000</td>
+                  </tr>
+                  <tr class="border-b border-slate-200 bg-white">
+                    <td class="p-3 font-medium text-slate-900">SEO + AEO Package</td>
+                    <td class="p-3 text-slate-600">Complete search visibility (traditional + AI)</td>
+                    <td class="p-3 text-novastacks font-bold">SGD $6,000-$15,000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 class="text-xl font-semibold text-slate-900 mb-3">What Affects Pricing</h3>
+            <ul class="list-disc list-inside text-slate-700 mb-6 space-y-1">
+              <li><strong>Website size</strong> - More pages require more optimization work</li>
+              <li><strong>Competition</strong> - More competitive industries require more investment</li>
+              <li><strong>Scope</strong> - SEO-only vs. SEO + content production</li>
+              <li><strong>Current state</strong> - Sites with more issues require more initial work</li>
+              <li><strong>Goals</strong> - Aggressive targets require more resources</li>
+            </ul>
+
+            <div class="bg-novastacks/5 p-4 rounded-lg border-l-4 border-novastacks">
+              <p class="text-sm text-slate-700">
+                <strong>ROI Example:</strong> For a SGD $8,000/month engagement, if organic traffic generates 50 qualified leads/month at SGD $200 value each = SGD $10,000/month value. 6-month investment: SGD $48,000; potential return: SGD $60,000+ (leads only). Most clients see positive ROI within 6 months.
+              </p>
+            </div>
+          </section>
+
+          <!-- FAQ Section (Dark) -->
+          <section class="mb-12">
+            <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// FAQ</p>
+            <h2 class="text-2xl font-bold text-white mb-6 font-display">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+              <!-- FAQ Item 1 -->
+              <div class="border border-white/10 rounded-lg">
+                <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-white hover:bg-slate-900" onclick="toggleFaq(this)">
+                  <span>How long does SEO take to show results in Singapore?</span>
+                  <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div class="faq-content px-4 pb-4">
+                  <p class="text-slate-300">SEO typically takes 3-6 months to show meaningful results. Quick wins (technical fixes, content optimization) can appear in 1-2 months. Competitive keywords may take 6-12 months to rank. Our AI-augmented execution typically delivers results 30-50% faster than traditional agencies. We set realistic expectations during discovery.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div class="border border-white/10 rounded-lg">
+                <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-white hover:bg-slate-900" onclick="toggleFaq(this)">
+                  <span>Do you work with Singapore-based businesses only?</span>
+                  <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div class="faq-content px-4 pb-4">
+                  <p class="text-slate-300">We're based in Singapore and have deep expertise in the Singapore market, but we work with companies across APAC. Our founder's experience at Tencent and Expedia spans Asia-Pacific and North America. For international SEO (targeting multiple countries), we bring regional understanding that pure-play agencies lack.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div class="border border-white/10 rounded-lg">
+                <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-white hover:bg-slate-900" onclick="toggleFaq(this)">
+                  <span>What's the difference between SEO and AEO?</span>
+                  <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div class="faq-content px-4 pb-4">
+                  <p class="text-slate-300">SEO optimizes for traditional search rankings - appearing in Google's organic results. AEO optimizes for AI citations - being mentioned by ChatGPT, Perplexity, and Google AI Overview. They're complementary: SEO drives clicks from search results; AEO drives traffic from AI recommendations. We recommend both for comprehensive search visibility.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 4 -->
+              <div class="border border-white/10 rounded-lg">
+                <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-white hover:bg-slate-900" onclick="toggleFaq(this)">
+                  <span>How do you measure SEO success?</span>
+                  <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div class="faq-content px-4 pb-4">
+                  <p class="text-slate-300">We measure organic traffic, keyword rankings, AI citations, leads attributed to organic, and revenue from organic channels. Rankings alone don't matter if they don't drive business results. We establish baseline metrics and report monthly on progress. Every metric ties back to business impact.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 5 -->
+              <div class="border border-white/10 rounded-lg">
+                <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-white hover:bg-slate-900" onclick="toggleFaq(this)">
+                  <span>Can you help with Google Business Profile optimization?</span>
+                  <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div class="faq-content px-4 pb-4">
+                  <p class="text-slate-300">Yes. Local SEO including Google Business Profile optimization is part of our offering. For businesses with physical locations or service areas, we optimize GBP, build local citations, manage reviews, and create location-specific content. Local SEO is especially important for Singapore businesses serving local customers.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 6 -->
+              <div class="border border-white/10 rounded-lg">
+                <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-white hover:bg-slate-900" onclick="toggleFaq(this)">
+                  <span>Do you provide SEO training for in-house teams?</span>
+                  <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div class="faq-content px-4 pb-4">
+                  <p class="text-slate-300">Yes. We can train your team on SEO fundamentals, content optimization, technical best practices, and ongoing maintenance. Training is especially valuable for companies that want to build internal capability while we handle strategic initiatives. We also document processes so your team can maintain what we build.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 7 -->
+              <div class="border border-white/10 rounded-lg">
+                <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-white hover:bg-slate-900" onclick="toggleFaq(this)">
+                  <span>What makes Novastacks different from other Singapore SEO agencies?</span>
+                  <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div class="faq-content px-4 pb-4">
+                  <p class="text-slate-300">Three things: First, we combine SEO with AEO - you get optimized for both traditional search and AI-powered discovery. Second, our AI-augmented execution delivers results 30-50% faster than traditional agencies. Third, we're operators, not just consultants - 20+ years of experience at companies like Tencent and Expedia means we understand what actually drives business growth, not just rankings.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- CTA (Light) -->
+          <section class="bg-slate-100 p-8 rounded-lg text-center -mx-6 md:-mx-12">
+            <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// GET_STARTED</p>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 font-display">Ready to Grow Your Singapore Business Through SEO?</h2>
+            <p class="text-slate-600 mb-6">If you're looking for an SEO agency in Singapore that delivers business results - not just rankings - we should talk.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="/contact/" class="inline-block px-6 py-3 bg-novastacks text-white font-medium rounded hover:bg-novastacks/80 transition-colors">
+                Get Free SEO Audit
+              </a>
+              <a href="/contact/" class="inline-block px-6 py-3 bg-transparent border-2 border-novastacks text-novastacks font-medium rounded hover:bg-novastacks hover:text-white transition-colors">
+                Book Consultation
+              </a>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   </article>
 
-  <!-- Related Posts -->
-  <section class="py-12 bg-gray-50">
+  <!-- Related Posts (Dark) -->
+  <section class="py-12 bg-slate-950 border-t border-white/10">
     <div class="container mx-auto px-6">
-      <h2 class="text-2xl font-bold text-novastacks-text mb-8 font-display">Related Posts</h2>
+      <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// RELATED</p>
+      <h2 class="text-2xl font-bold text-white mb-8 font-display">Related Posts</h2>
       <div class="grid md:grid-cols-3 gap-6">
-        <a href="/aeo/" class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-          <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded-full">AEO</span>
-          <h3 class="font-bold text-novastacks-text mt-3 mb-2">Answer Engine Optimization</h3>
-          <p class="text-gray-600 text-sm">Our comprehensive AEO solution for AI-powered search visibility.</p>
+        <a href="/aeo/" class="bg-slate-900 border border-white/10 rounded-lg p-6 hover:border-novastacks/50 transition-colors">
+          <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded">AEO</span>
+          <h3 class="font-bold text-white mt-3 mb-2">Answer Engine Optimization</h3>
+          <p class="text-slate-400 text-sm">Our comprehensive AEO solution for AI-powered search visibility.</p>
         </a>
-        <a href="/aeo/what-is-aeo/" class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-          <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded-full">AEO</span>
-          <h3 class="font-bold text-novastacks-text mt-3 mb-2">What is AEO?</h3>
-          <p class="text-gray-600 text-sm">The definitive guide to Answer Engine Optimization and how AI decides what to cite.</p>
+        <a href="/aeo/what-is-aeo/" class="bg-slate-900 border border-white/10 rounded-lg p-6 hover:border-novastacks/50 transition-colors">
+          <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded">AEO</span>
+          <h3 class="font-bold text-white mt-3 mb-2">What is AEO?</h3>
+          <p class="text-slate-400 text-sm">The definitive guide to Answer Engine Optimization and how AI decides what to cite.</p>
         </a>
-        <a href="/blog/best-aeo-tools-2026/" class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-          <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded-full">AEO</span>
-          <h3 class="font-bold text-novastacks-text mt-3 mb-2">Best AEO Tools 2026</h3>
-          <p class="text-gray-600 text-sm">We tested 12 AEO tools across 6 months. Real comparison with honest pros/cons.</p>
+        <a href="/blog/best-aeo-tools-2026/" class="bg-slate-900 border border-white/10 rounded-lg p-6 hover:border-novastacks/50 transition-colors">
+          <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded">AEO</span>
+          <h3 class="font-bold text-white mt-3 mb-2">Best AEO Tools 2026</h3>
+          <p class="text-slate-400 text-sm">We tested 12 AEO tools across 6 months. Real comparison with honest pros/cons.</p>
         </a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-slate-900 text-white py-12">
+  <footer class="bg-slate-900 text-white py-16">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
 
@@ -858,15 +869,9 @@
     </div>
   </footer>
 
-
-
-
-
-
-
   <!-- Mobile Menu Script -->
   <script>
-    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
       document.getElementById('mobile-menu').classList.toggle('hidden');
     });
 

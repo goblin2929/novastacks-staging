@@ -12,17 +12,24 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS (compiled) -->
   <link rel="stylesheet" href="assets/css/styles.css">
+
+  <style>
+    .font-display { font-family: 'Space Grotesk', sans-serif; }
+    .font-sans { font-family: 'Inter', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
 </head>
-<body class="bg-gray-100 text-novastacks-text font-serif">
+<body class="bg-slate-950 text-white font-sans">
   <div class="min-h-screen flex items-center justify-center">
     <div class="text-center px-6">
-      <h1 class="text-6xl font-bold mb-4 text-novastacks">404</h1>
-      <p class="text-xl text-gray-600 mb-8">Oops! Page not found</p>
-      <a href="/" class="bg-novastacks text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-novastacks-dark transform hover:-translate-y-1 transition-all duration-300 inline-block">
+      <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// ERROR</p>
+      <h1 class="text-6xl font-bold mb-4 text-novastacks font-display">404</h1>
+      <p class="text-xl text-slate-400 mb-8">Oops! Page not found</p>
+      <a href="/" class="bg-novastacks text-white px-8 py-4 rounded font-semibold text-lg hover:bg-novastacks/80 transition-all duration-300 inline-block">
         Return to Home
       </a>
     </div>

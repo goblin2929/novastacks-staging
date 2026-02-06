@@ -26,7 +26,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS (compiled) -->
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -126,9 +126,13 @@
   </script>
 
   <style>
+    .font-display { font-family: 'Space Grotesk', sans-serif; }
+    .font-sans { font-family: 'Inter', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+
     /* FAQ Accordion Styles */
     .faq-item {
-      border-bottom: 1px solid #e5e7eb;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
     .faq-item:last-child {
       border-bottom: none;
@@ -137,7 +141,7 @@
       cursor: pointer;
     }
     .faq-toggle:hover {
-      background-color: #f9fafb;
+      background-color: rgba(255, 255, 255, 0.05);
     }
     .faq-content {
       max-height: 0;
@@ -155,12 +159,12 @@
     }
   </style>
 </head>
-<body class="bg-white text-novastacks-text font-serif">
+<body class="bg-slate-950 text-white font-sans">
   <!-- Header -->
-  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <header class="bg-slate-950 border-b border-white/10 sticky top-0 z-50">
     <div class="container mx-auto px-6">
       <nav class="flex justify-between items-center py-4">
-        <a href="/" class="flex items-center gap-3 hover:scale-105 transition-transform">
+        <a href="/" class="flex items-center gap-3">
           <div
             class="w-60 h-12 md:w-64 md:h-14 bg-contain bg-no-repeat bg-center"
             style="background-image: url('lovable-uploads/315157be-4582-4858-b0d2-0598ddbed87c.png')"
@@ -169,20 +173,17 @@
 
         <!-- Desktop Navigation -->
         <ul class="hidden md:flex gap-8">
-          <li><a href="/aeo" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
-          <li><a href="/methodology" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Methodology</a></li>
-          <li><a href="/generator" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">About</a></li>
+          <li><a href="/aeo" class="text-slate-400 hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
+          <li><a href="/methodology" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Methodology</a></li>
+          <li><a href="/generator" class="text-slate-400 hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="text-slate-400 hover:text-novastacks font-medium transition-colors">About</a></li>
         </ul>
 
-        <!-- Desktop CTA Buttons -->
-        <div class="hidden md:flex gap-3">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transform hover:-translate-y-1 transition-all duration-300">
-            Get Started
-          </a>
-          <a href="/generator" class="bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300">
-            Learn More
+        <!-- Desktop CTA Button -->
+        <div class="hidden md:flex">
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300">
+            Book a Call
           </a>
         </div>
 
@@ -193,64 +194,53 @@
           aria-label="Toggle mobile menu"
           aria-expanded="false"
         >
-          <span id="menu-bar-1" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-2" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-3" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
+          <span id="menu-bar-1" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-2" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-3" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
         </button>
       </nav>
 
       <!-- Mobile Navigation Menu -->
-      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 py-4">
+      <div id="mobile-menu" class="hidden md:hidden bg-slate-950 border-t border-white/10 py-4">
         <ul class="flex flex-col gap-4">
-          <li><a href="/aeo" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
-          <li><a href="/methodology" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
-          <li><a href="/generator" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">About</a></li>
+          <li><a href="/aeo" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
+          <li><a href="/methodology" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
+          <li><a href="/generator" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">About</a></li>
         </ul>
         <div class="flex flex-col gap-3 mt-4">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transition-all duration-300 text-center">
-            Get Started
-          </a>
-          <a href="/generator" class="bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300 text-center">
-            Learn More
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300 text-center">
+            Book a Call
           </a>
         </div>
       </div>
     </div>
   </header>
 
-
-
-
-
-
-
   <!-- Main Content -->
   <main class="pt-16 md:pt-20">
-    <!-- Hero Section -->
-    <section class="py-16 md:py-20 lg:py-24 bg-gradient-to-b from-white to-gray-50">
+    <!-- Hero Section (DARK) -->
+    <section class="py-16 md:py-20 lg:py-24 bg-slate-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-4xl mx-auto">
           <div class="mb-6">
-            <span class="inline-block px-4 py-2 bg-novastacks/10 text-novastacks font-semibold text-sm rounded-full mb-6">
-              Fractional CMO Guide
-            </span>
+            <span class="font-mono text-novastacks text-sm tracking-wider">// FRACTIONAL_CMO_GUIDE</span>
           </div>
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight font-display">
             What is a Fractional CMO?
           </h1>
-          <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+          <p class="text-lg md:text-xl text-slate-400 mb-8 leading-relaxed max-w-3xl mx-auto">
             A fractional CMO is a part-time chief marketing officer who provides senior marketing leadership on a flexible, contracted basis - typically 10-20 hours per week. Unlike full-time CMOs who command $300,000+ annual salaries plus equity, a fractional CMO delivers the same executive-level strategy and oversight at a fraction of the cost.
           </p>
-          <p class="text-base md:text-lg text-novastacks-text mb-8 leading-relaxed max-w-3xl mx-auto">
+          <p class="text-base md:text-lg text-white mb-8 leading-relaxed max-w-3xl mx-auto">
             Growth-stage startups, SMBs, and companies in transition use fractional CMOs to access senior marketing expertise without the full-time commitment.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/contact" class="bg-novastacks text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-novastacks-dark transform hover:-translate-y-1 transition-all duration-300">
+            <a href="/contact" class="bg-novastacks text-white px-8 py-4 rounded font-semibold text-lg hover:bg-novastacks/80 transition-all duration-300">
               Book a Discovery Call
             </a>
-            <a href="/fractional-cmo/" class="bg-transparent text-novastacks border-2 border-novastacks px-8 py-4 rounded-lg font-semibold text-lg hover:bg-novastacks hover:text-white transition-all duration-300">
+            <a href="/fractional-cmo/" class="bg-transparent text-novastacks border-2 border-novastacks px-8 py-4 rounded font-semibold text-lg hover:bg-novastacks hover:text-white transition-all duration-300">
               Explore Our Services
             </a>
           </div>
@@ -258,43 +248,44 @@
       </div>
     </section>
 
-    <!-- How Does a Fractional CMO Work Section -->
-    <section class="py-16 md:py-20 lg:py-24 bg-white">
+    <!-- How Does a Fractional CMO Work Section (LIGHT) -->
+    <section class="py-16 md:py-20 lg:py-24 bg-slate-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <span class="font-mono text-novastacks text-sm tracking-wider">// HOW_IT_WORKS</span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mt-4 mb-6 leading-tight font-display">
             How Does a Fractional CMO Work?
           </h2>
-          <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+          <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
             The mechanics of a fractional CMO engagement vary by provider and company needs, but the core structure is consistent across the industry.
           </p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8 mb-12">
           <!-- Engagement Model 1 -->
-          <div class="bg-gray-50 p-8 rounded-2xl">
-            <h3 class="text-xl font-semibold text-novastacks-text mb-4">Retainer-Based (Most Common)</h3>
-            <p class="text-gray-600 leading-relaxed">You pay a monthly retainer for a set number of hours - typically 40-80 hours per month. This provides predictable costs and ensures dedicated attention to your business. Retainers range from $5,000-$15,000/month depending on experience and scope.</p>
+          <div class="bg-white p-8 rounded-2xl border border-slate-200">
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">Retainer-Based (Most Common)</h3>
+            <p class="text-slate-600 leading-relaxed">You pay a monthly retainer for a set number of hours - typically 40-80 hours per month. This provides predictable costs and ensures dedicated attention to your business. Retainers range from $5,000-$15,000/month depending on experience and scope.</p>
           </div>
 
           <!-- Engagement Model 2 -->
-          <div class="bg-gray-50 p-8 rounded-2xl">
-            <h3 class="text-xl font-semibold text-novastacks-text mb-4">Project-Based</h3>
-            <p class="text-gray-600 leading-relaxed">Some companies engage fractional CMOs for specific initiatives: launching a new product, building a marketing team, or developing a go-to-market strategy. Projects typically run 3-6 months with defined deliverables.</p>
+          <div class="bg-white p-8 rounded-2xl border border-slate-200">
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">Project-Based</h3>
+            <p class="text-slate-600 leading-relaxed">Some companies engage fractional CMOs for specific initiatives: launching a new product, building a marketing team, or developing a go-to-market strategy. Projects typically run 3-6 months with defined deliverables.</p>
           </div>
 
           <!-- Engagement Model 3 -->
-          <div class="bg-gray-50 p-8 rounded-2xl">
-            <h3 class="text-xl font-semibold text-novastacks-text mb-4">Hourly (Rare)</h3>
-            <p class="text-gray-600 leading-relaxed">Hourly arrangements exist but are less common. They work for advisory relationships where the company needs occasional strategic input rather than ongoing leadership.</p>
+          <div class="bg-white p-8 rounded-2xl border border-slate-200">
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">Hourly (Rare)</h3>
+            <p class="text-slate-600 leading-relaxed">Hourly arrangements exist but are less common. They work for advisory relationships where the company needs occasional strategic input rather than ongoing leadership.</p>
           </div>
         </div>
 
         <!-- Time Commitment -->
-        <div class="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-          <h3 class="text-2xl font-semibold text-novastacks-text mb-6">Time Commitment</h3>
-          <p class="text-gray-600 leading-relaxed mb-6">Most fractional CMO engagements involve 10-20 hours per week of active work. This includes:</p>
-          <ul class="grid md:grid-cols-2 gap-4 text-gray-600">
+        <div class="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+          <h3 class="text-2xl font-semibold text-slate-900 mb-6">Time Commitment</h3>
+          <p class="text-slate-600 leading-relaxed mb-6">Most fractional CMO engagements involve 10-20 hours per week of active work. This includes:</p>
+          <ul class="grid md:grid-cols-2 gap-4 text-slate-600">
             <li class="flex items-start gap-3">
               <span class="text-novastacks font-bold">2-4 hrs/week</span>
               <span>Strategy sessions with leadership</span>
@@ -312,34 +303,35 @@
               <span>Vendor and agency oversight</span>
             </li>
           </ul>
-          <p class="text-gray-600 leading-relaxed mt-6 italic">The key insight: effective marketing leadership is about quality decisions, not quantity of hours. A skilled fractional CMO makes more impact in 15 focused hours than an average full-time hire makes in 50.</p>
+          <p class="text-slate-600 leading-relaxed mt-6 italic">The key insight: effective marketing leadership is about quality decisions, not quantity of hours. A skilled fractional CMO makes more impact in 15 focused hours than an average full-time hire makes in 50.</p>
         </div>
       </div>
     </section>
 
-    <!-- What Does a Fractional CMO Do Section -->
-    <section class="py-16 md:py-20 lg:py-24 bg-gray-50">
+    <!-- What Does a Fractional CMO Do Section (DARK) -->
+    <section class="py-16 md:py-20 lg:py-24 bg-slate-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <span class="font-mono text-novastacks text-sm tracking-wider">// RESPONSIBILITIES</span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mt-4 mb-6 leading-tight font-display">
             What Does a Fractional CMO Actually Do?
           </h2>
-          <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+          <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto">
             The scope varies by company stage and needs, but fractional CMOs typically own these responsibilities.
           </p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Responsibility 1 -->
-          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-            <div class="w-12 h-12 bg-novastacks/10 rounded-full flex items-center justify-center mb-6">
+          <div class="bg-slate-900 p-8 rounded-2xl border border-white/10">
+            <div class="w-12 h-12 bg-novastacks/20 rounded-lg flex items-center justify-center mb-6">
               <svg class="w-6 h-6 text-novastacks" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-novastacks-text mb-4">Strategic Planning & Roadmap</h3>
-            <p class="text-gray-600 leading-relaxed mb-4">Assesses your current marketing state, identifies gaps, and develops a 6-12 month roadmap aligned with business goals.</p>
-            <ul class="text-sm text-gray-500 space-y-2">
+            <h3 class="text-xl font-semibold text-white mb-4">Strategic Planning & Roadmap</h3>
+            <p class="text-slate-400 leading-relaxed mb-4">Assesses your current marketing state, identifies gaps, and develops a 6-12 month roadmap aligned with business goals.</p>
+            <ul class="text-sm text-slate-500 space-y-2">
               <li>- Market positioning and messaging</li>
               <li>- Channel strategy and budget allocation</li>
               <li>- Goal setting and OKRs</li>
@@ -348,15 +340,15 @@
           </div>
 
           <!-- Responsibility 2 -->
-          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-            <div class="w-12 h-12 bg-novastacks/10 rounded-full flex items-center justify-center mb-6">
+          <div class="bg-slate-900 p-8 rounded-2xl border border-white/10">
+            <div class="w-12 h-12 bg-novastacks/20 rounded-lg flex items-center justify-center mb-6">
               <svg class="w-6 h-6 text-novastacks" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-novastacks-text mb-4">Team Building & Management</h3>
-            <p class="text-gray-600 leading-relaxed mb-4">Builds your first real marketing team. This is often the highest-leverage work - hiring the right person multiplies impact for years.</p>
-            <ul class="text-sm text-gray-500 space-y-2">
+            <h3 class="text-xl font-semibold text-white mb-4">Team Building & Management</h3>
+            <p class="text-slate-400 leading-relaxed mb-4">Builds your first real marketing team. This is often the highest-leverage work - hiring the right person multiplies impact for years.</p>
+            <ul class="text-sm text-slate-500 space-y-2">
               <li>- Defining roles and writing job descriptions</li>
               <li>- Recruiting and interviewing candidates</li>
               <li>- Onboarding new hires</li>
@@ -365,16 +357,16 @@
           </div>
 
           <!-- Responsibility 3 -->
-          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-            <div class="w-12 h-12 bg-novastacks/10 rounded-full flex items-center justify-center mb-6">
+          <div class="bg-slate-900 p-8 rounded-2xl border border-white/10">
+            <div class="w-12 h-12 bg-novastacks/20 rounded-lg flex items-center justify-center mb-6">
               <svg class="w-6 h-6 text-novastacks" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-novastacks-text mb-4">Marketing Operations & Systems</h3>
-            <p class="text-gray-600 leading-relaxed mb-4">The unglamorous infrastructure that makes everything else work. Companies without marketing ops spend 40% of their time on administrative chaos.</p>
-            <ul class="text-sm text-gray-500 space-y-2">
+            <h3 class="text-xl font-semibold text-white mb-4">Marketing Operations & Systems</h3>
+            <p class="text-slate-400 leading-relaxed mb-4">The unglamorous infrastructure that makes everything else work. Companies without marketing ops spend 40% of their time on administrative chaos.</p>
+            <ul class="text-sm text-slate-500 space-y-2">
               <li>- CRM and marketing automation setup</li>
               <li>- Analytics and attribution implementation</li>
               <li>- Reporting dashboards and KPIs</li>
@@ -383,15 +375,15 @@
           </div>
 
           <!-- Responsibility 4 -->
-          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-            <div class="w-12 h-12 bg-novastacks/10 rounded-full flex items-center justify-center mb-6">
+          <div class="bg-slate-900 p-8 rounded-2xl border border-white/10">
+            <div class="w-12 h-12 bg-novastacks/20 rounded-lg flex items-center justify-center mb-6">
               <svg class="w-6 h-6 text-novastacks" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-novastacks-text mb-4">Performance Optimization</h3>
-            <p class="text-gray-600 leading-relaxed mb-4">Once systems are in place, focuses on optimization. Individual channel managers optimize their channels. A CMO optimizes the entire portfolio.</p>
-            <ul class="text-sm text-gray-500 space-y-2">
+            <h3 class="text-xl font-semibold text-white mb-4">Performance Optimization</h3>
+            <p class="text-slate-400 leading-relaxed mb-4">Once systems are in place, focuses on optimization. Individual channel managers optimize their channels. A CMO optimizes the entire portfolio.</p>
+            <ul class="text-sm text-slate-500 space-y-2">
               <li>- Campaign performance analysis</li>
               <li>- A/B testing frameworks</li>
               <li>- Budget reallocation based on ROI</li>
@@ -400,15 +392,15 @@
           </div>
 
           <!-- Responsibility 5 -->
-          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-            <div class="w-12 h-12 bg-novastacks/10 rounded-full flex items-center justify-center mb-6">
+          <div class="bg-slate-900 p-8 rounded-2xl border border-white/10">
+            <div class="w-12 h-12 bg-novastacks/20 rounded-lg flex items-center justify-center mb-6">
               <svg class="w-6 h-6 text-novastacks" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-novastacks-text mb-4">Vendor & Agency Management</h3>
-            <p class="text-gray-600 leading-relaxed mb-4">Most companies work with external agencies for specialized functions. We've seen companies overpay for underperforming agencies for years because no one was watching.</p>
-            <ul class="text-sm text-gray-500 space-y-2">
+            <h3 class="text-xl font-semibold text-white mb-4">Vendor & Agency Management</h3>
+            <p class="text-slate-400 leading-relaxed mb-4">Most companies work with external agencies for specialized functions. We've seen companies overpay for underperforming agencies for years because no one was watching.</p>
+            <ul class="text-sm text-slate-500 space-y-2">
               <li>- Evaluates and selects the right agencies</li>
               <li>- Sets expectations and KPIs</li>
               <li>- Reviews performance and holds agencies accountable</li>
@@ -417,15 +409,15 @@
           </div>
 
           <!-- Responsibility 6 -->
-          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-            <div class="w-12 h-12 bg-novastacks/10 rounded-full flex items-center justify-center mb-6">
+          <div class="bg-slate-900 p-8 rounded-2xl border border-white/10">
+            <div class="w-12 h-12 bg-novastacks/20 rounded-lg flex items-center justify-center mb-6">
               <svg class="w-6 h-6 text-novastacks" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-novastacks-text mb-4">Board & Investor Communications</h3>
-            <p class="text-gray-600 leading-relaxed mb-4">For venture-backed companies, marketing needs representation in board meetings. This often surprises founders.</p>
-            <ul class="text-sm text-gray-500 space-y-2">
+            <h3 class="text-xl font-semibold text-white mb-4">Board & Investor Communications</h3>
+            <p class="text-slate-400 leading-relaxed mb-4">For venture-backed companies, marketing needs representation in board meetings. This often surprises founders.</p>
+            <ul class="text-sm text-slate-500 space-y-2">
               <li>- Prepares marketing metrics for board decks</li>
               <li>- Presents strategy and progress to investors</li>
               <li>- Supports fundraising with marketing materials</li>
@@ -436,35 +428,36 @@
       </div>
     </section>
 
-    <!-- Fractional vs Full-Time CMO Section -->
-    <section class="py-16 md:py-20 lg:py-24 bg-white">
+    <!-- Fractional vs Full-Time CMO Section (LIGHT) -->
+    <section class="py-16 md:py-20 lg:py-24 bg-slate-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <span class="font-mono text-novastacks text-sm tracking-wider">// COMPARISON</span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mt-4 mb-6 leading-tight font-display">
             Fractional CMO vs. Full-Time CMO
           </h2>
-          <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+          <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
             This is the core decision. Here's how we advise companies.
           </p>
         </div>
 
         <!-- Comparison Table -->
         <div class="overflow-x-auto mb-12">
-          <table class="w-full bg-white rounded-2xl shadow-sm border border-gray-200">
+          <table class="w-full bg-white rounded-2xl shadow-sm border border-slate-200">
             <thead>
-              <tr class="bg-gray-800 text-white">
+              <tr class="bg-slate-900 text-white">
                 <th class="px-6 py-4 text-left font-semibold">Factor</th>
                 <th class="px-6 py-4 text-left font-semibold">Fractional CMO</th>
                 <th class="px-6 py-4 text-left font-semibold">Full-Time CMO</th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-gray-200">
+            <tbody class="divide-y divide-slate-200 text-slate-700">
               <tr>
                 <td class="px-6 py-4 font-medium">Monthly Cost</td>
                 <td class="px-6 py-4">$5,000-$15,000</td>
                 <td class="px-6 py-4">$25,000-$35,000+</td>
               </tr>
-              <tr class="bg-gray-50">
+              <tr class="bg-slate-50">
                 <td class="px-6 py-4 font-medium">Annual Cost</td>
                 <td class="px-6 py-4">$60,000-$180,000</td>
                 <td class="px-6 py-4">$300,000-$500,000+</td>
@@ -474,7 +467,7 @@
                 <td class="px-6 py-4">Month-to-month or quarterly</td>
                 <td class="px-6 py-4">2+ year expectation</td>
               </tr>
-              <tr class="bg-gray-50">
+              <tr class="bg-slate-50">
                 <td class="px-6 py-4 font-medium">Flexibility</td>
                 <td class="px-6 py-4">Scale up/down as needed</td>
                 <td class="px-6 py-4">Fixed overhead</td>
@@ -484,7 +477,7 @@
                 <td class="px-6 py-4">Often more diverse (multiple companies)</td>
                 <td class="px-6 py-4">Deep in one domain</td>
               </tr>
-              <tr class="bg-gray-50">
+              <tr class="bg-slate-50">
                 <td class="px-6 py-4 font-medium">Availability</td>
                 <td class="px-6 py-4">10-20 hours/week</td>
                 <td class="px-6 py-4">50+ hours/week</td>
@@ -501,8 +494,8 @@
         <!-- When to Choose -->
         <div class="grid md:grid-cols-2 gap-8">
           <div class="bg-green-50 p-8 rounded-2xl border-l-4 border-green-500">
-            <h3 class="text-xl font-semibold text-novastacks-text mb-4">When Fractional Makes Sense</h3>
-            <ul class="space-y-3 text-gray-600">
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">When Fractional Makes Sense</h3>
+            <ul class="space-y-3 text-slate-600">
               <li class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
@@ -537,8 +530,8 @@
           </div>
 
           <div class="bg-blue-50 p-8 rounded-2xl border-l-4 border-blue-500">
-            <h3 class="text-xl font-semibold text-novastacks-text mb-4">When Full-Time Makes Sense</h3>
-            <ul class="space-y-3 text-gray-600">
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">When Full-Time Makes Sense</h3>
+            <ul class="space-y-3 text-slate-600">
               <li class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
@@ -567,66 +560,67 @@
           </div>
         </div>
 
-        <p class="text-center text-gray-600 mt-8 italic">Most companies should start fractional and graduate to full-time when the evidence supports it. We've helped multiple clients hire their full-time CMOs - and stayed on to support the transition.</p>
+        <p class="text-center text-slate-600 mt-8 italic">Most companies should start fractional and graduate to full-time when the evidence supports it. We've helped multiple clients hire their full-time CMOs - and stayed on to support the transition.</p>
       </div>
     </section>
 
-    <!-- Fractional CMO vs Agency vs Consultant Section -->
-    <section class="py-16 md:py-20 lg:py-24 bg-gray-50">
+    <!-- Fractional CMO vs Agency vs Consultant Section (DARK) -->
+    <section class="py-16 md:py-20 lg:py-24 bg-slate-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <span class="font-mono text-novastacks text-sm tracking-wider">// ALTERNATIVES</span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mt-4 mb-6 leading-tight font-display">
             Fractional CMO vs. Agency vs. Consultant
           </h2>
-          <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+          <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto">
             These three options get confused constantly. Here's the breakdown.
           </p>
         </div>
 
         <!-- Comparison Table -->
         <div class="overflow-x-auto mb-12">
-          <table class="w-full bg-white rounded-2xl shadow-sm border border-gray-200">
+          <table class="w-full bg-slate-900 rounded-2xl border border-white/10">
             <thead>
-              <tr class="bg-gray-800 text-white">
+              <tr class="bg-slate-800 text-white">
                 <th class="px-6 py-4 text-left font-semibold">Factor</th>
                 <th class="px-6 py-4 text-left font-semibold">Fractional CMO</th>
                 <th class="px-6 py-4 text-left font-semibold">Marketing Agency</th>
                 <th class="px-6 py-4 text-left font-semibold">Marketing Consultant</th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-gray-200">
+            <tbody class="divide-y divide-white/10 text-slate-300">
               <tr>
-                <td class="px-6 py-4 font-medium">Role</td>
+                <td class="px-6 py-4 font-medium text-white">Role</td>
                 <td class="px-6 py-4">Strategic leadership</td>
                 <td class="px-6 py-4">Execution</td>
                 <td class="px-6 py-4">Advisory</td>
               </tr>
-              <tr class="bg-gray-50">
-                <td class="px-6 py-4 font-medium">Ownership</td>
+              <tr class="bg-slate-900/50">
+                <td class="px-6 py-4 font-medium text-white">Ownership</td>
                 <td class="px-6 py-4">Owns outcomes</td>
                 <td class="px-6 py-4">Owns deliverables</td>
                 <td class="px-6 py-4">Owns recommendations</td>
               </tr>
               <tr>
-                <td class="px-6 py-4 font-medium">Integration</td>
+                <td class="px-6 py-4 font-medium text-white">Integration</td>
                 <td class="px-6 py-4">Part of your team</td>
                 <td class="px-6 py-4">External partner</td>
                 <td class="px-6 py-4">External advisor</td>
               </tr>
-              <tr class="bg-gray-50">
-                <td class="px-6 py-4 font-medium">Scope</td>
+              <tr class="bg-slate-900/50">
+                <td class="px-6 py-4 font-medium text-white">Scope</td>
                 <td class="px-6 py-4">Full marketing function</td>
                 <td class="px-6 py-4">Specific channels/services</td>
                 <td class="px-6 py-4">Specific problems</td>
               </tr>
               <tr>
-                <td class="px-6 py-4 font-medium">Typical Cost</td>
+                <td class="px-6 py-4 font-medium text-white">Typical Cost</td>
                 <td class="px-6 py-4">$5K-$15K/month</td>
                 <td class="px-6 py-4">$3K-$50K/month</td>
                 <td class="px-6 py-4">$200-$500/hour</td>
               </tr>
-              <tr class="bg-gray-50">
-                <td class="px-6 py-4 font-medium">Team Building</td>
+              <tr class="bg-slate-900/50">
+                <td class="px-6 py-4 font-medium text-white">Team Building</td>
                 <td class="px-6 py-4">Yes</td>
                 <td class="px-6 py-4">No</td>
                 <td class="px-6 py-4">No</td>
@@ -641,15 +635,15 @@
           <p class="text-white/90 leading-relaxed mb-6">The most effective model for many companies combines a fractional CMO with specialized agencies:</p>
           <ul class="space-y-3">
             <li class="flex items-start gap-3">
-              <span class="text-novastacks-accent font-bold">1.</span>
+              <span class="text-white font-bold">1.</span>
               <span><strong>Fractional CMO</strong> sets strategy, manages vendors, and handles high-level decisions</span>
             </li>
             <li class="flex items-start gap-3">
-              <span class="text-novastacks-accent font-bold">2.</span>
+              <span class="text-white font-bold">2.</span>
               <span><strong>Agencies</strong> execute on specific channels (paid media, PR, content production)</span>
             </li>
             <li class="flex items-start gap-3">
-              <span class="text-novastacks-accent font-bold">3.</span>
+              <span class="text-white font-bold">3.</span>
               <span><strong>In-house team</strong> (if any) handles day-to-day operations and company-specific work</span>
             </li>
           </ul>
@@ -658,26 +652,27 @@
       </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section class="py-16 md:py-20 lg:py-24 bg-white">
+    <!-- Pricing Section (LIGHT) -->
+    <section class="py-16 md:py-20 lg:py-24 bg-slate-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <span class="font-mono text-novastacks text-sm tracking-wider">// PRICING</span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mt-4 mb-6 leading-tight font-display">
             How Much Does a Fractional CMO Cost?
           </h2>
-          <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+          <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
             Pricing varies significantly based on experience, hours, and scope. Here's what we see in the market.
           </p>
         </div>
 
         <!-- Pricing Tiers -->
         <div class="grid md:grid-cols-3 gap-8 mb-12">
-          <div class="bg-gray-50 p-8 rounded-2xl text-center">
-            <h3 class="text-xl font-semibold text-novastacks-text mb-2">Entry</h3>
+          <div class="bg-white p-8 rounded-2xl text-center border border-slate-200">
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">Entry</h3>
             <div class="text-4xl font-bold text-novastacks mb-2">$5,000-$7,500</div>
-            <p class="text-gray-500 mb-4">/month</p>
-            <p class="text-sm text-gray-600 mb-4">20-30 hours/month</p>
-            <p class="text-sm text-gray-500">10-15 years experience, strong in one domain</p>
+            <p class="text-slate-500 mb-4">/month</p>
+            <p class="text-sm text-slate-600 mb-4">20-30 hours/month</p>
+            <p class="text-sm text-slate-500">10-15 years experience, strong in one domain</p>
           </div>
 
           <div class="bg-novastacks text-white p-8 rounded-2xl text-center transform scale-105">
@@ -688,34 +683,34 @@
             <p class="text-sm text-white/70">15-20 years experience, multiple company successes</p>
           </div>
 
-          <div class="bg-gray-50 p-8 rounded-2xl text-center">
-            <h3 class="text-xl font-semibold text-novastacks-text mb-2">Senior</h3>
+          <div class="bg-white p-8 rounded-2xl text-center border border-slate-200">
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">Senior</h3>
             <div class="text-4xl font-bold text-novastacks mb-2">$12,000-$15,000+</div>
-            <p class="text-gray-500 mb-4">/month</p>
-            <p class="text-sm text-gray-600 mb-4">40-60 hours/month</p>
-            <p class="text-sm text-gray-500">20+ years experience, enterprise/IPO track record</p>
+            <p class="text-slate-500 mb-4">/month</p>
+            <p class="text-sm text-slate-600 mb-4">40-60 hours/month</p>
+            <p class="text-sm text-slate-500">20+ years experience, enterprise/IPO track record</p>
           </div>
         </div>
 
         <!-- Cost Comparison -->
         <div class="max-w-4xl mx-auto">
-          <h3 class="text-2xl font-semibold text-novastacks-text mb-6 text-center">Cost vs. Full-Time CMO</h3>
+          <h3 class="text-2xl font-semibold text-slate-900 mb-6 text-center">Cost vs. Full-Time CMO</h3>
           <div class="overflow-x-auto">
-            <table class="w-full bg-white rounded-2xl shadow-sm border border-gray-200">
+            <table class="w-full bg-white rounded-2xl shadow-sm border border-slate-200">
               <thead>
-                <tr class="bg-gray-800 text-white">
+                <tr class="bg-slate-900 text-white">
                   <th class="px-6 py-4 text-left font-semibold">Item</th>
                   <th class="px-6 py-4 text-right font-semibold">Full-Time CMO</th>
                   <th class="px-6 py-4 text-right font-semibold">Fractional CMO</th>
                 </tr>
               </thead>
-              <tbody class="divide-y divide-gray-200">
+              <tbody class="divide-y divide-slate-200 text-slate-700">
                 <tr>
                   <td class="px-6 py-4">Base Salary</td>
                   <td class="px-6 py-4 text-right">$250,000-$350,000</td>
                   <td class="px-6 py-4 text-right">-</td>
                 </tr>
-                <tr class="bg-gray-50">
+                <tr class="bg-slate-50">
                   <td class="px-6 py-4">Equity</td>
                   <td class="px-6 py-4 text-right">0.5-1.5%</td>
                   <td class="px-6 py-4 text-right">-</td>
@@ -725,7 +720,7 @@
                   <td class="px-6 py-4 text-right">$30,000-$50,000</td>
                   <td class="px-6 py-4 text-right">-</td>
                 </tr>
-                <tr class="bg-gray-50">
+                <tr class="bg-slate-50">
                   <td class="px-6 py-4">Recruiting Costs</td>
                   <td class="px-6 py-4 text-right">$75,000-$100,000</td>
                   <td class="px-6 py-4 text-right">-</td>
@@ -743,100 +738,101 @@
               </tbody>
             </table>
           </div>
-          <p class="text-center text-gray-600 mt-6">You're looking at <strong>3-5x cost savings</strong> - and that's before accounting for the flexibility to scale up or down as business needs change.</p>
+          <p class="text-center text-slate-600 mt-6">You're looking at <strong>3-5x cost savings</strong> - and that's before accounting for the flexibility to scale up or down as business needs change.</p>
         </div>
       </div>
     </section>
 
-    <!-- Signs You Need a Fractional CMO Section -->
-    <section class="py-16 md:py-20 lg:py-24 bg-gray-50">
+    <!-- Signs You Need a Fractional CMO Section (DARK) -->
+    <section class="py-16 md:py-20 lg:py-24 bg-slate-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <span class="font-mono text-novastacks text-sm tracking-wider">// READINESS_CHECK</span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mt-4 mb-6 leading-tight font-display">
             Signs Your Company Needs a Fractional CMO
           </h2>
-          <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+          <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto">
             Not every company needs senior marketing leadership. Here's how to know if you're ready.
           </p>
         </div>
 
         <div class="grid md:grid-cols-2 gap-8 mb-12">
           <!-- You Need One -->
-          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-            <h3 class="text-xl font-semibold text-green-600 mb-6">You Need a Fractional CMO If:</h3>
+          <div class="bg-slate-900 p-8 rounded-2xl border border-white/10">
+            <h3 class="text-xl font-semibold text-green-400 mb-6">You Need a Fractional CMO If:</h3>
             <ul class="space-y-4">
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-gray-600">Marketing spend is growing but results aren't keeping pace</span>
+                <span class="text-slate-300">Marketing spend is growing but results aren't keeping pace</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-gray-600">You're hiring marketers but don't know who to hire first</span>
+                <span class="text-slate-300">You're hiring marketers but don't know who to hire first</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-gray-600">Agencies are running unsupervised and you're not sure if they're performing</span>
+                <span class="text-slate-300">Agencies are running unsupervised and you're not sure if they're performing</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-gray-600">Product is strong but messaging and positioning feel wrong</span>
+                <span class="text-slate-300">Product is strong but messaging and positioning feel wrong</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-gray-600">CEO is spending 10+ hours/week on marketing decisions</span>
+                <span class="text-slate-300">CEO is spending 10+ hours/week on marketing decisions</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-gray-600">You have marketing channels working but can't prioritize investment</span>
+                <span class="text-slate-300">You have marketing channels working but can't prioritize investment</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-gray-600">Fundraising is coming up and marketing metrics aren't investor-ready</span>
+                <span class="text-slate-300">Fundraising is coming up and marketing metrics aren't investor-ready</span>
               </li>
             </ul>
           </div>
 
           <!-- You Don't Need One -->
-          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-            <h3 class="text-xl font-semibold text-red-600 mb-6">You Don't Need a Fractional CMO If:</h3>
+          <div class="bg-slate-900 p-8 rounded-2xl border border-white/10">
+            <h3 class="text-xl font-semibold text-red-400 mb-6">You Don't Need a Fractional CMO If:</h3>
             <ul class="space-y-4">
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
-                <span class="text-gray-600">You're pre-product-market-fit - focus on product, not marketing leadership</span>
+                <span class="text-slate-300">You're pre-product-market-fit - focus on product, not marketing leadership</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
-                <span class="text-gray-600">Marketing budget is under $100K/year - invest in execution, not strategy</span>
+                <span class="text-slate-300">Marketing budget is under $100K/year - invest in execution, not strategy</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
-                <span class="text-gray-600">You already have a strong marketing leader - don't add overhead</span>
+                <span class="text-slate-300">You already have a strong marketing leader - don't add overhead</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
-                <span class="text-gray-600">You want someone to run Facebook ads - hire a specialist, not a CMO</span>
+                <span class="text-slate-300">You want someone to run Facebook ads - hire a specialist, not a CMO</span>
               </li>
             </ul>
           </div>
@@ -844,36 +840,36 @@
 
         <!-- Company Stage Triggers -->
         <div class="max-w-4xl mx-auto">
-          <h3 class="text-2xl font-semibold text-novastacks-text mb-6 text-center">Company Stage Triggers</h3>
+          <h3 class="text-2xl font-semibold text-white mb-6 text-center">Company Stage Triggers</h3>
           <div class="overflow-x-auto">
-            <table class="w-full bg-white rounded-2xl shadow-sm border border-gray-200">
+            <table class="w-full bg-slate-900 rounded-2xl border border-white/10">
               <thead>
-                <tr class="bg-gray-800 text-white">
+                <tr class="bg-slate-800 text-white">
                   <th class="px-6 py-4 text-left font-semibold">Stage</th>
                   <th class="px-6 py-4 text-left font-semibold">Signal</th>
                   <th class="px-6 py-4 text-left font-semibold">Fractional CMO Fit</th>
                 </tr>
               </thead>
-              <tbody class="divide-y divide-gray-200">
+              <tbody class="divide-y divide-white/10 text-slate-300">
                 <tr>
-                  <td class="px-6 py-4 font-medium">Seed</td>
+                  <td class="px-6 py-4 font-medium text-white">Seed</td>
                   <td class="px-6 py-4">Finding PMF</td>
-                  <td class="px-6 py-4 text-yellow-600">Usually too early</td>
+                  <td class="px-6 py-4 text-yellow-400">Usually too early</td>
                 </tr>
-                <tr class="bg-gray-50">
-                  <td class="px-6 py-4 font-medium">Series A</td>
+                <tr class="bg-slate-900/50">
+                  <td class="px-6 py-4 font-medium text-white">Series A</td>
                   <td class="px-6 py-4">Scaling initial traction</td>
-                  <td class="px-6 py-4 text-green-600">Good timing - set foundations</td>
+                  <td class="px-6 py-4 text-green-400">Good timing - set foundations</td>
                 </tr>
                 <tr>
-                  <td class="px-6 py-4 font-medium">Series B</td>
+                  <td class="px-6 py-4 font-medium text-white">Series B</td>
                   <td class="px-6 py-4">Building repeatable growth</td>
-                  <td class="px-6 py-4 text-green-600">Ideal - build team and systems</td>
+                  <td class="px-6 py-4 text-green-400">Ideal - build team and systems</td>
                 </tr>
-                <tr class="bg-gray-50">
-                  <td class="px-6 py-4 font-medium">Series C+</td>
+                <tr class="bg-slate-900/50">
+                  <td class="px-6 py-4 font-medium text-white">Series C+</td>
                   <td class="px-6 py-4">Scaling proven playbook</td>
-                  <td class="px-6 py-4 text-blue-600">May need full-time CMO</td>
+                  <td class="px-6 py-4 text-blue-400">May need full-time CMO</td>
                 </tr>
               </tbody>
             </table>
@@ -882,26 +878,27 @@
       </div>
     </section>
 
-    <!-- How to Hire Section -->
-    <section class="py-16 md:py-20 lg:py-24 bg-white">
+    <!-- How to Hire Section (LIGHT) -->
+    <section class="py-16 md:py-20 lg:py-24 bg-slate-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <span class="font-mono text-novastacks text-sm tracking-wider">// HIRING_GUIDE</span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mt-4 mb-6 leading-tight font-display">
             How to Hire a Fractional CMO
           </h2>
-          <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+          <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
             The hiring process matters. Here's what to look for and how to evaluate candidates.
           </p>
         </div>
 
         <div class="grid md:grid-cols-2 gap-8 mb-12">
           <!-- What to Look For -->
-          <div class="bg-gray-50 p-8 rounded-2xl">
-            <h3 class="text-xl font-semibold text-novastacks-text mb-6">What to Look For</h3>
+          <div class="bg-white p-8 rounded-2xl border border-slate-200">
+            <h3 class="text-xl font-semibold text-slate-900 mb-6">What to Look For</h3>
 
             <div class="mb-6">
-              <h4 class="font-semibold text-novastacks-text mb-2">Experience Alignment</h4>
-              <ul class="text-gray-600 space-y-1 text-sm">
+              <h4 class="font-semibold text-slate-900 mb-2">Experience Alignment</h4>
+              <ul class="text-slate-600 space-y-1 text-sm">
                 <li>- Have they worked at companies similar to yours (stage, industry, business model)?</li>
                 <li>- Do they have a track record of the specific results you need?</li>
                 <li>- Have they managed teams and budgets at your scale?</li>
@@ -909,8 +906,8 @@
             </div>
 
             <div class="mb-6">
-              <h4 class="font-semibold text-novastacks-text mb-2">Working Style Fit</h4>
-              <ul class="text-gray-600 space-y-1 text-sm">
+              <h4 class="font-semibold text-slate-900 mb-2">Working Style Fit</h4>
+              <ul class="text-slate-600 space-y-1 text-sm">
                 <li>- Are they strategic or hands-on (or both)?</li>
                 <li>- How do they communicate - async, meetings, Slack?</li>
                 <li>- Can they work at your pace?</li>
@@ -918,8 +915,8 @@
             </div>
 
             <div>
-              <h4 class="font-semibold text-novastacks-text mb-2">Availability</h4>
-              <ul class="text-gray-600 space-y-1 text-sm">
+              <h4 class="font-semibold text-slate-900 mb-2">Availability</h4>
+              <ul class="text-slate-600 space-y-1 text-sm">
                 <li>- Do they have capacity for your needs?</li>
                 <li>- How many other clients do they serve?</li>
                 <li>- What's their response time commitment?</li>
@@ -929,51 +926,51 @@
 
           <!-- Red Flags -->
           <div class="bg-red-50 p-8 rounded-2xl border-l-4 border-red-500">
-            <h3 class="text-xl font-semibold text-novastacks-text mb-6">Red Flags to Avoid</h3>
+            <h3 class="text-xl font-semibold text-slate-900 mb-6">Red Flags to Avoid</h3>
             <ul class="space-y-4">
               <li class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
                 </svg>
-                <span class="text-gray-600"><strong>Overpromising</strong> - "I'll double your leads in 90 days" without knowing your business</span>
+                <span class="text-slate-600"><strong>Overpromising</strong> - "I'll double your leads in 90 days" without knowing your business</span>
               </li>
               <li class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
                 </svg>
-                <span class="text-gray-600"><strong>No recent experience</strong> - The marketing landscape changes fast</span>
+                <span class="text-slate-600"><strong>No recent experience</strong> - The marketing landscape changes fast</span>
               </li>
               <li class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
                 </svg>
-                <span class="text-gray-600"><strong>Too many clients</strong> - If they have 10 clients, you're getting 4 hours/week</span>
+                <span class="text-slate-600"><strong>Too many clients</strong> - If they have 10 clients, you're getting 4 hours/week</span>
               </li>
               <li class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
                 </svg>
-                <span class="text-gray-600"><strong>No execution mindset</strong> - Strategy without execution is just consulting</span>
+                <span class="text-slate-600"><strong>No execution mindset</strong> - Strategy without execution is just consulting</span>
               </li>
               <li class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
                 </svg>
-                <span class="text-gray-600"><strong>Poor references</strong> - Always check references with former clients</span>
+                <span class="text-slate-600"><strong>Poor references</strong> - Always check references with former clients</span>
               </li>
             </ul>
           </div>
         </div>
 
         <!-- Onboarding Best Practices -->
-        <div class="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-          <h3 class="text-2xl font-semibold text-novastacks-text mb-6">Onboarding Best Practices</h3>
-          <p class="text-gray-600 mb-6">The first 30 days determine success:</p>
+        <div class="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+          <h3 class="text-2xl font-semibold text-slate-900 mb-6">Onboarding Best Practices</h3>
+          <p class="text-slate-600 mb-6">The first 30 days determine success:</p>
 
           <div class="grid md:grid-cols-3 gap-6">
             <div>
               <h4 class="font-semibold text-novastacks mb-2">Week 1: Immersion</h4>
-              <ul class="text-sm text-gray-600 space-y-1">
+              <ul class="text-sm text-slate-600 space-y-1">
                 <li>- Deep dive on business, product, and customers</li>
                 <li>- Review existing marketing data and campaigns</li>
                 <li>- Meet key stakeholders and understand goals</li>
@@ -981,7 +978,7 @@
             </div>
             <div>
               <h4 class="font-semibold text-novastacks mb-2">Week 2: Assessment</h4>
-              <ul class="text-sm text-gray-600 space-y-1">
+              <ul class="text-sm text-slate-600 space-y-1">
                 <li>- Complete marketing audit</li>
                 <li>- Identify quick wins and strategic priorities</li>
                 <li>- Draft initial observations and recommendations</li>
@@ -989,7 +986,7 @@
             </div>
             <div>
               <h4 class="font-semibold text-novastacks mb-2">Week 3-4: Roadmap</h4>
-              <ul class="text-sm text-gray-600 space-y-1">
+              <ul class="text-sm text-slate-600 space-y-1">
                 <li>- Develop 90-day action plan</li>
                 <li>- Align with leadership on priorities</li>
                 <li>- Begin execution on highest-impact items</li>
@@ -1000,164 +997,167 @@
       </div>
     </section>
 
-    <!-- The Novastacks Approach Section -->
-    <section class="py-16 md:py-20 lg:py-24 bg-novastacks text-white">
+    <!-- The Novastacks Approach Section (DARK) -->
+    <section class="py-16 md:py-20 lg:py-24 bg-slate-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight font-display">
+          <span class="font-mono text-novastacks text-sm tracking-wider">// OUR_APPROACH</span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mt-4 mb-6 leading-tight font-display">
             The Novastacks Approach to Fractional CMO
           </h2>
-          <p class="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
+          <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto">
             We've built Novastacks specifically for companies that need more than traditional fractional CMO services. Here's what makes our approach different.
           </p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="bg-white/10 p-6 rounded-2xl">
-            <h3 class="text-xl font-semibold mb-4">AI-Augmented Execution</h3>
-            <p class="text-white/80 leading-relaxed">We've developed agentic workflows that enable us to execute at 10x the speed of traditional agencies. What takes most fractional CMOs weeks - comprehensive audits, content production, competitive analysis - we deliver in days. Learn more about our <a href="/agentic-marketing/" class="text-novastacks-accent hover:underline">agentic marketing approach</a>.</p>
+          <div class="bg-slate-900 p-6 rounded-2xl border border-white/10">
+            <h3 class="text-xl font-semibold text-white mb-4">AI-Augmented Execution</h3>
+            <p class="text-slate-400 leading-relaxed">We've developed agentic workflows that enable us to execute at 10x the speed of traditional agencies. What takes most fractional CMOs weeks - comprehensive audits, content production, competitive analysis - we deliver in days. Learn more about our <a href="/agentic-marketing/" class="text-novastacks hover:underline">agentic marketing approach</a>.</p>
           </div>
 
-          <div class="bg-white/10 p-6 rounded-2xl">
-            <h3 class="text-xl font-semibold mb-4">AEO Expertise Built In</h3>
-            <p class="text-white/80 leading-relaxed">Answer Engine Optimization is becoming as important as SEO. We bring specialized expertise in getting your brand cited by ChatGPT, Perplexity, and Google AI Overview - capabilities most fractional CMOs don't have. See our <a href="/aeo/" class="text-novastacks-accent hover:underline">AEO services</a> for details.</p>
+          <div class="bg-slate-900 p-6 rounded-2xl border border-white/10">
+            <h3 class="text-xl font-semibold text-white mb-4">AEO Expertise Built In</h3>
+            <p class="text-slate-400 leading-relaxed">Answer Engine Optimization is becoming as important as SEO. We bring specialized expertise in getting your brand cited by ChatGPT, Perplexity, and Google AI Overview - capabilities most fractional CMOs don't have. See our <a href="/aeo/" class="text-novastacks hover:underline">AEO services</a> for details.</p>
           </div>
 
-          <div class="bg-white/10 p-6 rounded-2xl">
-            <h3 class="text-xl font-semibold mb-4">Operator Experience</h3>
-            <p class="text-white/80 leading-relaxed">We spent 20+ years building growth systems at companies like Tencent and Expedia. We've hired hundreds of marketers, managed eight-figure budgets, and scaled brands across Asia-Pacific and North America. When we advise you, it's from experience - not frameworks we read in a book.</p>
+          <div class="bg-slate-900 p-6 rounded-2xl border border-white/10">
+            <h3 class="text-xl font-semibold text-white mb-4">Operator Experience</h3>
+            <p class="text-slate-400 leading-relaxed">We spent 20+ years building growth systems at companies like Tencent and Expedia. We've hired hundreds of marketers, managed eight-figure budgets, and scaled brands across Asia-Pacific and North America. When we advise you, it's from experience - not frameworks we read in a book.</p>
           </div>
 
-          <div class="bg-white/10 p-6 rounded-2xl">
-            <h3 class="text-xl font-semibold mb-4">True Growth Partner</h3>
-            <p class="text-white/80 leading-relaxed">Most fractional CMOs give you strategy and leave you to figure out execution. We work alongside your team, roll up our sleeves, and get things done. We treat your business like our own because we're measured on your outcomes, not our deliverables.</p>
+          <div class="bg-slate-900 p-6 rounded-2xl border border-white/10">
+            <h3 class="text-xl font-semibold text-white mb-4">True Growth Partner</h3>
+            <p class="text-slate-400 leading-relaxed">Most fractional CMOs give you strategy and leave you to figure out execution. We work alongside your team, roll up our sleeves, and get things done. We treat your business like our own because we're measured on your outcomes, not our deliverables.</p>
           </div>
         </div>
 
         <div class="text-center mt-12">
-          <a href="/contact" class="inline-block bg-white text-novastacks-text px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transform hover:-translate-y-1 transition-all duration-300">
+          <a href="/contact" class="inline-block bg-novastacks text-white px-8 py-4 rounded font-semibold text-lg hover:bg-novastacks/80 transition-all duration-300">
             Book a Discovery Call
           </a>
         </div>
       </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="py-16 md:py-20 lg:py-24 bg-gray-50">
+    <!-- FAQ Section (LIGHT) -->
+    <section class="py-16 md:py-20 lg:py-24 bg-slate-100">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+          <span class="font-mono text-novastacks text-sm tracking-wider">// FAQ</span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mt-4 mb-6 leading-tight font-display">
             FAQ: Fractional CMO Questions Answered
           </h2>
         </div>
 
-        <div class="bg-white rounded-2xl shadow-sm border border-gray-200">
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200">
           <!-- FAQ Item 1 -->
-          <div class="faq-item">
-            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-novastacks-text pr-8">What is the difference between a fractional CMO and a marketing consultant?</span>
+          <div class="faq-item border-b border-slate-200">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-slate-50" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold text-slate-900 pr-8">What is the difference between a fractional CMO and a marketing consultant?</span>
               <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
             <div class="faq-content px-6 pb-6">
-              <p class="text-gray-600 leading-relaxed">A fractional CMO is an embedded marketing leader who becomes part of your team, owns outcomes, and manages other marketers. A marketing consultant provides external advice on specific problems without ongoing ownership. Fractional CMOs attend leadership meetings, manage budgets, and hire team members. Consultants deliver recommendations and move on.</p>
+              <p class="text-slate-600 leading-relaxed">A fractional CMO is an embedded marketing leader who becomes part of your team, owns outcomes, and manages other marketers. A marketing consultant provides external advice on specific problems without ongoing ownership. Fractional CMOs attend leadership meetings, manage budgets, and hire team members. Consultants deliver recommendations and move on.</p>
             </div>
           </div>
 
           <!-- FAQ Item 2 -->
-          <div class="faq-item">
-            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-novastacks-text pr-8">How many hours per week does a fractional CMO work?</span>
+          <div class="faq-item border-b border-slate-200">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-slate-50" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold text-slate-900 pr-8">How many hours per week does a fractional CMO work?</span>
               <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
             <div class="faq-content px-6 pb-6">
-              <p class="text-gray-600 leading-relaxed">Most fractional CMO engagements involve 10-20 hours per week, or 40-80 hours per month. This is enough time for strategic leadership, team management, and oversight of key initiatives. The exact hours depend on company needs, team size, and scope of work. Some engagements start at 10 hours and scale up as needs grow.</p>
+              <p class="text-slate-600 leading-relaxed">Most fractional CMO engagements involve 10-20 hours per week, or 40-80 hours per month. This is enough time for strategic leadership, team management, and oversight of key initiatives. The exact hours depend on company needs, team size, and scope of work. Some engagements start at 10 hours and scale up as needs grow.</p>
             </div>
           </div>
 
           <!-- FAQ Item 3 -->
-          <div class="faq-item">
-            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-novastacks-text pr-8">Can a fractional CMO build and manage a marketing team?</span>
+          <div class="faq-item border-b border-slate-200">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-slate-50" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold text-slate-900 pr-8">Can a fractional CMO build and manage a marketing team?</span>
               <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
             <div class="faq-content px-6 pb-6">
-              <p class="text-gray-600 leading-relaxed">Yes. Team building is one of the most valuable functions a fractional CMO provides. They define roles, write job descriptions, recruit candidates, conduct interviews, onboard new hires, and provide ongoing management. Many companies engage fractional CMOs specifically to build their first real marketing team before transitioning to a full-time CMO.</p>
+              <p class="text-slate-600 leading-relaxed">Yes. Team building is one of the most valuable functions a fractional CMO provides. They define roles, write job descriptions, recruit candidates, conduct interviews, onboard new hires, and provide ongoing management. Many companies engage fractional CMOs specifically to build their first real marketing team before transitioning to a full-time CMO.</p>
             </div>
           </div>
 
           <!-- FAQ Item 4 -->
-          <div class="faq-item">
-            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-novastacks-text pr-8">What industries benefit most from fractional CMO services?</span>
+          <div class="faq-item border-b border-slate-200">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-slate-50" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold text-slate-900 pr-8">What industries benefit most from fractional CMO services?</span>
               <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
             <div class="faq-content px-6 pb-6">
-              <p class="text-gray-600 leading-relaxed">SaaS, B2B services, e-commerce, and professional services see the strongest fit. Any industry where marketing is a significant growth driver but the company isn't large enough for a full-time CMO can benefit. Technology startups, healthcare companies, and financial services firms are common users. The model works less well for capital-intensive industries where marketing is a minor function.</p>
+              <p class="text-slate-600 leading-relaxed">SaaS, B2B services, e-commerce, and professional services see the strongest fit. Any industry where marketing is a significant growth driver but the company isn't large enough for a full-time CMO can benefit. Technology startups, healthcare companies, and financial services firms are common users. The model works less well for capital-intensive industries where marketing is a minor function.</p>
             </div>
           </div>
 
           <!-- FAQ Item 5 -->
-          <div class="faq-item">
-            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-novastacks-text pr-8">How long does a typical fractional CMO engagement last?</span>
+          <div class="faq-item border-b border-slate-200">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-slate-50" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold text-slate-900 pr-8">How long does a typical fractional CMO engagement last?</span>
               <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
             <div class="faq-content px-6 pb-6">
-              <p class="text-gray-600 leading-relaxed">Engagements typically run 6-18 months. The first 3-6 months focus on strategy development, team building, and foundational systems. The following months focus on optimization and scaling. Some companies transition to full-time CMOs after 12-18 months; others continue with fractional leadership indefinitely because the model works well for them.</p>
+              <p class="text-slate-600 leading-relaxed">Engagements typically run 6-18 months. The first 3-6 months focus on strategy development, team building, and foundational systems. The following months focus on optimization and scaling. Some companies transition to full-time CMOs after 12-18 months; others continue with fractional leadership indefinitely because the model works well for them.</p>
             </div>
           </div>
 
           <!-- FAQ Item 6 -->
-          <div class="faq-item">
-            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-novastacks-text pr-8">Should I hire a fractional CMO or a marketing agency?</span>
+          <div class="faq-item border-b border-slate-200">
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-slate-50" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold text-slate-900 pr-8">Should I hire a fractional CMO or a marketing agency?</span>
               <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
             <div class="faq-content px-6 pb-6">
-              <p class="text-gray-600 leading-relaxed">These solve different problems. A fractional CMO provides strategic leadership and manages your overall marketing function. An agency executes specific channels or campaigns. Many companies use both: a fractional CMO sets strategy and oversees agencies, while agencies handle specialized execution (paid media, PR, content production). If you need leadership, hire a fractional CMO. If you need more hands, hire an agency.</p>
+              <p class="text-slate-600 leading-relaxed">These solve different problems. A fractional CMO provides strategic leadership and manages your overall marketing function. An agency executes specific channels or campaigns. Many companies use both: a fractional CMO sets strategy and oversees agencies, while agencies handle specialized execution (paid media, PR, content production). If you need leadership, hire a fractional CMO. If you need more hands, hire an agency.</p>
             </div>
           </div>
 
           <!-- FAQ Item 7 -->
           <div class="faq-item">
-            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" onclick="toggleFaq(this)">
-              <span class="text-lg font-semibold text-novastacks-text pr-8">What results can I expect from a fractional CMO?</span>
+            <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-slate-50" onclick="toggleFaq(this)">
+              <span class="text-lg font-semibold text-slate-900 pr-8">What results can I expect from a fractional CMO?</span>
               <svg class="faq-icon w-5 h-5 text-novastacks flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
             <div class="faq-content px-6 pb-6">
-              <p class="text-gray-600 leading-relaxed">Results vary by company situation, but typical outcomes include: clearer marketing strategy and roadmap, improved marketing team performance, better vendor and agency results, more efficient marketing spend, stronger marketing metrics for investors, and foundation for scaling. Most companies see measurable improvement within 90 days. The best predictor of results is the quality of the fractional CMO and the company's commitment to implementing recommendations.</p>
+              <p class="text-slate-600 leading-relaxed">Results vary by company situation, but typical outcomes include: clearer marketing strategy and roadmap, improved marketing team performance, better vendor and agency results, more efficient marketing spend, stronger marketing metrics for investors, and foundation for scaling. Most companies see measurable improvement within 90 days. The best predictor of results is the quality of the fractional CMO and the company's commitment to implementing recommendations.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Final CTA Section -->
-    <section class="bg-novastacks-text text-white py-16 md:py-20 lg:py-24">
+    <!-- Final CTA Section (DARK) -->
+    <section class="bg-slate-950 text-white py-16 md:py-20 lg:py-24">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight font-display">Ready to Explore Fractional CMO Services?</h2>
-        <p class="text-lg text-white/90 mb-8 leading-relaxed">
+        <span class="font-mono text-novastacks text-sm tracking-wider">// GET_STARTED</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-6 leading-tight font-display">Ready to Explore Fractional CMO Services?</h2>
+        <p class="text-lg text-slate-400 mb-8 leading-relaxed">
           If you're considering whether a fractional CMO is right for your company, we'd welcome the conversation. We've helped dozens of growth-stage companies build their marketing foundations - and we're candid about whether the fractional model fits your situation.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact" class="bg-white text-novastacks-text px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300">
+          <a href="/contact" class="bg-novastacks text-white px-8 py-4 rounded font-semibold text-lg hover:bg-novastacks/80 transition-all duration-300">
             Book Discovery Call
           </a>
-          <a href="/fractional-cmo/" class="bg-transparent text-white border-2 border-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-novastacks-text transition-all duration-300">
+          <a href="/fractional-cmo/" class="bg-transparent text-white border-2 border-white px-8 py-4 rounded font-semibold text-lg hover:bg-white hover:text-slate-900 transition-all duration-300">
             Explore Our Services
           </a>
         </div>
@@ -1166,7 +1166,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-slate-900 text-white py-12">
+  <footer class="bg-slate-900 text-white py-16">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
 
@@ -1247,12 +1247,6 @@
       </div>
     </div>
   </footer>
-
-
-
-
-
-
 
   <!-- JavaScript -->
   <script src="assets/js/mobile-menu.js"></script>

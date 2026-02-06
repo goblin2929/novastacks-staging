@@ -25,7 +25,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -99,42 +99,48 @@
     ]
   }
   </script>
+
+  <style>
+    .font-display { font-family: 'Space Grotesk', sans-serif; }
+    .font-sans { font-family: 'Inter', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
 </head>
-<body class="bg-white text-novastacks-text font-serif">
+<body class="bg-slate-950 text-white font-sans">
   <!-- Header -->
-  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <header class="bg-slate-950 border-b border-white/10 sticky top-0 z-50">
     <div class="container mx-auto px-6">
       <nav class="flex justify-between items-center py-4">
-        <a href="/" class="flex items-center gap-3 hover:scale-105 transition-transform">
+        <a href="/" class="flex items-center gap-3">
           <div class="w-60 h-12 md:w-64 md:h-14 bg-contain bg-no-repeat bg-center" style="background-image: url('lovable-uploads/315157be-4582-4858-b0d2-0598ddbed87c.png')"></div>
         </a>
         <ul class="hidden md:flex gap-8">
-          <li><a href="/aeo" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
-          <li><a href="/methodology" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Methodology</a></li>
-          <li><a href="/generator" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">About</a></li>
+          <li><a href="/aeo" class="text-slate-400 hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
+          <li><a href="/methodology" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Methodology</a></li>
+          <li><a href="/generator" class="text-slate-400 hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="text-slate-400 hover:text-novastacks font-medium transition-colors">About</a></li>
         </ul>
         <div class="hidden md:flex gap-3">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transition-all duration-300">Get Started</a>
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300">Book a Call</a>
         </div>
         <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1" aria-label="Toggle mobile menu">
-          <span class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
+          <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
         </button>
       </nav>
-      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 py-4">
+      <div id="mobile-menu" class="hidden md:hidden bg-slate-950 border-t border-white/10 py-4">
         <ul class="flex flex-col gap-4">
-          <li><a href="/aeo" class="block py-2">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="block py-2">Fractional CMO</a></li>
-          <li><a href="/blog" class="block py-2">Blog</a></li>
+          <li><a href="/aeo" class="block text-slate-400 hover:text-novastacks py-2">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="block text-slate-400 hover:text-novastacks py-2">Fractional CMO</a></li>
+          <li><a href="/blog" class="block text-slate-400 hover:text-novastacks py-2">Blog</a></li>
         </ul>
       </div>
     </div>
   </header>
 
-  <main class="pt-16 md:pt-20">
+  <main>
     <!-- Article Header -->
     <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div class="mb-8">
@@ -142,17 +148,18 @@
       </div>
 
       <header class="mb-12">
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// E_COMMERCE</p>
         <div class="flex gap-2 mb-4">
-          <span class="bg-novastacks/10 text-novastacks text-sm font-semibold px-3 py-1 rounded-full">E-commerce</span>
-          <span class="bg-gray-100 text-gray-600 text-sm font-semibold px-3 py-1 rounded-full">AEO</span>
+          <span class="bg-novastacks/10 text-novastacks text-sm font-semibold px-3 py-1 rounded">E-commerce</span>
+          <span class="bg-slate-800 text-slate-300 text-sm font-semibold px-3 py-1 rounded">AEO</span>
         </div>
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 leading-tight font-display">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight font-display">
           UCP vs ACP: What E-commerce Brands Need to Know About Agentic Commerce Protocols
         </h1>
-        <p class="text-xl text-gray-600 mb-6 leading-relaxed">
+        <p class="text-xl text-slate-300 mb-6 leading-relaxed">
           Google and OpenAI just released competing protocols that will determine which products AI recommends — and which it can sell directly. Here's what you need to know.
         </p>
-        <div class="flex items-center gap-4 text-sm text-gray-500">
+        <div class="flex items-center gap-4 text-sm text-slate-400">
           <span>By Tina Chu</span>
           <span>|</span>
           <span>January 29, 2026</span>
@@ -162,289 +169,311 @@
       </header>
 
       <!-- Article Content -->
-      <div class="prose prose-lg max-w-none">
+      <div class="prose prose-lg prose-invert max-w-none">
 
-        <p class="text-lg leading-relaxed">
-          In January 2026, something significant happened that most e-commerce brands missed: Google announced the <strong>Universal Commerce Protocol (UCP)</strong> at NRF, and OpenAI quietly expanded its <strong>Agentic Commerce Protocol (ACP)</strong> to more merchants.
+        <p class="text-lg leading-relaxed text-slate-300">
+          In January 2026, something significant happened that most e-commerce brands missed: Google announced the <strong class="text-white">Universal Commerce Protocol (UCP)</strong> at NRF, and OpenAI quietly expanded its <strong class="text-white">Agentic Commerce Protocol (ACP)</strong> to more merchants.
         </p>
 
-        <p class="text-lg leading-relaxed">
+        <p class="text-lg leading-relaxed text-slate-300">
           These aren't just technical announcements. They're the infrastructure layer that will determine which products AI recommends — and which ones AI can actually <em>sell</em> on your behalf.
         </p>
 
-        <p class="text-lg leading-relaxed">
+        <p class="text-lg leading-relaxed text-slate-300">
           If you're an e-commerce brand wondering why your products aren't showing up in ChatGPT's shopping recommendations or Google's AI Mode, this is probably why.
         </p>
 
-        <h2 class="text-2xl md:text-3xl font-bold text-novastacks-text mt-12 mb-6 font-display">What Is Agentic Commerce?</h2>
+        <section class="mt-12 bg-slate-900 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-12">
+          <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// AGENTIC_COMMERCE</p>
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-6 font-display">What Is Agentic Commerce?</h2>
 
-        <p class="text-lg leading-relaxed">
-          Before we dive into the protocols, let's clarify what "agentic commerce" means.
-        </p>
-
-        <p class="text-lg leading-relaxed">
-          Traditional e-commerce: Customer searches → browses → adds to cart → checks out.
-        </p>
-
-        <p class="text-lg leading-relaxed">
-          <strong>Agentic commerce</strong>: Customer tells AI what they want → AI finds options → AI handles checkout → done.
-        </p>
-
-        <p class="text-lg leading-relaxed">
-          The AI agent acts on behalf of the customer, completing the entire shopping journey without the customer ever visiting your website. This is already happening in ChatGPT, Google's AI Mode, and Perplexity.
-        </p>
-
-        <div class="bg-gray-50 p-6 rounded-xl my-8">
-          <p class="text-lg font-semibold text-novastacks-text mb-2">The Stakes</p>
-          <p class="text-gray-600">Morgan Stanley predicts nearly half of online shoppers will use AI agents by 2030. Gartner predicts 90% of B2B buying will be AI-agent intermediated by 2028. The shift is happening faster than most brands realize.</p>
-        </div>
-
-        <h2 class="text-2xl md:text-3xl font-bold text-novastacks-text mt-12 mb-6 font-display">Google's Universal Commerce Protocol (UCP)</h2>
-
-        <p class="text-lg leading-relaxed">
-          UCP is Google's open-source standard for agentic commerce. Announced at NRF 2026, it's designed to let AI agents complete the entire shopping journey — from discovery to checkout to post-purchase support.
-        </p>
-
-        <h3 class="text-xl font-bold text-novastacks-text mt-8 mb-4">Key Features</h3>
-
-        <ul class="space-y-3 text-lg">
-          <li><strong>Powers checkout in Google AI Mode</strong> — the new AI-first search experience</li>
-          <li><strong>Single integration point</strong> — one implementation works across all Google consumer surfaces</li>
-          <li><strong>Open-source</strong> — compatible with Agent Payments Protocol (AP2), Agent2Agent (A2A), and Model Context Protocol (MCP)</li>
-          <li><strong>Major backing</strong> — co-developed with Shopify, Etsy, Wayfair, Target, Walmart, and endorsed by Visa, Mastercard, Stripe, Best Buy, Home Depot</li>
-        </ul>
-
-        <h3 class="text-xl font-bold text-novastacks-text mt-8 mb-4">What UCP Means for Your Products</h3>
-
-        <p class="text-lg leading-relaxed">
-          When someone asks Google AI Mode "find me running shoes for flat feet under $150," UCP enables:
-        </p>
-
-        <ol class="space-y-3 text-lg list-decimal list-inside">
-          <li>AI to pull product data from Google's Shopping Graph (50B+ listings, refreshed 2B times/hour)</li>
-          <li>AI to compare products based on attributes you've provided</li>
-          <li>AI to complete checkout without sending the customer to your site</li>
-          <li>AI to handle post-purchase support</li>
-        </ol>
-
-        <p class="text-lg leading-relaxed">
-          If your product feed isn't optimized for UCP, you're invisible to this entire flow.
-        </p>
-
-        <h2 class="text-2xl md:text-3xl font-bold text-novastacks-text mt-12 mb-6 font-display">OpenAI's Agentic Commerce Protocol (ACP)</h2>
-
-        <p class="text-lg leading-relaxed">
-          ACP is OpenAI's cross-platform protocol enabling shopping and payments within ChatGPT and other AI assistants. It's maintained by OpenAI and Stripe.
-        </p>
-
-        <h3 class="text-xl font-bold text-novastacks-text mt-8 mb-4">Key Features</h3>
-
-        <ul class="space-y-3 text-lg">
-          <li><strong>"Instant Checkout"</strong> — users can buy directly within ChatGPT</li>
-          <li><strong>Stripe integration</strong> — uses Shared Payment Token for seamless payments</li>
-          <li><strong>Three specifications</strong> — Product Feed Spec, Agentic Checkout Spec, Delegated Payment Spec</li>
-          <li><strong>Auto-eligible merchants</strong> — Shopify and Etsy merchants are automatically eligible</li>
-        </ul>
-
-        <h3 class="text-xl font-bold text-novastacks-text mt-8 mb-4">What ACP Means for Your Products</h3>
-
-        <p class="text-lg leading-relaxed">
-          When someone asks ChatGPT "I need a gift for my sister who likes skincare," ACP enables:
-        </p>
-
-        <ol class="space-y-3 text-lg list-decimal list-inside">
-          <li>ChatGPT to search and compare products from ACP-enabled merchants</li>
-          <li>ChatGPT to present product cards with pricing, reviews, specs</li>
-          <li>One-click checkout without leaving the chat</li>
-          <li>Order tracking and support within the same conversation</li>
-        </ol>
-
-        <p class="text-lg leading-relaxed">
-          Current partners include Target, Instacart, DoorDash, Skims, and Glossier.
-        </p>
-
-        <h2 class="text-2xl md:text-3xl font-bold text-novastacks-text mt-12 mb-6 font-display">UCP vs ACP: The Key Differences</h2>
-
-        <div class="overflow-x-auto my-8">
-          <table class="w-full border-collapse">
-            <thead>
-              <tr class="bg-gray-100">
-                <th class="text-left p-4 font-semibold">Aspect</th>
-                <th class="text-left p-4 font-semibold">UCP (Google)</th>
-                <th class="text-left p-4 font-semibold">ACP (OpenAI)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="border-b">
-                <td class="p-4 font-semibold">Philosophy</td>
-                <td class="p-4">"Android approach" — open, ecosystem-first</td>
-                <td class="p-4">"Apple approach" — polished, infrastructure-first</td>
-              </tr>
-              <tr class="border-b">
-                <td class="p-4 font-semibold">Primary Platform</td>
-                <td class="p-4">Google AI Mode, Gemini</td>
-                <td class="p-4">ChatGPT</td>
-              </tr>
-              <tr class="border-b">
-                <td class="p-4 font-semibold">Feed Source</td>
-                <td class="p-4">Google Merchant Center</td>
-                <td class="p-4">ACP Product Feed or Shopify/Etsy</td>
-              </tr>
-              <tr class="border-b">
-                <td class="p-4 font-semibold">Payment Integration</td>
-                <td class="p-4">Google Pay + multiple processors</td>
-                <td class="p-4">Stripe only</td>
-              </tr>
-              <tr class="border-b">
-                <td class="p-4 font-semibold">Open Source?</td>
-                <td class="p-4">Yes</td>
-                <td class="p-4">No (OpenAI/Stripe maintained)</td>
-              </tr>
-              <tr>
-                <td class="p-4 font-semibold">Auto-Eligible</td>
-                <td class="p-4">Existing Merchant Center users</td>
-                <td class="p-4">Shopify and Etsy merchants</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p class="text-lg leading-relaxed">
-          According to Checkout.com's analysis, both protocols will coexist — serving different moments of intent across different platforms. Smart brands will optimize for both.
-        </p>
-
-        <h2 class="text-2xl md:text-3xl font-bold text-novastacks-text mt-12 mb-6 font-display">What This Means for E-commerce AEO</h2>
-
-        <p class="text-lg leading-relaxed">
-          Here's the critical insight: <strong>AEO for e-commerce is no longer just about getting cited. It's about being transactable.</strong>
-        </p>
-
-        <p class="text-lg leading-relaxed">
-          If AI can't complete a purchase through your product, it will recommend a competitor whose product it <em>can</em> transact.
-        </p>
-
-        <h3 class="text-xl font-bold text-novastacks-text mt-8 mb-4">The New E-commerce AEO Stack</h3>
-
-        <div class="bg-novastacks/5 p-6 rounded-xl my-8">
-          <p class="font-semibold text-novastacks-text mb-4">Layer 1: Discovery (Traditional AEO)</p>
-          <ul class="space-y-2 text-gray-600">
-            <li>Product schema markup</li>
-            <li>FAQ schema on product pages</li>
-            <li>Structured product descriptions</li>
-            <li>Expert attribution</li>
-          </ul>
-        </div>
-
-        <div class="bg-novastacks/5 p-6 rounded-xl my-8">
-          <p class="font-semibold text-novastacks-text mb-4">Layer 2: Comparison (Feed Optimization)</p>
-          <ul class="space-y-2 text-gray-600">
-            <li>Complete product attributes in feeds</li>
-            <li>Contextual descriptions ("waterproof for rainy commutes")</li>
-            <li>Real-time inventory and pricing</li>
-            <li>Competitive differentiation signals</li>
-          </ul>
-        </div>
-
-        <div class="bg-novastacks/5 p-6 rounded-xl my-8">
-          <p class="font-semibold text-novastacks-text mb-4">Layer 3: Transaction (Protocol Enablement)</p>
-          <ul class="space-y-2 text-gray-600">
-            <li>UCP/ACP integration</li>
-            <li>Guest checkout enabled</li>
-            <li>Google Pay / Stripe integration</li>
-            <li>Real-time fulfillment data</li>
-          </ul>
-        </div>
-
-        <p class="text-lg leading-relaxed">
-          Miss any layer, and you're leaving money on the table.
-        </p>
-
-        <h2 class="text-2xl md:text-3xl font-bold text-novastacks-text mt-12 mb-6 font-display">Action Items for E-commerce Brands</h2>
-
-        <h3 class="text-xl font-bold text-novastacks-text mt-8 mb-4">Immediate (This Month)</h3>
-
-        <ol class="space-y-3 text-lg list-decimal list-inside">
-          <li><strong>Audit your Google Merchant Center feed</strong> — Is inventory real-time? Are attributes complete?</li>
-          <li><strong>Check ACP eligibility</strong> — If you're on Shopify or Etsy, you're already eligible. Enable it.</li>
-          <li><strong>Enable guest checkout</strong> — Required for agentic commerce on both protocols</li>
-          <li><strong>Integrate Google Pay</strong> — Frictionless payment for UCP transactions</li>
-        </ol>
-
-        <h3 class="text-xl font-bold text-novastacks-text mt-8 mb-4">Short-Term (Q1 2026)</h3>
-
-        <ol class="space-y-3 text-lg list-decimal list-inside">
-          <li><strong>Add contextual product attributes</strong> — Not just "blue running shoe" but "best for flat feet, rainy conditions"</li>
-          <li><strong>Implement comprehensive schema</strong> — Product, Offer, AggregateRating, FAQPage at minimum</li>
-          <li><strong>Prepare for March 2026 Google changes</strong> — New product ID requirements coming</li>
-          <li><strong>Apply for ChatGPT merchant program</strong> — If not on Shopify/Etsy</li>
-        </ol>
-
-        <h3 class="text-xl font-bold text-novastacks-text mt-8 mb-4">Long-Term (2026-2027)</h3>
-
-        <ol class="space-y-3 text-lg list-decimal list-inside">
-          <li><strong>Build for multi-agent ecosystems</strong> — Your products will be compared by AI agents, not humans</li>
-          <li><strong>Invest in real-time data infrastructure</strong> — AI penalizes stale inventory/pricing instantly</li>
-          <li><strong>Develop agentic customer service</strong> — Post-purchase support via AI will be expected</li>
-        </ol>
-
-        <h2 class="text-2xl md:text-3xl font-bold text-novastacks-text mt-12 mb-6 font-display">The Bottom Line</h2>
-
-        <p class="text-lg leading-relaxed">
-          UCP and ACP aren't just technical protocols — they're the new distribution layer for e-commerce. Brands that integrate early will capture demand that competitors can't even see.
-        </p>
-
-        <p class="text-lg leading-relaxed">
-          The shift from "getting found" to "being transactable" is the biggest change in e-commerce since mobile.
-        </p>
-
-        <p class="text-lg leading-relaxed">
-          And it's happening now.
-        </p>
-
-        <div class="bg-gray-50 p-8 rounded-xl my-12">
-          <h3 class="text-xl font-bold text-novastacks-text mb-4">Need Help with E-commerce AEO?</h3>
-          <p class="text-gray-600 mb-6">
-            Our Answer Architecture program for e-commerce includes feed optimization, schema implementation, and UCP/ACP readiness assessment. See who AI recommends instead of you — free.
+          <p class="text-lg leading-relaxed text-slate-300">
+            Before we dive into the protocols, let's clarify what "agentic commerce" means.
           </p>
-          <a href="/aeo-for-ecommerce" class="inline-block bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transition-all duration-300">
-            Learn About E-commerce AEO
-          </a>
-        </div>
 
-        <hr class="my-12 border-gray-200">
+          <p class="text-lg leading-relaxed text-slate-300">
+            Traditional e-commerce: Customer searches &rarr; browses &rarr; adds to cart &rarr; checks out.
+          </p>
 
-        <h3 class="text-xl font-bold text-novastacks-text mb-4">Sources</h3>
-        <ul class="space-y-2 text-gray-600 text-sm">
-          <li>Google Developers Blog: Universal Commerce Protocol</li>
-          <li>OpenAI Agentic Commerce Documentation</li>
-          <li>Checkout.com: ACP vs UCP Comparison</li>
-          <li>Search Engine Journal: Agentic Commerce for SEOs</li>
-          <li>Productsup: Inside Google Shopping AI Mode</li>
-          <li>Modern Retail: AI Shopping Agent Wars 2026</li>
-        </ul>
+          <p class="text-lg leading-relaxed text-slate-300">
+            <strong class="text-white">Agentic commerce</strong>: Customer tells AI what they want &rarr; AI finds options &rarr; AI handles checkout &rarr; done.
+          </p>
+
+          <p class="text-lg leading-relaxed text-slate-300">
+            The AI agent acts on behalf of the customer, completing the entire shopping journey without the customer ever visiting your website. This is already happening in ChatGPT, Google's AI Mode, and Perplexity.
+          </p>
+
+          <div class="bg-slate-800 p-6 rounded-xl my-8 border border-white/10">
+            <p class="text-lg font-semibold text-white mb-2">The Stakes</p>
+            <p class="text-slate-300">Morgan Stanley predicts nearly half of online shoppers will use AI agents by 2030. Gartner predicts 90% of B2B buying will be AI-agent intermediated by 2028. The shift is happening faster than most brands realize.</p>
+          </div>
+        </section>
+
+        <section class="mt-12">
+          <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// GOOGLE_UCP</p>
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-6 font-display">Google's Universal Commerce Protocol (UCP)</h2>
+
+          <p class="text-lg leading-relaxed text-slate-300">
+            UCP is Google's open-source standard for agentic commerce. Announced at NRF 2026, it's designed to let AI agents complete the entire shopping journey — from discovery to checkout to post-purchase support.
+          </p>
+
+          <h3 class="text-xl font-bold text-white mt-8 mb-4">Key Features</h3>
+
+          <ul class="space-y-3 text-lg text-slate-300">
+            <li><strong class="text-white">Powers checkout in Google AI Mode</strong> — the new AI-first search experience</li>
+            <li><strong class="text-white">Single integration point</strong> — one implementation works across all Google consumer surfaces</li>
+            <li><strong class="text-white">Open-source</strong> — compatible with Agent Payments Protocol (AP2), Agent2Agent (A2A), and Model Context Protocol (MCP)</li>
+            <li><strong class="text-white">Major backing</strong> — co-developed with Shopify, Etsy, Wayfair, Target, Walmart, and endorsed by Visa, Mastercard, Stripe, Best Buy, Home Depot</li>
+          </ul>
+
+          <h3 class="text-xl font-bold text-white mt-8 mb-4">What UCP Means for Your Products</h3>
+
+          <p class="text-lg leading-relaxed text-slate-300">
+            When someone asks Google AI Mode "find me running shoes for flat feet under $150," UCP enables:
+          </p>
+
+          <ol class="space-y-3 text-lg list-decimal list-inside text-slate-300">
+            <li>AI to pull product data from Google's Shopping Graph (50B+ listings, refreshed 2B times/hour)</li>
+            <li>AI to compare products based on attributes you've provided</li>
+            <li>AI to complete checkout without sending the customer to your site</li>
+            <li>AI to handle post-purchase support</li>
+          </ol>
+
+          <p class="text-lg leading-relaxed text-slate-300 mt-4">
+            If your product feed isn't optimized for UCP, you're invisible to this entire flow.
+          </p>
+        </section>
+
+        <section class="mt-12 bg-slate-900 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-12">
+          <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// OPENAI_ACP</p>
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-6 font-display">OpenAI's Agentic Commerce Protocol (ACP)</h2>
+
+          <p class="text-lg leading-relaxed text-slate-300">
+            ACP is OpenAI's cross-platform protocol enabling shopping and payments within ChatGPT and other AI assistants. It's maintained by OpenAI and Stripe.
+          </p>
+
+          <h3 class="text-xl font-bold text-white mt-8 mb-4">Key Features</h3>
+
+          <ul class="space-y-3 text-lg text-slate-300">
+            <li><strong class="text-white">"Instant Checkout"</strong> — users can buy directly within ChatGPT</li>
+            <li><strong class="text-white">Stripe integration</strong> — uses Shared Payment Token for seamless payments</li>
+            <li><strong class="text-white">Three specifications</strong> — Product Feed Spec, Agentic Checkout Spec, Delegated Payment Spec</li>
+            <li><strong class="text-white">Auto-eligible merchants</strong> — Shopify and Etsy merchants are automatically eligible</li>
+          </ul>
+
+          <h3 class="text-xl font-bold text-white mt-8 mb-4">What ACP Means for Your Products</h3>
+
+          <p class="text-lg leading-relaxed text-slate-300">
+            When someone asks ChatGPT "I need a gift for my sister who likes skincare," ACP enables:
+          </p>
+
+          <ol class="space-y-3 text-lg list-decimal list-inside text-slate-300">
+            <li>ChatGPT to search and compare products from ACP-enabled merchants</li>
+            <li>ChatGPT to present product cards with pricing, reviews, specs</li>
+            <li>One-click checkout without leaving the chat</li>
+            <li>Order tracking and support within the same conversation</li>
+          </ol>
+
+          <p class="text-lg leading-relaxed text-slate-300 mt-4">
+            Current partners include Target, Instacart, DoorDash, Skims, and Glossier.
+          </p>
+        </section>
+
+        <section class="mt-12">
+          <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// COMPARISON</p>
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-6 font-display">UCP vs ACP: The Key Differences</h2>
+
+          <div class="overflow-x-auto my-8">
+            <table class="w-full border-collapse">
+              <thead>
+                <tr class="bg-slate-800">
+                  <th class="text-left p-4 font-semibold text-white">Aspect</th>
+                  <th class="text-left p-4 font-semibold text-white">UCP (Google)</th>
+                  <th class="text-left p-4 font-semibold text-white">ACP (OpenAI)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-white/10">
+                  <td class="p-4 font-semibold text-white">Philosophy</td>
+                  <td class="p-4 text-slate-300">"Android approach" — open, ecosystem-first</td>
+                  <td class="p-4 text-slate-300">"Apple approach" — polished, infrastructure-first</td>
+                </tr>
+                <tr class="border-b border-white/10 bg-slate-900/50">
+                  <td class="p-4 font-semibold text-white">Primary Platform</td>
+                  <td class="p-4 text-slate-300">Google AI Mode, Gemini</td>
+                  <td class="p-4 text-slate-300">ChatGPT</td>
+                </tr>
+                <tr class="border-b border-white/10">
+                  <td class="p-4 font-semibold text-white">Feed Source</td>
+                  <td class="p-4 text-slate-300">Google Merchant Center</td>
+                  <td class="p-4 text-slate-300">ACP Product Feed or Shopify/Etsy</td>
+                </tr>
+                <tr class="border-b border-white/10 bg-slate-900/50">
+                  <td class="p-4 font-semibold text-white">Payment Integration</td>
+                  <td class="p-4 text-slate-300">Google Pay + multiple processors</td>
+                  <td class="p-4 text-slate-300">Stripe only</td>
+                </tr>
+                <tr class="border-b border-white/10">
+                  <td class="p-4 font-semibold text-white">Open Source?</td>
+                  <td class="p-4 text-slate-300">Yes</td>
+                  <td class="p-4 text-slate-300">No (OpenAI/Stripe maintained)</td>
+                </tr>
+                <tr>
+                  <td class="p-4 font-semibold text-white">Auto-Eligible</td>
+                  <td class="p-4 text-slate-300">Existing Merchant Center users</td>
+                  <td class="p-4 text-slate-300">Shopify and Etsy merchants</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="text-lg leading-relaxed text-slate-300">
+            According to Checkout.com's analysis, both protocols will coexist — serving different moments of intent across different platforms. Smart brands will optimize for both.
+          </p>
+        </section>
+
+        <section class="mt-12 bg-slate-900 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-12">
+          <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// AEO_IMPLICATIONS</p>
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-6 font-display">What This Means for E-commerce AEO</h2>
+
+          <p class="text-lg leading-relaxed text-slate-300">
+            Here's the critical insight: <strong class="text-white">AEO for e-commerce is no longer just about getting cited. It's about being transactable.</strong>
+          </p>
+
+          <p class="text-lg leading-relaxed text-slate-300">
+            If AI can't complete a purchase through your product, it will recommend a competitor whose product it <em>can</em> transact.
+          </p>
+
+          <h3 class="text-xl font-bold text-white mt-8 mb-4">The New E-commerce AEO Stack</h3>
+
+          <div class="bg-novastacks/10 p-6 rounded-xl my-8 border-l-4 border-novastacks">
+            <p class="font-semibold text-white mb-4">Layer 1: Discovery (Traditional AEO)</p>
+            <ul class="space-y-2 text-slate-300">
+              <li>Product schema markup</li>
+              <li>FAQ schema on product pages</li>
+              <li>Structured product descriptions</li>
+              <li>Expert attribution</li>
+            </ul>
+          </div>
+
+          <div class="bg-novastacks/10 p-6 rounded-xl my-8 border-l-4 border-novastacks">
+            <p class="font-semibold text-white mb-4">Layer 2: Comparison (Feed Optimization)</p>
+            <ul class="space-y-2 text-slate-300">
+              <li>Complete product attributes in feeds</li>
+              <li>Contextual descriptions ("waterproof for rainy commutes")</li>
+              <li>Real-time inventory and pricing</li>
+              <li>Competitive differentiation signals</li>
+            </ul>
+          </div>
+
+          <div class="bg-novastacks/10 p-6 rounded-xl my-8 border-l-4 border-novastacks">
+            <p class="font-semibold text-white mb-4">Layer 3: Transaction (Protocol Enablement)</p>
+            <ul class="space-y-2 text-slate-300">
+              <li>UCP/ACP integration</li>
+              <li>Guest checkout enabled</li>
+              <li>Google Pay / Stripe integration</li>
+              <li>Real-time fulfillment data</li>
+            </ul>
+          </div>
+
+          <p class="text-lg leading-relaxed text-slate-300">
+            Miss any layer, and you're leaving money on the table.
+          </p>
+        </section>
+
+        <section class="mt-12">
+          <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// ACTION_ITEMS</p>
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-6 font-display">Action Items for E-commerce Brands</h2>
+
+          <h3 class="text-xl font-bold text-white mt-8 mb-4">Immediate (This Month)</h3>
+
+          <ol class="space-y-3 text-lg list-decimal list-inside text-slate-300">
+            <li><strong class="text-white">Audit your Google Merchant Center feed</strong> — Is inventory real-time? Are attributes complete?</li>
+            <li><strong class="text-white">Check ACP eligibility</strong> — If you're on Shopify or Etsy, you're already eligible. Enable it.</li>
+            <li><strong class="text-white">Enable guest checkout</strong> — Required for agentic commerce on both protocols</li>
+            <li><strong class="text-white">Integrate Google Pay</strong> — Frictionless payment for UCP transactions</li>
+          </ol>
+
+          <h3 class="text-xl font-bold text-white mt-8 mb-4">Short-Term (Q1 2026)</h3>
+
+          <ol class="space-y-3 text-lg list-decimal list-inside text-slate-300">
+            <li><strong class="text-white">Add contextual product attributes</strong> — Not just "blue running shoe" but "best for flat feet, rainy conditions"</li>
+            <li><strong class="text-white">Implement comprehensive schema</strong> — Product, Offer, AggregateRating, FAQPage at minimum</li>
+            <li><strong class="text-white">Prepare for March 2026 Google changes</strong> — New product ID requirements coming</li>
+            <li><strong class="text-white">Apply for ChatGPT merchant program</strong> — If not on Shopify/Etsy</li>
+          </ol>
+
+          <h3 class="text-xl font-bold text-white mt-8 mb-4">Long-Term (2026-2027)</h3>
+
+          <ol class="space-y-3 text-lg list-decimal list-inside text-slate-300">
+            <li><strong class="text-white">Build for multi-agent ecosystems</strong> — Your products will be compared by AI agents, not humans</li>
+            <li><strong class="text-white">Invest in real-time data infrastructure</strong> — AI penalizes stale inventory/pricing instantly</li>
+            <li><strong class="text-white">Develop agentic customer service</strong> — Post-purchase support via AI will be expected</li>
+          </ol>
+        </section>
+
+        <section class="mt-12 bg-slate-900 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-12">
+          <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// BOTTOM_LINE</p>
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-6 font-display">The Bottom Line</h2>
+
+          <p class="text-lg leading-relaxed text-slate-300">
+            UCP and ACP aren't just technical protocols — they're the new distribution layer for e-commerce. Brands that integrate early will capture demand that competitors can't even see.
+          </p>
+
+          <p class="text-lg leading-relaxed text-slate-300">
+            The shift from "getting found" to "being transactable" is the biggest change in e-commerce since mobile.
+          </p>
+
+          <p class="text-lg leading-relaxed text-slate-300">
+            And it's happening now.
+          </p>
+
+          <div class="bg-slate-800 p-8 rounded-xl my-12 border border-white/10">
+            <h3 class="text-xl font-bold text-white mb-4">Need Help with E-commerce AEO?</h3>
+            <p class="text-slate-300 mb-6">
+              Our Answer Architecture program for e-commerce includes feed optimization, schema implementation, and UCP/ACP readiness assessment. See who AI recommends instead of you — free.
+            </p>
+            <a href="/aeo-for-ecommerce" class="inline-block bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300">
+              Learn About E-commerce AEO
+            </a>
+          </div>
+
+          <hr class="my-12 border-white/10">
+
+          <h3 class="text-xl font-bold text-white mb-4">Sources</h3>
+          <ul class="space-y-2 text-slate-400 text-sm">
+            <li>Google Developers Blog: Universal Commerce Protocol</li>
+            <li>OpenAI Agentic Commerce Documentation</li>
+            <li>Checkout.com: ACP vs UCP Comparison</li>
+            <li>Search Engine Journal: Agentic Commerce for SEOs</li>
+            <li>Productsup: Inside Google Shopping AI Mode</li>
+            <li>Modern Retail: AI Shopping Agent Wars 2026</li>
+          </ul>
+        </section>
 
       </div>
     </article>
 
     <!-- Related Posts -->
-    <section class="bg-gray-50 py-16">
+    <section class="bg-slate-900 py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl font-bold text-novastacks-text mb-8 font-display">Related Articles</h2>
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// RELATED</p>
+        <h2 class="text-2xl font-bold text-white mb-8 font-display">Related Articles</h2>
         <div class="grid md:grid-cols-3 gap-8">
-          <a href="/aeo/what-is-aeo" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <a href="/aeo/what-is-aeo" class="bg-slate-800 p-6 rounded-xl border border-white/10 hover:border-novastacks/50 transition-colors">
             <span class="text-sm text-novastacks font-semibold">AEO Guide</span>
-            <h3 class="text-lg font-semibold text-novastacks-text mt-2 mb-2">What is Answer Engine Optimization?</h3>
-            <p class="text-gray-600 text-sm">The complete guide to getting cited by AI assistants.</p>
+            <h3 class="text-lg font-semibold text-white mt-2 mb-2">What is Answer Engine Optimization?</h3>
+            <p class="text-slate-400 text-sm">The complete guide to getting cited by AI assistants.</p>
           </a>
-          <a href="/aeo-for-saas" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <a href="/aeo-for-saas" class="bg-slate-800 p-6 rounded-xl border border-white/10 hover:border-novastacks/50 transition-colors">
             <span class="text-sm text-novastacks font-semibold">AEO for SaaS</span>
-            <h3 class="text-lg font-semibold text-novastacks-text mt-2 mb-2">AEO for SaaS Companies</h3>
-            <p class="text-gray-600 text-sm">Get cited when prospects ask "best software for..."</p>
+            <h3 class="text-lg font-semibold text-white mt-2 mb-2">AEO for SaaS Companies</h3>
+            <p class="text-slate-400 text-sm">Get cited when prospects ask "best software for..."</p>
           </a>
-          <a href="/blog/best-aeo-tools-2026" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <a href="/blog/best-aeo-tools-2026" class="bg-slate-800 p-6 rounded-xl border border-white/10 hover:border-novastacks/50 transition-colors">
             <span class="text-sm text-novastacks font-semibold">Tools</span>
-            <h3 class="text-lg font-semibold text-novastacks-text mt-2 mb-2">Best AEO Tools in 2026</h3>
-            <p class="text-gray-600 text-sm">Track AI citations and optimize for Answer Engines.</p>
+            <h3 class="text-lg font-semibold text-white mt-2 mb-2">Best AEO Tools in 2026</h3>
+            <p class="text-slate-400 text-sm">Track AI citations and optimize for Answer Engines.</p>
           </a>
         </div>
       </div>
@@ -452,7 +481,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-slate-900 text-white py-12">
+  <footer class="bg-slate-900 text-white py-16">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
 

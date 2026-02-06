@@ -77,7 +77,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS (compiled) -->
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -86,6 +86,9 @@
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="a6bNPCfvII1gVtf+GzOf3g" async></script>
 
   <style>
+    .font-display { font-family: 'Space Grotesk', sans-serif; }
+    .font-sans { font-family: 'Inter', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
     .faq-content {
       max-height: 0;
       overflow: hidden;
@@ -102,12 +105,12 @@
     }
   </style>
 </head>
-<body class="bg-white text-novastacks-text font-serif">
+<body class="bg-slate-950 text-white font-sans">
   <!-- Header -->
-  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <header class="bg-slate-950 border-b border-white/10 sticky top-0 z-50">
     <div class="container mx-auto px-6">
       <nav class="flex justify-between items-center py-4">
-        <a href="/" class="flex items-center gap-3 hover:scale-105 transition-transform">
+        <a href="/" class="flex items-center gap-3">
           <div
             class="w-60 h-12 md:w-64 md:h-14 bg-contain bg-no-repeat bg-center"
             style="background-image: url('lovable-uploads/315157be-4582-4858-b0d2-0598ddbed87c.png')"
@@ -116,20 +119,17 @@
 
         <!-- Desktop Navigation -->
         <ul class="hidden md:flex gap-8">
-          <li><a href="/aeo" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
-          <li><a href="/methodology" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Methodology</a></li>
-          <li><a href="/generator" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">About</a></li>
+          <li><a href="/aeo" class="text-slate-400 hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
+          <li><a href="/methodology" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Methodology</a></li>
+          <li><a href="/generator" class="text-slate-400 hover:text-novastacks font-medium transition-colors">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="text-slate-400 hover:text-novastacks font-medium transition-colors">About</a></li>
         </ul>
 
-        <!-- Desktop CTA Buttons -->
+        <!-- Desktop CTA Button -->
         <div class="hidden md:flex gap-3">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transform hover:-translate-y-1 transition-all duration-300">
-            Get Started
-          </a>
-          <a href="/generator" class="bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300">
-            Learn More
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300">
+            Book a Call
           </a>
         </div>
 
@@ -140,27 +140,24 @@
           aria-label="Toggle mobile menu"
           aria-expanded="false"
         >
-          <span id="menu-bar-1" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-2" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-3" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
+          <span id="menu-bar-1" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-2" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-3" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
         </button>
       </nav>
 
       <!-- Mobile Navigation Menu -->
-      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 py-4">
+      <div id="mobile-menu" class="hidden md:hidden bg-slate-950 border-t border-white/10 py-4">
         <ul class="flex flex-col gap-4">
-          <li><a href="/aeo" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
-          <li><a href="/methodology" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
-          <li><a href="/generator" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">On-Branded Copy AI</a></li>
-          <li><a href="/#founder" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">About</a></li>
+          <li><a href="/aeo" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
+          <li><a href="/methodology" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
+          <li><a href="/generator" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">On-Branded Copy AI</a></li>
+          <li><a href="/#founder" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">About</a></li>
         </ul>
         <div class="flex flex-col gap-3 mt-4">
-          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transition-all duration-300 text-center">
-            Get Started
-          </a>
-          <a href="/generator" class="bg-transparent text-novastacks border-2 border-novastacks px-6 py-3 rounded-lg font-semibold hover:bg-novastacks hover:text-white transition-all duration-300 text-center">
-            Learn More
+          <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300 text-center">
+            Book a Call
           </a>
         </div>
       </div>
@@ -168,33 +165,33 @@
   </header>
 
   <!-- Breadcrumb -->
-  <div class="bg-gray-50 border-b border-gray-200">
+  <div class="bg-slate-900 border-b border-white/10">
     <div class="container mx-auto px-6 py-3">
-      <nav class="text-sm text-gray-600">
+      <nav class="text-sm text-slate-400">
         <a href="/" class="hover:text-novastacks">Home</a>
         <span class="mx-2">/</span>
         <a href="/blog/" class="hover:text-novastacks">Blog</a>
         <span class="mx-2">/</span>
-        <span class="text-novastacks-text">Your Head of Growth Is Set Up to Fail</span>
+        <span class="text-white">Your Head of Growth Is Set Up to Fail</span>
       </nav>
     </div>
   </div>
 
   <!-- Article Header -->
   <article>
-    <header class="py-12 lg:py-16 bg-gradient-to-b from-gray-50 to-white">
+    <header class="py-12 lg:py-16 bg-slate-950">
       <div class="container mx-auto px-6">
         <div class="max-w-3xl">
+          <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// GROWTH_STRATEGY</p>
           <div class="flex items-center gap-3 mb-4">
-            <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded-full">Growth Strategy</span>
-            <span class="text-xs font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full">Part 1 of 3</span>
-            <span class="text-sm text-gray-500">8 min read</span>
-            <span class="text-sm text-gray-500">January 26, 2026</span>
+            <span class="text-xs font-semibold text-novastacks bg-novastacks/10 px-3 py-1 rounded">Part 1 of 3</span>
+            <span class="text-sm text-slate-400">8 min read</span>
+            <span class="text-sm text-slate-400">January 26, 2026</span>
           </div>
-          <h1 class="text-4xl lg:text-5xl font-bold text-novastacks-text mb-6 font-display">
+          <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6 font-display">
             Your Head of Growth Is Set Up to Fail
           </h1>
-          <p class="text-xl text-gray-600 mb-6">
+          <p class="text-xl text-slate-300 mb-6">
             You hired a talented Head of Growth. They came with impressive credentials. Six months later, they're drowning. It's not their fault. It's the job you gave them.
           </p>
           <div class="flex items-center gap-4">
@@ -202,8 +199,8 @@
               <span class="text-novastacks font-bold">TC</span>
             </div>
             <div>
-              <p class="font-medium text-novastacks-text">Tina Chu</p>
-              <p class="text-sm text-gray-500">Founder & Growth Strategist</p>
+              <p class="font-medium text-white">Tina Chu</p>
+              <p class="text-sm text-slate-400">Founder & Growth Strategist</p>
             </div>
           </div>
         </div>
@@ -211,261 +208,271 @@
     </header>
 
     <!-- Featured Image -->
-    <div class="container mx-auto px-6 -mt-4">
-      <div class="max-w-4xl mx-auto">
-        <div class="aspect-video bg-gradient-to-br from-novastacks/20 to-novastacks/5 rounded-xl flex items-center justify-center border-2 border-dashed border-novastacks/30">
-          <div class="text-center">
-            <svg class="w-16 h-16 mx-auto text-novastacks/40 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-            </svg>
-            <p class="text-novastacks/60 font-medium">Featured Header Image</p>
-            <p class="text-sm text-gray-400">16:9 aspect ratio | ~1200x675px recommended</p>
+    <div class="bg-slate-900 py-8">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="aspect-video bg-gradient-to-br from-novastacks/20 to-novastacks/5 rounded-xl flex items-center justify-center border border-white/10">
+            <div class="text-center">
+              <svg class="w-16 h-16 mx-auto text-novastacks/40 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              <p class="text-novastacks/60 font-medium">Featured Header Image</p>
+              <p class="text-sm text-slate-500">16:9 aspect ratio | ~1200x675px recommended</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Article Content -->
-    <div class="container mx-auto px-6 py-12">
-      <div class="max-w-3xl mx-auto">
+    <div class="bg-slate-950 py-12">
+      <div class="container mx-auto px-6">
+        <div class="max-w-3xl mx-auto">
 
-        <!-- Section 1: The Problem -->
-        <section class="mb-12">
-          <h2 class="text-2xl font-bold text-novastacks-text mb-4 font-display">The 8-Function Problem</h2>
-          <p class="text-gray-700 mb-4">
-            Modern growth requires mastery across <strong>8 distinct functions</strong>. Each one has its own tools, metrics, best practices, and career paths. Each one takes 3-5 years to master. And they're evolving so fast that expertise has a half-life of about 18 months.
-          </p>
-          <p class="text-gray-700 mb-6">
-            You're asking one person to be an expert in all of them.
-          </p>
-
-          <!-- The 8 Functions Table -->
-          <div class="overflow-x-auto mb-6">
-            <table class="w-full border-collapse text-sm">
-              <thead>
-                <tr class="bg-gray-100">
-                  <th class="text-left p-3 font-bold">Function</th>
-                  <th class="text-left p-3 font-bold">Core Skills</th>
-                  <th class="text-left p-3 font-bold">Key Metrics</th>
-                  <th class="text-left p-3 font-bold">Typical Salary</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="border-b border-gray-200">
-                  <td class="p-3 font-medium">Brand & PR</td>
-                  <td class="p-3">Messaging, media relations, crisis mgmt</td>
-                  <td class="p-3">Share of voice, sentiment, coverage</td>
-                  <td class="p-3">$120-180K</td>
-                </tr>
-                <tr class="border-b border-gray-200 bg-gray-50">
-                  <td class="p-3 font-medium">Paid Acquisition</td>
-                  <td class="p-3">PPC, social ads, retargeting, attribution</td>
-                  <td class="p-3">CAC, ROAS, conversion rates</td>
-                  <td class="p-3">$100-160K</td>
-                </tr>
-                <tr class="border-b border-gray-200">
-                  <td class="p-3 font-medium">SEO & AEO</td>
-                  <td class="p-3">Technical SEO, content strategy, AI optimization</td>
-                  <td class="p-3">Rankings, traffic, AI citations</td>
-                  <td class="p-3">$110-170K</td>
-                </tr>
-                <tr class="border-b border-gray-200 bg-gray-50">
-                  <td class="p-3 font-medium">Content Marketing</td>
-                  <td class="p-3">Writing, editing, distribution, thought leadership</td>
-                  <td class="p-3">Engagement, leads, brand authority</td>
-                  <td class="p-3">$90-140K</td>
-                </tr>
-                <tr class="border-b border-gray-200">
-                  <td class="p-3 font-medium">CRO</td>
-                  <td class="p-3">A/B testing, UX, funnel analysis, psychology</td>
-                  <td class="p-3">Conversion rates, AOV, LTV</td>
-                  <td class="p-3">$100-150K</td>
-                </tr>
-                <tr class="border-b border-gray-200 bg-gray-50">
-                  <td class="p-3 font-medium text-novastacks">Product Marketing</td>
-                  <td class="p-3">Positioning, competitive intel, launches</td>
-                  <td class="p-3">Win rates, market share, adoption</td>
-                  <td class="p-3">$130-190K</td>
-                </tr>
-                <tr class="border-b border-gray-200">
-                  <td class="p-3 font-medium">Lifecycle Marketing</td>
-                  <td class="p-3">Email, retention, segmentation, personalization</td>
-                  <td class="p-3">Retention, churn, NRR</td>
-                  <td class="p-3">$95-145K</td>
-                </tr>
-                <tr class="border-b border-gray-200 bg-gray-50">
-                  <td class="p-3 font-medium text-novastacks">MarTech & Ops</td>
-                  <td class="p-3">Tool integration, data, automation, reporting</td>
-                  <td class="p-3">Data quality, efficiency, attribution</td>
-                  <td class="p-3">$115-175K</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <p class="text-gray-700 mb-4">
-            Add up those salaries. A fully-staffed in-house team is <strong>$800K-$1.3M annually</strong>. Most startups can't afford that. So they hire one person and hope for the best.
-          </p>
-        </section>
-
-        <!-- Section 2: The Lie -->
-        <section class="mb-12">
-          <h2 class="text-2xl font-bold text-novastacks-text mb-4 font-display">The "T-Shaped Marketer" Is a Lie</h2>
-          <p class="text-gray-700 mb-4">
-            You've probably heard the advice: hire a "T-shaped marketer" with deep expertise in one area and broad knowledge across others.
-          </p>
-          <p class="text-gray-700 mb-4">
-            It sounds reasonable. It's also increasingly obsolete.
-          </p>
-
-          <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg mb-6">
-            <p class="text-gray-800 font-medium mb-2">The uncomfortable math:</p>
-            <ul class="text-gray-700 space-y-2">
-              <li>Each function requires <strong>3-5 years</strong> to develop real expertise</li>
-              <li>Marketing technology and best practices change every <strong>18-24 months</strong></li>
-              <li>A marketer with 5 years of SEO experience is working with knowledge that's <strong>already 2+ generations old</strong></li>
-              <li>Their "broad knowledge" of other functions is likely <strong>3-4 generations outdated</strong></li>
-            </ul>
-          </div>
-
-          <p class="text-gray-700 mb-4">
-            The T-shaped marketer isn't a scaling strategy. It's a survival tactic for early-stage startups who can't afford specialists. And it stops working the moment you need to compete against companies with actual expertise.
-          </p>
-        </section>
-
-        <!-- Section 3: What Actually Happens -->
-        <section class="mb-12">
-          <h2 class="text-2xl font-bold text-novastacks-text mb-4 font-display">What Actually Happens</h2>
-          <p class="text-gray-700 mb-4">
-            Here's the pattern I see constantly:
-          </p>
-
-          <div class="space-y-4 mb-6">
-            <div class="flex items-start gap-4">
-              <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center flex-shrink-0">
-                <span class="font-bold text-gray-600">1</span>
-              </div>
-              <div>
-                <p class="font-medium text-novastacks-text mb-1">Month 1-3: Honeymoon</p>
-                <p class="text-gray-700 text-sm">Your new Head of Growth starts strong. They focus on what they know best. Quick wins emerge.</p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center flex-shrink-0">
-                <span class="font-bold text-gray-600">2</span>
-              </div>
-              <div>
-                <p class="font-medium text-novastacks-text mb-1">Month 4-6: Reality</p>
-                <p class="text-gray-700 text-sm">The low-hanging fruit is gone. Now they need to work across functions they don't fully understand. Quality starts slipping.</p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center flex-shrink-0">
-                <span class="font-bold text-gray-600">3</span>
-              </div>
-              <div>
-                <p class="font-medium text-novastacks-text mb-1">Month 7-12: Drowning</p>
-                <p class="text-gray-700 text-sm">They're context-switching constantly. Nothing gets done well. They either burn out or start job searching.</p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class="w-8 h-8 bg-red-200 rounded-full flex items-center justify-center flex-shrink-0">
-                <span class="font-bold text-red-600">4</span>
-              </div>
-              <div>
-                <p class="font-medium text-novastacks-text mb-1">Month 12+: Blame Game</p>
-                <p class="text-gray-700 text-sm">Leadership blames the hire. The hire blames unrealistic expectations. Both are right.</p>
-              </div>
-            </div>
-          </div>
-
-          <p class="text-gray-700 mb-4">
-            The average tenure for a Head of Growth is now <strong>18 months</strong>. That's not enough time to build anything sustainable. It's barely enough time to fail.
-          </p>
-        </section>
-
-        <!-- Series Navigation -->
-        <section class="mb-12">
-          <div class="bg-gradient-to-br from-novastacks/5 to-novastacks/10 border border-novastacks/20 p-6 rounded-xl">
-            <p class="text-sm font-semibold text-novastacks mb-2">NEXT IN THIS SERIES</p>
-            <h3 class="text-xl font-bold text-novastacks-text mb-3 font-display">The Two Functions You Definitely Don't Have</h3>
-            <p class="text-gray-700 mb-4">
-              There are 8 functions in growth marketing. Most companies are missing the same two. In Part 2, we'll explain why Product Marketing and MarTech Ops are the invisible foundations that determine whether everything else works.
+          <!-- Section 1: The Problem -->
+          <section class="mb-12">
+            <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// THE_PROBLEM</p>
+            <h2 class="text-2xl font-bold text-white mb-4 font-display">The 8-Function Problem</h2>
+            <p class="text-slate-300 mb-4">
+              Modern growth requires mastery across <strong class="text-white">8 distinct functions</strong>. Each one has its own tools, metrics, best practices, and career paths. Each one takes 3-5 years to master. And they're evolving so fast that expertise has a half-life of about 18 months.
             </p>
-            <a href="/blog/two-functions-you-dont-have/" class="inline-flex items-center gap-2 text-novastacks font-semibold hover:gap-3 transition-all">
-              Read Part 2
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-        </section>
+            <p class="text-slate-300 mb-6">
+              You're asking one person to be an expert in all of them.
+            </p>
 
-        <!-- FAQ Section -->
-        <section class="mb-12">
-          <h2 class="text-2xl font-bold text-novastacks-text mb-6 font-display">FAQ</h2>
-          <div class="space-y-4">
-            <!-- FAQ Item 1 -->
-            <div class="border border-gray-200 rounded-lg">
-              <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-novastacks-text hover:bg-gray-50" onclick="toggleFaq(this)">
-                <span>What are the 8 growth functions a startup needs?</span>
-                <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="faq-content px-4 pb-4">
-                <p class="text-gray-700">The 8 growth functions are: Brand & PR, Paid Acquisition, SEO & AEO, Content Marketing, Conversion Rate Optimization (CRO), Product Marketing, Lifecycle Marketing, and Marketing Technology & Operations. Each requires distinct expertise and 3-5+ years to master.</p>
+            <!-- The 8 Functions Table -->
+            <div class="overflow-x-auto mb-6">
+              <table class="w-full border-collapse text-sm">
+                <thead>
+                  <tr class="bg-slate-800">
+                    <th class="text-left p-3 font-bold text-white">Function</th>
+                    <th class="text-left p-3 font-bold text-white">Core Skills</th>
+                    <th class="text-left p-3 font-bold text-white">Key Metrics</th>
+                    <th class="text-left p-3 font-bold text-white">Typical Salary</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-white/10">
+                    <td class="p-3 font-medium text-white">Brand & PR</td>
+                    <td class="p-3 text-slate-300">Messaging, media relations, crisis mgmt</td>
+                    <td class="p-3 text-slate-300">Share of voice, sentiment, coverage</td>
+                    <td class="p-3 text-slate-300">$120-180K</td>
+                  </tr>
+                  <tr class="border-b border-white/10 bg-slate-900/50">
+                    <td class="p-3 font-medium text-white">Paid Acquisition</td>
+                    <td class="p-3 text-slate-300">PPC, social ads, retargeting, attribution</td>
+                    <td class="p-3 text-slate-300">CAC, ROAS, conversion rates</td>
+                    <td class="p-3 text-slate-300">$100-160K</td>
+                  </tr>
+                  <tr class="border-b border-white/10">
+                    <td class="p-3 font-medium text-white">SEO & AEO</td>
+                    <td class="p-3 text-slate-300">Technical SEO, content strategy, AI optimization</td>
+                    <td class="p-3 text-slate-300">Rankings, traffic, AI citations</td>
+                    <td class="p-3 text-slate-300">$110-170K</td>
+                  </tr>
+                  <tr class="border-b border-white/10 bg-slate-900/50">
+                    <td class="p-3 font-medium text-white">Content Marketing</td>
+                    <td class="p-3 text-slate-300">Writing, editing, distribution, thought leadership</td>
+                    <td class="p-3 text-slate-300">Engagement, leads, brand authority</td>
+                    <td class="p-3 text-slate-300">$90-140K</td>
+                  </tr>
+                  <tr class="border-b border-white/10">
+                    <td class="p-3 font-medium text-white">CRO</td>
+                    <td class="p-3 text-slate-300">A/B testing, UX, funnel analysis, psychology</td>
+                    <td class="p-3 text-slate-300">Conversion rates, AOV, LTV</td>
+                    <td class="p-3 text-slate-300">$100-150K</td>
+                  </tr>
+                  <tr class="border-b border-white/10 bg-slate-900/50">
+                    <td class="p-3 font-medium text-novastacks">Product Marketing</td>
+                    <td class="p-3 text-slate-300">Positioning, competitive intel, launches</td>
+                    <td class="p-3 text-slate-300">Win rates, market share, adoption</td>
+                    <td class="p-3 text-slate-300">$130-190K</td>
+                  </tr>
+                  <tr class="border-b border-white/10">
+                    <td class="p-3 font-medium text-white">Lifecycle Marketing</td>
+                    <td class="p-3 text-slate-300">Email, retention, segmentation, personalization</td>
+                    <td class="p-3 text-slate-300">Retention, churn, NRR</td>
+                    <td class="p-3 text-slate-300">$95-145K</td>
+                  </tr>
+                  <tr class="border-b border-white/10 bg-slate-900/50">
+                    <td class="p-3 font-medium text-novastacks">MarTech & Ops</td>
+                    <td class="p-3 text-slate-300">Tool integration, data, automation, reporting</td>
+                    <td class="p-3 text-slate-300">Data quality, efficiency, attribution</td>
+                    <td class="p-3 text-slate-300">$115-175K</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p class="text-slate-300 mb-4">
+              Add up those salaries. A fully-staffed in-house team is <strong class="text-white">$800K-$1.3M annually</strong>. Most startups can't afford that. So they hire one person and hope for the best.
+            </p>
+          </section>
+
+          <!-- Section 2: The Lie -->
+          <section class="mb-12 bg-slate-900 -mx-6 px-6 py-12 lg:-mx-12 lg:px-12">
+            <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// THE_LIE</p>
+            <h2 class="text-2xl font-bold text-white mb-4 font-display">The "T-Shaped Marketer" Is a Lie</h2>
+            <p class="text-slate-300 mb-4">
+              You've probably heard the advice: hire a "T-shaped marketer" with deep expertise in one area and broad knowledge across others.
+            </p>
+            <p class="text-slate-300 mb-4">
+              It sounds reasonable. It's also increasingly obsolete.
+            </p>
+
+            <div class="bg-red-500/10 border-l-4 border-red-500 p-6 rounded-r-lg mb-6">
+              <p class="text-white font-medium mb-2">The uncomfortable math:</p>
+              <ul class="text-slate-300 space-y-2">
+                <li>Each function requires <strong class="text-white">3-5 years</strong> to develop real expertise</li>
+                <li>Marketing technology and best practices change every <strong class="text-white">18-24 months</strong></li>
+                <li>A marketer with 5 years of SEO experience is working with knowledge that's <strong class="text-white">already 2+ generations old</strong></li>
+                <li>Their "broad knowledge" of other functions is likely <strong class="text-white">3-4 generations outdated</strong></li>
+              </ul>
+            </div>
+
+            <p class="text-slate-300 mb-4">
+              The T-shaped marketer isn't a scaling strategy. It's a survival tactic for early-stage startups who can't afford specialists. And it stops working the moment you need to compete against companies with actual expertise.
+            </p>
+          </section>
+
+          <!-- Section 3: What Actually Happens -->
+          <section class="mb-12">
+            <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// WHAT_HAPPENS</p>
+            <h2 class="text-2xl font-bold text-white mb-4 font-display">What Actually Happens</h2>
+            <p class="text-slate-300 mb-4">
+              Here's the pattern I see constantly:
+            </p>
+
+            <div class="space-y-4 mb-6">
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span class="font-bold text-slate-300">1</span>
+                </div>
+                <div>
+                  <p class="font-medium text-white mb-1">Month 1-3: Honeymoon</p>
+                  <p class="text-slate-400 text-sm">Your new Head of Growth starts strong. They focus on what they know best. Quick wins emerge.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span class="font-bold text-slate-300">2</span>
+                </div>
+                <div>
+                  <p class="font-medium text-white mb-1">Month 4-6: Reality</p>
+                  <p class="text-slate-400 text-sm">The low-hanging fruit is gone. Now they need to work across functions they don't fully understand. Quality starts slipping.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span class="font-bold text-slate-300">3</span>
+                </div>
+                <div>
+                  <p class="font-medium text-white mb-1">Month 7-12: Drowning</p>
+                  <p class="text-slate-400 text-sm">They're context-switching constantly. Nothing gets done well. They either burn out or start job searching.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 bg-red-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span class="font-bold text-red-400">4</span>
+                </div>
+                <div>
+                  <p class="font-medium text-white mb-1">Month 12+: Blame Game</p>
+                  <p class="text-slate-400 text-sm">Leadership blames the hire. The hire blames unrealistic expectations. Both are right.</p>
+                </div>
               </div>
             </div>
 
-            <!-- FAQ Item 2 -->
-            <div class="border border-gray-200 rounded-lg">
-              <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-novastacks-text hover:bg-gray-50" onclick="toggleFaq(this)">
-                <span>Why is the T-shaped marketer model failing?</span>
-                <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            <p class="text-slate-300 mb-4">
+              The average tenure for a Head of Growth is now <strong class="text-white">18 months</strong>. That's not enough time to build anything sustainable. It's barely enough time to fail.
+            </p>
+          </section>
+
+          <!-- Series Navigation -->
+          <section class="mb-12 bg-slate-900 -mx-6 px-6 py-12 lg:-mx-12 lg:px-12">
+            <div class="bg-gradient-to-br from-novastacks/10 to-novastacks/5 border border-novastacks/20 p-6 rounded-xl">
+              <p class="font-mono text-novastacks text-sm tracking-wider mb-2">// NEXT_IN_SERIES</p>
+              <h3 class="text-xl font-bold text-white mb-3 font-display">The Two Functions You Definitely Don't Have</h3>
+              <p class="text-slate-300 mb-4">
+                There are 8 functions in growth marketing. Most companies are missing the same two. In Part 2, we'll explain why Product Marketing and MarTech Ops are the invisible foundations that determine whether everything else works.
+              </p>
+              <a href="/blog/two-functions-you-dont-have/" class="inline-flex items-center gap-2 text-novastacks font-semibold hover:gap-3 transition-all">
+                Read Part 2
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                 </svg>
-              </button>
-              <div class="faq-content px-4 pb-4">
-                <p class="text-gray-700">The T-shaped marketer model assumes one person can have deep expertise in 1-2 areas while being broadly competent across others. In reality, marketing has become so specialized that even deep expertise becomes outdated within 2-3 years. It's a survival tactic, not a scaling strategy.</p>
+              </a>
+            </div>
+          </section>
+
+          <!-- FAQ Section -->
+          <section class="mb-12">
+            <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// FAQ</p>
+            <h2 class="text-2xl font-bold text-white mb-6 font-display">FAQ</h2>
+            <div class="space-y-4">
+              <!-- FAQ Item 1 -->
+              <div class="border border-white/10 rounded-lg">
+                <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-white hover:bg-slate-900" onclick="toggleFaq(this)">
+                  <span>What are the 8 growth functions a startup needs?</span>
+                  <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div class="faq-content px-4 pb-4">
+                  <p class="text-slate-300">The 8 growth functions are: Brand & PR, Paid Acquisition, SEO & AEO, Content Marketing, Conversion Rate Optimization (CRO), Product Marketing, Lifecycle Marketing, and Marketing Technology & Operations. Each requires distinct expertise and 3-5+ years to master.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div class="border border-white/10 rounded-lg">
+                <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-white hover:bg-slate-900" onclick="toggleFaq(this)">
+                  <span>Why is the T-shaped marketer model failing?</span>
+                  <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div class="faq-content px-4 pb-4">
+                  <p class="text-slate-300">The T-shaped marketer model assumes one person can have deep expertise in 1-2 areas while being broadly competent across others. In reality, marketing has become so specialized that even deep expertise becomes outdated within 2-3 years. It's a survival tactic, not a scaling strategy.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div class="border border-white/10 rounded-lg">
+                <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-white hover:bg-slate-900" onclick="toggleFaq(this)">
+                  <span>How many marketing specialists does a growth team need?</span>
+                  <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div class="faq-content px-4 pb-4">
+                  <p class="text-slate-300">A fully-staffed in-house growth team covering all 8 functions typically requires 5-8 specialists. Most startups can't afford this, which is why strategic outsourcing and fractional resources have become essential.</p>
+                </div>
               </div>
             </div>
+          </section>
 
-            <!-- FAQ Item 3 -->
-            <div class="border border-gray-200 rounded-lg">
-              <button class="faq-toggle w-full flex items-center justify-between p-4 text-left font-medium text-novastacks-text hover:bg-gray-50" onclick="toggleFaq(this)">
-                <span>How many marketing specialists does a growth team need?</span>
-                <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="faq-content px-4 pb-4">
-                <p class="text-gray-700">A fully-staffed in-house growth team covering all 8 functions typically requires 5-8 specialists. Most startups can't afford this, which is why strategic outsourcing and fractional resources have become essential.</p>
+          <!-- CTA Section -->
+          <section class="bg-slate-900 -mx-6 px-6 py-12 lg:-mx-12 lg:px-12">
+            <div class="bg-slate-800 p-8 lg:p-12 rounded-2xl text-center">
+              <h2 class="text-2xl lg:text-3xl font-bold text-white mb-4 font-display">Not Sure Where Your Gaps Are?</h2>
+              <p class="text-slate-300 mb-8 max-w-xl mx-auto">A quick conversation can help you identify which functions are holding back your growth and whether to build or outsource them.</p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-novastacks text-white px-8 py-4 rounded font-semibold text-lg hover:bg-novastacks/80 transition-all duration-300">
+                  Schedule 30 mins Consultation
+                </a>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <!-- CTA Section -->
-        <section class="bg-novastacks-text p-8 lg:p-12 rounded-2xl text-center">
-          <h2 class="text-2xl lg:text-3xl font-bold text-white mb-4 font-display">Not Sure Where Your Gaps Are?</h2>
-          <p class="text-white/90 mb-8 max-w-xl mx-auto">A quick conversation can help you identify which functions are holding back your growth and whether to build or outsource them.</p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://calendar.app.google/ktnYyixysLuXeEJU8" class="bg-white text-novastacks-text px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300">
-              Schedule 30 mins Consultation
-            </a>
-          </div>
-        </section>
-
+        </div>
       </div>
     </div>
   </article>
 
   <!-- Footer -->
-  <footer class="bg-slate-900 text-white py-12">
+  <footer class="bg-slate-900 text-white py-16">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
 

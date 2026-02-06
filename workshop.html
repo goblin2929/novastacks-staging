@@ -26,10 +26,16 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS (compiled) -->
   <link rel="stylesheet" href="assets/css/styles.css">
+
+  <style>
+    .font-display { font-family: 'Space Grotesk', sans-serif; }
+    .font-sans { font-family: 'Inter', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -76,12 +82,12 @@
   }
   </script>
 </head>
-<body class="bg-white text-novastacks-text font-serif">
+<body class="bg-slate-950 text-white font-sans">
   <!-- Header -->
-  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <header class="bg-slate-950 border-b border-white/10 sticky top-0 z-50">
     <div class="container mx-auto px-6">
       <nav class="flex justify-between items-center py-4">
-        <a href="/" class="flex items-center gap-3 hover:scale-105 transition-transform">
+        <a href="/" class="flex items-center gap-3">
           <div
             class="w-60 h-12 md:w-64 md:h-14 bg-contain bg-no-repeat bg-center"
             style="background-image: url('lovable-uploads/315157be-4582-4858-b0d2-0598ddbed87c.png')"
@@ -90,17 +96,17 @@
 
         <!-- Desktop Navigation -->
         <ul class="hidden md:flex gap-8">
-          <li><a href="/aeo" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
-          <li><a href="/methodology" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">Methodology</a></li>
+          <li><a href="/aeo" class="text-slate-400 hover:text-novastacks font-medium transition-colors">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Fractional CMO</a></li>
+          <li><a href="/methodology" class="text-slate-400 hover:text-novastacks font-medium transition-colors">Methodology</a></li>
           <li><a href="/workshop" class="text-novastacks font-medium transition-colors">Workshop</a></li>
-          <li><a href="/#founder" class="text-novastacks-text hover:text-novastacks font-medium transition-colors">About</a></li>
+          <li><a href="/#founder" class="text-slate-400 hover:text-novastacks font-medium transition-colors">About</a></li>
         </ul>
 
         <!-- Desktop CTA -->
         <div class="hidden md:flex gap-3">
-          <a href="#register" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transform hover:-translate-y-1 transition-all duration-300">
-            Register Now
+          <a href="https://cal.com/novastacks/30min" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300">
+            Book a Call
           </a>
         </div>
 
@@ -111,41 +117,39 @@
           aria-label="Toggle mobile menu"
           aria-expanded="false"
         >
-          <span id="menu-bar-1" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-2" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
-          <span id="menu-bar-3" class="block w-6 h-0.5 bg-novastacks-text transition-all duration-300"></span>
+          <span id="menu-bar-1" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-2" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span id="menu-bar-3" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
         </button>
       </nav>
 
       <!-- Mobile Navigation Menu -->
-      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 py-4">
+      <div id="mobile-menu" class="hidden md:hidden bg-slate-950 border-t border-white/10 py-4">
         <ul class="flex flex-col gap-4">
-          <li><a href="/aeo" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
-          <li><a href="/fractional-growth-partner" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
-          <li><a href="/methodology" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
+          <li><a href="/aeo" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">SEO & AEO</a></li>
+          <li><a href="/fractional-growth-partner" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Fractional CMO</a></li>
+          <li><a href="/methodology" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">Methodology</a></li>
           <li><a href="/workshop" class="block text-novastacks font-medium transition-colors py-2">Workshop</a></li>
-          <li><a href="/#founder" class="block text-novastacks-text hover:text-novastacks font-medium transition-colors py-2">About</a></li>
+          <li><a href="/#founder" class="block text-slate-400 hover:text-novastacks font-medium transition-colors py-2">About</a></li>
         </ul>
         <div class="flex flex-col gap-3 mt-4">
-          <a href="#register" class="bg-novastacks text-white px-6 py-3 rounded-lg font-semibold hover:bg-novastacks-dark transition-all duration-300 text-center">
-            Register Now
+          <a href="https://cal.com/novastacks/30min" class="bg-novastacks text-white px-6 py-3 rounded font-semibold hover:bg-novastacks/80 transition-all duration-300 text-center">
+            Book a Call
           </a>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative py-20 lg:py-28 bg-slate-900 overflow-hidden">
+  <!-- Hero Section (Dark) -->
+  <section class="relative py-20 lg:py-28 bg-slate-950 overflow-hidden">
     <!-- Gradient overlay -->
-    <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-novastacks-dark opacity-90"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-novastacks-dark opacity-90"></div>
 
     <!-- Content -->
     <div class="container mx-auto px-6 relative z-10">
       <div class="text-center max-w-4xl mx-auto">
-        <div class="inline-flex items-center gap-2 px-4 py-2 bg-novastacks/20 backdrop-blur-sm rounded-full text-sm font-medium text-novastacks mb-6">
-          Hands-On Workshop · Singapore
-        </div>
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-6">// WORKSHOP</p>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight font-display">
           Claude Code for<br>
           <span class="text-novastacks">Marketing & Sales</span>
@@ -157,10 +161,10 @@
           No coding required. Limited to 25 seats.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#register" class="bg-novastacks text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-novastacks-dark transform hover:-translate-y-1 transition-all duration-300">
+          <a href="#register" class="bg-novastacks text-white px-8 py-4 rounded font-semibold text-lg hover:bg-novastacks/80 transition-all duration-300">
             Register Now — $399 SGD
           </a>
-          <a href="#agenda" class="bg-transparent text-white border-2 border-white/30 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-all duration-300">
+          <a href="#agenda" class="bg-transparent text-white border-2 border-white/30 px-8 py-4 rounded font-semibold text-lg hover:bg-white/10 transition-all duration-300">
             See Full Agenda
           </a>
         </div>
@@ -168,166 +172,170 @@
     </div>
   </section>
 
-  <!-- Problem Section -->
-  <section class="py-16 lg:py-20 bg-white">
+  <!-- Problem Section (Light) -->
+  <section class="py-16 lg:py-20 bg-slate-100">
     <div class="container mx-auto px-6">
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl lg:text-4xl font-bold text-novastacks-text mb-6 font-display">
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// THE_PROBLEM</p>
+        <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-6 font-display">
           You've seen the demos.<br>You're still not using it.
         </h2>
-        <p class="text-lg text-novastacks-text-light mb-8 leading-relaxed">
+        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
           You watched the YouTube videos. You might even have Claude Code installed. But you hit the terminal, got confused, and closed it.
         </p>
-        <p class="text-lg text-novastacks-text-light mb-8 leading-relaxed">
+        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
           The tutorials were for developers. The examples didn't match your job. You got stuck and had no one to ask.
         </p>
-        <p class="text-lg text-novastacks-text font-semibold">
+        <p class="text-lg text-slate-900 font-semibold">
           You're not alone. Most people who try to learn Claude Code on their own give up within a week.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Solution Section -->
-  <section class="py-16 lg:py-20 bg-slate-50">
+  <!-- Solution Section (Dark) -->
+  <section class="py-16 lg:py-20 bg-slate-950">
     <div class="container mx-auto px-6">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl lg:text-4xl font-bold text-novastacks-text mb-12 font-display text-center">
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4 text-center">// THE_SOLUTION</p>
+        <h2 class="text-3xl lg:text-4xl font-bold text-white mb-12 font-display text-center">
           This workshop gets you unstuck.
         </h2>
 
         <div class="grid md:grid-cols-2 gap-6">
           <!-- Problem/Solution Cards -->
-          <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-            <div class="text-red-500 font-semibold text-sm uppercase tracking-wide mb-2">Problem</div>
-            <h3 class="font-bold text-novastacks-text mb-2">Terminal fear</h3>
+          <div class="bg-slate-900 p-6 rounded-xl border border-white/10">
+            <div class="text-red-400 font-semibold text-sm uppercase tracking-wide mb-2">Problem</div>
+            <h3 class="font-bold text-white mb-2">Terminal fear</h3>
             <div class="text-novastacks font-semibold text-sm uppercase tracking-wide mb-2 mt-4">Solution</div>
-            <p class="text-novastacks-text-light">We teach exactly 3 commands. Everyone practices until comfortable.</p>
+            <p class="text-slate-400">We teach exactly 3 commands. Everyone practices until comfortable.</p>
           </div>
 
-          <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-            <div class="text-red-500 font-semibold text-sm uppercase tracking-wide mb-2">Problem</div>
-            <h3 class="font-bold text-novastacks-text mb-2">Generic tutorials</h3>
+          <div class="bg-slate-900 p-6 rounded-xl border border-white/10">
+            <div class="text-red-400 font-semibold text-sm uppercase tracking-wide mb-2">Problem</div>
+            <h3 class="font-bold text-white mb-2">Generic tutorials</h3>
             <div class="text-novastacks font-semibold text-sm uppercase tracking-wide mb-2 mt-4">Solution</div>
-            <p class="text-novastacks-text-light">Every example is built for marketing and sales workflows.</p>
+            <p class="text-slate-400">Every example is built for marketing and sales workflows.</p>
           </div>
 
-          <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-            <div class="text-red-500 font-semibold text-sm uppercase tracking-wide mb-2">Problem</div>
-            <h3 class="font-bold text-novastacks-text mb-2">No one to ask</h3>
+          <div class="bg-slate-900 p-6 rounded-xl border border-white/10">
+            <div class="text-red-400 font-semibold text-sm uppercase tracking-wide mb-2">Problem</div>
+            <h3 class="font-bold text-white mb-2">No one to ask</h3>
             <div class="text-novastacks font-semibold text-sm uppercase tracking-wide mb-2 mt-4">Solution</div>
-            <p class="text-novastacks-text-light">Two senior trainers. Individual troubleshooting. No one left behind.</p>
+            <p class="text-slate-400">Two senior trainers. Individual troubleshooting. No one left behind.</p>
           </div>
 
-          <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-            <div class="text-red-500 font-semibold text-sm uppercase tracking-wide mb-2">Problem</div>
-            <h3 class="font-bold text-novastacks-text mb-2">No "aha moment"</h3>
+          <div class="bg-slate-900 p-6 rounded-xl border border-white/10">
+            <div class="text-red-400 font-semibold text-sm uppercase tracking-wide mb-2">Problem</div>
+            <h3 class="font-bold text-white mb-2">No "aha moment"</h3>
             <div class="text-novastacks font-semibold text-sm uppercase tracking-wide mb-2 mt-4">Solution</div>
-            <p class="text-novastacks-text-light">You build something real, in the room, that you take home working.</p>
+            <p class="text-slate-400">You build something real, in the room, that you take home working.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- What You'll Build Section -->
-  <section class="py-16 lg:py-20 bg-white">
+  <!-- What You'll Build Section (Light) -->
+  <section class="py-16 lg:py-20 bg-slate-100">
     <div class="container mx-auto px-6">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl lg:text-4xl font-bold text-novastacks-text mb-4 font-display text-center">
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4 text-center">// BUILD</p>
+        <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4 font-display text-center">
           Choose your workflow
         </h2>
-        <p class="text-lg text-novastacks-text-light mb-12 text-center">
+        <p class="text-lg text-slate-600 mb-12 text-center">
           During the workshop, you'll build ONE working automation:
         </p>
 
         <div class="grid md:grid-cols-3 gap-6">
-          <div class="bg-gradient-to-br from-novastacks/5 to-novastacks/10 p-6 rounded-xl border border-novastacks/20">
+          <div class="bg-white p-6 rounded-xl border border-slate-200">
             <div class="w-12 h-12 bg-novastacks/20 rounded-lg flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-novastacks" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
               </svg>
             </div>
-            <h3 class="font-bold text-novastacks-text mb-2">Lead Research Brief</h3>
-            <p class="text-novastacks-text-light text-sm mb-4">Input a company URL. Get a structured brief with company info, news, key people, competitive positioning.</p>
+            <h3 class="font-bold text-slate-900 mb-2">Lead Research Brief</h3>
+            <p class="text-slate-600 text-sm mb-4">Input a company URL. Get a structured brief with company info, news, key people, competitive positioning.</p>
             <div class="text-xs text-novastacks font-medium">~45 min saved per use</div>
           </div>
 
-          <div class="bg-gradient-to-br from-novastacks/5 to-novastacks/10 p-6 rounded-xl border border-novastacks/20">
+          <div class="bg-white p-6 rounded-xl border border-slate-200">
             <div class="w-12 h-12 bg-novastacks/20 rounded-lg flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-novastacks" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
               </svg>
             </div>
-            <h3 class="font-bold text-novastacks-text mb-2">Content Repurposer</h3>
-            <p class="text-novastacks-text-light text-sm mb-4">Take a blog post. Generate a LinkedIn post that sounds like you (not AI slop).</p>
+            <h3 class="font-bold text-slate-900 mb-2">Content Repurposer</h3>
+            <p class="text-slate-600 text-sm mb-4">Take a blog post. Generate a LinkedIn post that sounds like you (not AI slop).</p>
             <div class="text-xs text-novastacks font-medium">~30 min saved per use</div>
           </div>
 
-          <div class="bg-gradient-to-br from-novastacks/5 to-novastacks/10 p-6 rounded-xl border border-novastacks/20">
+          <div class="bg-white p-6 rounded-xl border border-slate-200">
             <div class="w-12 h-12 bg-novastacks/20 rounded-lg flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-novastacks" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
               </svg>
             </div>
-            <h3 class="font-bold text-novastacks-text mb-2">Competitor Tracker</h3>
-            <p class="text-novastacks-text-light text-sm mb-4">Set up automated monitoring of competitor websites, pricing, and positioning.</p>
+            <h3 class="font-bold text-slate-900 mb-2">Competitor Tracker</h3>
+            <p class="text-slate-600 text-sm mb-4">Set up automated monitoring of competitor websites, pricing, and positioning.</p>
             <div class="text-xs text-novastacks font-medium">Hours saved per week</div>
           </div>
         </div>
 
-        <p class="text-center text-novastacks-text font-semibold mt-8">
+        <p class="text-center text-slate-900 font-semibold mt-8">
           You pick one. You build it. You leave with it working.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Trainers Section -->
-  <section class="py-16 lg:py-20 bg-slate-50">
+  <!-- Trainers Section (Dark) -->
+  <section class="py-16 lg:py-20 bg-slate-950">
     <div class="container mx-auto px-6">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl lg:text-4xl font-bold text-novastacks-text mb-4 font-display text-center">
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4 text-center">// TRAINERS</p>
+        <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4 font-display text-center">
           Your Trainers
         </h2>
-        <p class="text-lg text-novastacks-text-light mb-12 text-center">
+        <p class="text-lg text-slate-400 mb-12 text-center">
           Senior operators. Daily practitioners. Not AI influencers.
         </p>
 
         <div class="grid md:grid-cols-2 gap-8">
           <!-- Tina -->
-          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-            <div class="w-20 h-20 bg-gradient-to-br from-novastacks to-novastacks-dark rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">
+          <div class="bg-slate-900 p-8 rounded-xl border border-white/10">
+            <div class="w-20 h-20 bg-gradient-to-br from-novastacks to-novastacks-dark rounded-lg flex items-center justify-center text-white text-2xl font-bold mb-4">
               TC
             </div>
-            <h3 class="text-xl font-bold text-novastacks-text mb-1">Tina Chu</h3>
+            <h3 class="text-xl font-bold text-white mb-1">Tina Chu</h3>
             <p class="text-novastacks font-medium mb-4">Founder, Novastacks AI</p>
-            <p class="text-novastacks-text-light mb-4">
+            <p class="text-slate-400 mb-4">
               20+ years building marketing teams at Expedia, Tencent, and Klook. Led teams of 300+ people across Asia.
             </p>
-            <p class="text-novastacks-text-light">
+            <p class="text-slate-400">
               Now builds AI marketing systems with Claude Code — in production, daily.
             </p>
           </div>
 
           <!-- Yaohong -->
-          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-            <div class="w-20 h-20 bg-gradient-to-br from-slate-600 to-slate-800 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">
+          <div class="bg-slate-900 p-8 rounded-xl border border-white/10">
+            <div class="w-20 h-20 bg-gradient-to-br from-slate-600 to-slate-800 rounded-lg flex items-center justify-center text-white text-2xl font-bold mb-4">
               YC
             </div>
-            <h3 class="text-xl font-bold text-novastacks-text mb-1">Yaohong Ch'ng</h3>
+            <h3 class="text-xl font-bold text-white mb-1">Yaohong Ch'ng</h3>
             <p class="text-novastacks font-medium mb-4">Founder, Superuser HQ</p>
-            <p class="text-novastacks-text-light mb-4">
+            <p class="text-slate-400 mb-4">
               20+ years in finance and tech. Built and scaled data teams at StashAway and January Capital.
             </p>
-            <p class="text-novastacks-text-light">
+            <p class="text-slate-400">
               First-principles thinker who makes complex technical concepts clear.
             </p>
           </div>
         </div>
 
-        <div class="mt-8 p-6 bg-novastacks/5 rounded-xl border border-novastacks/20">
-          <p class="text-center text-novastacks-text">
+        <div class="mt-8 p-6 bg-slate-900 rounded-xl border border-novastacks/30">
+          <p class="text-center text-white">
             <strong>Combined:</strong> 40+ years of experience. Both use Claude Code every day. They'll teach you what actually works.
           </p>
         </div>
@@ -335,79 +343,80 @@
     </div>
   </section>
 
-  <!-- Agenda Section -->
-  <section id="agenda" class="py-16 lg:py-20 bg-white">
+  <!-- Agenda Section (Light) -->
+  <section id="agenda" class="py-16 lg:py-20 bg-slate-100">
     <div class="container mx-auto px-6">
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl lg:text-4xl font-bold text-novastacks-text mb-4 font-display text-center">
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4 text-center">// AGENDA</p>
+        <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4 font-display text-center">
           4 hours. 7 blocks. 1 working workflow.
         </h2>
-        <p class="text-lg text-novastacks-text-light mb-12 text-center">
+        <p class="text-lg text-slate-600 mb-12 text-center">
           Hands-on from start to finish.
         </p>
 
         <div class="space-y-4">
-          <div class="flex gap-4 p-4 bg-slate-50 rounded-lg">
+          <div class="flex gap-4 p-4 bg-white rounded-lg border border-slate-200">
             <div class="text-novastacks font-mono font-bold w-16 shrink-0">0:00</div>
             <div>
-              <h3 class="font-bold text-novastacks-text">Why This Matters</h3>
-              <p class="text-novastacks-text-light text-sm">Agentic AI vs chat AI. Live demo. Mental model for Claude Code.</p>
+              <h3 class="font-bold text-slate-900">Why This Matters</h3>
+              <p class="text-slate-600 text-sm">Agentic AI vs chat AI. Live demo. Mental model for Claude Code.</p>
             </div>
           </div>
 
-          <div class="flex gap-4 p-4 bg-slate-50 rounded-lg">
+          <div class="flex gap-4 p-4 bg-white rounded-lg border border-slate-200">
             <div class="text-novastacks font-mono font-bold w-16 shrink-0">0:30</div>
             <div>
-              <h3 class="font-bold text-novastacks-text">Terminal Comfort</h3>
-              <p class="text-novastacks-text-light text-sm">The only 3 commands you need. Everyone practices.</p>
+              <h3 class="font-bold text-slate-900">Terminal Comfort</h3>
+              <p class="text-slate-600 text-sm">The only 3 commands you need. Everyone practices.</p>
             </div>
           </div>
 
-          <div class="flex gap-4 p-4 bg-slate-50 rounded-lg">
+          <div class="flex gap-4 p-4 bg-white rounded-lg border border-slate-200">
             <div class="text-novastacks font-mono font-bold w-16 shrink-0">1:00</div>
             <div>
-              <h3 class="font-bold text-novastacks-text">Core Concepts</h3>
-              <p class="text-novastacks-text-light text-sm">Prompts, files, web research. Live demo: build a lead brief from a URL.</p>
+              <h3 class="font-bold text-slate-900">Core Concepts</h3>
+              <p class="text-slate-600 text-sm">Prompts, files, web research. Live demo: build a lead brief from a URL.</p>
             </div>
           </div>
 
-          <div class="flex gap-4 p-4 bg-slate-50 rounded-lg">
+          <div class="flex gap-4 p-4 bg-white rounded-lg border border-slate-200">
             <div class="text-novastacks font-mono font-bold w-16 shrink-0">1:45</div>
             <div>
-              <h3 class="font-bold text-novastacks-text">MCPs & Skills</h3>
-              <p class="text-novastacks-text-light text-sm">Connect to your tools. Save and reuse workflows.</p>
+              <h3 class="font-bold text-slate-900">MCPs & Skills</h3>
+              <p class="text-slate-600 text-sm">Connect to your tools. Save and reuse workflows.</p>
             </div>
           </div>
 
-          <div class="flex gap-4 p-4 bg-novastacks/10 rounded-lg">
+          <div class="flex gap-4 p-4 bg-novastacks/10 rounded-lg border border-novastacks/20">
             <div class="text-novastacks font-mono font-bold w-16 shrink-0">2:15</div>
             <div>
-              <h3 class="font-bold text-novastacks-text">Break</h3>
-              <p class="text-novastacks-text-light text-sm">Coffee, tea, and networking.</p>
+              <h3 class="font-bold text-slate-900">Break</h3>
+              <p class="text-slate-600 text-sm">Coffee, tea, and networking.</p>
             </div>
           </div>
 
-          <div class="flex gap-4 p-4 bg-slate-50 rounded-lg">
+          <div class="flex gap-4 p-4 bg-white rounded-lg border border-slate-200">
             <div class="text-novastacks font-mono font-bold w-16 shrink-0">2:30</div>
             <div>
-              <h3 class="font-bold text-novastacks-text">Guided Build</h3>
-              <p class="text-novastacks-text-light text-sm">Create your workflow. Trainers help individually.</p>
+              <h3 class="font-bold text-slate-900">Guided Build</h3>
+              <p class="text-slate-600 text-sm">Create your workflow. Trainers help individually.</p>
             </div>
           </div>
 
-          <div class="flex gap-4 p-4 bg-slate-50 rounded-lg">
+          <div class="flex gap-4 p-4 bg-white rounded-lg border border-slate-200">
             <div class="text-novastacks font-mono font-bold w-16 shrink-0">3:30</div>
             <div>
-              <h3 class="font-bold text-novastacks-text">Show & Tell</h3>
-              <p class="text-novastacks-text-light text-sm">Share what you built. Learn from peers.</p>
+              <h3 class="font-bold text-slate-900">Show & Tell</h3>
+              <p class="text-slate-600 text-sm">Share what you built. Learn from peers.</p>
             </div>
           </div>
 
-          <div class="flex gap-4 p-4 bg-slate-50 rounded-lg">
+          <div class="flex gap-4 p-4 bg-white rounded-lg border border-slate-200">
             <div class="text-novastacks font-mono font-bold w-16 shrink-0">4:00</div>
             <div>
-              <h3 class="font-bold text-novastacks-text">What's Next</h3>
-              <p class="text-novastacks-text-light text-sm">OpenClaw demo. Resources for continued learning.</p>
+              <h3 class="font-bold text-slate-900">What's Next</h3>
+              <p class="text-slate-600 text-sm">OpenClaw demo. Resources for continued learning.</p>
             </div>
           </div>
         </div>
@@ -415,81 +424,82 @@
     </div>
   </section>
 
-  <!-- Who This Is For -->
-  <section class="py-16 lg:py-20 bg-slate-50">
+  <!-- Who This Is For (Dark) -->
+  <section class="py-16 lg:py-20 bg-slate-950">
     <div class="container mx-auto px-6">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl lg:text-4xl font-bold text-novastacks-text mb-4 font-display text-center">
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4 text-center">// AUDIENCE</p>
+        <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4 font-display text-center">
           Who This Is For
         </h2>
-        <p class="text-lg text-novastacks-text-light mb-12 text-center max-w-2xl mx-auto">
+        <p class="text-lg text-slate-400 mb-12 text-center max-w-2xl mx-auto">
           Professionals who want to bring agentic AI workflows into their actual work — not hobbyists looking for cool demos.
         </p>
 
         <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-white p-8 rounded-xl shadow-sm border border-green-200">
-            <h3 class="text-green-600 font-bold text-lg mb-4 flex items-center gap-2">
+          <div class="bg-slate-900 p-8 rounded-xl border border-green-500/30">
+            <h3 class="text-green-400 font-bold text-lg mb-4 flex items-center gap-2">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               This is for you
             </h3>
-            <ul class="space-y-3 text-novastacks-text-light">
+            <ul class="space-y-3 text-slate-400">
               <li class="flex items-start gap-2">
-                <span class="text-green-500 mt-1">•</span>
-                <strong class="text-novastacks-text">Marketing & Martech:</strong> Automating research, content workflows, campaign reporting
+                <span class="text-green-400 mt-1">•</span>
+                <span><strong class="text-white">Marketing & Martech:</strong> Automating research, content workflows, campaign reporting</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-green-500 mt-1">•</span>
-                <strong class="text-novastacks-text">Sales & RevOps:</strong> Lead research, outreach prep, CRM data enrichment
+                <span class="text-green-400 mt-1">•</span>
+                <span><strong class="text-white">Sales & RevOps:</strong> Lead research, outreach prep, CRM data enrichment</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-green-500 mt-1">•</span>
-                <strong class="text-novastacks-text">Data & Analytics:</strong> Report generation, data transformation, insight extraction
+                <span class="text-green-400 mt-1">•</span>
+                <span><strong class="text-white">Data & Analytics:</strong> Report generation, data transformation, insight extraction</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-green-500 mt-1">•</span>
-                <strong class="text-novastacks-text">Solopreneurs & Consultants:</strong> Building leverage through AI-powered workflows
+                <span class="text-green-400 mt-1">•</span>
+                <span><strong class="text-white">Solopreneurs & Consultants:</strong> Building leverage through AI-powered workflows</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-green-500 mt-1">•</span>
-                <strong class="text-novastacks-text">Operations & Strategy:</strong> Process automation, competitive intelligence, documentation
+                <span class="text-green-400 mt-1">•</span>
+                <span><strong class="text-white">Operations & Strategy:</strong> Process automation, competitive intelligence, documentation</span>
               </li>
             </ul>
-            <div class="mt-6 p-4 bg-green-50 rounded-lg">
-              <p class="text-sm text-green-800">
+            <div class="mt-6 p-4 bg-green-500/10 rounded-lg border border-green-500/20">
+              <p class="text-sm text-green-300">
                 <strong>Common thread:</strong> You have real professional workflows you want to automate. You're willing to invest 4 hours to learn how.
               </p>
             </div>
           </div>
 
-          <div class="bg-white p-8 rounded-xl shadow-sm border border-red-200">
-            <h3 class="text-red-500 font-bold text-lg mb-4 flex items-center gap-2">
+          <div class="bg-slate-900 p-8 rounded-xl border border-red-500/30">
+            <h3 class="text-red-400 font-bold text-lg mb-4 flex items-center gap-2">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
               </svg>
               This is not for you
             </h3>
-            <ul class="space-y-3 text-novastacks-text-light">
+            <ul class="space-y-3 text-slate-400">
               <li class="flex items-start gap-2">
                 <span class="text-red-400 mt-1">•</span>
-                <strong class="text-novastacks-text">Developers</strong> who already use terminal/CLI daily — you can learn this faster on your own
+                <span><strong class="text-white">Developers</strong> who already use terminal/CLI daily — you can learn this faster on your own</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-red-400 mt-1">•</span>
-                <strong class="text-novastacks-text">ChatGPT power users</strong> looking for better prompts — this is a different category of tool
+                <span><strong class="text-white">ChatGPT power users</strong> looking for better prompts — this is a different category of tool</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-red-400 mt-1">•</span>
-                <strong class="text-novastacks-text">Curious observers</strong> who want to "see what AI can do" — you won't get value without doing the work
+                <span><strong class="text-white">Curious observers</strong> who want to "see what AI can do" — you won't get value without doing the work</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-red-400 mt-1">•</span>
-                <strong class="text-novastacks-text">Anyone without real workflows</strong> to automate — you need a use case to build toward
+                <span><strong class="text-white">Anyone without real workflows</strong> to automate — you need a use case to build toward</span>
               </li>
             </ul>
-            <div class="mt-6 p-4 bg-red-50 rounded-lg">
-              <p class="text-sm text-red-800">
+            <div class="mt-6 p-4 bg-red-500/10 rounded-lg border border-red-500/20">
+              <p class="text-sm text-red-300">
                 <strong>Be honest with yourself:</strong> If you don't have workflows you want to automate, wait until you do.
               </p>
             </div>
@@ -497,23 +507,23 @@
         </div>
 
         <!-- Why trainers matter for this audience -->
-        <div class="mt-12 p-8 bg-white rounded-xl shadow-sm border border-gray-200">
-          <h3 class="font-bold text-novastacks-text text-lg mb-4 text-center">Why Operator-Led Training Matters</h3>
-          <p class="text-novastacks-text-light text-center mb-6">
+        <div class="mt-12 p-8 bg-slate-900 rounded-xl border border-white/10">
+          <h3 class="font-bold text-white text-lg mb-4 text-center">Why Operator-Led Training Matters</h3>
+          <p class="text-slate-400 text-center mb-6">
             Your questions aren't technical — they're about applying AI to real business workflows.
           </p>
           <div class="grid md:grid-cols-3 gap-6 text-center">
             <div>
               <div class="text-novastacks font-semibold mb-2">"How do I use this for lead research?"</div>
-              <p class="text-sm text-novastacks-text-light">Tina built sales enablement workflows at Klook. She'll show you exactly how.</p>
+              <p class="text-sm text-slate-400">Tina built sales enablement workflows at Klook. She'll show you exactly how.</p>
             </div>
             <div>
               <div class="text-novastacks font-semibold mb-2">"How do I connect this to my data?"</div>
-              <p class="text-sm text-novastacks-text-light">Yaohong built data teams at StashAway. He knows the integration patterns.</p>
+              <p class="text-sm text-slate-400">Yaohong built data teams at StashAway. He knows the integration patterns.</p>
             </div>
             <div>
               <div class="text-novastacks font-semibold mb-2">"What's actually practical at scale?"</div>
-              <p class="text-sm text-novastacks-text-light">Both have led 300+ person teams. They know what works in production, not just demos.</p>
+              <p class="text-sm text-slate-400">Both have led 300+ person teams. They know what works in production, not just demos.</p>
             </div>
           </div>
         </div>
@@ -521,60 +531,62 @@
     </div>
   </section>
 
-  <!-- What's Included -->
-  <section class="py-16 lg:py-20 bg-white">
+  <!-- What's Included (Light) -->
+  <section class="py-16 lg:py-20 bg-slate-100">
     <div class="container mx-auto px-6">
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl lg:text-4xl font-bold text-novastacks-text mb-12 font-display text-center">
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4 text-center">// INCLUDED</p>
+        <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-12 font-display text-center">
           What's included
         </h2>
 
         <div class="grid sm:grid-cols-2 gap-4">
-          <div class="flex items-start gap-3 p-4">
+          <div class="flex items-start gap-3 p-4 bg-white rounded-lg border border-slate-200">
             <svg class="w-6 h-6 text-novastacks shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
             </svg>
-            <span class="text-novastacks-text">4-hour hands-on workshop</span>
+            <span class="text-slate-900">4-hour hands-on workshop</span>
           </div>
-          <div class="flex items-start gap-3 p-4">
+          <div class="flex items-start gap-3 p-4 bg-white rounded-lg border border-slate-200">
             <svg class="w-6 h-6 text-novastacks shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
             </svg>
-            <span class="text-novastacks-text">Pre-workshop setup support</span>
+            <span class="text-slate-900">Pre-workshop setup support</span>
           </div>
-          <div class="flex items-start gap-3 p-4">
+          <div class="flex items-start gap-3 p-4 bg-white rounded-lg border border-slate-200">
             <svg class="w-6 h-6 text-novastacks shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
             </svg>
-            <span class="text-novastacks-text">Digital cheat sheet</span>
+            <span class="text-slate-900">Digital cheat sheet</span>
           </div>
-          <div class="flex items-start gap-3 p-4">
+          <div class="flex items-start gap-3 p-4 bg-white rounded-lg border border-slate-200">
             <svg class="w-6 h-6 text-novastacks shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
             </svg>
-            <span class="text-novastacks-text">Resource list for continued learning</span>
+            <span class="text-slate-900">Resource list for continued learning</span>
           </div>
-          <div class="flex items-start gap-3 p-4">
+          <div class="flex items-start gap-3 p-4 bg-white rounded-lg border border-slate-200">
             <svg class="w-6 h-6 text-novastacks shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
             </svg>
-            <span class="text-novastacks-text">30-day email support</span>
+            <span class="text-slate-900">30-day email support</span>
           </div>
-          <div class="flex items-start gap-3 p-4">
+          <div class="flex items-start gap-3 p-4 bg-white rounded-lg border border-slate-200">
             <svg class="w-6 h-6 text-novastacks shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
             </svg>
-            <span class="text-novastacks-text">Coffee, tea & refreshments</span>
+            <span class="text-slate-900">Coffee, tea & refreshments</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Register Section -->
-  <section id="register" class="py-16 lg:py-24 bg-slate-900">
+  <!-- Register Section (Dark) -->
+  <section id="register" class="py-16 lg:py-24 bg-slate-950">
     <div class="container mx-auto px-6">
       <div class="max-w-3xl mx-auto text-center">
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4">// REGISTER</p>
         <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4 font-display">
           Stop watching. Start building.
         </h2>
@@ -582,7 +594,7 @@
           25 seats. Two senior trainers. One working workflow you'll use Monday.
         </p>
 
-        <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl mb-8">
+        <div class="bg-slate-900 border border-white/10 p-8 rounded-2xl mb-8">
           <div class="grid sm:grid-cols-3 gap-6 text-white mb-8">
             <div>
               <div class="text-novastacks text-sm font-medium uppercase tracking-wide mb-1">Location</div>
@@ -606,7 +618,7 @@
             <div class="text-4xl font-bold text-white mb-2">$399 <span class="text-lg font-normal text-white/60">SGD</span></div>
             <div class="text-novastacks text-sm mb-6">First 10 tickets only. Standard price: $499</div>
 
-            <a href="#" class="inline-block bg-novastacks text-white px-10 py-4 rounded-lg font-semibold text-lg hover:bg-novastacks-dark transform hover:-translate-y-1 transition-all duration-300">
+            <a href="#" class="inline-block bg-novastacks text-white px-10 py-4 rounded font-semibold text-lg hover:bg-novastacks/80 transition-all duration-300">
               Register on Lu.ma
             </a>
             <p class="text-white/50 text-sm mt-4">
@@ -618,63 +630,64 @@
     </div>
   </section>
 
-  <!-- FAQs -->
-  <section class="py-16 lg:py-20 bg-white">
+  <!-- FAQs (Light) -->
+  <section class="py-16 lg:py-20 bg-slate-100">
     <div class="container mx-auto px-6">
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl lg:text-4xl font-bold text-novastacks-text mb-12 font-display text-center">
+        <p class="font-mono text-novastacks text-sm tracking-wider mb-4 text-center">// FAQ</p>
+        <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-12 font-display text-center">
           FAQs
         </h2>
 
         <div class="space-y-6">
-          <div class="border-b border-gray-200 pb-6">
-            <h3 class="font-bold text-novastacks-text mb-2">Do I need coding experience?</h3>
-            <p class="text-novastacks-text-light">No. We assume you've never touched terminal before. This workshop is designed for non-technical professionals.</p>
+          <div class="border-b border-slate-300 pb-6">
+            <h3 class="font-bold text-slate-900 mb-2">Do I need coding experience?</h3>
+            <p class="text-slate-600">No. We assume you've never touched terminal before. This workshop is designed for non-technical professionals.</p>
           </div>
 
-          <div class="border-b border-gray-200 pb-6">
-            <h3 class="font-bold text-novastacks-text mb-2">What do I need to bring?</h3>
-            <p class="text-novastacks-text-light">Laptop with Claude Code installed. We send setup instructions after registration.</p>
+          <div class="border-b border-slate-300 pb-6">
+            <h3 class="font-bold text-slate-900 mb-2">What do I need to bring?</h3>
+            <p class="text-slate-600">Laptop with Claude Code installed. We send setup instructions after registration.</p>
           </div>
 
-          <div class="border-b border-gray-200 pb-6">
-            <h3 class="font-bold text-novastacks-text mb-2">What if I can't get Claude Code working?</h3>
-            <p class="text-novastacks-text-light">We offer pre-workshop setup support. Register early and we'll help you get set up.</p>
+          <div class="border-b border-slate-300 pb-6">
+            <h3 class="font-bold text-slate-900 mb-2">What if I can't get Claude Code working?</h3>
+            <p class="text-slate-600">We offer pre-workshop setup support. Register early and we'll help you get set up.</p>
           </div>
 
-          <div class="border-b border-gray-200 pb-6">
-            <h3 class="font-bold text-novastacks-text mb-2">Is this different from ChatGPT?</h3>
-            <p class="text-novastacks-text-light">Yes. ChatGPT answers questions. Claude Code executes workflows — reading files, connecting tools, writing documents.</p>
+          <div class="border-b border-slate-300 pb-6">
+            <h3 class="font-bold text-slate-900 mb-2">Is this different from ChatGPT?</h3>
+            <p class="text-slate-600">Yes. ChatGPT answers questions. Claude Code executes workflows — reading files, connecting tools, writing documents.</p>
           </div>
 
-          <div class="border-b border-gray-200 pb-6">
-            <h3 class="font-bold text-novastacks-text mb-2">Can I expense this to my company?</h3>
-            <p class="text-novastacks-text-light">Yes. We provide invoices for corporate reimbursement.</p>
+          <div class="border-b border-slate-300 pb-6">
+            <h3 class="font-bold text-slate-900 mb-2">Can I expense this to my company?</h3>
+            <p class="text-slate-600">Yes. We provide invoices for corporate reimbursement.</p>
           </div>
 
           <div class="pb-6">
-            <h3 class="font-bold text-novastacks-text mb-2">What's the refund policy?</h3>
-            <p class="text-novastacks-text-light">Full refund up to 7 days before. 50% refund up to 3 days before. No refunds after.</p>
+            <h3 class="font-bold text-slate-900 mb-2">What's the refund policy?</h3>
+            <p class="text-slate-600">Full refund up to 7 days before. 50% refund up to 3 days before. No refunds after.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Final CTA -->
-  <section class="py-16 bg-novastacks">
+  <!-- Final CTA (Dark) -->
+  <section class="py-16 bg-slate-950 border-t border-white/10">
     <div class="container mx-auto px-6 text-center">
       <h2 class="text-2xl lg:text-3xl font-bold text-white mb-4 font-display">
         Ready to stop watching and start building?
       </h2>
-      <a href="#register" class="inline-block bg-white text-novastacks px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transform hover:-translate-y-1 transition-all duration-300">
+      <a href="#register" class="inline-block bg-novastacks text-white px-8 py-4 rounded font-semibold text-lg hover:bg-novastacks/80 transition-all duration-300">
         Register Now
       </a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-slate-900 text-white py-12">
+  <footer class="bg-slate-950 text-white py-16 border-t border-white/10">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
 
@@ -732,7 +745,7 @@
       </div>
 
       <!-- Bottom Bar -->
-      <div class="border-t border-slate-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
+      <div class="border-t border-white/10 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
         <div class="flex items-center gap-2 mb-4 md:mb-0">
           <div
             class="w-32 h-8 bg-contain bg-no-repeat bg-center"
